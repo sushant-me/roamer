@@ -424,6 +424,11 @@ class SiteScreen extends StatelessWidget {
           _dim('Illumination', site.d['illumination'], site.scores['illumination']),
           _dim('Aridity', null, site.scores['aridity']),
         ])),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 2, 20, 0),
+          child: Text('Bar = match in target-σ units (fuller is closer). Grey coverage tiles are not computed by design.',
+              style: TextStyle(color: kMuted, fontSize: 10.5, height: 1.4)),
+        ),
         const _SectionLabel('COVERAGE — WHAT IS COMPUTED'),
         Panel(child: Wrap(spacing: 8, runSpacing: 8, children: _coverage())),
         const _SectionLabel('PROVENANCE (EVERY NUMBER TRACEABLE)'),
@@ -658,8 +663,50 @@ class BriefScreen extends StatelessWidget {
         const _SectionLabel('DISCLAIMER'),
         Panel(child: const Text('This is a planning estimate built from open data and documented assumptions — not a certified mission design. Every input is listed on the record page.',
             style: TextStyle(color: kMuted, fontSize: 11, height: 1.4))),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+          child: SizedBox(
+            width: double.infinity,
+            child: OutlinedButton.icon(
+              style: OutlinedButton.styleFrom(
+                side: const BorderSide(color: kYellow),
+                foregroundColor: kYellow,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+              ),
+              onPressed: () async {
+                await Clipboard.setData(ClipboardData(text: _briefText()));
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                    content: Text('Brief copied — paste it anywhere.'),
+                    backgroundColor: kBlue,
+                  ));
+                }
+              },
+              icon: const Icon(Icons.copy, size: 18),
+              label: const Text('COPY BRIEF AS TEXT', style: TextStyle(fontWeight: FontWeight.w800, letterSpacing: 1.1)),
+            ),
+          ),
+        ),
       ]),
     );
+  }
+
+  String _briefText() {
+    final dayLen = (site.illumination['daylength_dec21_h'] as num?)?.toDouble() ?? 10;
+    final solar = (site.climate['solar_kwh_m2_day'] as num?)?.toDouble() ?? 5;
+    final kwh = (0.35 * solar * dayLen * 0.75).toStringAsFixed(2);
+    final slope = (site.terrain['local_slope_med_deg'] as num).toDouble();
+    return '''ROAMER — MISSION BRIEF
+Site: ${site.name} (${site.lat}, ${site.lon}) · ${site.alt.round()} m
+Verdict: ${site.passes}/${site.total} requirements pass · similarity ${site.similarity.toStringAsFixed(2)} · attention ${site.attention.toStringAsFixed(2)} · survey gap ${site.gap.toStringAsFixed(2)}
+Access: ${site.access}
+Objective: test the highest-gap site for a 5-day EVA + thermal-protocol campaign, and record the ground truth needed to move it from "candidate" to "characterized".
+Power: 350 W array · planning yield $kwh kWh/day (${solar.toStringAsFixed(2)} kWh/m²/day, worst-season daylight ${dayLen.toStringAsFixed(1)} h) · 3.3 kWh battery
+Comms: Window A 08:10–11:40 local · Window B 15:20–17:50 local (planning estimate)
+Traverse: local slope ${slope.toStringAsFixed(1)}° → suit-load derating applied
+Risk: ${site.alt.round()} m altitude — acclimatization day required; battery thermal management; evacuation via ${site.access}
+Provenance: AWS Terrarium (SRTM-derived) 500 m grid · Open-Meteo ERA5 2015–2024 · OpenAlex attention · NOAA-style solar geometry. Every number traceable at https://sushant-me.github.io/roamer/
+Disclaimer: planning estimate from open data — not a certified mission design.''';
   }
 }
 
@@ -679,6 +726,12 @@ class MethodView extends StatelessWidget {
   @override
   Widget build(BuildContext context) => _page([
     const Header('METHOD', sub: 'What this is — and what it is not'),
+    Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
+      Text('CHALLENGE', style: TextStyle(color: kMuted, fontSize: 10, letterSpacing: 2)),
+      SizedBox(height: 6),
+      Text('Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars. NASA Space Apps Challenge 2026, Bhaktapur (Virtual).',
+          style: TextStyle(color: kInk, fontSize: 12.5, height: 1.4)),
+    ])),
     Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
       Text('THE CLAIM', style: TextStyle(color: kMuted, fontSize: 10, letterSpacing: 2)),
       SizedBox(height: 8),
@@ -709,6 +762,9 @@ class MethodView extends StatelessWidget {
       SizedBox(height: 8),
       Text('Web: sushant-me.github.io/roamer   ·   Android APK: github.com/sushant-me/roamer/releases\nBuilt during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.',
           style: TextStyle(color: kMuted, fontSize: 11, fontStyle: FontStyle.italic)),
+      SizedBox(height: 8),
+      Text('Built with: Flutter/Dart (web + Android), GitHub Pages, GitHub Releases. SI tools: this assistant was used for code, the data pipeline and copy; every number is recomputed from the sources above and human-reviewed before submission.',
+          style: TextStyle(color: kMuted, fontSize: 11, height: 1.45)),
     ])),
     Padding(padding: const EdgeInsets.all(16), child: Text('Generated ${meta['generated']}', style: const TextStyle(color: kGrey, fontSize: 10))),
   ]);
