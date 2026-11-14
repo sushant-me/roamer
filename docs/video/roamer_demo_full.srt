@@ -1,0 +1,72 @@
+1
+00:00:00,100 --> 00:00:02,782
+Every night, the sky has a story.
+
+2
+00:00:02,732 --> 00:00:04,724
+AstroLens helps you read it.
+
+3
+00:00:04,724 --> 00:00:06,898
+Seven features, one app.
+
+4
+00:00:06,898 --> 00:00:10,414
+Point your phone at the sky, and the stars have names.
+
+5
+00:00:10,414 --> 00:00:14,698
+Tilt the sky dome with your hand, or let the gyroscope move it for you.
+
+6
+00:00:14,698 --> 00:00:17,497
+Tonight's Sky tells you what is above you right now.
+
+7
+00:00:17,497 --> 00:00:25,583
+Then fly a three-D solar system: all eight planets, drag to orbit, tap a world for a real NASA image.
+
+8
+00:00:25,583 --> 00:00:29,828
+Beyond them, galaxies, the Kuiper Belt, the Oort Cloud.
+
+9
+00:00:29,828 --> 00:00:36,938
+Watch Earth form across four and a half billion years, from a cold cloud of gas to a living planet.
+
+10
+00:00:36,938 --> 00:00:42,185
+Weigh the five competing hypotheses, and the open problem each one still has.
+
+11
+00:00:42,185 --> 00:00:47,576
+Finally, the challenge: where on Earth should we test Moon and Mars hardware?
+
+12
+00:00:47,576 --> 00:00:51,326
+Thirty-four sites, one five-hundred-metre grid.
+
+13
+00:00:51,326 --> 00:00:55,154
+Gap tells you where to survey next, not which analog is best.
+
+14
+00:00:55,154 --> 00:00:58,878
+Atacama scores zero because it has already been studied.
+
+15
+00:00:58,878 --> 00:01:00,349
+Chhusang leads.
+
+16
+00:01:00,349 --> 00:01:01,742
+AstroLens.
+
+17
+00:01:01,742 --> 00:01:02,732
+Look up.
+
+18
+00:01:02,732 --> 00:01:03,995
+Understand.
+
