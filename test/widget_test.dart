@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:roamer/main.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -64,5 +65,15 @@ void main() {
       expect(g['similarity'], isNotNull);
       expect(g['secondary_gap'], isNotNull);
     }
+  });
+
+  testWidgets('app boots to the FIND screen from the real asset', (tester) async {
+    final raw = await tester.runAsync(() => rootBundle.loadString('assets/data/roamer_data.json'));
+    final data = jsonDecode(raw!) as Map<String, dynamic>;
+    await tester.pumpWidget(RoamerApp(data: data));
+    await tester.pump(const Duration(milliseconds: 50));
+    expect(find.textContaining('ROAMER'), findsWidgets);
+    expect(find.textContaining('34 sites characterized'), findsOneWidget);
+    expect(find.textContaining('TEST RANGE'), findsOneWidget);
   });
 }
