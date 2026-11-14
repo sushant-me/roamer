@@ -10,7 +10,7 @@
    "role": "candidate",
    "blurb": "The 2019 MAU-Nepal 001 site. Road-reachable since 2024; the Kali Gandaki valley floor is the flattest ground for kilometres.",
    "operability": 0.9,
-   "access": "Road (Jomsom–Kagbeni blacktopped 2024), ACAP permit, lodges in Kagbeni.",
+   "access": "Road (Jomsom\u2013Kagbeni blacktopped 2024), ACAP permit, lodges in Kagbeni.",
    "features": {
     "terrain": {
      "relief_m": 2325,
@@ -47,7 +47,7 @@
     "seasonal_amp_k": 8.1,
     "diurnal_amp_k": 4.6,
     "solar_kwh_m2_day": 7.51,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015\u20132024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
    },
    "literature": {
     "count": 97,
@@ -69,20 +69,20 @@
     "trafficable_slopes": {
      "pass": true,
      "value": 8.79,
-     "unit": "° local slope (3 km)",
-     "threshold": "≤10°"
+     "unit": "\u00b0 local slope (3 km)",
+     "threshold": "\u226410\u00b0"
     },
     "terrain_relief": {
      "pass": true,
      "value": 154,
-     "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "unit": "m P90\u2013P10 (1.5 km site pad)",
+     "threshold": "150\u20131,500 m"
     },
     "sunlight": {
      "pass": true,
      "value": 37.7,
-     "unit": "° noon elevation (worst solstice)",
-     "threshold": "≥20°"
+     "unit": "\u00b0 noon elevation (worst solstice)",
+     "threshold": "\u226520\u00b0"
     },
     "aridity": {
      "pass": true,
@@ -93,8 +93,8 @@
     "access": {
      "pass": true,
      "value": 0.9,
-     "unit": "operability 0–1",
-     "threshold": "≥0.5"
+     "unit": "operability 0\u20131",
+     "threshold": "\u22650.5"
     }
    },
    "passes": 5,
@@ -112,7 +112,7 @@
    "role": "candidate",
    "blurb": "High, dry, windswept Tibetan plateau beyond the Himalaya; restricted-area permit required.",
    "operability": 0.45,
-   "access": "Restricted-area permit; road from Jomsom seasonal; 4–6 h drive.",
+   "access": "Restricted-area permit; road from Jomsom seasonal; 4\u20136 h drive.",
    "features": {
     "terrain": {
      "relief_m": 1654,
@@ -149,7 +149,7 @@
     "seasonal_amp_k": 8.5,
     "diurnal_amp_k": 5.7,
     "solar_kwh_m2_day": 8.4,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015\u20132024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
    },
    "literature": {
     "count": 158,
@@ -171,20 +171,20 @@
     "trafficable_slopes": {
      "pass": true,
      "value": 7.08,
-     "unit": "° local slope (3 km)",
-     "threshold": "≤10°"
+     "unit": "\u00b0 local slope (3 km)",
+     "threshold": "\u226410\u00b0"
     },
     "terrain_relief": {
      "pass": true,
      "value": 208,
-     "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "unit": "m P90\u2013P10 (1.5 km site pad)",
+     "threshold": "150\u20131,500 m"
     },
     "sunlight": {
      "pass": true,
      "value": 37.4,
-     "unit": "° noon elevation (worst solstice)",
-     "threshold": "≥20°"
+     "unit": "\u00b0 noon elevation (worst solstice)",
+     "threshold": "\u226520\u00b0"
     },
     "aridity": {
      "pass": true,
@@ -195,8 +195,8 @@
     "access": {
      "pass": false,
      "value": 0.45,
-     "unit": "operability 0–1",
-     "threshold": "≥0.5"
+     "unit": "operability 0\u20131",
+     "threshold": "\u22650.5"
     }
    },
    "passes": 4,
@@ -212,9 +212,9 @@
    "lon": 82.9,
    "alt_m": 3600,
    "role": "candidate",
-   "blurb": "Remote Dolpo basin around Nepal’s deepest lake; national-park permit, no road to the lake.",
+   "blurb": "Remote Dolpo basin around Nepal\u2019s deepest lake; national-park permit, no road to the lake.",
    "operability": 0.3,
-   "access": "Shey Phoksundo National Park permit; trek 1–2 days from the road head.",
+   "access": "Shey Phoksundo National Park permit; trek 1\u20132 days from the road head.",
    "features": {
     "terrain": {
      "relief_m": 1904,
@@ -251,7 +251,7 @@
     "seasonal_amp_k": 9.2,
     "diurnal_amp_k": 5.8,
     "solar_kwh_m2_day": 7.31,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015\u20132024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
    },
    "literature": {
     "count": 239,
@@ -273,20 +273,20 @@
     "trafficable_slopes": {
      "pass": false,
      "value": 25.9,
-     "unit": "° local slope (3 km)",
-     "threshold": "≤10°"
+     "unit": "\u00b0 local slope (3 km)",
+     "threshold": "\u226410\u00b0"
     },
     "terrain_relief": {
      "pass": true,
      "value": 662,
-     "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "unit": "m P90\u2013P10 (1.5 km site pad)",
+     "threshold": "150\u20131,500 m"
     },
     "sunlight": {
      "pass": true,
      "value": 37.4,
-     "unit": "° noon elevation (worst solstice)",
-     "threshold": "≥20°"
+     "unit": "\u00b0 noon elevation (worst solstice)",
+     "threshold": "\u226520\u00b0"
     },
     "aridity": {
      "pass": false,
@@ -297,8 +297,8 @@
     "access": {
      "pass": false,
      "value": 0.3,
-     "unit": "operability 0–1",
-     "threshold": "≥0.5"
+     "unit": "operability 0\u20131",
+     "threshold": "\u22650.5"
     }
    },
    "passes": 2,
@@ -353,7 +353,7 @@
     "seasonal_amp_k": 6.9,
     "diurnal_amp_k": 3.6,
     "solar_kwh_m2_day": 7.39,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015\u20132024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
    },
    "literature": {
     "count": 4068,
@@ -375,20 +375,20 @@
     "trafficable_slopes": {
      "pass": false,
      "value": 12.32,
-     "unit": "° local slope (3 km)",
-     "threshold": "≤10°"
+     "unit": "\u00b0 local slope (3 km)",
+     "threshold": "\u226410\u00b0"
     },
     "terrain_relief": {
      "pass": true,
      "value": 254,
-     "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "unit": "m P90\u2013P10 (1.5 km site pad)",
+     "threshold": "150\u20131,500 m"
     },
     "sunlight": {
      "pass": true,
      "value": 38.7,
-     "unit": "° noon elevation (worst solstice)",
-     "threshold": "≥20°"
+     "unit": "\u00b0 noon elevation (worst solstice)",
+     "threshold": "\u226520\u00b0"
     },
     "aridity": {
      "pass": false,
@@ -399,8 +399,8 @@
     "access": {
      "pass": true,
      "value": 0.8,
-     "unit": "operability 0–1",
-     "threshold": "≥0.5"
+     "unit": "operability 0\u20131",
+     "threshold": "\u22650.5"
     }
    },
    "passes": 3,
@@ -455,7 +455,7 @@
     "seasonal_amp_k": 2.6,
     "diurnal_amp_k": 8.4,
     "solar_kwh_m2_day": 9.25,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015\u20132024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
    },
    "literature": {
     "count": 61070,
@@ -477,20 +477,20 @@
     "trafficable_slopes": {
      "pass": true,
      "value": 1.43,
-     "unit": "° local slope (3 km)",
-     "threshold": "≤10°"
+     "unit": "\u00b0 local slope (3 km)",
+     "threshold": "\u226410\u00b0"
     },
     "terrain_relief": {
      "pass": true,
      "value": 25,
-     "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "unit": "m P90\u2013P10 (1.5 km site pad)",
+     "threshold": "150\u20131,500 m"
     },
     "sunlight": {
      "pass": true,
      "value": 42.5,
-     "unit": "° noon elevation (worst solstice)",
-     "threshold": "≥20°"
+     "unit": "\u00b0 noon elevation (worst solstice)",
+     "threshold": "\u226520\u00b0"
     },
     "aridity": {
      "pass": true,
@@ -501,8 +501,8 @@
     "access": {
      "pass": true,
      "value": 0.6,
-     "unit": "operability 0–1",
-     "threshold": "≥0.5"
+     "unit": "operability 0\u20131",
+     "threshold": "\u22650.5"
     }
    },
    "passes": 5,
@@ -518,7 +518,7 @@
    "lon": 83.99,
    "alt_m": 800,
    "role": "negative_control",
-   "blurb": "Wet, vegetated mid-hill control. Should fail the desert/thermal requirements — if it passes, the method is broken.",
+   "blurb": "Wet, vegetated mid-hill control. Should fail the desert/thermal requirements \u2014 if it passes, the method is broken.",
    "operability": 0.95,
    "access": "Road, city services.",
    "features": {
@@ -557,7 +557,7 @@
     "seasonal_amp_k": 6.5,
     "diurnal_amp_k": 4.3,
     "solar_kwh_m2_day": 5.74,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015\u20132024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
    },
    "literature": {
     "count": 15263,
@@ -579,20 +579,20 @@
     "trafficable_slopes": {
      "pass": true,
      "value": 2.2,
-     "unit": "° local slope (3 km)",
-     "threshold": "≤10°"
+     "unit": "\u00b0 local slope (3 km)",
+     "threshold": "\u226410\u00b0"
     },
     "terrain_relief": {
      "pass": true,
      "value": 73,
-     "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "unit": "m P90\u2013P10 (1.5 km site pad)",
+     "threshold": "150\u20131,500 m"
     },
     "sunlight": {
      "pass": true,
      "value": 38.3,
-     "unit": "° noon elevation (worst solstice)",
-     "threshold": "≥20°"
+     "unit": "\u00b0 noon elevation (worst solstice)",
+     "threshold": "\u226520\u00b0"
     },
     "aridity": {
      "pass": false,
@@ -603,8 +603,8 @@
     "access": {
      "pass": true,
      "value": 0.95,
-     "unit": "operability 0–1",
-     "threshold": "≥0.5"
+     "unit": "operability 0\u20131",
+     "threshold": "\u22650.5"
     }
    },
    "passes": 4,
@@ -615,7 +615,7 @@
  ],
  "meta": {
   "generated": "2026-11-14T05:51:15.908Z",
-  "method": "Terrarium elevation tiles (z12) → 500 m block-average → slope/roughness/variogram; NASA POWER climatology; OpenAlex literature counts; solar geometry (NOAA-style)."
+  "method": "Terrarium elevation tiles (z12) \u2192 500 m block-average \u2192 slope/roughness/variogram; NASA POWER climatology; OpenAlex literature counts; solar geometry (NOAA-style)."
  },
  "target": {
   "id": "mars_midlat",
@@ -645,7 +645,7 @@
   "source": "Target bands from published Mars mid-latitude statistics (MOLA topography; THEMIS/Diviner thermal summaries; PDS). Values are documented ranges, not a single mission measurement."
  },
  "map": {
-  "image": "assets/map/hillshade.png",
+  "image": "assets/map/hillshade.jpg",
   "width": 1024,
   "height": 768,
   "lonMin": 78.75,
