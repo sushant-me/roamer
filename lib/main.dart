@@ -365,6 +365,13 @@ Widget _bar(double v, Color c) => ClipRRect(
 class SiteScreen extends StatelessWidget {
   final Site site;
   const SiteScreen({super.key, required this.site});
+  static const reqWhy = {
+    'trafficable_slopes': '10° is a practical limit for unassisted EVA and wheeled rovers on loose ground.',
+    'terrain_relief': '20–1,500 m: enough vertical structure to test traverse and survey, not a cliff.',
+    'sunlight': '≥20° winter noon keeps solar power and thermal control workable.',
+    'aridity': '<800 mm/yr: semi-arid or drier — the desert criterion this shortlist uses.',
+    'access': '≥0.5 operability: reachable without expedition-grade logistics.',
+  };
   static const reqLabels = {
     'trafficable_slopes': 'Trafficable slopes',
     'terrain_relief': 'Site-pad relief',
@@ -409,6 +416,8 @@ class SiteScreen extends StatelessWidget {
             Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(e.value, style: const TextStyle(color: kInk, fontSize: 14, fontWeight: FontWeight.w600)),
               Text('${r['value']} ${r['unit']}  ·  target ${r['threshold']}', style: const TextStyle(color: kMuted, fontSize: 11)),
+              const SizedBox(height: 2),
+              Text(reqWhy[e.key] ?? '', style: const TextStyle(color: kGrey, fontSize: 10, fontStyle: FontStyle.italic)),
             ])),
           ]));
         }),
@@ -433,6 +442,11 @@ class SiteScreen extends StatelessWidget {
         ),
         const _SectionLabel('COVERAGE — WHAT IS COMPUTED'),
         Panel(child: Wrap(spacing: 8, runSpacing: 8, children: _coverage())),
+        const _SectionLabel('UNCERTAINTY — WHERE THE NUMBER COULD MOVE'),
+        Panel(child: const Text(
+          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature, not MODIS skin temperature. Attention: an OpenAlex keyword count. 12 records is a shortlist, not a global survey — read the gap as a screening signal, not a probability.',
+          style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
+        )),
         const _SectionLabel('PROVENANCE (EVERY NUMBER TRACEABLE)'),
         Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           _prov('Terrain', 'AWS Terrain Tiles (Terrarium, SRTM-derived) · z12 · 500 m block-average · slope Horn'),
