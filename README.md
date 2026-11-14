@@ -11,6 +11,13 @@ ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 
 **Backup deck (7 slides):** https://sushant-me.github.io/roamer/roamer_deck_7slides.pdf
 **One-pager (PDF):** https://sushant-me.github.io/roamer/roamer_one_pager.pdf (download `app-release.apk`)
 **Demo video (29 s, narrated):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4 — narration is SI-generated (text-to-speech), disclosed in the project page.
+**Captions:** https://sushant-me.github.io/roamer/video/roamer_demo_30s.srt
+
+<details><summary><b>Video transcript</b></summary>
+
+> NASA Space Apps, twenty twenty-six. Find places on Earth that analog Moon and Mars bases. ROAMER scores thirty-four sites on a common five hundred metre grid, shows where the analogy breaks, and ranks them by what nobody has studied. Atacama passes. Pokhara fails. Chhusang leads, with Kagbeni close behind. Paste coordinates, and it finds the nearest characterized site. We do not claim Earth is another planet. We quantify how close it gets — and what still makes it different.
+
+</details>
 
 ## If you are a judge (30 seconds)
 
