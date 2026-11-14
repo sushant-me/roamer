@@ -82739,8 +82739,9 @@ if(k===0)k="no characterized record \u2014 see note below"
 else{j=k===1?"":"es"
 j=""+k+" match"+j+" \u2014 tap a record"
 k=j}}e.push(new A.c3(A.ct(A.c([B.U8,B.cU,new A.AH(n,B.P5,B.QT,B.Oe,B.Of,new A.agU(d),!0,c),B.l2,A.bd(k,c,c,c,B.Sd,c,c)],o),B.S,B.u,B.y),c))
-if(r&&b.a!=null)e.push(new A.c3(A.eb(A.c([B.EF,B.l1,A.lu(A.ct(A.c([A.bd(B.c.N(q[0],4)+", "+B.c.N(q[1],4),c,c,c,B.PT,c,c),A.bd("nearest characterized: "+b.a.b+" \xb7 "+B.c.N(p,0)+" km \u2014 this point is not yet characterized",c,c,c,B.dM,c,c)],o),B.S,B.u,B.y)),A.aqU(B.U4,new A.agV(b,d),c)],o),B.a_,B.u,B.y,0),c))
-if(!a0&&a1&&s.length===0)e.push(new A.c3(A.ct(A.c([B.Um,B.l4,A.bd("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,B.la,c,c)],o),B.S,B.u,B.y),c))
+if(r&&b.a!=null){r=A.bd(B.c.N(q[0],4)+", "+B.c.N(q[1],4),c,c,c,B.PT,c,c)
+n=b.a
+e.push(new A.c3(A.eb(A.c([B.EF,B.l1,A.lu(A.ct(A.c([r,A.bd(p<1?"this is the "+n.b+" record \u2014 coordinates match its reference point":"nearest characterized: "+n.b+" \xb7 "+B.c.N(p,0)+" km \u2014 this point is not yet characterized",c,c,c,B.dM,c,c)],o),B.S,B.u,B.y)),A.aqU(B.U4,new A.agV(b,d),c)],o),B.a_,B.u,B.y,0),c))}if(!a0&&a1&&s.length===0)e.push(new A.c3(A.ct(A.c([B.Um,B.l4,A.bd("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,B.la,c,c)],o),B.S,B.u,B.y),c))
 e.push(new A.c3(A.ct(A.c([A.eb(A.c([B.Ud,A.bd("DEM hillshade \xb7 500 m grid",c,c,c,A.ef(c,c,A.av(204,B.M.B()>>>16&255,B.M.B()>>>8&255,B.M.B()&255),c,c,c,c,c,c,c,c,10,c,c,c,c,c,!0,c,c,c,c,c,c,c,c),c,c)],o),B.a_,B.tJ,B.y,0),B.cU,A.ds(A.auP(new A.agW(d)),330,c),B.cU,A.ar8(A.c([d.CR(B.Z,"candidate"),d.CR(B.bi,"positive control"),d.CR(B.bE,"negative control")],o),6,12),B.l3,B.Uc],o),B.S,B.u,B.y),c))
 e.push(B.KR)
 for(a0=s.length,m=0;m<s.length;s.length===a0||(0,A.r)(s),++m){l=s[m]

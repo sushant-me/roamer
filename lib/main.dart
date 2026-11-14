@@ -225,7 +225,9 @@ class _FindViewState extends State<FindView> {
         const SizedBox(width: 10),
         Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text('${coord[0].toStringAsFixed(4)}, ${coord[1].toStringAsFixed(4)}', style: const TextStyle(color: kInk, fontSize: 14, fontFamily: 'monospace')),
-          Text('nearest characterized: ${nearest.name} · ${nearestKm.toStringAsFixed(0)} km — this point is not yet characterized',
+          Text(nearestKm < 1
+              ? 'this is the ${nearest.name} record — coordinates match its reference point'
+              : 'nearest characterized: ${nearest.name} · ${nearestKm.toStringAsFixed(0)} km — this point is not yet characterized',
               style: const TextStyle(color: kMuted, fontSize: 11)),
         ])),
         TextButton(onPressed: () => widget.onOpen(nearest!), child: const Text('OPEN', style: TextStyle(color: kYellow, fontWeight: FontWeight.w800))),
