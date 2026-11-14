@@ -82760,10 +82760,10 @@ j=""+k+" match"+j+" \u2014 tap a record"
 k=j}}e.push(new A.bL(A.ct(A.c([B.Ug,B.cV,new A.AH(n,B.Pb,B.R_,B.Ok,B.Ol,new A.agX(d),!0,c),B.l2,A.ba(k,c,c,c,B.Sk,c,c)],o),B.S,B.u,B.y),c))
 if(r&&b.a!=null){r=A.ba(B.c.N(q[0],4)+", "+B.c.N(q[1],4),c,c,c,B.PZ,c,c)
 n=b.a
-e.push(new A.bL(A.eb(A.c([B.EJ,B.l1,A.lu(A.ct(A.c([r,A.ba(p<1?"this is the "+n.b+" record \u2014 coordinates match its reference point":"nearest characterized: "+n.b+" \xb7 "+B.c.N(p,0)+" km \u2014 this point is not yet characterized",c,c,c,B.dN,c,c)],o),B.S,B.u,B.y)),A.aqX(B.Ub,new A.agY(b,d),c)],o),B.a_,B.u,B.y,0),c))}if(!a0&&a1&&s.length===0)e.push(new A.bL(A.ct(A.c([B.Ux,B.l4,A.ba("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,B.la,c,c)],o),B.S,B.u,B.y),c))
+e.push(new A.bL(A.eb(A.c([B.EJ,B.l1,A.lu(A.ct(A.c([r,A.ba(p<1?"this is the "+n.b+" record \u2014 coordinates match its reference point":"nearest characterized: "+n.b+" \xb7 "+B.c.N(p,0)+" km \u2014 this point is not yet characterized",c,c,c,B.dN,c,c)],o),B.S,B.u,B.y)),A.aqX(B.Uc,new A.agY(b,d),c)],o),B.a_,B.u,B.y,0),c))}if(!a0&&a1&&s.length===0)e.push(new A.bL(A.ct(A.c([B.Uy,B.l4,A.ba("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,B.la,c,c)],o),B.S,B.u,B.y),c))
 e.push(new A.bL(A.ct(A.c([A.eb(A.c([B.Un,A.ba("DEM hillshade \xb7 500 m grid",c,c,c,A.ef(c,c,A.av(204,B.M.B()>>>16&255,B.M.B()>>>8&255,B.M.B()&255),c,c,c,c,c,c,c,c,10,c,c,c,c,c,!0,c,c,c,c,c,c,c,c),c,c)],o),B.a_,B.tK,B.y,0),B.cV,A.dt(A.auS(new A.agZ(d)),330,c),B.cV,A.arb(A.c([d.CR(B.Z,"candidate"),d.CR(B.bj,"positive control"),d.CR(B.bF,"negative control")],o),6,12),B.l3,B.Ul],o),B.S,B.u,B.y),c))
-e.push(B.KV)
 e.push(B.KU)
+e.push(B.KW)
 for(a0=s.length,m=0;m<s.length;s.length===a0||(0,A.r)(s),++m){l=s[m]
 e.push(new A.M_(l,B.b.iv(d.a.c,l)+1,new A.ah_(d,l),c))}return A.iy(new A.em(B.iK,A.Jp(e,B.jk),c),c,c)},
 ac_(a,b,c,d,e,f,g,h,i){var s,r,q=null,p="positive_control",o=B.b.Ts(c,new A.agT(a)),n=A.ci(a.h(0,"x")),m=A.ci(a.h(0,"y")),l=o.d,k=l==="candidate"
@@ -82855,7 +82855,7 @@ j.push(new A.bD(B.DU,A.ba("Ground thermal context: skin (MERRA-2/NASA POWER) sea
 j.push(B.XH)
 j.push(new A.bL(A.arb(q.a3x(),8,8),p))
 j.push(B.XF)
-j.push(new A.bL(A.ba("Ranking: stable under \xb120% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~\xb110 m. Thermal: ERA5 air temperature is scored; MERRA-2 skin and ERA5-Land soil are context. Attention: an OpenAlex keyword count. "+q.d+" records is a regional shortlist, not a global survey \u2014 read the gap as a screening signal, not a probability.",p,p,p,B.b8,p,p),p))
+j.push(new A.bL(A.ba("Ranking: stable under \xb120% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~\xb110 m. Thermal: ERA5 air temperature is scored; MERRA-2 skin and ERA5-Land soil are context. Attention: an OpenAlex keyword count. "+q.d+" records is a regional shortlist, not a global survey \u2014 read the gap as a screening signal, not a probability. Resolution mismatch: 500 m terrain grid vs ~9 km ERA5 and ~50 km MERRA-2 \u2014 local mountain microclimate is not resolved. SRTM gives elevation only; geology, regolith and surface composition are not characterized.",p,p,p,B.b8,p,p),p))
 j.push(B.XR)
 j.push(new A.bL(A.ct(A.c([A.W1("Terrain","AWS Terrain Tiles (Terrarium, SRTM-derived) \xb7 z12 \xb7 500 m block-average \xb7 slope Horn"),A.W1("Thermal","Open-Meteo ERA5 air temperature (scored) + MERRA-2 skin (NASA POWER) + ERA5-Land soil 6 cm (context)"),A.W1(n,"Solar geometry (NOAA-style) \xb7 worst-solstice noon elevation"),A.W1("Literature","OpenAlex works count for the site name (attention proxy)"),A.W1("Targets","Published Mars mid-latitude statistics (MOLA/THEMIS) \xb7 documented ranges")],i),B.S,B.u,B.y),p))
 j.push(B.XO)
@@ -82898,7 +82898,7 @@ A.cZ.prototype={
 J(a){var s=null
 return new A.bD(B.DY,A.ba(this.c,s,s,s,B.SQ,s,s),s)}}
 A.Iq.prototype={
-J(a){var s,r,q,p,o,n,m,l,k,j=null,i="positive_control",h=t.p,g=A.c([B.Eq,new A.bL(A.ct(A.c([B.U9,B.l2,A.dt(A.auS(new A.a1h(this)),400,j),B.cV,B.UE],h),B.S,B.u,B.y),j),B.KW],h)
+J(a){var s,r,q,p,o,n,m,l,k,j=null,i="positive_control",h=t.p,g=A.c([B.Eq,new A.bL(A.ct(A.c([B.Ua,B.l2,A.dt(A.auS(new A.a1h(this)),400,j),B.cV,B.UE],h),B.S,B.u,B.y),j),B.KV],h)
 for(s=this.c,r=s.length,q=0;q<s.length;s.length===r||(0,A.r)(s),++q){p=s[q]
 o=A.ba(B.c.N(p.as,2),j,j,j,B.SF,j,j)
 n=A.ct(A.c([A.ba(p.b,j,j,j,B.z8,j,j),A.ba("similarity "+B.c.N(p.z,2)+" \xb7 attention "+B.c.N(p.Q,2)+" \xb7 operability "+B.c.N(p.y,2),j,j,j,B.Sq,j,j)],h),B.S,B.u,B.y)
@@ -83002,7 +83002,7 @@ g=g.f
 o=A.ct(A.c([A.iq("Altitude",o+" m \u2014 acclimatization day required"),A.iq("Cold","high diurnal range; battery thermal management"),A.iq("Evacuation","road access: "+g)],n),B.a_,B.u,B.y)
 g=A.ba(g,i,i,i,B.la,i,i)
 j=A.aFx(i,i,i,i,i,i,i,i,i,B.Z,i,i,B.jl,i,i,B.Ab,i,i,i,i)
-return A.aqG(p,A.Jp(A.c([new A.bL(m,i),B.XM,new A.bL(B.U7,i),B.XV,new A.bL(l,i),B.XY,new A.bL(k,i),B.XQ,new A.bL(e,i),B.XP,new A.bL(o,i),B.XE,new A.bL(g,i),B.XJ,new A.bL(B.UF,i),new A.bD(B.DO,A.dt(new A.Kc(!0,new A.Xu(this,a),i,i,i,j,i,i,!1,i,!0,i,new A.R6(B.Uv,B.EK,j,i,i),i),i,1/0),i)],n),B.mU),i)}}
+return A.aqG(p,A.Jp(A.c([new A.bL(m,i),B.XM,new A.bL(B.U7,i),B.XV,new A.bL(l,i),B.XY,new A.bL(k,i),B.XQ,new A.bL(e,i),B.XP,new A.bL(o,i),B.XE,new A.bL(g,i),B.XJ,new A.bL(B.UF,i),new A.bD(B.DO,A.dt(new A.Kc(!0,new A.Xu(this,a),i,i,i,j,i,i,!1,i,!0,i,new A.R6(B.Uw,B.EK,j,i,i),i),i,1/0),i)],n),B.mU),i)}}
 A.Xu.prototype={
 $0(){var s=0,r=A.P(t.H),q=this,p,o,n,m,l,k,j
 var $async$$0=A.Q(function(a,b){if(a===1)return A.M(b,r)
@@ -83026,17 +83026,26 @@ return A.O($async$$0,r)},
 $S:26}
 A.JL.prototype={
 J(a){var s=null
-return A.iy(new A.em(B.iK,A.Jp(A.c([B.Er,new A.bL(A.ct(B.HQ,B.S,B.u,B.y),s),new A.bL(A.ct(B.FC,B.S,B.u,B.y),s),B.XL,new A.bL(A.ct(B.Gx,B.S,B.u,B.y),s),B.XU,new A.bL(B.Uy,s),B.XT,new A.bL(A.ct(B.GP,B.S,B.u,B.y),s),B.XX,new A.bL(new A.dQ(new A.a5P(this),s),s),B.XS,new A.bL(B.UA,s),B.XI,new A.bL(B.Um,s),B.XK,new A.bL(A.ct(B.Hp,B.S,B.u,B.y),s),new A.bD(B.mW,A.ba("Generated "+A.k(this.d.h(0,"generated")),s,s,s,B.Tf,s,s),s)],t.p),B.jk),s),s,s)}}
+return A.iy(new A.em(B.iK,A.Jp(A.c([B.Er,new A.bL(A.ct(B.HQ,B.S,B.u,B.y),s),new A.bL(A.ct(B.FC,B.S,B.u,B.y),s),B.XL,new A.bL(A.ct(B.Gx,B.S,B.u,B.y),s),B.XU,new A.bL(B.Uu,s),B.XT,new A.bL(A.ct(B.GP,B.S,B.u,B.y),s),B.XX,new A.bL(new A.dQ(new A.a5P(this),s),s),B.XS,new A.bL(B.UA,s),B.XI,new A.bL(B.Um,s),B.XK,new A.bL(A.ct(B.Hp,B.S,B.u,B.y),s),new A.bD(B.mW,A.ba("Generated "+A.k(this.d.h(0,"generated")),s,s,s,B.Tf,s,s),s)],t.p),B.jk),s),s,s)}}
 A.a5P.prototype={
-$1(a){var s,r,q,p=null,o=this.a,n=o.e,m=A.cj(n.h(0,"base_top")),l=B.b.Tt(o.c,new A.a5N(m),new A.a5O(o))
-o=t.Xw.a(n.h(0,"top_counts"))
-s=o==null?p:o.e3(0,t.N,t.z)
-o=(s==null?B.eK:s).h(0,m)
-r=o==null?n.h(0,"kagbeni_top"):o
-if(r==null)r=10
-q=n.h(0,"variants")
+$1(a){var s,r,q,p,o,n,m,l=null,k="variants",j="thresholds",i=this.a,h=i.e,g=A.cj(h.h(0,"base_top")),f=B.b.Tt(i.c,new A.a5N(g),new A.a5O(i))
+i=t.Xw
+s=i.a(h.h(0,"top_counts"))
+r=s==null?l:s.e3(0,t.N,t.z)
+s=(r==null?B.eK:r).h(0,g)
+q=s==null?h.h(0,"kagbeni_top"):s
 if(q==null)q=10
-return A.ba("Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by \xb120% across "+A.k(q)+" variants and the ranking recomputed. "+l.b+" stays #1 in "+A.k(r)+"/"+A.k(q)+" variants. This is a perturbation test, not a full uncertainty propagation \u2014 but the top of the ranking is not weight-fragile.",p,p,p,B.b8,p,p)},
+p=h.h(0,k)
+if(p==null)p=10
+s=A.k(p)
+o=A.k(q)
+n=A.k(p)
+m=i.a(h.h(0,j))
+m=m==null?l:m.h(0,k)
+m=A.k(m==null?10:m)
+h=i.a(h.h(0,j))
+i=h==null?l:h.h(0,"flips")
+return A.ba("Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by \xb120% across "+s+" variants and the ranking recomputed. "+f.b+" stays #1 in "+o+"/"+n+" variants. Thresholds were also varied by \xb120% across "+m+" variants: "+A.k(i==null?16:i)+" pass/fail labels moved, while the ranking itself is unchanged by construction \u2014 the gap uses continuous distances, not pass counts. This is a perturbation test, not a full uncertainty propagation.",l,l,l,B.b8,l,l)},
 $S:524}
 A.a5N.prototype={
 $1(a){return a.a===this.a},
@@ -86606,11 +86615,11 @@ B.HP=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
 B.Fz=s([B.H3,B.GM,B.HP],t.zg)
 B.nF=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.z5=new A.j(!0,B.M,null,null,null,null,10,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ud=new A.bw("THE CLAIM",null,B.z5,null,null,null,null,null,null)
+B.Ue=new A.bw("THE CLAIM",null,B.z5,null,null,null,null,null,null)
 B.cV=new A.d6(null,8,null,null)
 B.Rs=new A.j(!0,B.ap,null,null,null,null,14,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ua=new A.bw("Name a site in the roamer test range, or paste coordinates anywhere. ROAMER scores the nearest characterized record against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by survey coverage \xd7 operability \u2014 then turns the best into a field brief.",null,B.Rs,null,null,null,null,null,null)
-B.FC=s([B.Ud,B.cV,B.Ua],t.p)
+B.Ub=new A.bw("Name a site in the roamer test range, or paste coordinates anywhere. ROAMER scores the nearest characterized record against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by survey coverage \xd7 operability \u2014 then turns the best into a field brief.",null,B.Rs,null,null,null,null,null,null)
+B.FC=s([B.Ue,B.cV,B.Ub],t.p)
 B.FZ=s([4,9,14,19],t.t)
 B.HA=s([137,80,78,71,13,10,26,10],t.Z)
 B.ET=new A.lE(0,"png")
@@ -86712,12 +86721,12 @@ B.f=new A.h(0,0)
 B.Ap=new A.dP(0.2,B.A3,B.mo,B.f,11)
 B.GN=s([B.Ap],t.sq)
 B.Ut=new A.bw("\xb7 Terrain is SRTM-derived via Terrarium tiles at 500 m \u2014 not Copernicus 30 m.",null,B.b8,null,null,null,null,null,null)
-B.U8=new A.bw("\xb7 Thermal is ERA5 air temperature (context); MODIS/Diviner skin temperature needs Earthdata login.",null,B.b8,null,null,null,null,null,null)
+B.U9=new A.bw("\xb7 Thermal is ERA5 air temperature (context); MODIS/Diviner skin temperature needs Earthdata login.",null,B.b8,null,null,null,null,null,null)
 B.UC=new A.bw("\xb7 Literature attention is an OpenAlex keyword count \u2014 a proxy, not a review.",null,B.b8,null,null,null,null,null,null)
 B.Ui=new A.bw("\xb7 Scope: 34 records concentrated in Nepal, with one global control (Atacama) \u2014 a regional shortlist, not a global survey.",null,B.b8,null,null,null,null,null,null)
-B.Uu=new A.bw("\xb7 Operability is an analyst-assigned 0\u20131 from road/permit/flight access \u2014 a documented judgment, not a measurement.",null,B.b8,null,null,null,null,null,null)
-B.Uw=new A.bw("\xb7 Target bands are documented Mars ranges, not a single mission measurement.",null,B.b8,null,null,null,null,null,null)
-B.GP=s([B.Ut,B.U8,B.UC,B.Ui,B.Uu,B.Uw],t.p)
+B.Uv=new A.bw("\xb7 Operability is an analyst-assigned 0\u20131 from road/permit/flight access \u2014 a documented judgment, not a measurement.",null,B.b8,null,null,null,null,null,null)
+B.Ux=new A.bw("\xb7 Target bands are documented Mars ranges, not a single mission measurement.",null,B.b8,null,null,null,null,null,null)
+B.GP=s([B.Ut,B.U9,B.UC,B.Ui,B.Uv,B.Ux],t.p)
 B.yK=new A.Ap(0,"left")
 B.yL=new A.Ap(1,"right")
 B.GQ=s([B.yK,B.yL],A.aq("z<Ap>"))
@@ -86771,10 +86780,10 @@ B.Qs=new A.j(!0,B.M,null,null,null,null,11.5,null,null,null,null,null,1.55,null,
 B.Uz=new A.bw("Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015\u20132024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.",null,B.Qs,null,null,null,null,null,null)
 B.nn=new A.Ik(1,"italic")
 B.Sa=new A.j(!0,B.M,null,null,null,null,11,null,B.nn,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Uc=new A.bw("Web: sushant-me.github.io/roamer   \xb7   Android APK: github.com/sushant-me/roamer/releases\nBuilt during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.",null,B.Sa,null,null,null,null,null,null)
+B.Ud=new A.bw("Web: sushant-me.github.io/roamer   \xb7   Android APK: github.com/sushant-me/roamer/releases\nBuilt during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.",null,B.Sa,null,null,null,null,null,null)
 B.SM=new A.j(!0,B.M,null,null,null,null,11,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ur=new A.bw("Built with: Flutter/Dart (web + Android), GitHub Pages, GitHub Releases. SI tools: this assistant was used for code, the data pipeline and copy; every number is recomputed from the sources above and human-reviewed before submission.",null,B.SM,null,null,null,null,null,null)
-B.Hp=s([B.Uz,B.cV,B.Uc,B.cV,B.Ur],t.p)
+B.Hp=s([B.Uz,B.cV,B.Ud,B.cV,B.Ur],t.p)
 B.Kd=new A.h(0,2)
 B.Ao=new A.dP(0.75,B.fi,B.mo,B.Kd,1.5)
 B.Hv=s([B.Ao],t.sq)
@@ -87803,17 +87812,17 @@ B.KQ=new A.Ka(1,"landscape")
 B.KR=new A.yF(null)
 B.KS=new A.Kd(0,"nearestOverlay")
 B.KT=new A.Kd(1,"rootOverlay")
-B.E2=new A.al(20,4,20,4)
-B.z6=new A.j(!0,B.cD,null,null,null,null,10,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ue=new A.bw("Gap ranks where to survey next \u2014 not the best analog. Similarity is shown separately.",null,B.z6,null,null,null,null,null,null)
-B.KU=new A.bD(B.E2,B.Ue,null)
 B.DW=new A.al(20,14,20,0)
 B.i6=new A.j(!0,B.M,null,null,null,null,11,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.UD=new A.bw("RANKED BY SURVEY GAP",null,B.i6,null,null,null,null,null,null)
-B.KV=new A.bD(B.DW,B.UD,null)
+B.KU=new A.bD(B.DW,B.UD,null)
 B.DX=new A.al(20,14,20,2)
 B.UB=new A.bw("RANKED BY GAP",null,B.i6,null,null,null,null,null,null)
-B.KW=new A.bD(B.DX,B.UB,null)
+B.KV=new A.bD(B.DX,B.UB,null)
+B.E2=new A.al(20,4,20,4)
+B.z6=new A.j(!0,B.cD,null,null,null,null,10,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.U8=new A.bw("Gap ranks research priority, not analog quality \u2014 similarity is the suitability signal, shown separately.",null,B.z6,null,null,null,null,null,null)
+B.KW=new A.bD(B.E2,B.U8,null)
 B.bB=new A.Kj(0,"fill")
 B.bN=new A.Kj(1,"stroke")
 B.KX=new A.lY(1/0)
@@ -88521,9 +88530,9 @@ B.PB=new A.j(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.U5=new A.du(B.RC,B.Qq,B.RD,B.S9,B.Q4,B.Qd,B.QN,B.S3,B.R1,B.SC,B.Pu,B.PO,B.Sy,B.SY,B.PB)
 B.S6=new A.j(!0,B.ap,null,null,null,null,13,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.U7=new A.bw('Test the highest-gap site for a 5-day EVA + thermal-protocol campaign, and record the ground truth needed to move it from "candidate" to "characterized".',null,B.S6,null,null,null,null,null,null)
-B.U9=new A.bw("x: similarity to Mars target  \xb7  y: how well studied (\u2191 more studied)",null,B.dN,null,null,null,null,null,null)
+B.Ua=new A.bw("x: similarity to Mars target  \xb7  y: how well studied (\u2191 more studied)",null,B.dN,null,null,null,null,null,null)
 B.RB=new A.j(!0,B.Z,null,null,null,null,null,B.dr,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ub=new A.bw("OPEN",null,B.RB,null,null,null,null,null,null)
+B.Uc=new A.bw("OPEN",null,B.RB,null,null,null,null,null,null)
 B.Ug=new A.bw("NAME A PLACE",null,B.i6,null,null,null,null,null,null)
 B.Tl=new A.j(!0,null,null,null,null,null,14,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Uk=new A.bw("MISSION BRIEF",null,B.Tl,null,null,null,null,null,null)
@@ -88532,12 +88541,12 @@ B.Um=new A.bw("Target profile: Mars mid-latitude (Jezero / NE Syrtis). Slope and
 B.Un=new A.bw("TEST RANGE",null,B.i6,null,null,null,null,null,null)
 B.Ps=new A.j(!0,null,null,null,null,null,null,B.dr,null,1.2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Uo=new A.bw("MISSION BRIEF \u2192",null,B.Ps,null,null,null,null,null,null)
-B.Qy=new A.j(!0,null,null,null,null,null,null,B.dr,null,1.1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Uv=new A.bw("COPY BRIEF AS TEXT",null,B.Qy,null,null,null,null,null,null)
-B.Q_=new A.j(!0,B.M,null,null,null,null,10,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ux=new A.bw("NO CHARACTERIZED RECORD YET",null,B.Q_,null,null,null,null,null,null)
 B.Sb=new A.j(!0,B.ap,null,null,null,null,12.5,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Uy=new A.bw('Not a Mars-likeness score. Not a landing-site selection. Not a claim that any of these sites is "the Moon on Earth". It is a shortlist with its evidence attached, and the negative result is part of the finding.',null,B.Sb,null,null,null,null,null,null)
+B.Uu=new A.bw('Not a Mars-likeness score. Not a landing-site selection. Not a certification of base-site suitability. Not a claim that any of these sites is "the Moon on Earth". It is a shortlist for further investigation, with its evidence attached, and the negative result is part of the finding.',null,B.Sb,null,null,null,null,null,null)
+B.Qy=new A.j(!0,null,null,null,null,null,null,B.dr,null,1.1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.Uw=new A.bw("COPY BRIEF AS TEXT",null,B.Qy,null,null,null,null,null,null)
+B.Q_=new A.j(!0,B.M,null,null,null,null,10,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.Uy=new A.bw("NO CHARACTERIZED RECORD YET",null,B.Q_,null,null,null,null,null,null)
 B.UA=new A.bw("Atacama (similarity 0.59) and Khumbu (0.32) are published analog sites; both land in the top four by similarity, which is the expected check that the scoring recovers known analogs. Neither tops Survey Gap because both are well studied \u2014 that is the ranking behaving as designed, not a miss.",null,B.b8,null,null,null,null,null,null)
 B.R0=new A.j(!0,B.M,null,null,null,null,10.5,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.UE=new A.bw("The empty corner (high similarity, low attention, reachable) is where ROAMER looks. Attention is an OpenAlex literature count for the site name \u2014 a proxy, not a measurement of scientific value.",null,B.R0,null,null,null,null,null,null)

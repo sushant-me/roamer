@@ -284,7 +284,7 @@ class _FindViewState extends State<FindView> {
     ));
     children.add(const Padding(
       padding: EdgeInsets.fromLTRB(20, 4, 20, 4),
-      child: Text('Gap ranks where to survey next — not the best analog. Similarity is shown separately.',
+      child: Text('Gap ranks research priority, not analog quality — similarity is the suitability signal, shown separately.',
           style: TextStyle(color: kGrey, fontSize: 10, height: 1.4)),
     ));
     for (final s in filtered) {
@@ -458,7 +458,7 @@ class SiteScreen extends StatelessWidget {
         Panel(child: Wrap(spacing: 8, runSpacing: 8, children: _coverage())),
         const _SectionLabel('UNCERTAINTY — WHERE THE NUMBER COULD MOVE'),
         Panel(child: Text(
-          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature is scored; MERRA-2 skin and ERA5-Land soil are context. Attention: an OpenAlex keyword count. $totalRecords records is a regional shortlist, not a global survey — read the gap as a screening signal, not a probability.',
+          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature is scored; MERRA-2 skin and ERA5-Land soil are context. Attention: an OpenAlex keyword count. $totalRecords records is a regional shortlist, not a global survey — read the gap as a screening signal, not a probability. Resolution mismatch: 500 m terrain grid vs ~9 km ERA5 and ~50 km MERRA-2 — local mountain microclimate is not resolved. SRTM gives elevation only; geology, regolith and surface composition are not characterized.',
           style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
         )),
         const _SectionLabel('PROVENANCE (EVERY NUMBER TRACEABLE)'),
@@ -777,7 +777,7 @@ class MethodView extends StatelessWidget {
       Text('4. Positive control (Atacama) and negative control (Pokhara) included; a method that cannot fail is not a method.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
     ])),
     const _SectionLabel('WHAT THIS IS NOT'),
-    Panel(child: const Text('Not a Mars-likeness score. Not a landing-site selection. Not a claim that any of these sites is "the Moon on Earth". It is a shortlist with its evidence attached, and the negative result is part of the finding.',
+    Panel(child: const Text('Not a Mars-likeness score. Not a landing-site selection. Not a certification of base-site suitability. Not a claim that any of these sites is "the Moon on Earth". It is a shortlist for further investigation, with its evidence attached, and the negative result is part of the finding.',
         style: TextStyle(color: kInk, fontSize: 12.5, height: 1.45))),
     const _SectionLabel('DOCUMENTED LIMITS'),
     Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
@@ -796,7 +796,7 @@ class MethodView extends StatelessWidget {
       final topCount = counts[topId] ?? sensitivity['kagbeni_top'] ?? 10;
       final variants = sensitivity['variants'] ?? 10;
       return Text(
-        'Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by ±20% across $variants variants and the ranking recomputed. ${topSite.name} stays #1 in $topCount/$variants variants. This is a perturbation test, not a full uncertainty propagation — but the top of the ranking is not weight-fragile.',
+        'Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by ±20% across $variants variants and the ranking recomputed. ${topSite.name} stays #1 in $topCount/$variants variants. Thresholds were also varied by ±20% across ${(sensitivity['thresholds'] as Map?)?['variants'] ?? 10} variants: ${(sensitivity['thresholds'] as Map?)?['flips'] ?? 16} pass/fail labels moved, while the ranking itself is unchanged by construction — the gap uses continuous distances, not pass counts. This is a perturbation test, not a full uncertainty propagation.',
         style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
       );
     })),
