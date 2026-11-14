@@ -6,7 +6,7 @@ ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 
 
 **Live web app:** https://sushant-me.github.io/roamer/
 **Android APK:** https://github.com/sushant-me/roamer/releases/latest (download `app-release.apk`)
-**Demo video (30 s):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4
+**Demo video (29 s, narrated):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4
 
 ## Screens
 
