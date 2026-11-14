@@ -1123,6 +1123,1332 @@
    "survey_gap": 0.23
   },
   {
+   "id": "jomsom",
+   "name": "Jomsom",
+   "country": "Nepal",
+   "lat": 28.78,
+   "lon": 83.723,
+   "alt_m": 2720,
+   "role": "candidate",
+   "blurb": "Wind-scoured Mustang valley town; road and air access, very dry, long analog history next door.",
+   "operability": 0.85,
+   "access": "Road and flights to Jomsom; ACAP permit.",
+   "features": {
+    "terrain": {
+     "relief_m": 2700,
+     "local_relief_m": 163,
+     "slope_med_deg": 21.14,
+     "local_slope_med_deg": 8.42,
+     "slope_iqr_deg": 11.5,
+     "rough_m": 54.8,
+     "vario_slope": 1.52,
+     "cells": "51x34",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "768x512",
+     "native_res_m": 33.5
+    },
+    "thermal": {
+     "seasonal_amp_k": 7.7,
+     "diurnal_amp_k": 4.5
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.8,
+     "noon_elev_jun21_deg": 84.7,
+     "noon_elev_min_deg": 37.8,
+     "daylength_dec21_h": 10.2,
+     "daylength_jun21_h": 13.8,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 1225
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 1225,
+    "seasonal_amp_k": 7.7,
+    "diurnal_amp_k": 4.5,
+    "solar_kwh_m2_day": 7.38,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 455,
+    "query": "Jomsom"
+   },
+   "d": {
+    "terrain": 1.53,
+    "thermal": 3.11,
+    "illumination": 0.18
+   },
+   "scores": {
+    "terrain": 0.4,
+    "thermal": 0.24,
+    "illumination": 0.85,
+    "aridity": 0,
+    "similarity": 0.34
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": true,
+     "value": 8.42,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 163,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.8,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 1225,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": true,
+     "value": 0.85,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 4,
+   "requirements_total": 5,
+   "attention": 0.66,
+   "survey_gap": 0.1
+  },
+  {
+   "id": "marpha",
+   "name": "Marpha",
+   "country": "Nepal",
+   "lat": 28.75,
+   "lon": 83.683,
+   "alt_m": 2670,
+   "role": "candidate",
+   "blurb": "Dry apple-growing valley village south of Jomsom; road-reachable, cold nights.",
+   "operability": 0.8,
+   "access": "Road (Jomsom–Marpha), ACAP permit, lodges.",
+   "features": {
+    "terrain": {
+     "relief_m": 2782,
+     "local_relief_m": 627,
+     "slope_med_deg": 23.38,
+     "local_slope_med_deg": 25.44,
+     "slope_iqr_deg": 10.7,
+     "rough_m": 56.6,
+     "vario_slope": 1.56,
+     "cells": "34x34",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x512",
+     "native_res_m": 33.5
+    },
+    "thermal": {
+     "seasonal_amp_k": 7.7,
+     "diurnal_amp_k": 4.5
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.8,
+     "noon_elev_jun21_deg": 84.7,
+     "noon_elev_min_deg": 37.8,
+     "daylength_dec21_h": 10.2,
+     "daylength_jun21_h": 13.8,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 1225
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 1225,
+    "seasonal_amp_k": 7.7,
+    "diurnal_amp_k": 4.5,
+    "solar_kwh_m2_day": 7.38,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 299,
+    "query": "Marpha"
+   },
+   "d": {
+    "terrain": 3.79,
+    "thermal": 3.11,
+    "illumination": 0.18
+   },
+   "scores": {
+    "terrain": 0.21,
+    "thermal": 0.24,
+    "illumination": 0.85,
+    "aridity": 0,
+    "similarity": 0.26
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 25.44,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 627,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.8,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 1225,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": true,
+     "value": 0.8,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 3,
+   "requirements_total": 5,
+   "attention": 0.62,
+   "survey_gap": 0.08
+  },
+  {
+   "id": "muktinath",
+   "name": "Muktinath",
+   "country": "Nepal",
+   "lat": 28.8167,
+   "lon": 83.8667,
+   "alt_m": 3800,
+   "role": "candidate",
+   "blurb": "High shrine plateau above the Kali Gandaki; very dry, road-reachable, cold.",
+   "operability": 0.7,
+   "access": "Road from Jomsom (seasonal); ACAP permit.",
+   "features": {
+    "terrain": {
+     "relief_m": 2592,
+     "local_relief_m": 252,
+     "slope_med_deg": 16.61,
+     "local_slope_med_deg": 12.57,
+     "slope_iqr_deg": 10.06,
+     "rough_m": 51.9,
+     "vario_slope": 1.45,
+     "cells": "34x51",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x768",
+     "native_res_m": 33.5
+    },
+    "thermal": {
+     "seasonal_amp_k": 8.1,
+     "diurnal_amp_k": 4.6
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.7,
+     "noon_elev_jun21_deg": 84.6,
+     "noon_elev_min_deg": 37.7,
+     "daylength_dec21_h": 10.2,
+     "daylength_jun21_h": 13.8,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 718
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 718,
+    "seasonal_amp_k": 8.1,
+    "diurnal_amp_k": 4.6,
+    "solar_kwh_m2_day": 7.51,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 514,
+    "query": "Muktinath"
+   },
+   "d": {
+    "terrain": 2.11,
+    "thermal": 3.07,
+    "illumination": 0.19
+   },
+   "scores": {
+    "terrain": 0.32,
+    "thermal": 0.25,
+    "illumination": 0.84,
+    "aridity": 0.1,
+    "similarity": 0.33
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 12.57,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 252,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.7,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": true,
+     "value": 718,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": true,
+     "value": 0.7,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 4,
+   "requirements_total": 5,
+   "attention": 0.68,
+   "survey_gap": 0.07
+  },
+  {
+   "id": "tukuche",
+   "name": "Tukuche",
+   "country": "Nepal",
+   "lat": 28.7333,
+   "lon": 83.65,
+   "alt_m": 2590,
+   "role": "candidate",
+   "blurb": "Lower Mustang valley village; dry, road-reachable, low literature coverage.",
+   "operability": 0.75,
+   "access": "Road, ACAP permit, lodges.",
+   "features": {
+    "terrain": {
+     "relief_m": 3073,
+     "local_relief_m": 331,
+     "slope_med_deg": 23.52,
+     "local_slope_med_deg": 19.05,
+     "slope_iqr_deg": 12.63,
+     "rough_m": 62.6,
+     "vario_slope": 1.57,
+     "cells": "34x51",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x768",
+     "native_res_m": 33.5
+    },
+    "thermal": {
+     "seasonal_amp_k": 8.8,
+     "diurnal_amp_k": 4.5
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.8,
+     "noon_elev_jun21_deg": 84.7,
+     "noon_elev_min_deg": 37.8,
+     "daylength_dec21_h": 10.2,
+     "daylength_jun21_h": 13.8,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 3053
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 3053,
+    "seasonal_amp_k": 8.8,
+    "diurnal_amp_k": 4.5,
+    "solar_kwh_m2_day": 7.49,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 93,
+    "query": "Tukuche"
+   },
+   "d": {
+    "terrain": 3.09,
+    "thermal": 3.02,
+    "illumination": 0.18
+   },
+   "scores": {
+    "terrain": 0.24,
+    "thermal": 0.25,
+    "illumination": 0.85,
+    "aridity": 0,
+    "similarity": 0.27
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 19.05,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 331,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.8,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 3053,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": true,
+     "value": 0.75,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 3,
+   "requirements_total": 5,
+   "attention": 0.49,
+   "survey_gap": 0.1
+  },
+  {
+   "id": "ghami",
+   "name": "Ghami",
+   "country": "Nepal",
+   "lat": 29.05,
+   "lon": 83.85,
+   "alt_m": 3520,
+   "role": "candidate",
+   "blurb": "Upper Mustang village on the old salt route; dry, exposed, low attention.",
+   "operability": 0.55,
+   "access": "Road (seasonal), restricted-area permit.",
+   "features": {
+    "terrain": {
+     "relief_m": 2586,
+     "local_relief_m": 154,
+     "slope_med_deg": 13.37,
+     "local_slope_med_deg": 10.18,
+     "slope_iqr_deg": 10.5,
+     "rough_m": 46.7,
+     "vario_slope": 1.63,
+     "cells": "34x51",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x768",
+     "native_res_m": 33.4
+    },
+    "thermal": {
+     "seasonal_amp_k": 8.8,
+     "diurnal_amp_k": 4.6
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.5,
+     "noon_elev_jun21_deg": 84.4,
+     "noon_elev_min_deg": 37.5,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 537
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 537,
+    "seasonal_amp_k": 8.8,
+    "diurnal_amp_k": 4.6,
+    "solar_kwh_m2_day": 7.99,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 525,
+    "query": "Ghami"
+   },
+   "d": {
+    "terrain": 1.84,
+    "thermal": 3.02,
+    "illumination": 0.21
+   },
+   "scores": {
+    "terrain": 0.35,
+    "thermal": 0.25,
+    "illumination": 0.83,
+    "aridity": 0.33,
+    "similarity": 0.4
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 10.18,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 154,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.5,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": true,
+     "value": 537,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": true,
+     "value": 0.55,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 4,
+   "requirements_total": 5,
+   "attention": 0.68,
+   "survey_gap": 0.07
+  },
+  {
+   "id": "tsarang",
+   "name": "Tsarang",
+   "country": "Nepal",
+   "lat": 29,
+   "lon": 83.85,
+   "alt_m": 3560,
+   "role": "candidate",
+   "blurb": "Upper Mustang valley with a historic monastery; cold, dry, sparse research.",
+   "operability": 0.5,
+   "access": "Road (seasonal), restricted-area permit.",
+   "features": {
+    "terrain": {
+     "relief_m": 2524,
+     "local_relief_m": 264,
+     "slope_med_deg": 13.46,
+     "local_slope_med_deg": 11.84,
+     "slope_iqr_deg": 10.12,
+     "rough_m": 47.5,
+     "vario_slope": 1.63,
+     "cells": "34x34",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x512",
+     "native_res_m": 33.4
+    },
+    "thermal": {
+     "seasonal_amp_k": 7.8,
+     "diurnal_amp_k": 4.7
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.6,
+     "noon_elev_jun21_deg": 84.4,
+     "noon_elev_min_deg": 37.6,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 390
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 390,
+    "seasonal_amp_k": 7.8,
+    "diurnal_amp_k": 4.7,
+    "solar_kwh_m2_day": 7.97,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 114,
+    "query": "Tsarang"
+   },
+   "d": {
+    "terrain": 1.98,
+    "thermal": 3.1,
+    "illumination": 0.2
+   },
+   "scores": {
+    "terrain": 0.34,
+    "thermal": 0.24,
+    "illumination": 0.83,
+    "aridity": 0.51,
+    "similarity": 0.44
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 11.84,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 264,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.6,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": true,
+     "value": 390,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": true,
+     "value": 0.5,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 4,
+   "requirements_total": 5,
+   "attention": 0.52,
+   "survey_gap": 0.11
+  },
+  {
+   "id": "chharka",
+   "name": "Chharka",
+   "country": "Nepal",
+   "lat": 29.0167,
+   "lon": 82.9167,
+   "alt_m": 4200,
+   "role": "candidate",
+   "blurb": "High Dolpo settlement; extremely dry and cold, very low attention.",
+   "operability": 0.2,
+   "access": "Shey Phoksundo National Park permit; multi-day trek.",
+   "features": {
+    "terrain": {
+     "relief_m": 2774,
+     "local_relief_m": 712,
+     "slope_med_deg": 22.85,
+     "local_slope_med_deg": 30.32,
+     "slope_iqr_deg": 12.77,
+     "rough_m": 72.3,
+     "vario_slope": 1.37,
+     "cells": "51x34",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "768x512",
+     "native_res_m": 33.4
+    },
+    "thermal": {
+     "seasonal_amp_k": 9,
+     "diurnal_amp_k": 6.2
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.5,
+     "noon_elev_jun21_deg": 84.4,
+     "noon_elev_min_deg": 37.5,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 1379
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 1379,
+    "seasonal_amp_k": 9,
+    "diurnal_amp_k": 6.2,
+    "solar_kwh_m2_day": 7.13,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 13,
+    "query": "Chharka"
+   },
+   "d": {
+    "terrain": 4.5,
+    "thermal": 3,
+    "illumination": 0.21
+   },
+   "scores": {
+    "terrain": 0.18,
+    "thermal": 0.25,
+    "illumination": 0.83,
+    "aridity": 0,
+    "similarity": 0.24
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 30.32,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 712,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.5,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 1379,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": false,
+     "value": 0.2,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 2,
+   "requirements_total": 5,
+   "attention": 0.29,
+   "survey_gap": 0.03
+  },
+  {
+   "id": "dunai",
+   "name": "Dunai",
+   "country": "Nepal",
+   "lat": 28.95,
+   "lon": 82.9,
+   "alt_m": 2100,
+   "role": "candidate",
+   "blurb": "Dolpa district headquarters; valley floor, road and air access, mixed aridity.",
+   "operability": 0.35,
+   "access": "Flight to Dolpa or seasonal road; national park permit nearby.",
+   "features": {
+    "terrain": {
+     "relief_m": 2213,
+     "local_relief_m": 474,
+     "slope_med_deg": 23.27,
+     "local_slope_med_deg": 26.14,
+     "slope_iqr_deg": 11.24,
+     "rough_m": 72.7,
+     "vario_slope": 1.32,
+     "cells": "34x51",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x768",
+     "native_res_m": 33.4
+    },
+    "thermal": {
+     "seasonal_amp_k": 9,
+     "diurnal_amp_k": 6.2
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.6,
+     "noon_elev_jun21_deg": 84.5,
+     "noon_elev_min_deg": 37.6,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 1321
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 1321,
+    "seasonal_amp_k": 9,
+    "diurnal_amp_k": 6.2,
+    "solar_kwh_m2_day": 7.2,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 10813,
+    "query": "Dunai"
+   },
+   "d": {
+    "terrain": 4.1,
+    "thermal": 3,
+    "illumination": 0.2
+   },
+   "scores": {
+    "terrain": 0.2,
+    "thermal": 0.25,
+    "illumination": 0.83,
+    "aridity": 0,
+    "similarity": 0.25
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 26.14,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 474,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.6,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 1321,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": false,
+     "value": 0.35,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 2,
+   "requirements_total": 5,
+   "attention": 1,
+   "survey_gap": 0
+  },
+  {
+   "id": "mugu",
+   "name": "Mugu",
+   "country": "Nepal",
+   "lat": 29.55,
+   "lon": 82.15,
+   "alt_m": 2500,
+   "role": "candidate",
+   "blurb": "Remote Karnali highland; dry, cold, almost absent from the analog literature.",
+   "operability": 0.2,
+   "access": "Flight to Talcha then walk; park permit.",
+   "features": {
+    "terrain": {
+     "relief_m": 1791,
+     "local_relief_m": 379,
+     "slope_med_deg": 18.71,
+     "local_slope_med_deg": 17.41,
+     "slope_iqr_deg": 12.69,
+     "rough_m": 63.5,
+     "vario_slope": 1.04,
+     "cells": "51x34",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "768x512",
+     "native_res_m": 33.2
+    },
+    "thermal": {
+     "seasonal_amp_k": 8.6,
+     "diurnal_amp_k": 5.1
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37,
+     "noon_elev_jun21_deg": 83.9,
+     "noon_elev_min_deg": 37,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 2329
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 2329,
+    "seasonal_amp_k": 8.6,
+    "diurnal_amp_k": 5.1,
+    "solar_kwh_m2_day": 6.62,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 4133,
+    "query": "Mugu"
+   },
+   "d": {
+    "terrain": 2.76,
+    "thermal": 3.03,
+    "illumination": 0.25
+   },
+   "scores": {
+    "terrain": 0.27,
+    "thermal": 0.25,
+    "illumination": 0.8,
+    "aridity": 0,
+    "similarity": 0.28
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 17.41,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 379,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 2329,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": false,
+     "value": 0.2,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 2,
+   "requirements_total": 5,
+   "attention": 0.9,
+   "survey_gap": 0.01
+  },
+  {
+   "id": "hilsa",
+   "name": "Hilsa",
+   "country": "Nepal",
+   "lat": 30.05,
+   "lon": 81.3,
+   "alt_m": 3700,
+   "role": "candidate",
+   "blurb": "Far-west Tibetan-border village; treeless, dry, logistically hard.",
+   "operability": 0.15,
+   "access": "Restricted-area permit; trek from Simikot.",
+   "features": {
+    "terrain": {
+     "relief_m": 1213,
+     "local_relief_m": 321,
+     "slope_med_deg": 15.43,
+     "local_slope_med_deg": 14.59,
+     "slope_iqr_deg": 10.11,
+     "rough_m": 58.6,
+     "vario_slope": 1.01,
+     "cells": "34x34",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x512",
+     "native_res_m": 33.1
+    },
+    "thermal": {
+     "seasonal_amp_k": 10.8,
+     "diurnal_amp_k": 4.5
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 36.5,
+     "noon_elev_jun21_deg": 83.4,
+     "noon_elev_min_deg": 36.5,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 1012
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 1012,
+    "seasonal_amp_k": 10.8,
+    "diurnal_amp_k": 4.5,
+    "solar_kwh_m2_day": 8.05,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 4218,
+    "query": "Hilsa"
+   },
+   "d": {
+    "terrain": 2.36,
+    "thermal": 2.85,
+    "illumination": 0.29
+   },
+   "scores": {
+    "terrain": 0.3,
+    "thermal": 0.26,
+    "illumination": 0.78,
+    "aridity": 0,
+    "similarity": 0.29
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 14.59,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 321,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 36.5,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 1012,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": false,
+     "value": 0.15,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 2,
+   "requirements_total": 5,
+   "attention": 0.91,
+   "survey_gap": 0
+  },
+  {
+   "id": "tarap",
+   "name": "Tarap",
+   "country": "Nepal",
+   "lat": 29.05,
+   "lon": 82.95,
+   "alt_m": 3800,
+   "role": "candidate",
+   "blurb": "Dolpo valley below the Kagmara pass; dry, remote, very little literature.",
+   "operability": 0.15,
+   "access": "National park permit; multi-day trek.",
+   "features": {
+    "terrain": {
+     "relief_m": 2775,
+     "local_relief_m": 400,
+     "slope_med_deg": 21.29,
+     "local_slope_med_deg": 22.4,
+     "slope_iqr_deg": 12.91,
+     "rough_m": 71.1,
+     "vario_slope": 1.33,
+     "cells": "34x51",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x768",
+     "native_res_m": 33.4
+    },
+    "thermal": {
+     "seasonal_amp_k": 9.6,
+     "diurnal_amp_k": 5.2
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37.5,
+     "noon_elev_jun21_deg": 84.4,
+     "noon_elev_min_deg": 37.5,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 958
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 958,
+    "seasonal_amp_k": 9.6,
+    "diurnal_amp_k": 5.2,
+    "solar_kwh_m2_day": 7.62,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 3965,
+    "query": "Tarap"
+   },
+   "d": {
+    "terrain": 3.57,
+    "thermal": 2.95,
+    "illumination": 0.21
+   },
+   "scores": {
+    "terrain": 0.22,
+    "thermal": 0.25,
+    "illumination": 0.83,
+    "aridity": 0,
+    "similarity": 0.26
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 22.4,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 400,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37.5,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 958,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": false,
+     "value": 0.15,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 2,
+   "requirements_total": 5,
+   "attention": 0.9,
+   "survey_gap": 0
+  },
+  {
+   "id": "muchu",
+   "name": "Muchu",
+   "country": "Nepal",
+   "lat": 29.95,
+   "lon": 81.95,
+   "alt_m": 3300,
+   "role": "candidate",
+   "blurb": "Humla village on the Limi route; cold, dry, restricted access.",
+   "operability": 0.2,
+   "access": "Flight to Simikot + trek; restricted-area permit.",
+   "features": {
+    "terrain": {
+     "relief_m": 2565,
+     "local_relief_m": 859,
+     "slope_med_deg": 23.48,
+     "local_slope_med_deg": 29.3,
+     "slope_iqr_deg": 12.45,
+     "rough_m": 72.8,
+     "vario_slope": 1.27,
+     "cells": "51x51",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "768x768",
+     "native_res_m": 33.1
+    },
+    "thermal": {
+     "seasonal_amp_k": 10.3,
+     "diurnal_amp_k": 4.6
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 36.6,
+     "noon_elev_jun21_deg": 83.5,
+     "noon_elev_min_deg": 36.6,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 1729
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 1729,
+    "seasonal_amp_k": 10.3,
+    "diurnal_amp_k": 4.6,
+    "solar_kwh_m2_day": 6.82,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 601,
+    "query": "Muchu"
+   },
+   "d": {
+    "terrain": 4.29,
+    "thermal": 2.89,
+    "illumination": 0.28
+   },
+   "scores": {
+    "terrain": 0.19,
+    "thermal": 0.26,
+    "illumination": 0.78,
+    "aridity": 0,
+    "similarity": 0.24
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 29.3,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 859,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 36.6,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 1729,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": false,
+     "value": 0.2,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 2,
+   "requirements_total": 5,
+   "attention": 0.69,
+   "survey_gap": 0.01
+  },
+  {
+   "id": "chainpur",
+   "name": "Chainpur (Bajhang)",
+   "country": "Nepal",
+   "lat": 29.55,
+   "lon": 81.2,
+   "alt_m": 1300,
+   "role": "candidate",
+   "blurb": "Deliberately difficult counterexample: lower, wetter mid-hill site that should fail aridity.",
+   "operability": 0.4,
+   "access": "Road from Bajhang; seasonal.",
+   "features": {
+    "terrain": {
+     "relief_m": 1688,
+     "local_relief_m": 335,
+     "slope_med_deg": 19.36,
+     "local_slope_med_deg": 15.35,
+     "slope_iqr_deg": 10.21,
+     "rough_m": 64.2,
+     "vario_slope": 1.24,
+     "cells": "34x34",
+     "cell_size_m": 500,
+     "window_km": 12,
+     "mosaic_px": "512x512",
+     "native_res_m": 33.2
+    },
+    "thermal": {
+     "seasonal_amp_k": 8.2,
+     "diurnal_amp_k": 6.4
+    },
+    "illumination": {
+     "noon_elev_dec21_deg": 37,
+     "noon_elev_jun21_deg": 83.9,
+     "noon_elev_min_deg": 37,
+     "daylength_dec21_h": 10.1,
+     "daylength_jun21_h": 13.9,
+     "daylight_frac": 0.5
+    },
+    "water": {
+     "precip_annual_mm": 1782
+    }
+   },
+   "climate": {
+    "precip_annual_mm": 1782,
+    "seasonal_amp_k": 8.2,
+    "diurnal_amp_k": 6.4,
+    "solar_kwh_m2_day": 6.47,
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+   },
+   "literature": {
+    "count": 666,
+    "query": "Chainpur (Bajhang)"
+   },
+   "d": {
+    "terrain": 2.47,
+    "thermal": 3.07,
+    "illumination": 0.25
+   },
+   "scores": {
+    "terrain": 0.29,
+    "thermal": 0.25,
+    "illumination": 0.8,
+    "aridity": 0,
+    "similarity": 0.29
+   },
+   "requirements": {
+    "trafficable_slopes": {
+     "pass": false,
+     "value": 15.35,
+     "unit": "° local slope (3 km)",
+     "threshold": "≤10°"
+    },
+    "terrain_relief": {
+     "pass": true,
+     "value": 335,
+     "unit": "m P90–P10 (1.5 km site pad)",
+     "threshold": "150–1,500 m"
+    },
+    "sunlight": {
+     "pass": true,
+     "value": 37,
+     "unit": "° noon elevation (worst solstice)",
+     "threshold": "≥20°"
+    },
+    "aridity": {
+     "pass": false,
+     "value": 1782,
+     "unit": "mm/yr precipitation",
+     "threshold": "<800 mm (semi-arid)"
+    },
+    "access": {
+     "pass": false,
+     "value": 0.4,
+     "unit": "operability 0–1",
+     "threshold": "≥0.5"
+    }
+   },
+   "passes": 2,
+   "requirements_total": 5,
+   "attention": 0.71,
+   "survey_gap": 0.03
+  },
+  {
    "id": "pokhara",
    "name": "Pokhara (mid-hill)",
    "country": "Nepal",
@@ -1226,7 +2552,7 @@
   }
  ],
  "meta": {
-  "generated": "2026-11-14T08:55:42.279Z",
+  "generated": "2026-11-14T09:08:45.075Z",
   "method": "Terrarium elevation tiles (z12) → 500 m block-average → slope/roughness/variogram; NASA POWER climatology; OpenAlex literature counts; solar geometry (NOAA-style)."
  },
  "target": {
@@ -1321,6 +2647,71 @@
     "y": 0.4196
    },
    {
+    "id": "jomsom",
+    "x": 0.442,
+    "y": 0.4358
+   },
+   {
+    "id": "marpha",
+    "x": 0.4385,
+    "y": 0.4399
+   },
+   {
+    "id": "muktinath",
+    "x": 0.4548,
+    "y": 0.4309
+   },
+   {
+    "id": "tukuche",
+    "x": 0.4356,
+    "y": 0.4421
+   },
+   {
+    "id": "ghami",
+    "x": 0.4533,
+    "y": 0.3993
+   },
+   {
+    "id": "tsarang",
+    "x": 0.4533,
+    "y": 0.4061
+   },
+   {
+    "id": "chharka",
+    "x": 0.3704,
+    "y": 0.4038
+   },
+   {
+    "id": "dunai",
+    "x": 0.3689,
+    "y": 0.4128
+   },
+   {
+    "id": "mugu",
+    "x": 0.3022,
+    "y": 0.3313
+   },
+   {
+    "id": "hilsa",
+    "x": 0.2267,
+    "y": 0.263
+   },
+   {
+    "id": "tarap",
+    "x": 0.3733,
+    "y": 0.3993
+   },
+   {
+    "id": "muchu",
+    "x": 0.2844,
+    "y": 0.2767
+   },
+   {
+    "id": "chainpur",
+    "x": 0.2178,
+    "y": 0.3313
+   },
+   {
     "id": "pokhara",
     "x": 0.4658,
     "y": 0.5127
@@ -1337,15 +2728,28 @@
   "base_order": [
    "chhusang",
    "kagbeni",
+   "tsarang",
+   "tukuche",
    "lo_manthang",
+   "jomsom",
+   "marpha",
+   "muktinath",
+   "ghami",
    "dhorpatan",
+   "chharka",
+   "chainpur",
    "simikot",
    "phoksundo",
    "khumbu",
    "manang",
+   "muchu",
+   "mugu",
+   "hilsa",
+   "tarap",
    "atacama",
    "rara",
    "jumla",
+   "dunai",
    "pokhara"
   ],
   "note": "Weights perturbed ±20% (single and paired); ranking recomputed from the same dimension scores. Experimental, not a full uncertainty propagation."
