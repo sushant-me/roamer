@@ -1,86 +1,73 @@
-# ROAMER — Find the Moon on Earth. Prove it with data.
+# AstroLens — a space learning app
 
-![build](https://github.com/sushant-me/roamer/actions/workflows/build.yml/badge.svg)
+**Team roamer · NASA Space Apps Challenge 2026 (Bhaktapur, Virtual)**
 
-NASA Space Apps Challenge 2026 · Bhaktapur (Virtual) · challenge: **Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars**
+Point at the night sky and name the stars. Scrub 4.6 billion years of Earth's formation. Then use the **Earth Analogs** engine to answer our challenge — *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars*.
 
-ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by **survey gap** — similarity × how little the literature has studied them × whether a crew can get there — then turns the best into a field brief.
+**Live:** https://sushant-me.github.io/roamer/ · **APK:** [latest release](https://github.com/sushant-me/roamer/releases/latest/download/app-release.apk) · **29 s demo:** [video](https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4)
 
-**Live web app:** https://sushant-me.github.io/roamer/
-**Android APK:** https://github.com/sushant-me/roamer/releases/latest
-**Backup deck (7 slides):** https://sushant-me.github.io/roamer/roamer_deck_7slides.pdf
-**One-pager (PDF):** https://sushant-me.github.io/roamer/roamer_one_pager.pdf (download `app-release.apk`)
-**Demo video (25 s, narrated):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4 — narration is SI-generated (text-to-speech), disclosed in the project page.
-**Captions (SRT):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.srt
-**Captioned video (no sound needed):** https://sushant-me.github.io/roamer/video/roamer_demo_30s_captions.mp4
+![Home](screenshots/home.png)
 
-<details><summary><b>Video transcript</b></summary>
+## Six features
 
-> NASA Space Apps, twenty twenty-six. Find places on Earth that analog Moon and Mars bases. ROAMER scores thirty-four sites on a common five hundred metre grid, shows where the analogy breaks, and ranks them by what nobody has studied. Atacama passes. Pokhara fails. Chhusang leads, with Kagbeni close behind. Paste coordinates, and it finds the nearest characterized site. We do not claim Earth is another planet. We quantify how close it gets — and what still makes it different.
+| Feature | What it does |
+|---|---|
+| **AR Sky Camera** | Uses the phone camera and motion sensors to estimate where it points, then names the nearest bright stars. Manual aim fallback when sensors are unavailable. |
+| **AR Explorer · Sky Dome** | Tap a star for its story; drag a 360° dome built from a 268-star catalogue. |
+| **Tonight's Sky** | Everything above your location right now, with altitude and direction. |
+| **Learn the Sky** | 268 bright stars and all 88 IAU constellations, with plain-language stories. |
+| **Story of Earth** | A 4.6-billion-year timeline, a playable film, whole-Earth composition, and five competing formation hypotheses. |
+| **Earth Analogs** | The challenge engine: 34 sites scored on one 500 m grid, a quantified mismatch ledger, and a survey-gap ranking. |
 
-</details>
+![Sky Dome](screenshots/dome.png)
 
-## If you are a judge (30 seconds)
+## The challenge answer — Earth Analogs
 
-1. Open https://sushant-me.github.io/roamer/ — wait ~3 s for the map.
-2. Tap the yellow **Chhusang** pin (or type `Chhusang`) → the case file opens.
-3. Scroll: five checks, mismatch ledger, target-σ bars, coverage tiles, provenance.
-4. Tap **MISSION BRIEF** → **COPY BRIEF AS TEXT**.
-5. Back → **SURVEY GAP** tab: why Atacama (known) and Pokhara (wet) cannot win, and why Chhusang and Kagbeni can.
-6. The 25 s narrated demo is in the repo header; the Android APK is on the release page.
+- **Survey Gap = similarity × (1 − literature attention) × operability** — a research-priority signal, not a certification of base-site suitability.
+- **Chhusang** leads (similarity 0.39, attention 0.26, gap **0.23**, proxy range 0.23–0.31); **Kagbeni** second (5/5 checks, gap 0.16, range 0.00–0.16).
+- **Controls:** Atacama passes 5/5 but scores 0.00 — already studied. Pokhara fails aridity and scores 0.00.
+- **Stability:** weights ±20% → top unchanged 10/10; thresholds ±20% → 16 pass/fail labels move, ranking unchanged by construction.
+- Seven international analogs are similarity-screened; with a second literature index their proxy gap is ≈0.00 (Askja 0.07) — well studied, like Atacama.
 
-## Screens
+![Earth Analogs](screenshots/analogs.png)
 
-1. **FIND** — name a place (or tap a pin on the Nepal hillshade). Case-file cards ranked by Survey Gap.
-2. **RECORD** — every requirement pass/fail with its value and threshold, the mismatch ledger (gravity ×2.6, pressure ×117 at a stated reference, radiation ×120–200, UV-C), dimension distances in target-σ units, coverage tiles (green computed / amber proxy / grey not computed), provenance for every number, and *what would change the verdict*.
-3. **SURVEY GAP** — similarity vs literature attention; the empty corner is where a field campaign pays off.
-4. **BRIEF** — objective, power, comms, traverse, risk, access, disclaimer.
-5. **METHOD** — the claim, the method, what this is not, documented limits, credits.
+## Story of Earth
 
-## The data (and its limits)
+A slider and a 75-second animated film walk from the solar nebula to today: planetesimals, magma ocean, Moon-forming impact, core and magnetic field, oceans, late accretion, continents, the Great Oxidation, complex life. Each stage lists materials and evidence. A Hypotheses tab plays the debate between core accretion, disk instability, giant impact, late veneer and water delivery — with the evidence and the open problem for each.
 
-| Layer | Source | Note |
-|---|---|---|
-| Terrain | AWS Terrain Tiles (Terrarium, SRTM-derived), z12 | 500 m block-average; slope recomputed on the 500 m grid (Horn) |
-| Thermal | Open-Meteo ERA5 archive 2015–2024 | **air** temperature as context; MODIS/Diviner skin temperature needs Earthdata login and is not computed |
-| Illumination | Solar geometry (NOAA-style) | worst-solstice noon elevation, day length |
-| Aridity | ERA5 precipitation | annual precipitation; semi-arid threshold <800 mm |
-| Attention | OpenAlex works count | keyword proxy, not a review |
-| Targets | Published Mars mid-latitude statistics (MOLA/THEMIS) | documented ranges, not a single mission measurement |
+![Story of Earth](screenshots/film.png)
 
-**Negative control:** Pokhara (wet mid-hill) fails aridity and ranks ~0 on survey gap. **Positive control:** Atacama passes all five requirements — the method reproduces a known analog.
+## Data & provenance
 
-A candidate is not a proven analog. It is a shortlist entry with its evidence attached. The grey tiles are deliberate: Earth cannot match dust, radiation, subsurface or permafrost — that is part of the finding.
+- Star positions/magnitudes: **HYG Database v4.1** (astronexus/HYG-Database, CC BY-SA 4.0); descriptions written for this app.
+- Imagery: NASA Images API and NASA/ESO public images (Blue Marble — Apollo 17; Milky Way panorama — ESO/S. Guisard; nebulae and ISS night pass).
+- Earth analogs: AWS Terrain Tiles (Terrarium, SRTM-derived) at 500 m, Open-Meteo ERA5 2015–2024, ERA5-Land soil 6 cm, NASA POWER MERRA-2 skin temperature (context), OpenAlex literature counts, NASA PDS MOLA/THEMIS ranges.
+- Every number is traceable in the app.
+
+## Honest limits
+
+- The Earth-analog set is a **regional shortlist** (Nepal + Atacama), not a global survey.
+- SRTM gives elevation only — no geology or regolith. ERA5/MERRA-2 are coarse (500 m grid vs ~9/50 km). No MODIS skin temperature yet.
+- Star pointing uses a low-precision sidereal-time model (fraction-of-a-degree error) and depends on device sensors; manual aim is the fallback. This is a learning tool, not a planetarium-grade ephemeris.
+- Operability for analog sites is an analyst-assigned judgment.
+
+## Reviews
+
+- **Human methodology review**: Arun Lohar (@arunlohar11), Space Apps Connect #2115 — resolved and credited; threshold and proxy sensitivity, suitability-vs-priority framing and data limits were incorporated.
+- **ChatGPT judge review**: 20 → 23 → **24/25** across four passes.
 
 ## Run / build
 
 ```sh
-# web
-flutter build web --release        # output in build/web
-# android
-flutter build apk --release        # output in build/app/outputs/flutter-apk/app-release.apk
-# local preview
-python3 -m http.server 8099 --directory build/web
+flutter pub get
+flutter run -d chrome          # or a device
+flutter test
+flutter build web --release --base-href /roamer/
+flutter build apk --release
 ```
 
-Regenerate the data (Node 22+):
-
-```sh
-cd tools && npm install pngjs && node build_data.js
-```
-
-The pipeline fetches Terrarium elevation tiles, Open-Meteo climate, and OpenAlex counts, then writes `assets/data/roamer_data.json` and `assets/map/hillshade.png` (Nepal crop, rendered locally from the same DEM tiles).
-
-## External review & known limits
-
-- **Human methodology review**: Arun Lohar (@arunlohar11), Space Apps Connect #2115 — **resolved and credited**; feedback incorporated: threshold sensitivity, suitability-vs-research-priority framing, 500 m-vs-climate resolution mismatch, SRTM geology limits, "shortlist for investigation, not certification".
-- **ChatGPT reviews**: 20 → 23 → **24/25** across four passes.
-- **Global analogs**: Río Tinto, Haughton Crater, McMurdo Dry Valleys, Pampas de La Joya, Wadi Rum, Death Valley, Askja are **similarity-screened** and placed under a second literature index (Crossref): proxy survey gap ≈0.00 for all but Askja (0.07) — well-studied, like the Atacama control. They are not in the OpenAlex ranking because that budget was exhausted; shown in METHOD so the gap is explicit.
-- **Numbers independently recomputed**: all 34 similarities and gaps re-derived from stored features in a separate implementation (max deviation 0.006; 0 pass-count mismatches).
-- **Limits**: 34 records concentrated in Nepal + Atacama; thermal scored on ERA5 air temperature (MERRA-2 skin and soil 6 cm shown as context); terrain SRTM-derived at 500 m; no MODIS LST (needs Earthdata login); operability is an analyst-assigned judgment.
+The data pipeline (Node, optional) lives in `tools/`: `build_data.js` regenerates the analog dataset, `stars.json` is the HYG-derived star catalogue, `constellations.json` the IAU list.
 
 ## Credits
 
-Terrarium terrain tiles (AWS Open Data; SRTM-derived), NASA POWER/Open-Meteo climate, OpenAlex, NASA PDS MOLA/THEMIS target values, OpenStreetMap attribution for any basemap. Built during the 2026 NASA Space Apps Challenge, 14–15 November 2026 — no project work before the hackathon.
-
-MIT License.
+Team roamer · NASA Space Apps 2026. MIT licensed. Star catalogue CC BY-SA 4.0 (HYG); NASA/ESO images retain their respective credits.
