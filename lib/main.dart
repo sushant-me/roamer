@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'space.dart';
 
 const Color kNavy = Color(0xFF0B1B3A);
 const Color kNavy2 = Color(0xFF0E2247);
@@ -27,7 +28,7 @@ class RoamerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ROAMER — Find the Moon on Earth',
+      title: 'AstroLens — explore Earth analogs and the night sky',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
@@ -35,7 +36,7 @@ class RoamerApp extends StatelessWidget {
         colorScheme: const ColorScheme.dark(primary: kYellow, secondary: kBlue, surface: kNavy2),
         fontFamily: 'Roboto',
       ),
-      home: HomeShell(data: data),
+      home: HomeScreen(data: data, buildAnalog: () => HomeShell(data: data)),
     );
   }
 }
@@ -194,7 +195,7 @@ class _FindViewState extends State<FindView> {
       }
     }
     final children = <Widget>[];
-    children.add(Header('ROAMER', sub: 'Find the Moon on Earth. Prove it with data.'));
+    children.add(Header('Earth Analogs', sub: 'Find the Moon on Earth. Prove it with data.'));
     children.add(Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       const Text('NAME A PLACE', style: TextStyle(color: kMuted, fontSize: 11, letterSpacing: 2)),
       const SizedBox(height: 8),
@@ -548,7 +549,7 @@ class SiteScreen extends StatelessWidget {
 
 class _SectionLabel extends StatelessWidget {
   final String text;
-  const _SectionLabel(this.text, {super.key});
+  const _SectionLabel(this.text);
   @override
   Widget build(BuildContext context) => Padding(
     padding: const EdgeInsets.fromLTRB(20, 16, 20, 4),
@@ -635,7 +636,6 @@ class GapPainter extends CustomPainter {
     canvas.drawRect(Offset.zero & size, Paint()..color = kNavy);
     const l = 30.0, t = 14.0, r = 12.0, b = 30.0;
     final w = size.width - l - r, h = size.height - t - b;
-    final plot = Rect.fromLTWH(l, t, w, h);
     // empty corner: high similarity (right), low attention (bottom)
     canvas.drawRect(Rect.fromLTRB(l + w * .5, t + h * .5, l + w, t + h), Paint()..color = kYellow.withOpacity(.07));
     final grid = Paint()..color = kBlue.withOpacity(.45)..strokeWidth = 1;
@@ -758,7 +758,7 @@ class BriefScreen extends StatelessWidget {
     final solar = (site.climate['solar_kwh_m2_day'] as num?)?.toDouble() ?? 5;
     final kwh = (0.35 * solar * dayLen * 0.75).toStringAsFixed(2);
     final slope = (site.terrain['local_slope_med_deg'] as num).toDouble();
-    return '''ROAMER — MISSION BRIEF
+    return '''ASTROLENS — EARTH ANALOG MISSION BRIEF
 Site: ${site.name} (${site.lat}, ${site.lon}) · ${site.alt.round()} m
 Verdict: ${site.passes}/${site.total} requirements pass · similarity ${site.similarity.toStringAsFixed(2)} · attention ${site.attention.toStringAsFixed(2)} · survey gap ${site.gap.toStringAsFixed(2)}
 Access: ${site.access}

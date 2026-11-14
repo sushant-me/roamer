@@ -1,11 +1,11 @@
 {
-  "name": "ROAMER \u2014 Find the Moon on Earth",
-  "short_name": "ROAMER",
+  "name": "AstroLens \u2014 space learning app",
+  "short_name": "AstroLens",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0B1B3A",
-  "theme_color": "#0B1B3A",
-  "description": "ROAMER scores places on Earth against Moon/Mars requirements, quantifies where the analogy breaks, and builds a field brief. NASA Space Apps 2026, Bhaktapur.",
+  "background_color": "#060B18",
+  "theme_color": "#060B18",
+  "description": "Earth analog sites, AR sky camera, tonight\u2019s sky and the story of Earth.",
   "orientation": "any",
   "prefer_related_applications": false,
   "icons": [

@@ -1,32 +1,32 @@
 1
-00:00:00,050 --> 00:00:04,107
-Every Moon and Mars mission needs a place on Earth to test.
+00:00:00,050 --> 00:00:00,790
+Look up.
 
 2
-00:00:04,107 --> 00:00:07,206
-But the famous analogs are already studied to death.
+00:00:00,790 --> 00:00:04,119
+AstroLens turns your phone into a space guide.
 
 3
-00:00:07,206 --> 00:00:15,089
-ROAMER scores thirty-four sites on one five hundred metre grid, shows where the analogy breaks, and ranks them by research gap.
+00:00:04,119 --> 00:00:07,563
+Point it at the night sky and it names the stars above you.
 
 4
-00:00:15,089 --> 00:00:18,852
-Atacama passes, but scores zero: already studied.
+00:00:07,563 --> 00:00:12,474
+Explore them in AR, see what is visible tonight, and watch how Earth formed.
 
 5
-00:00:18,852 --> 00:00:20,089
-Pokhara fails.
+00:00:12,474 --> 00:00:18,482
+Then switch to Earth analogs: the real places on Earth where we should test Moon and Mars hardware.
 
 6
-00:00:20,089 --> 00:00:21,326
-Chhusang leads.
+00:00:18,482 --> 00:00:19,732
+AstroLens.
 
 7
-00:00:21,326 --> 00:00:22,780
-Find the Moon on Earth.
+00:00:19,732 --> 00:00:20,522
+Look up.
 
 8
-00:00:22,780 --> 00:00:23,954
-Prove it with data.
+00:00:20,522 --> 00:00:21,594
+Understand.
 
