@@ -116,7 +116,7 @@ class _HomeShellState extends State<HomeShell> {
     );
   }
 
-  void _open(Site s) => Navigator.push(context, MaterialPageRoute(builder: (_) => SiteScreen(site: s)));
+  void _open(Site s) => Navigator.push(context, MaterialPageRoute(builder: (_) => SiteScreen(site: s, totalRecords: sites.length)));
 }
 
 // ---------------- shared bits ----------------
@@ -279,8 +279,13 @@ class _FindViewState extends State<FindView> {
     ])));
 
     children.add(const Padding(
-      padding: EdgeInsets.fromLTRB(20, 14, 20, 4),
+      padding: EdgeInsets.fromLTRB(20, 14, 20, 0),
       child: Text('RANKED BY SURVEY GAP', style: TextStyle(color: kMuted, fontSize: 11, letterSpacing: 2)),
+    ));
+    children.add(const Padding(
+      padding: EdgeInsets.fromLTRB(20, 4, 20, 4),
+      child: Text('Gap ranks where to survey next — not the best analog. Similarity is shown separately.',
+          style: TextStyle(color: kGrey, fontSize: 10, height: 1.4)),
     ));
     for (final s in filtered) {
       children.add(SiteCard(site: s, rank: widget.sites.indexOf(s) + 1, onTap: () => widget.onOpen(s)));
@@ -365,7 +370,8 @@ Widget _bar(double v, Color c) => ClipRRect(
 // ---------------- RECORD (case file) ----------------
 class SiteScreen extends StatelessWidget {
   final Site site;
-  const SiteScreen({super.key, required this.site});
+  final int totalRecords;
+  const SiteScreen({super.key, required this.site, required this.totalRecords});
   static const reqWhy = {
     'trafficable_slopes': '10° is a practical limit for unassisted EVA and wheeled rovers on loose ground.',
     'terrain_relief': '20–1,500 m: enough vertical structure to test traverse and survey, not a cliff.',
@@ -451,9 +457,9 @@ class SiteScreen extends StatelessWidget {
         const _SectionLabel('COVERAGE — WHAT IS COMPUTED'),
         Panel(child: Wrap(spacing: 8, runSpacing: 8, children: _coverage())),
         const _SectionLabel('UNCERTAINTY — WHERE THE NUMBER COULD MOVE'),
-        Panel(child: const Text(
-          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature, not MODIS skin temperature. Attention: an OpenAlex keyword count. 12 records is a shortlist, not a global survey — read the gap as a screening signal, not a probability.',
-          style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
+        Panel(child: Text(
+          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature, not MODIS skin temperature. Attention: an OpenAlex keyword count. $totalRecords records is a regional shortlist, not a global survey — read the gap as a screening signal, not a probability.',
+          style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
         )),
         const _SectionLabel('PROVENANCE (EVERY NUMBER TRACEABLE)'),
         Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -778,6 +784,8 @@ class MethodView extends StatelessWidget {
       Text('· Terrain is SRTM-derived via Terrarium tiles at 500 m — not Copernicus 30 m.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('· Thermal is ERA5 air temperature (context); MODIS/Diviner skin temperature needs Earthdata login.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('· Literature attention is an OpenAlex keyword count — a proxy, not a review.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Scope: 34 records concentrated in Nepal, with one global control (Atacama) — a regional shortlist, not a global survey.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Operability is an analyst-assigned 0–1 from road/permit/flight access — a documented judgment, not a measurement.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('· Target bands are documented Mars ranges, not a single mission measurement.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
     ])),
     const _SectionLabel('SENSITIVITY — IS THE RANKING FRAGILE?'),
