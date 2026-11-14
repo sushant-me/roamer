@@ -1,0 +1,25 @@
+const { chromium } = require('/home/logic/node_modules/playwright');
+(async()=>{
+  const b=await chromium.launch({args:['--no-sandbox']});
+  const ctx=await b.newContext({viewport:{width:1440,height:900}});
+  const p=await ctx.newPage();
+  const shot=async n=>{ await p.waitForTimeout(700); await p.screenshot({path:'/tmp/scenes/'+n+'.png'}); console.log('shot',n); };
+  await p.goto('http://127.0.0.1:8099/roamer/',{waitUntil:'networkidle',timeout:60000});
+  await p.waitForTimeout(6000);
+  await shot('01_find_top');
+  await p.mouse.wheel(0,420); await p.waitForTimeout(900); await shot('02_find_cards');
+  await p.mouse.wheel(0,-420); await p.waitForTimeout(600);
+  await p.mouse.click(720,740); await p.waitForTimeout(1800); await shot('03_record_top');
+  await p.mouse.wheel(0,560); await p.waitForTimeout(900); await shot('04_record_ledger');
+  await p.mouse.wheel(0,560); await p.waitForTimeout(900); await shot('05_record_coverage');
+  await p.goto('http://127.0.0.1:8099/roamer/',{waitUntil:'networkidle',timeout:60000}); await p.waitForTimeout(5000);
+  await p.mouse.click(720,852); await p.waitForTimeout(1800); await shot('06_gap_chart');
+  await p.mouse.wheel(0,420); await p.waitForTimeout(900); await shot('07_gap_list');
+  await p.goto('http://127.0.0.1:8099/roamer/',{waitUntil:'networkidle',timeout:60000}); await p.waitForTimeout(5000);
+  await p.mouse.click(720,740); await p.waitForTimeout(1500);
+  await p.mouse.wheel(0,3000); await p.waitForTimeout(1200); await shot('08_brief_button');
+  await p.mouse.click(720,860); await p.waitForTimeout(1500); await shot('09_brief');
+  await p.goto('http://127.0.0.1:8099/roamer/',{waitUntil:'networkidle',timeout:60000}); await p.waitForTimeout(5000);
+  await p.mouse.click(1120,852); await p.waitForTimeout(1500); await shot('10_method');
+  await b.close(); console.log('done');
+})();
