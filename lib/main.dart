@@ -673,7 +673,7 @@ class MethodView extends StatelessWidget {
       Text('Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015–2024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.',
           style: TextStyle(color: kMuted, fontSize: 11.5, height: 1.55)),
       SizedBox(height: 8),
-      Text('Built during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.',
+      Text('Web: sushant-me.github.io/roamer   ·   Android APK: github.com/sushant-me/roamer/releases\nBuilt during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.',
           style: TextStyle(color: kMuted, fontSize: 11, fontStyle: FontStyle.italic)),
     ])),
     Padding(padding: const EdgeInsets.all(16), child: Text('Generated ${meta['generated']}', style: const TextStyle(color: kGrey, fontSize: 10))),
