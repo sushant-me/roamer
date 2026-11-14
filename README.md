@@ -1,5 +1,7 @@
 # ROAMER — Find the Moon on Earth. Prove it with data.
 
+![build](https://github.com/sushant-me/roamer/actions/workflows/build.yml/badge.svg)
+
 NASA Space Apps Challenge 2026 · Bhaktapur (Virtual) · challenge: **Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars**
 
 ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by **survey gap** — similarity × how little the literature has studied them × whether a crew can get there — then turns the best into a field brief.
