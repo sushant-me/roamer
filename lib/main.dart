@@ -95,7 +95,7 @@ class _HomeShellState extends State<HomeShell> {
     final pages = [
       FindView(sites: sites, map: map, onOpen: _open),
       GapView(sites: sites, onOpen: _open),
-      MethodView(sites: sites, meta: meta, sensitivity: (widget.data['sensitivity'] as Map?)?.cast<String, dynamic>() ?? const {}),
+      MethodView(sites: sites, meta: meta, sensitivity: (widget.data['sensitivity'] as Map?)?.cast<String, dynamic>() ?? const {}, globalScreening: (widget.data['global_screening'] as List?) ?? const []),
     ];
     return Scaffold(
       body: SafeArea(child: IndexedStack(index: tab, children: pages)),
@@ -771,7 +771,8 @@ class MethodView extends StatelessWidget {
   final List<Site> sites;
   final Map<String, dynamic> meta;
   final Map<String, dynamic> sensitivity;
-  const MethodView({super.key, required this.sites, required this.meta, required this.sensitivity});
+  final List<dynamic> globalScreening;
+  const MethodView({super.key, required this.sites, required this.meta, required this.sensitivity, required this.globalScreening});
   @override
   Widget build(BuildContext context) => _page([
     const Header('METHOD', sub: 'What this is — and what it is not'),
@@ -828,11 +829,21 @@ class MethodView extends StatelessWidget {
       'Target profile: Mars mid-latitude (Jezero / NE Syrtis). Slope and relief limits also bound lunar trafficability, but lunar thermal and illumination extremes are not scored: the Moon comparison here is trafficability + access only, and every record says so.',
       style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
     )),
-    const _SectionLabel('ESTABLISHED ANALOGS — NOT SCORED THIS RUN'),
-    Panel(child: const Text(
-      'Río Tinto, Haughton Crater, McMurdo Dry Valleys, Pampas de La Joya, Wadi Rum, Death Valley and Askja are established planetary analogs. They are outside the Nepal crop and were not scored: the shared OpenAlex attention budget was exhausted mid-run, and scoring them with a broken attention term would have been dishonest. They are listed here so the omission is explicit, not hidden.',
-      style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
-    )),
+    const _SectionLabel('GLOBAL ANALOGS — SIMILARITY ONLY (NOT RANKED)'),
+    Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      ...globalScreening.map((g) => Padding(
+        padding: const EdgeInsets.symmetric(vertical: 3),
+        child: Text(
+          '${g['name']} (${g['country']}) · similarity ${g['similarity']} · attention not computed',
+          style: const TextStyle(color: kInk, fontSize: 12, fontFamily: 'monospace'),
+        ),
+      )),
+      const SizedBox(height: 6),
+      const Text(
+        'These seven established analogs are screened for suitability but not ranked: the shared OpenAlex attention budget was exhausted mid-run, and scoring them with a broken attention term would have been dishonest. They are shown here so the coverage gap is explicit, not hidden.',
+        style: TextStyle(color: kMuted, fontSize: 11, height: 1.45),
+      ),
+    ])),
     const _SectionLabel('DATA & CREDITS'),
     Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
       Text('Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015–2024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.',
