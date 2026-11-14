@@ -3981,7 +3981,10 @@
    "localSlope": 3.13,
    "seasonalAmp": 8.7,
    "precip": 592,
-   "note": "similarity computed; attention not available this run, so no survey gap"
+   "note": "similarity computed; attention not available this run, so no survey gap",
+   "crossref_count": 30160,
+   "crossref_attention": 1,
+   "secondary_gap": 0
   },
   {
    "id": "haughton",
@@ -3995,7 +3998,10 @@
    "localSlope": 1.12,
    "seasonalAmp": 19.4,
    "precip": 208,
-   "note": "similarity computed; attention not available this run, so no survey gap"
+   "note": "similarity computed; attention not available this run, so no survey gap",
+   "crossref_count": 13214,
+   "crossref_attention": 1,
+   "secondary_gap": 0
   },
   {
    "id": "dry_valleys",
@@ -4009,7 +4015,10 @@
    "localSlope": 5.23,
    "seasonalAmp": 8.6,
    "precip": 34,
-   "note": "similarity computed; attention not available this run, so no survey gap"
+   "note": "similarity computed; attention not available this run, so no survey gap",
+   "crossref_count": 150430,
+   "crossref_attention": 1,
+   "secondary_gap": 0
   },
   {
    "id": "la_joya",
@@ -4023,7 +4032,10 @@
    "localSlope": 1.45,
    "seasonalAmp": 0.5,
    "precip": 169,
-   "note": "similarity computed; attention not available this run, so no survey gap"
+   "note": "similarity computed; attention not available this run, so no survey gap",
+   "crossref_count": 11200638,
+   "crossref_attention": 1,
+   "secondary_gap": 0
   },
   {
    "id": "wadi_rum",
@@ -4037,7 +4049,10 @@
    "localSlope": 9.05,
    "seasonalAmp": 9.6,
    "precip": 43,
-   "note": "similarity computed; attention not available this run, so no survey gap"
+   "note": "similarity computed; attention not available this run, so no survey gap",
+   "crossref_count": 9954,
+   "crossref_attention": 1,
+   "secondary_gap": 0
   },
   {
    "id": "death_valley",
@@ -4051,7 +4066,10 @@
    "localSlope": 3.88,
    "seasonalAmp": 12.3,
    "precip": 105,
-   "note": "similarity computed; attention not available this run, so no survey gap"
+   "note": "similarity computed; attention not available this run, so no survey gap",
+   "crossref_count": 466535,
+   "crossref_attention": 1,
+   "secondary_gap": 0
   },
   {
    "id": "askja",
@@ -4065,7 +4083,10 @@
    "localSlope": 3.83,
    "seasonalAmp": 6.9,
    "precip": 1302,
-   "note": "similarity computed; attention not available this run, so no survey gap"
+   "note": "similarity computed; attention not available this run, so no survey gap",
+   "crossref_count": 147,
+   "crossref_attention": 0.54,
+   "secondary_gap": 0.07
   }
  ]
 }

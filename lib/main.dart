@@ -848,13 +848,13 @@ class MethodView extends StatelessWidget {
       ...globalScreening.map((g) => Padding(
         padding: const EdgeInsets.symmetric(vertical: 3),
         child: Text(
-          '${g['name']} (${g['country']}) · similarity ${g['similarity']} · attention not computed',
+          '${g['name']} (${g['country']}) · similarity ${g['similarity']} · Crossref-proxy gap ${g['secondary_gap'] ?? '—'}',
           style: const TextStyle(color: kInk, fontSize: 12, fontFamily: 'monospace'),
         ),
       )),
       const SizedBox(height: 6),
       const Text(
-        'These seven established analogs are screened for suitability but not ranked: the shared OpenAlex attention budget was exhausted mid-run, and scoring them with a broken attention term would have been dishonest. They are shown here so the coverage gap is explicit, not hidden.',
+        'These seven established analogs are screened for suitability but not ranked in the OpenAlex-based list: that budget was exhausted mid-run. Under a second literature index (Crossref), the famous analogs score a near-zero research gap (only Askja is 0.07) — the same pattern as the Atacama positive control, which supports the main result that well-studied analogs are not where a new survey pays off.',
         style: TextStyle(color: kMuted, fontSize: 11, height: 1.45),
       ),
     ])),
