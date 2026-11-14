@@ -28,7 +28,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.1,
-     "diurnal_amp_k": 4.6
+     "diurnal_amp_k": 4.6,
+     "soil_seasonal_amp_k": 11.4,
+     "soil_diurnal_amp_k": 9.1
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.7,
@@ -47,7 +49,9 @@
     "seasonal_amp_k": 8.1,
     "diurnal_amp_k": 4.6,
     "solar_kwh_m2_day": 7.51,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 97,
@@ -130,7 +134,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.5,
-     "diurnal_amp_k": 5.7
+     "diurnal_amp_k": 5.7,
+     "soil_seasonal_amp_k": 12,
+     "soil_diurnal_amp_k": 9.8
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.4,
@@ -149,7 +155,9 @@
     "seasonal_amp_k": 8.5,
     "diurnal_amp_k": 5.7,
     "solar_kwh_m2_day": 8.4,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 158,
@@ -232,7 +240,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 9.2,
-     "diurnal_amp_k": 5.8
+     "diurnal_amp_k": 5.8,
+     "soil_seasonal_amp_k": 8.4,
+     "soil_diurnal_amp_k": 3.6
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.4,
@@ -251,7 +261,9 @@
     "seasonal_amp_k": 9.2,
     "diurnal_amp_k": 5.8,
     "solar_kwh_m2_day": 7.31,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 239,
@@ -334,7 +346,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 6.9,
-     "diurnal_amp_k": 3.6
+     "diurnal_amp_k": 3.6,
+     "soil_seasonal_amp_k": 7.8,
+     "soil_diurnal_amp_k": 3.2
     },
     "illumination": {
      "noon_elev_dec21_deg": 38.7,
@@ -353,7 +367,9 @@
     "seasonal_amp_k": 6.9,
     "diurnal_amp_k": 3.6,
     "solar_kwh_m2_day": 7.39,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 4068,
@@ -436,7 +452,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 2.6,
-     "diurnal_amp_k": 8.4
+     "diurnal_amp_k": 8.4,
+     "soil_seasonal_amp_k": 7,
+     "soil_diurnal_amp_k": 14.5
     },
     "illumination": {
      "noon_elev_dec21_deg": 89.3,
@@ -455,7 +473,9 @@
     "seasonal_amp_k": 2.6,
     "diurnal_amp_k": 8.4,
     "solar_kwh_m2_day": 9.25,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 61070,
@@ -538,7 +558,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.3,
-     "diurnal_amp_k": 4.2
+     "diurnal_amp_k": 4.2,
+     "soil_seasonal_amp_k": 11.3,
+     "soil_diurnal_amp_k": 4.5
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.9,
@@ -557,7 +579,9 @@
     "seasonal_amp_k": 8.3,
     "diurnal_amp_k": 4.2,
     "solar_kwh_m2_day": 7.27,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 3810,
@@ -640,7 +664,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 7.2,
-     "diurnal_amp_k": 4.4
+     "diurnal_amp_k": 4.4,
+     "soil_seasonal_amp_k": 8.2,
+     "soil_diurnal_amp_k": 4.1
     },
     "illumination": {
      "noon_elev_dec21_deg": 38.1,
@@ -659,7 +685,9 @@
     "seasonal_amp_k": 7.2,
     "diurnal_amp_k": 4.4,
     "solar_kwh_m2_day": 6.19,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 416,
@@ -742,7 +770,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.7,
-     "diurnal_amp_k": 5.3
+     "diurnal_amp_k": 5.3,
+     "soil_seasonal_amp_k": 8.2,
+     "soil_diurnal_amp_k": 4.2
     },
     "illumination": {
      "noon_elev_dec21_deg": 37,
@@ -761,7 +791,9 @@
     "seasonal_amp_k": 8.7,
     "diurnal_amp_k": 5.3,
     "solar_kwh_m2_day": 6.51,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 491393,
@@ -844,7 +876,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 9.1,
-     "diurnal_amp_k": 3.6
+     "diurnal_amp_k": 3.6,
+     "soil_seasonal_amp_k": 8.2,
+     "soil_diurnal_amp_k": 3
     },
     "illumination": {
      "noon_elev_dec21_deg": 36.6,
@@ -863,7 +897,9 @@
     "seasonal_amp_k": 9.1,
     "diurnal_amp_k": 3.6,
     "solar_kwh_m2_day": 6.64,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 131,
@@ -946,7 +982,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.1,
-     "diurnal_amp_k": 5.2
+     "diurnal_amp_k": 5.2,
+     "soil_seasonal_amp_k": 8.9,
+     "soil_diurnal_amp_k": 4.8
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.3,
@@ -965,7 +1003,9 @@
     "seasonal_amp_k": 8.1,
     "diurnal_amp_k": 5.2,
     "solar_kwh_m2_day": 6.91,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 13718,
@@ -1048,7 +1088,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.1,
-     "diurnal_amp_k": 4.6
+     "diurnal_amp_k": 4.6,
+     "soil_seasonal_amp_k": 11.4,
+     "soil_diurnal_amp_k": 9.1
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.7,
@@ -1067,7 +1109,9 @@
     "seasonal_amp_k": 8.1,
     "diurnal_amp_k": 4.6,
     "solar_kwh_m2_day": 7.67,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 10,
@@ -1150,7 +1194,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 7.7,
-     "diurnal_amp_k": 4.5
+     "diurnal_amp_k": 4.5,
+     "soil_seasonal_amp_k": 9.7,
+     "soil_diurnal_amp_k": 4.4
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.8,
@@ -1169,7 +1215,9 @@
     "seasonal_amp_k": 7.7,
     "diurnal_amp_k": 4.5,
     "solar_kwh_m2_day": 7.38,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 455,
@@ -1252,7 +1300,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 7.7,
-     "diurnal_amp_k": 4.5
+     "diurnal_amp_k": 4.5,
+     "soil_seasonal_amp_k": 9.7,
+     "soil_diurnal_amp_k": 4.4
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.8,
@@ -1271,7 +1321,9 @@
     "seasonal_amp_k": 7.7,
     "diurnal_amp_k": 4.5,
     "solar_kwh_m2_day": 7.38,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 299,
@@ -1354,7 +1406,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.1,
-     "diurnal_amp_k": 4.6
+     "diurnal_amp_k": 4.6,
+     "soil_seasonal_amp_k": 11.4,
+     "soil_diurnal_amp_k": 9.1
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.7,
@@ -1373,7 +1427,9 @@
     "seasonal_amp_k": 8.1,
     "diurnal_amp_k": 4.6,
     "solar_kwh_m2_day": 7.51,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 514,
@@ -1456,7 +1512,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.8,
-     "diurnal_amp_k": 4.5
+     "diurnal_amp_k": 4.5,
+     "soil_seasonal_amp_k": 5.7,
+     "soil_diurnal_amp_k": 1.7
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.8,
@@ -1475,7 +1533,9 @@
     "seasonal_amp_k": 8.8,
     "diurnal_amp_k": 4.5,
     "solar_kwh_m2_day": 7.49,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 93,
@@ -1558,7 +1618,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.8,
-     "diurnal_amp_k": 4.6
+     "diurnal_amp_k": 4.6,
+     "soil_seasonal_amp_k": 10,
+     "soil_diurnal_amp_k": 5.9
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.5,
@@ -1577,7 +1639,9 @@
     "seasonal_amp_k": 8.8,
     "diurnal_amp_k": 4.6,
     "solar_kwh_m2_day": 7.99,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 525,
@@ -1660,7 +1724,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 7.8,
-     "diurnal_amp_k": 4.7
+     "diurnal_amp_k": 4.7,
+     "soil_seasonal_amp_k": 11.8,
+     "soil_diurnal_amp_k": 9.5
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.6,
@@ -1679,7 +1745,9 @@
     "seasonal_amp_k": 7.8,
     "diurnal_amp_k": 4.7,
     "solar_kwh_m2_day": 7.97,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 114,
@@ -1762,7 +1830,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 9,
-     "diurnal_amp_k": 6.2
+     "diurnal_amp_k": 6.2,
+     "soil_seasonal_amp_k": 8.3,
+     "soil_diurnal_amp_k": 3.8
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.5,
@@ -1781,7 +1851,9 @@
     "seasonal_amp_k": 9,
     "diurnal_amp_k": 6.2,
     "solar_kwh_m2_day": 7.13,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 13,
@@ -1864,7 +1936,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 9,
-     "diurnal_amp_k": 6.2
+     "diurnal_amp_k": 6.2,
+     "soil_seasonal_amp_k": 8.3,
+     "soil_diurnal_amp_k": 3.8
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.6,
@@ -1883,7 +1957,9 @@
     "seasonal_amp_k": 9,
     "diurnal_amp_k": 6.2,
     "solar_kwh_m2_day": 7.2,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 10813,
@@ -1966,7 +2042,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.6,
-     "diurnal_amp_k": 5.1
+     "diurnal_amp_k": 5.1,
+     "soil_seasonal_amp_k": 8.5,
+     "soil_diurnal_amp_k": 4.3
     },
     "illumination": {
      "noon_elev_dec21_deg": 37,
@@ -1985,7 +2063,9 @@
     "seasonal_amp_k": 8.6,
     "diurnal_amp_k": 5.1,
     "solar_kwh_m2_day": 6.62,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 4133,
@@ -2068,7 +2148,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 10.8,
-     "diurnal_amp_k": 4.5
+     "diurnal_amp_k": 4.5,
+     "soil_seasonal_amp_k": 9.8,
+     "soil_diurnal_amp_k": 4.6
     },
     "illumination": {
      "noon_elev_dec21_deg": 36.5,
@@ -2087,7 +2169,9 @@
     "seasonal_amp_k": 10.8,
     "diurnal_amp_k": 4.5,
     "solar_kwh_m2_day": 8.05,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 4218,
@@ -2170,7 +2254,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 9.6,
-     "diurnal_amp_k": 5.2
+     "diurnal_amp_k": 5.2,
+     "soil_seasonal_amp_k": 8.8,
+     "soil_diurnal_amp_k": 3.9
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.5,
@@ -2189,7 +2275,9 @@
     "seasonal_amp_k": 9.6,
     "diurnal_amp_k": 5.2,
     "solar_kwh_m2_day": 7.62,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 3965,
@@ -2272,7 +2360,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 10.3,
-     "diurnal_amp_k": 4.6
+     "diurnal_amp_k": 4.6,
+     "soil_seasonal_amp_k": 8,
+     "soil_diurnal_amp_k": 3
     },
     "illumination": {
      "noon_elev_dec21_deg": 36.6,
@@ -2291,7 +2381,9 @@
     "seasonal_amp_k": 10.3,
     "diurnal_amp_k": 4.6,
     "solar_kwh_m2_day": 6.82,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 601,
@@ -2374,7 +2466,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.2,
-     "diurnal_amp_k": 6.4
+     "diurnal_amp_k": 6.4,
+     "soil_seasonal_amp_k": 9.1,
+     "soil_diurnal_amp_k": 5.1
     },
     "illumination": {
      "noon_elev_dec21_deg": 37,
@@ -2393,7 +2487,9 @@
     "seasonal_amp_k": 8.2,
     "diurnal_amp_k": 6.4,
     "solar_kwh_m2_day": 6.47,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 666,
@@ -2476,7 +2572,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 9.3,
-     "diurnal_amp_k": 5.8
+     "diurnal_amp_k": 5.8,
+     "soil_seasonal_amp_k": 8.4,
+     "soil_diurnal_amp_k": 3.6
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.4,
@@ -2495,7 +2593,9 @@
     "seasonal_amp_k": 9.3,
     "diurnal_amp_k": 5.8,
     "solar_kwh_m2_day": 7.31,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 450,
@@ -2578,7 +2678,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.5,
-     "diurnal_amp_k": 4.7
+     "diurnal_amp_k": 4.7,
+     "soil_seasonal_amp_k": 7.1,
+     "soil_diurnal_amp_k": 3.1
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.7,
@@ -2597,7 +2699,9 @@
     "seasonal_amp_k": 8.5,
     "diurnal_amp_k": 4.7,
     "solar_kwh_m2_day": 6.85,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 10,
@@ -2680,7 +2784,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 12,
-     "diurnal_amp_k": 5.3
+     "diurnal_amp_k": 5.3,
+     "soil_seasonal_amp_k": 9.6,
+     "soil_diurnal_amp_k": 4.3
     },
     "illumination": {
      "noon_elev_dec21_deg": 36.4,
@@ -2699,7 +2805,9 @@
     "seasonal_amp_k": 12,
     "diurnal_amp_k": 5.3,
     "solar_kwh_m2_day": 7.94,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 58106,
@@ -2782,7 +2890,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 10.6,
-     "diurnal_amp_k": 3.5
+     "diurnal_amp_k": 3.5,
+     "soil_seasonal_amp_k": 7.9,
+     "soil_diurnal_amp_k": 3.7
     },
     "illumination": {
      "noon_elev_dec21_deg": 36.6,
@@ -2801,7 +2911,9 @@
     "seasonal_amp_k": 10.6,
     "diurnal_amp_k": 3.5,
     "solar_kwh_m2_day": 6.85,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 132,
@@ -2884,7 +2996,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.9,
-     "diurnal_amp_k": 5.6
+     "diurnal_amp_k": 5.6,
+     "soil_seasonal_amp_k": 8.2,
+     "soil_diurnal_amp_k": 4
     },
     "illumination": {
      "noon_elev_dec21_deg": 37,
@@ -2903,7 +3017,9 @@
     "seasonal_amp_k": 8.9,
     "diurnal_amp_k": 5.6,
     "solar_kwh_m2_day": 6.67,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 29,
@@ -2986,7 +3102,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 9.3,
-     "diurnal_amp_k": 5.9
+     "diurnal_amp_k": 5.9,
+     "soil_seasonal_amp_k": 9.8,
+     "soil_diurnal_amp_k": 6
     },
     "illumination": {
      "noon_elev_dec21_deg": 37.3,
@@ -3005,7 +3123,9 @@
     "seasonal_amp_k": 9.3,
     "diurnal_amp_k": 5.9,
     "solar_kwh_m2_day": 8.51,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 692,
@@ -3088,7 +3208,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.2,
-     "diurnal_amp_k": 6.4
+     "diurnal_amp_k": 6.4,
+     "soil_seasonal_amp_k": 9.1,
+     "soil_diurnal_amp_k": 5.1
     },
     "illumination": {
      "noon_elev_dec21_deg": 37,
@@ -3107,7 +3229,9 @@
     "seasonal_amp_k": 8.2,
     "diurnal_amp_k": 6.4,
     "solar_kwh_m2_day": 6.47,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 111,
@@ -3190,7 +3314,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 11.3,
-     "diurnal_amp_k": 3.9
+     "diurnal_amp_k": 3.9,
+     "soil_seasonal_amp_k": 10.6,
+     "soil_diurnal_amp_k": 4.5
     },
     "illumination": {
      "noon_elev_dec21_deg": 36.6,
@@ -3209,7 +3335,9 @@
     "seasonal_amp_k": 11.3,
     "diurnal_amp_k": 3.9,
     "solar_kwh_m2_day": 7.87,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 2378965,
@@ -3292,7 +3420,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 8.1,
-     "diurnal_amp_k": 3.8
+     "diurnal_amp_k": 3.8,
+     "soil_seasonal_amp_k": 7.2,
+     "soil_diurnal_amp_k": 2.9
     },
     "illumination": {
      "noon_elev_dec21_deg": 38.7,
@@ -3311,7 +3441,9 @@
     "seasonal_amp_k": 8.1,
     "diurnal_amp_k": 3.8,
     "solar_kwh_m2_day": 6.49,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 39,
@@ -3394,7 +3526,9 @@
     },
     "thermal": {
      "seasonal_amp_k": 6.5,
-     "diurnal_amp_k": 4.3
+     "diurnal_amp_k": 4.3,
+     "soil_seasonal_amp_k": 8,
+     "soil_diurnal_amp_k": 4.6
     },
     "illumination": {
      "noon_elev_dec21_deg": 38.3,
@@ -3413,7 +3547,9 @@
     "seasonal_amp_k": 6.5,
     "diurnal_amp_k": 4.3,
     "solar_kwh_m2_day": 5.74,
-    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login)."
+    "source": "Open-Meteo ERA5 archive 2015–2024 at the site point (air temperature; shortwave radiation). Skin temperature is not computed (MODIS LST needs Earthdata login).",
+    "skin_source": "ERA5-Land hourly skin temperature, 2024 (context only; not used in scoring).",
+    "soil_source": "ERA5-Land soil temperature at 6 cm, 2024 (ground thermal context; not used in scoring)."
    },
    "literature": {
     "count": 15263,

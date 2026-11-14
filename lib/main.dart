@@ -44,10 +44,10 @@ class Site {
   final String id, name, country, role, blurb, access;
   final double lat, lon, alt, operability, similarity, attention, gap;
   final int passes, total;
-  final Map<String, dynamic> scores, requirements, terrain, climate, illumination, literature, d;
+  final Map<String, dynamic> scores, requirements, terrain, thermal, climate, illumination, literature, d;
   Site(this.id, this.name, this.country, this.role, this.blurb, this.access,
       this.lat, this.lon, this.alt, this.operability, this.similarity, this.attention, this.gap,
-      this.passes, this.total, this.scores, this.requirements, this.terrain, this.climate,
+      this.passes, this.total, this.scores, this.requirements, this.terrain, this.thermal, this.climate,
       this.illumination, this.literature, this.d);
   factory Site.fromJson(Map<String, dynamic> j) {
     final f = j['features'] as Map<String, dynamic>;
@@ -60,6 +60,7 @@ class Site {
       (j['scores'] as Map).cast<String, dynamic>(),
       (j['requirements'] as Map).cast<String, dynamic>(),
       (f['terrain'] as Map).cast<String, dynamic>(),
+      (f['thermal'] as Map?)?.cast<String, dynamic>() ?? {},
       (j['climate'] as Map?)?.cast<String, dynamic>() ?? {},
       (f['illumination'] as Map).cast<String, dynamic>(),
       (j['literature'] as Map).cast<String, dynamic>(),
@@ -440,6 +441,13 @@ class SiteScreen extends StatelessWidget {
           child: Text('Bar = match in target-σ units (fuller is closer). Weights: terrain 0.45 · thermal 0.15 · illumination 0.15 · aridity 0.25. Grey coverage tiles are not computed by design.',
               style: TextStyle(color: kMuted, fontSize: 10.5, height: 1.4)),
         ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+          child: Text(
+            'Ground thermal context (ERA5-Land soil, 6 cm, 2024): seasonal ±${site.thermal['soil_seasonal_amp_k'] ?? '—'} K · diurnal ±${site.thermal['soil_diurnal_amp_k'] ?? '—'} K — context only, not scored.',
+            style: const TextStyle(color: kGrey, fontSize: 10, height: 1.4),
+          ),
+        ),
         const _SectionLabel('COVERAGE — WHAT IS COMPUTED'),
         Panel(child: Wrap(spacing: 8, runSpacing: 8, children: _coverage())),
         const _SectionLabel('UNCERTAINTY — WHERE THE NUMBER COULD MOVE'),
@@ -450,7 +458,7 @@ class SiteScreen extends StatelessWidget {
         const _SectionLabel('PROVENANCE (EVERY NUMBER TRACEABLE)'),
         Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           _prov('Terrain', 'AWS Terrain Tiles (Terrarium, SRTM-derived) · z12 · 500 m block-average · slope Horn'),
-          _prov('Thermal', 'Open-Meteo ERA5 archive 2015–2024 · air temperature (context) · skin temperature not computed'),
+          _prov('Thermal', 'Open-Meteo ERA5 air temperature 2015–2024 (scored) + ERA5-Land soil at 6 cm 2024 (ground context)'),
           _prov('Illumination', 'Solar geometry (NOAA-style) · worst-solstice noon elevation'),
           _prov('Literature', 'OpenAlex works count for the site name (attention proxy)'),
           _prov('Targets', 'Published Mars mid-latitude statistics (MOLA/THEMIS) · documented ranges'),
