@@ -820,6 +820,11 @@ class MethodView extends StatelessWidget {
       'Target profile: Mars mid-latitude (Jezero / NE Syrtis). Slope and relief limits also bound lunar trafficability, but lunar thermal and illumination extremes are not scored: the Moon comparison here is trafficability + access only, and every record says so.',
       style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
     )),
+    const _SectionLabel('ESTABLISHED ANALOGS — NOT SCORED THIS RUN'),
+    Panel(child: const Text(
+      'Río Tinto, Haughton Crater, McMurdo Dry Valleys, Pampas de La Joya, Wadi Rum, Death Valley and Askja are established planetary analogs. They are outside the Nepal crop and were not scored: the shared OpenAlex attention budget was exhausted mid-run, and scoring them with a broken attention term would have been dishonest. They are listed here so the omission is explicit, not hidden.',
+      style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
+    )),
     const _SectionLabel('DATA & CREDITS'),
     Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
       Text('Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015–2024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.',

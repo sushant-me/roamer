@@ -62,6 +62,13 @@ cd tools && npm install pngjs && node build_data.js
 
 The pipeline fetches Terrarium elevation tiles, Open-Meteo climate, and OpenAlex counts, then writes `assets/data/roamer_data.json` and `assets/map/hillshade.png` (Nepal crop, rendered locally from the same DEM tiles).
 
+## External review & known limits
+
+- **Human methodology review** (arunlohar11, Space Apps Connect #2115) — feedback incorporated: threshold sensitivity, suitability-vs-research-priority framing, 500 m-vs-climate resolution mismatch, SRTM geology limits, "shortlist for investigation, not certification".
+- **ChatGPT reviews**: 20 → 23 → **24/25** across three passes.
+- **Global analogs not scored this run**: Río Tinto, Haughton Crater, McMurdo Dry Valleys, Pampas de La Joya, Wadi Rum, Death Valley, Askja. They were added, then removed because the shared OpenAlex attention budget was exhausted and attention collapsed to zero — a corrupted metric. Listed here so the omission is explicit.
+- **Limits**: 34 records concentrated in Nepal + Atacama; thermal scored on ERA5 air temperature (MERRA-2 skin and soil 6 cm shown as context); terrain SRTM-derived at 500 m; no MODIS LST (needs Earthdata login); operability is an analyst-assigned judgment.
+
 ## Credits
 
 Terrarium terrain tiles (AWS Open Data; SRTM-derived), NASA POWER/Open-Meteo climate, OpenAlex, NASA PDS MOLA/THEMIS target values, OpenStreetMap attribution for any basemap. Built during the 2026 NASA Space Apps Challenge, 14–15 November 2026 — no project work before the hackathon.
