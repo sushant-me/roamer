@@ -450,7 +450,7 @@ class SiteScreen extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           child: Text(
-            'Ground thermal context (ERA5-Land soil, 6 cm, 2024): seasonal ±${site.thermal['soil_seasonal_amp_k'] ?? '—'} K · diurnal ±${site.thermal['soil_diurnal_amp_k'] ?? '—'} K — context only, not scored.',
+            'Ground thermal context: skin (MERRA-2/NASA POWER) seasonal ±${site.thermal['skin_seasonal_amp_k'] ?? '—'} K · soil 6 cm (ERA5-Land 2024) seasonal ±${site.thermal['soil_seasonal_amp_k'] ?? '—'} K, diurnal ±${site.thermal['soil_diurnal_amp_k'] ?? '—'} K — context only, not scored.',
             style: const TextStyle(color: kGrey, fontSize: 10, height: 1.4),
           ),
         ),
@@ -458,13 +458,13 @@ class SiteScreen extends StatelessWidget {
         Panel(child: Wrap(spacing: 8, runSpacing: 8, children: _coverage())),
         const _SectionLabel('UNCERTAINTY — WHERE THE NUMBER COULD MOVE'),
         Panel(child: Text(
-          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature, not MODIS skin temperature. Attention: an OpenAlex keyword count. $totalRecords records is a regional shortlist, not a global survey — read the gap as a screening signal, not a probability.',
+          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature is scored; MERRA-2 skin and ERA5-Land soil are context. Attention: an OpenAlex keyword count. $totalRecords records is a regional shortlist, not a global survey — read the gap as a screening signal, not a probability.',
           style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
         )),
         const _SectionLabel('PROVENANCE (EVERY NUMBER TRACEABLE)'),
         Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           _prov('Terrain', 'AWS Terrain Tiles (Terrarium, SRTM-derived) · z12 · 500 m block-average · slope Horn'),
-          _prov('Thermal', 'Open-Meteo ERA5 air temperature 2015–2024 (scored) + ERA5-Land soil at 6 cm 2024 (ground context)'),
+          _prov('Thermal', 'Open-Meteo ERA5 air temperature (scored) + MERRA-2 skin (NASA POWER) + ERA5-Land soil 6 cm (context)'),
           _prov('Illumination', 'Solar geometry (NOAA-style) · worst-solstice noon elevation'),
           _prov('Literature', 'OpenAlex works count for the site name (attention proxy)'),
           _prov('Targets', 'Published Mars mid-latitude statistics (MOLA/THEMIS) · documented ranges'),
