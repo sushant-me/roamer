@@ -1,0 +1,23 @@
+const { chromium } = require('/home/logic/node_modules/playwright');
+(async()=>{
+  const browser = await chromium.launch({args:['--no-sandbox']});
+  const ctx = await browser.newContext({viewport:{width:1440,height:1000}});
+  const page = await ctx.newPage();
+  const errs=[]; page.on('pageerror', e=>errs.push(String(e).slice(0,200)));
+  await page.goto('http://127.0.0.1:8099/', {waitUntil:'networkidle', timeout:60000});
+  await page.waitForTimeout(6000);
+  await page.screenshot({path:'/tmp/s1_find.png'});
+  await page.mouse.click(720, 740); await page.waitForTimeout(2500);
+  await page.screenshot({path:'/tmp/s2_record.png'});
+  await page.mouse.wheel(0, 800); await page.waitForTimeout(1200); await page.screenshot({path:'/tmp/s3_record.png'});
+  await page.mouse.wheel(0, 800); await page.waitForTimeout(1200); await page.screenshot({path:'/tmp/s4_record.png'});
+  await page.mouse.wheel(0, 800); await page.waitForTimeout(1200); await page.screenshot({path:'/tmp/s5_record.png'});
+  await page.goto('http://127.0.0.1:8099/', {waitUntil:'networkidle', timeout:60000}); await page.waitForTimeout(5000);
+  await page.mouse.click(720, 952); await page.waitForTimeout(2500); await page.screenshot({path:'/tmp/s6_gap.png'});
+  await page.goto('http://127.0.0.1:8099/', {waitUntil:'networkidle', timeout:60000}); await page.waitForTimeout(5000);
+  await page.mouse.click(1120, 952); await page.waitForTimeout(2500); await page.screenshot({path:'/tmp/s7_method.png'});
+  const m = await browser.newContext({viewport:{width:390,height:844}, deviceScaleFactor:2, isMobile:true});
+  const mp = await m.newPage(); await mp.goto('http://127.0.0.1:8099/', {waitUntil:'networkidle', timeout:60000}); await mp.waitForTimeout(6000);
+  await mp.screenshot({path:'/tmp/s8_mobile.png'});
+  await browser.close(); console.log('errors:', errs.length?errs:'none');
+})();
