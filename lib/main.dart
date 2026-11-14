@@ -848,7 +848,7 @@ class MethodView extends StatelessWidget {
       ...globalScreening.map((g) => Padding(
         padding: const EdgeInsets.symmetric(vertical: 3),
         child: Text(
-          '${g['name']} (${g['country']}) · similarity ${g['similarity']} · Crossref-proxy gap ${g['secondary_gap'] ?? '—'}',
+          '${g['name']} (${g['country']}) · similarity ${g['similarity']} · ${g['openalex_gap'] != null ? 'gap ${g['openalex_gap']} (OpenAlex)' : 'Crossref-proxy gap ${g['secondary_gap'] ?? '—'}'}',
           style: const TextStyle(color: kInk, fontSize: 12, fontFamily: 'monospace'),
         ),
       )),

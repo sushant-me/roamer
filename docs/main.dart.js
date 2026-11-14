@@ -83083,9 +83083,10 @@ A.a5O.prototype={
 $0(){return B.b.gW(this.a.c)},
 $S:525}
 A.a5P.prototype={
-$1(a){var s=null,r=J.bo(a),q=A.k(r.h(a,"name")),p=A.k(r.h(a,"country")),o=A.k(r.h(a,"similarity"))
-r=r.h(a,"secondary_gap")
-return new A.bu(B.DJ,A.b2(q+" ("+p+") \xb7 similarity "+o+" \xb7 Crossref-proxy gap "+A.k(r==null?"\u2014":r),s,s,s,B.PT,s,s),s)},
+$1(a){var s="openalex_gap",r=null,q=J.bo(a),p=A.k(q.h(a,"name")),o=A.k(q.h(a,"country")),n=A.k(q.h(a,"similarity"))
+if(q.h(a,s)!=null)q="gap "+A.k(q.h(a,s))+" (OpenAlex)"
+else{q=q.h(a,"secondary_gap")
+q="Crossref-proxy gap "+A.k(q==null?"\u2014":q)}return new A.bu(B.DJ,A.b2(p+" ("+o+") \xb7 similarity "+n+" \xb7 "+q,r,r,r,B.PT,r,r),r)},
 $S:526}
 A.bq.prototype={
 dm(a){var s=a.a,r=this.a,q=s[15]
