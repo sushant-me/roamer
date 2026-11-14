@@ -10,7 +10,7 @@ ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 
 **Android APK:** https://github.com/sushant-me/roamer/releases/latest
 **Backup deck (7 slides):** https://sushant-me.github.io/roamer/roamer_deck_7slides.pdf
 **One-pager (PDF):** https://sushant-me.github.io/roamer/roamer_one_pager.pdf (download `app-release.apk`)
-**Demo video (29 s, narrated):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4 — narration is SI-generated (text-to-speech), disclosed in the project page.
+**Demo video (25 s, narrated):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4 — narration is SI-generated (text-to-speech), disclosed in the project page.
 **Captions (SRT):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.srt
 **Captioned video (no sound needed):** https://sushant-me.github.io/roamer/video/roamer_demo_30s_captions.mp4
 
@@ -27,7 +27,7 @@ ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 
 3. Scroll: five checks, mismatch ledger, target-σ bars, coverage tiles, provenance.
 4. Tap **MISSION BRIEF** → **COPY BRIEF AS TEXT**.
 5. Back → **SURVEY GAP** tab: why Atacama (known) and Pokhara (wet) cannot win, and why Chhusang and Kagbeni can.
-6. The 29 s narrated demo is in the repo header; the Android APK is on the release page.
+6. The 25 s narrated demo is in the repo header; the Android APK is on the release page.
 
 ## Screens
 

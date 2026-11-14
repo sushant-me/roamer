@@ -1,36 +1,32 @@
 1
-00:00:01,600 --> 00:00:05,000
-NASA Space Apps, twenty twenty-six.
+00:00:00,050 --> 00:00:04,107
+Every Moon and Mars mission needs a place on Earth to test.
 
 2
-00:00:05,000 --> 00:00:08,400
-Find places on Earth that analog Moon and Mars bases.
+00:00:04,107 --> 00:00:07,206
+But the famous analogs are already studied to death.
 
 3
-00:00:08,400 --> 00:00:12,400
-ROAMER scores thirty-four sites on a common
-five hundred metre grid,
+00:00:07,206 --> 00:00:15,089
+ROAMER scores thirty-four sites on one five hundred metre grid, shows where the analogy breaks, and ranks them by research gap.
 
 4
-00:00:12,400 --> 00:00:16,600
-shows where the analogy breaks, and ranks
-them by what nobody has studied.
+00:00:15,089 --> 00:00:18,852
+Atacama passes, but scores zero: already studied.
 
 5
-00:00:16,600 --> 00:00:19,600
-Atacama passes. Pokhara fails.
+00:00:18,852 --> 00:00:20,089
+Pokhara fails.
 
 6
-00:00:19,600 --> 00:00:22,800
-Chhusang leads, with Kagbeni close behind.
+00:00:20,089 --> 00:00:21,326
+Chhusang leads.
 
 7
-00:00:22,800 --> 00:00:25,400
-Paste coordinates, and it finds
-the nearest characterized site.
+00:00:21,326 --> 00:00:22,780
+Find the Moon on Earth.
 
 8
-00:00:25,400 --> 00:00:29,000
-We do not claim Earth is another planet.
-We quantify how close it gets —
-and what still makes it different.
+00:00:22,780 --> 00:00:23,954
+Prove it with data.
+
