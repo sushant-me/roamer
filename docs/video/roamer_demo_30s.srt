@@ -1,32 +1,32 @@
 1
-00:00:00,050 --> 00:00:00,790
+00:00:00,100 --> 00:00:01,682
 Look up.
 
 2
-00:00:00,790 --> 00:00:04,119
+00:00:01,632 --> 00:00:05,063
 AstroLens turns your phone into a space guide.
 
 3
-00:00:04,119 --> 00:00:07,563
+00:00:05,063 --> 00:00:08,762
 Point it at the night sky and it names the stars above you.
 
 4
-00:00:07,563 --> 00:00:12,474
-Explore them in AR, see what is visible tonight, and watch how Earth formed.
+00:00:08,762 --> 00:00:16,147
+Explore stars in a 360 degree dome, fly a 3D solar system of every planet, and watch how Earth formed.
 
 5
-00:00:12,474 --> 00:00:18,482
+00:00:16,147 --> 00:00:21,926
 Then switch to Earth analogs: the real places on Earth where we should test Moon and Mars hardware.
 
 6
-00:00:18,482 --> 00:00:19,732
+00:00:21,926 --> 00:00:23,839
 AstroLens.
 
 7
-00:00:19,732 --> 00:00:20,522
+00:00:23,839 --> 00:00:25,420
 Look up.
 
 8
-00:00:20,522 --> 00:00:21,594
+00:00:25,420 --> 00:00:27,308
 Understand.
 
