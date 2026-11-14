@@ -14,10 +14,10 @@ ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 
 ## If you are a judge (30 seconds)
 
 1. Open https://sushant-me.github.io/roamer/ — wait ~3 s for the map.
-2. Tap the yellow **Kagbeni** pin (or type `Kagbeni`) → the case file opens.
+2. Tap the yellow **Chhusang** pin (or type `Chhusang`) → the case file opens.
 3. Scroll: five checks, mismatch ledger, target-σ bars, coverage tiles, provenance.
 4. Tap **MISSION BRIEF** → **COPY BRIEF AS TEXT**.
-5. Back → **SURVEY GAP** tab: why Atacama (known) and Pokhara (wet) cannot win, and why Kagbeni can.
+5. Back → **SURVEY GAP** tab: why Atacama (known) and Pokhara (wet) cannot win, and why Chhusang and Kagbeni can.
 6. The 29 s narrated demo is in the repo header; the Android APK is on the release page.
 
 ## Screens
