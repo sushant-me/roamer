@@ -7,7 +7,8 @@ NASA Space Apps Challenge 2026 · Bhaktapur (Virtual) · challenge: **Identify E
 ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by **survey gap** — similarity × how little the literature has studied them × whether a crew can get there — then turns the best into a field brief.
 
 **Live web app:** https://sushant-me.github.io/roamer/
-**Android APK:** https://github.com/sushant-me/roamer/releases/latest (download `app-release.apk`)
+**Android APK:** https://github.com/sushant-me/roamer/releases/latest
+**Backup deck (7 slides):** https://sushant-me.github.io/roamer/roamer_deck_7slides.pdf (download `app-release.apk`)
 **Demo video (29 s, narrated):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4
 
 ## Screens
