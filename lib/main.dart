@@ -291,7 +291,7 @@ class _FindViewState extends State<FindView> {
           style: TextStyle(color: kGrey, fontSize: 10, height: 1.4)),
     ));
     for (final s in filtered) {
-      children.add(SiteCard(site: s, rank: widget.sites.indexOf(s) + 1, onTap: () => widget.onOpen(s)));
+      children.add(SiteCard(site: s, rank: widget.sites.indexOf(s) + 1, top: s.id == widget.sites.first.id, onTap: () => widget.onOpen(s)));
     }
     return _page(children);
   }
@@ -326,8 +326,9 @@ class _FindViewState extends State<FindView> {
 class SiteCard extends StatelessWidget {
   final Site site;
   final int rank;
+  final bool top;
   final VoidCallback onTap;
-  const SiteCard({super.key, required this.site, required this.rank, required this.onTap});
+  const SiteCard({super.key, required this.site, required this.rank, required this.onTap, this.top = false});
   @override
   Widget build(BuildContext context) => InkWell(
     onTap: onTap,
@@ -351,6 +352,13 @@ class SiteCard extends StatelessWidget {
       ]),
       const SizedBox(height: 10),
       _bar(site.gap, kYellow),
+      if (top) Padding(
+        padding: const EdgeInsets.only(top: 8),
+        child: Text(
+          'WHY #1 · gap = ${site.similarity.toStringAsFixed(2)} × (1 − ${site.attention.toStringAsFixed(2)}) × ${site.operability.toStringAsFixed(2)} = ${site.gap.toStringAsFixed(2)}',
+          style: const TextStyle(color: kYellow, fontSize: 10, fontFamily: 'monospace', height: 1.3),
+        ),
+      ),
     ])),
   );
   Widget _stat(String v, String l, {bool accent = false}) => Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
