@@ -374,7 +374,7 @@ break
 default:s=null}s=A.a_(s,t.N)
 return s},
 aJz(){var s=A.cC().b,r=s==null?null:s.canvasKitVariant
-s=A.aLZ(A.aDW(B.GS,r==null?"auto":r))
+s=A.aLZ(A.aDW(B.GT,r==null?"auto":r))
 return new A.a8(s,new A.anI(),A.a1(s).i("a8<1,D>"))},
 aLj(a,b){return b+a},
 W9(){var s=0,r=A.P(t.m),q,p,o,n
@@ -874,7 +874,7 @@ a.l()
 return n},
 hP(a){return new A.xt(a)},
 aLI(a){var s,r,q,p,o,n,m
-A:for(s=a.length,r=0;r<6;++r){q=B.FW[r]
+A:for(s=a.length,r=0;r<6;++r){q=B.FX[r]
 p=q.c
 o=p.length
 if(s<o)continue A
@@ -1564,11 +1564,11 @@ arG(a){var s=!1
 if($.b4().gcH()===B.ay||$.b4().gcH()===B.bz)if(a!=null)s=a===".SF Pro Text"||a===".SF Pro Display"||a===".SF UI Text"||a===".SF UI Display"
 return s},
 axN(){if(A.ayT())return B.nH
-if($.b4().gcH()===B.ay||$.b4().gcH()===B.bz)return B.Gn
+if($.b4().gcH()===B.ay||$.b4().gcH()===B.bz)return B.Go
 throw A.i(A.aN("Should only be called on Mac or iOS."))},
 aKG(){if(A.ayT())return B.nH
 if($.b4().gcH()===B.ay||$.b4().gcH()===B.bz)return A.axN()
-return B.Gk},
+return B.Gl},
 ayw(a,b){var s,r,q,p,o=new A.ce("")
 A.ayf(a,o)
 if(!A.arH(a)&&!A.arG(a)){s=b==null
@@ -10962,8 +10962,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.be(s,200)
-r=A.be(A.ZG(l,B.nJ,B.Gp),24)
-q=A.be(A.ZG(l,B.nJ,B.H_),32)
+r=A.be(A.ZG(l,B.nJ,B.Gq),24)
+q=A.be(A.ZG(l,B.nJ,B.H0),32)
 p=A.be(l.a,10)
 o=A.be(l.a,12)
 l.d===$&&A.a()
@@ -19098,7 +19098,7 @@ r.toString
 A.ci(r)
 q=a.h(0,"swipeEdge")
 q.toString
-return new A.m2(s,r,B.GL[A.d6(q)])},
+return new A.m2(s,r,B.GM[A.d6(q)])},
 Ap:function Ap(a,b){this.a=a
 this.b=b},
 m2:function m2(a,b,c){this.a=a
@@ -21216,7 +21216,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 aDK(a,b){var s=A.a1(b).i("a8<1,da>")
 s=A.a_(new A.a8(b,new A.a_A(),s),s.i("ar.E"))
-return A.aD7(!0,s,a,B.H8,!0,B.D5,null)},
+return A.aD7(!0,s,a,B.H9,!0,B.D5,null)},
 apM(a){var s
 try{a.dz()}catch(s){a.LR()}a.w=B.Wh
 try{a.b3(A.aLV())}catch(s){}},
@@ -21813,7 +21813,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 aq7(a,b){var s
-if(a.j(0,b))return new A.GM(B.Hb)
+if(a.j(0,b))return new A.GM(B.Hc)
 s=A.c([],t.fJ)
 A.c0()
 a.my(new A.a2p(b,A.aD(t.u),s))
@@ -22190,7 +22190,7 @@ t.Dn.a(a)
 s=J.br(a)
 r=s.h(a,0)
 r.toString
-switch(B.G4[A.d6(r)].a){case 0:s=s.h1(a,1)
+switch(B.G5[A.d6(r)].a){case 0:s=s.h1(a,1)
 r=s[0]
 r.toString
 A.d6(r)
@@ -25745,7 +25745,7 @@ if(p!==0)return p
 return A.atw(A.aEo(q,r))},
 atx(a,b,c){return((a&255)<<16|(b&255)<<8|c&255|4278190080)>>>0},
 atw(a){return A.atx(A.Yx(a[0]),A.Yx(a[1]),A.Yx(a[2]))},
-wd(a){return A.aql(A.c([A.wc(B.j.fa(a,16)&255),A.wc(B.j.fa(a,8)&255),A.wc(a&255)],t.n),B.G6)},
+wd(a){return A.aql(A.c([A.wc(B.j.fa(a,16)&255),A.wc(B.j.fa(a,8)&255),A.wc(a&255)],t.n),B.G7)},
 ns(a){return 100*A.aCK((a+16)/116)},
 aty(a){return A.nr(a/100)*116-16},
 wc(a){var s=a/255
@@ -26001,7 +26001,7 @@ $1(a){this.a.b=A.az2(a.getOutputBounds(A.cf(this.b)))},
 $S:2}
 A.qx.prototype={
 gaaq(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.b.p(B.FU,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.b.p(B.FV,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 r1(){return $.aK.aU().ColorFilter.MakeMatrix(this.gaaq())},
@@ -26764,7 +26764,7 @@ ul(){var s=this.as
 s===$&&A.a()
 return s},
 um(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Hj
+if(a<0||b<0)return B.Hk
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -26783,7 +26783,7 @@ l.push(new A.dI(n[0],n[1],n[2],n[3],B.k5[m]))}return l},
 cJ(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
-r=B.GN[J.ae(s.affinity.value)]
+r=B.GO[J.ae(s.affinity.value)]
 return new A.a2(J.ae(s.pos),r)},
 Ih(a){var s=this.a
 s===$&&A.a()
@@ -27029,7 +27029,7 @@ j(a,b){if(b==null)return!1
 if(!(b instanceof A.wV))return!1
 return b.d===this.d&&b.b==this.b&&A.f_(b.c,this.c)},
 gv(a){var s=this,r=s.c
-return A.H(s.d,s.a,s.b,A.bk(r==null?B.Ha:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.H(s.d,s.a,s.b,A.bk(r==null?B.Hb:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 $ifH:1}
 A.vR.prototype={
 Rq(a,b){var s=this.Lm(a),r=A.aL(new A.XT(this,b,s))
@@ -27568,7 +27568,7 @@ p.toString
 p=p>0}else p=!1
 if(p)return q}o=this.a4Z(a,b)
 if(o.length===1)return B.b.gX(o)
-for(r=0;r<7;++r){q=A.au5(o,new A.a0q(B.Gu[r]))
+for(r=0;r<7;++r){q=A.au5(o,new A.a0q(B.Gv[r]))
 if(q!=null)return q}return B.b.gX(o)},
 a5J(a){var s,r,q
 if(B.hl.aq(a)){s=B.hl.h(0,a)
@@ -29204,7 +29204,7 @@ if(e.b){q=t.f
 d=q.a(q.a(B.bP.fj(a2)).h(0,"data"))
 c=A.cs(d.h(0,"message"))
 if(c!=null&&c.length!==0){b=A.aqd(d,"assertiveness")
-e.a.RE(c,B.Gl[b==null?0:b])}}a.eH(a3,B.bP.bB(!0))
+e.a.RE(c,B.Gm[b==null?0:b])}}a.eH(a3,B.bP.bB(!0))
 return
 case"flutter/navigation":q=a.gcD().b
 p=t.e8
@@ -32220,7 +32220,7 @@ if(m.f!==B.np){m.f=B.np
 m.NN()}}return m.d.a.XU(a)},
 NN(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-XT(a){if(B.b.p(B.H2,a))return this.f===B.h3
+XT(a){if(B.b.p(B.H3,a))return this.f===B.h3
 return!1}}
 A.a0a.prototype={
 $0(){return new A.iC(Date.now(),0,!1)},
@@ -33801,7 +33801,7 @@ o=A.d6(s.h(0,"textAlignIndex"))
 n=A.d6(s.h(0,"textDirectionIndex"))
 m=A.ft(s.h(0,"fontWeightIndex"))
 l=m!=null?A.ayI(m):"normal"
-p=new A.acW(new A.a_w(A.a2G(s,"fontSize"),l,A.cs(s.h(0,"fontFamily")),B.Gi[o],B.k5[n],A.a2G(s,"letterSpacing"),A.a2G(s,"wordSpacing"),A.a2G(s,"lineHeight")))
+p=new A.acW(new A.a_w(A.a2G(s,"fontSize"),l,A.cs(s.h(0,"fontFamily")),B.Gj[o],B.k5[n],A.a2G(s,"letterSpacing"),A.a2G(s,"wordSpacing"),A.a2G(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.Bg
 break
@@ -38983,7 +38983,7 @@ if(o>0)return s
 return null}}
 A.aeR.prototype={
 E(a,b){this.Lj(b,0,b.length,!1)},
-bQ(){this.Lj(B.H6,0,0,!0)}}
+bQ(){this.Lj(B.H7,0,0,!0)}}
 A.ana.prototype={
 Lj(a,b,c,d){var s=this.b.aj1(a,b,c,d)
 if(s!=null)this.a.n9(s,0,s.length,d)}}
@@ -42212,7 +42212,7 @@ r=A.rD(B.Kb,B.f,r==null?1:r)
 r.toString
 q=p.af(q.gq())
 if(q==null)q=1
-return A.awv(A.avz(null,B.H,new A.rq(q,B.GJ,new A.d4(B.A2,this.e)),s,1,B.O3),r)}}
+return A.awv(A.avz(null,B.H,new A.rq(q,B.GK,new A.d4(B.A2,this.e)),s,1,B.O3),r)}}
 A.Fb.prototype={
 l(){var s=this,r=s.bq$
 if(r!=null)r.I(s.gha())
@@ -45401,7 +45401,7 @@ n=o.e
 o=o.cx
 r=q.ga9Q()
 q.a.toString
-return new A.Bj(p,p,p,new A.aiG(),p,p,p,p,p,n,B.Jq,p,p,p,B.Hf,q.ga9X(),o,p,B.RH,s,p,r,p,p,B.nI,!1,!1,p,p,p,new A.nY(q,t.bT))},
+return new A.Bj(p,p,p,new A.aiG(),p,p,p,p,p,n,B.Jq,p,p,p,B.Hg,q.ga9X(),o,p,B.RH,s,p,r,p,p,B.nI,!1,!1,p,p,p,new A.nY(q,t.bT))},
 J(a){var s,r=this.a2s(a)
 this.a.toString
 s=this.d
@@ -45700,7 +45700,7 @@ A.u2.prototype={
 H(){return"_CornerId."+this.b}}
 A.kS.prototype={}
 A.rs.prototype={
-ku(){var s,r,q,p=this,o=A.aKy(B.GY,new A.a5z(p,p.b.gaT().U(0,p.a.gaT()))),n=p.a
+ku(){var s,r,q,p=this,o=A.aKy(B.GZ,new A.a5z(p,p.b.gaT().U(0,p.a.gaT()))),n=p.a
 n.toString
 s=o.a
 r=p.ox(n,s)
@@ -49236,7 +49236,7 @@ r.f=s.d},
 $S:0}
 A.Jw.prototype={
 J(a){var s=this.c.T(0,new A.h(0,40.95))
-return A.avz(A.Yy(null,B.Cr,!0),B.a7,new A.rq(1,B.Hq,new A.d4(B.A1,B.q)),s,1.25,B.O4)}}
+return A.avz(A.Yy(null,B.Cr,!0),B.a7,new A.rq(1,B.Hr,new A.d4(B.A1,B.q)),s,1.25,B.O4)}}
 A.ol.prototype={
 H(){return"MaterialType."+this.b}}
 A.ya.prototype={
@@ -49949,7 +49949,7 @@ $3(a,b,c){return new A.mX(b,this.a,!1,c,null)},
 $S:141}
 A.Kf.prototype={
 a2_(a){var s=t.Tr
-s=A.a_(new A.a8(B.GX,new A.a6P(a),s),s.i("ar.E"))
+s=A.a_(new A.a8(B.GY,new A.a6P(a),s),s.i("ar.E"))
 return s},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -54852,7 +54852,7 @@ return new A.lA(r.a.cK(s.ghX()),r.b,r.c)},
 cJ(a){var s=this.b
 return s.a.c.cJ(a.U(0,s.ghX()))},
 pc(){var s,r,q=this.b,p=q.ghX()
-if(!isFinite(p.a)||!isFinite(p.b))return B.H9
+if(!isFinite(p.a)||!isFinite(p.b))return B.Ha
 s=q.f
 if(s==null){s=q.a.c.pc()
 q.f=s}if(p.j(0,B.f))r=s
@@ -64133,7 +64133,7 @@ break
 case 1:return A.N(q,r)}})
 return A.O($async$Cx,r)},
 a5f(a,b){var s,r,q,p
-if(a===b)return B.He
+if(a===b)return B.Hf
 s=A.c([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.iv(B.ev,a)
@@ -66135,7 +66135,7 @@ A.kq.prototype={}
 A.KA.prototype={
 kT(a,b){var s,r,q,p,o,n=$.W.ab$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.C,r=0;r<2;++r){q=B.H3[r]
+for(s=t.C,r=0;r<2;++r){q=B.H4[r]
 p=n.e
 p.toString
 o=A.apf(p,q,s)
@@ -68003,7 +68003,7 @@ q.b6()
 q.bW$.E(0,s.gaau())
 s.e=q}return q},
 gNt(){var s=this.f
-return s===$?this.f=new A.agu(1,B.Gh,B.bn):s},
+return s===$?this.f=new A.agu(1,B.Gi,B.bn):s},
 gf9(){var s=this.z
 s=s==null?null:$.bM().d===s
 return s===!0},
@@ -68717,7 +68717,7 @@ h.Em()
 r=h.ga5Z()
 q=q.tp
 h.e!==$&&A.aP()
-h.e=new A.LL(f,new A.c9(B.Je,l),new A.og(),p,B.c4,0,k,h.ga88(),h.ga8a(),r,B.c4,0,j,h.ga82(),h.ga84(),r,i,B.Hc,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Hg(),new A.Hg())
+h.e=new A.LL(f,new A.c9(B.Je,l),new A.og(),p,B.c4,0,k,h.ga88(),h.ga8a(),r,B.c4,0,j,h.ga82(),h.ga84(),r,i,B.Hd,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Hg(),new A.Hg())
 return h},
 vo(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -72091,7 +72091,7 @@ j(a,b){var s=this
 if(b==null)return!1
 if(J.K(b)!==A.n(s))return!1
 return b instanceof A.eq&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.cc(null,null)},
-gv(a){return A.H(this.a,this.b,null,this.d,A.bk(B.Hi),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gv(a){return A.H(this.a,this.b,null,this.d,A.bk(B.Hj),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.tZ(B.j.mr(this.a,16).toUpperCase(),5,"0")+")"}}
 A.o3.prototype={
 c5(a){return!this.w.j(0,a.w)},
@@ -73032,7 +73032,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.yf(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qT(a1),B.H7,e===!0,d,c,b,a3,A.aF0(a2))
+a=new A.yf(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qT(a1),B.H8,e===!0,d,c,b,a3,A.aF0(a2))
 if(!a.j(0,a0.e))a0.al(new A.aiX(a0,a))},
 xD(){if(this.d==null)this.oU()},
 FB(){this.oU()},
@@ -73393,7 +73393,7 @@ r.R(0,s.Wa(null,l))
 l.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.Hg[p]
+for(;!1;++p){o=B.Hh[p]
 n=l.c
 n.toString
 m=new A.fY(o.Fn(n),null,!0,B.lB,B.bQ,new A.q3(new ($.Wp())(B.bQ)),B.bQ)
@@ -73744,7 +73744,7 @@ J(a){var s,r,q=this,p=null,o=q.ga7F(),n=A.ly(a),m=q.bE$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.gK()==null){r=q.gKh()
-r=J.iP(r.slice(0),A.a1(r).c)}else r=B.Hh
+r=J.iP(r.slice(0),A.a1(r).c)}else r=B.Hi
 return new A.o0(p,new A.dp(new A.a6s(q,a),A.y2(B.bI,new A.G9(!1,A.apS(A.nN(!0,p,A.MZ(m,new A.rF(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),p,n),p),o,q.ga7y(),p,p,o),p,t.w3),p)}}
 A.a6r.prototype={
 $1(a){var s,r=this.a
@@ -78918,7 +78918,7 @@ r.wv()
 return s.aW()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gCz(),p=0;p<s.length;s.length===r||(0,A.r)(s),++p)s[p].I(q)
-o.b=B.Hd
+o.b=B.He
 o.y=!1
 o.dd()},
 dT(a,b){return a.lS(b)},
@@ -79507,7 +79507,7 @@ g.p2=A.p(t.D2,q)
 p=g.p1
 s=s.c
 g.p1=A.p(s,q)
-for(o=0;o<11;++o){n=B.Gz[o]
+for(o=0;o<11;++o){n=B.GA[o]
 m=f.agS(n)
 l=m==null?null:m.a
 k=p.h(0,n)
@@ -82738,10 +82738,10 @@ else{k=s.length
 if(k===0)k="no characterized record \u2014 see note below"
 else{j=k===1?"":"es"
 j=""+k+" match"+j+" \u2014 tap a record"
-k=j}}e.push(new A.c3(A.ct(A.c([B.U7,B.cU,new A.AH(n,B.P5,B.QT,B.Oe,B.Of,new A.agU(d),!0,c),B.l2,A.bd(k,c,c,c,B.Sd,c,c)],o),B.S,B.u,B.y),c))
-if(r&&b.a!=null)e.push(new A.c3(A.eb(A.c([B.EF,B.l1,A.lu(A.ct(A.c([A.bd(B.c.N(q[0],4)+", "+B.c.N(q[1],4),c,c,c,B.PT,c,c),A.bd("nearest characterized: "+b.a.b+" \xb7 "+B.c.N(p,0)+" km \u2014 this point is not yet characterized",c,c,c,B.dM,c,c)],o),B.S,B.u,B.y)),A.aqU(B.U3,new A.agV(b,d),c)],o),B.a_,B.u,B.y,0),c))
-if(!a0&&a1&&s.length===0)e.push(new A.c3(A.ct(A.c([B.Ul,B.l4,A.bd("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,B.la,c,c)],o),B.S,B.u,B.y),c))
-e.push(new A.c3(A.ct(A.c([A.eb(A.c([B.Uc,A.bd("DEM hillshade \xb7 500 m grid",c,c,c,A.ef(c,c,A.av(204,B.M.B()>>>16&255,B.M.B()>>>8&255,B.M.B()&255),c,c,c,c,c,c,c,c,10,c,c,c,c,c,!0,c,c,c,c,c,c,c,c),c,c)],o),B.a_,B.tJ,B.y,0),B.cU,A.ds(A.auP(new A.agW(d)),330,c),B.cU,A.ar8(A.c([d.CR(B.Z,"candidate"),d.CR(B.bi,"positive control"),d.CR(B.bE,"negative control")],o),6,12),B.l3,B.Ub],o),B.S,B.u,B.y),c))
+k=j}}e.push(new A.c3(A.ct(A.c([B.U8,B.cU,new A.AH(n,B.P5,B.QT,B.Oe,B.Of,new A.agU(d),!0,c),B.l2,A.bd(k,c,c,c,B.Sd,c,c)],o),B.S,B.u,B.y),c))
+if(r&&b.a!=null)e.push(new A.c3(A.eb(A.c([B.EF,B.l1,A.lu(A.ct(A.c([A.bd(B.c.N(q[0],4)+", "+B.c.N(q[1],4),c,c,c,B.PT,c,c),A.bd("nearest characterized: "+b.a.b+" \xb7 "+B.c.N(p,0)+" km \u2014 this point is not yet characterized",c,c,c,B.dM,c,c)],o),B.S,B.u,B.y)),A.aqU(B.U4,new A.agV(b,d),c)],o),B.a_,B.u,B.y,0),c))
+if(!a0&&a1&&s.length===0)e.push(new A.c3(A.ct(A.c([B.Um,B.l4,A.bd("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,B.la,c,c)],o),B.S,B.u,B.y),c))
+e.push(new A.c3(A.ct(A.c([A.eb(A.c([B.Ud,A.bd("DEM hillshade \xb7 500 m grid",c,c,c,A.ef(c,c,A.av(204,B.M.B()>>>16&255,B.M.B()>>>8&255,B.M.B()&255),c,c,c,c,c,c,c,c,10,c,c,c,c,c,!0,c,c,c,c,c,c,c,c),c,c)],o),B.a_,B.tJ,B.y,0),B.cU,A.ds(A.auP(new A.agW(d)),330,c),B.cU,A.ar8(A.c([d.CR(B.Z,"candidate"),d.CR(B.bi,"positive control"),d.CR(B.bE,"negative control")],o),6,12),B.l3,B.Uc],o),B.S,B.u,B.y),c))
 e.push(B.KR)
 for(a0=s.length,m=0;m<s.length;s.length===a0||(0,A.r)(s),++m){l=s[m]
 e.push(new A.M_(l,B.b.iv(d.a.c,l)+1,new A.agX(d,l),c))}return A.iy(new A.em(B.iJ,A.Jp(e,B.jj),c),c,c)},
@@ -82830,7 +82830,7 @@ k.push(B.XD)
 k.push(new A.c3(A.ct(A.c([A.W1("Terrain","AWS Terrain Tiles (Terrarium, SRTM-derived) \xb7 z12 \xb7 500 m block-average \xb7 slope Horn"),A.W1("Thermal","Open-Meteo ERA5 archive 2015\u20132024 \xb7 air temperature (context) \xb7 skin temperature not computed"),A.W1(o,"Solar geometry (NOAA-style) \xb7 worst-solstice noon elevation"),A.W1("Literature","OpenAlex works count for the site name (attention proxy)"),A.W1("Targets","Published Mars mid-latitude statistics (MOLA/THEMIS) \xb7 documented ranges")],j),B.S,B.u,B.y),q))
 k.push(B.XA)
 k.push(new A.c3(A.bd(r.afF(),q,q,q,B.Q8,q,q),q))
-k.push(new A.bJ(B.DP,A.ds(new A.HU(new A.abG(r,a),q,q,q,A.aDN(q,q,B.Z,q,q,q,q,q,q,B.dd,q,q,B.jk,q,q,q,q,q,q,q),q,q,!1,q,!0,q,B.Ud,q),q,1/0),q))
+k.push(new A.bJ(B.DP,A.ds(new A.HU(new A.abG(r,a),q,q,q,A.aDN(q,q,B.Z,q,q,q,q,q,q,B.dd,q,q,B.jk,q,q,q,q,q,q,q),q,q,!1,q,!0,q,B.Ue,q),q,1/0),q))
 return A.aqD(l,A.Jp(k,B.mU),q)},
 afF(){var s=B.tM.ghg(),r=s.jf(s,new A.abC(this)).fO(0,new A.abD(),t.N).em(0)
 s=(r.length!==0?"Fails: "+B.b.bl(r,", ")+". ":"")+"Terrain is SRTM-derived at 500 m, not Copernicus 30 m; thermal is air temperature, not MODIS skin temperature; literature attention is an OpenAlex proxy; target bands are documented ranges, not a single mission measurement. A candidate is not a proven analog \u2014 it is a shortlist entry with its evidence attached."
@@ -82956,7 +82956,7 @@ if(s==null)s=5
 r=B.c.N(0.35*s*d*0.75,2)
 e=g.CW
 q=A.ci(e.h(0,h))<8?"8\u201310 km":"4\u20136 km"
-p=A.at7(B.dd,0,B.lL,B.Ua)
+p=A.at7(B.dd,0,B.lL,B.Ub)
 o=""+f
 n=t.p
 m=A.ct(A.c([A.bd(g.b,i,i,i,B.RJ,i,i),B.l3,A.bd(o+" m \xb7 "+B.c.N(g.r,2)+"\xb0, "+B.c.N(g.w,2)+"\xb0 \xb7 "+g.at+"/"+g.ax+" requirements \xb7 gap "+B.c.N(g.as,2),i,i,i,B.dM,i,i)],n),B.S,B.u,B.y)
@@ -82967,7 +82967,7 @@ g=g.f
 o=A.ct(A.c([A.iq("Altitude",o+" m \u2014 acclimatization day required"),A.iq("Cold","high diurnal range; battery thermal management"),A.iq("Evacuation","road access: "+g)],n),B.a_,B.u,B.y)
 g=A.bd(g,i,i,i,B.la,i,i)
 j=A.aFu(i,i,i,i,i,i,i,i,i,B.Z,i,i,B.jk,i,i,B.A8,i,i,i,i)
-return A.aqD(p,A.Jp(A.c([new A.c3(m,i),B.Xy,new A.c3(B.U0,i),B.XG,new A.c3(l,i),B.XI,new A.c3(k,i),B.XC,new A.c3(e,i),B.XB,new A.c3(o,i),B.Xs,new A.c3(g,i),B.Xv,new A.c3(B.Ut,i),new A.bJ(B.DL,A.ds(new A.Kc(!0,new A.Xu(this,a),i,i,i,j,i,i,!1,i,!0,i,new A.R6(B.Uj,B.EG,j,i,i),i),i,1/0),i)],n),B.mU),i)}}
+return A.aqD(p,A.Jp(A.c([new A.c3(m,i),B.Xy,new A.c3(B.U0,i),B.XG,new A.c3(l,i),B.XI,new A.c3(k,i),B.XC,new A.c3(e,i),B.XB,new A.c3(o,i),B.Xs,new A.c3(g,i),B.Xv,new A.c3(B.Ut,i),new A.bJ(B.DL,A.ds(new A.Kc(!0,new A.Xu(this,a),i,i,i,j,i,i,!1,i,!0,i,new A.R6(B.Uk,B.EG,j,i,i),i),i,1/0),i)],n),B.mU),i)}}
 A.Xu.prototype={
 $0(){var s=0,r=A.P(t.H),q=this,p,o,n,m,l,k,j
 var $async$$0=A.Q(function(a,b){if(a===1)return A.M(b,r)
@@ -82991,7 +82991,7 @@ return A.O($async$$0,r)},
 $S:28}
 A.JL.prototype={
 J(a){var s=null
-return A.iy(new A.em(B.iJ,A.Jp(A.c([B.En,new A.c3(A.ct(B.HM,B.S,B.u,B.y),s),new A.c3(A.ct(B.Hx,B.S,B.u,B.y),s),B.Xx,new A.c3(A.ct(B.Gs,B.S,B.u,B.y),s),B.XF,new A.c3(B.Un,s),B.XE,new A.c3(A.ct(B.Gy,B.S,B.u,B.y),s),B.Xw,new A.c3(A.ct(B.Hk,B.S,B.u,B.y),s),new A.bJ(B.mW,A.bd("Generated "+A.k(this.d.h(0,"generated")),s,s,s,B.T8,s,s),s)],t.p),B.jj),s),s,s)}}
+return A.iy(new A.em(B.iJ,A.Jp(A.c([B.En,new A.c3(A.ct(B.HM,B.S,B.u,B.y),s),new A.c3(A.ct(B.Fy,B.S,B.u,B.y),s),B.Xx,new A.c3(A.ct(B.Gt,B.S,B.u,B.y),s),B.XF,new A.c3(B.Un,s),B.XE,new A.c3(A.ct(B.Gz,B.S,B.u,B.y),s),B.Xw,new A.c3(A.ct(B.Hl,B.S,B.u,B.y),s),new A.bJ(B.mW,A.bd("Generated "+A.k(this.d.h(0,"generated")),s,s,s,B.T8,s,s),s)],t.p),B.jj),s),s,s)}}
 A.bp.prototype={
 dm(a){var s=a.a,r=this.a,q=s[15]
 r.$flags&2&&A.ay(r)
@@ -85988,7 +85988,7 @@ B.Bo=new A.adK()
 B.al=new A.adL()
 B.d9=new A.adN()
 B.dO=new A.N7(0,0,0,0)
-B.H7=s([],A.aq("z<aNp>"))
+B.H8=s([],A.aq("z<aNp>"))
 B.XW=new A.adT()
 B.da=new A.Nq()
 B.cB=new A.Nr()
@@ -86547,38 +86547,44 @@ B.nC=new A.xZ(0,"opportunity")
 B.k3=new A.xZ(2,"mandatory")
 B.nD=new A.xZ(3,"endOfText")
 B.Fs=new A.y1(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.GZ=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
-B.GI=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
+B.H_=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.GJ=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.HL=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.Fv=s([B.GZ,B.GI,B.HL],t.zg)
+B.Fv=s([B.H_,B.GJ,B.HL],t.zg)
 B.nE=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
-B.FU=s([4,9,14,19],t.t)
-B.Hv=s([137,80,78,71,13,10,26,10],t.Z)
+B.z3=new A.j(!0,B.M,null,null,null,null,10,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.U6=new A.bN("THE CLAIM",null,B.z3,null,null,null,null,null,null)
+B.cU=new A.dd(null,8,null,null)
+B.Rl=new A.j(!0,B.ap,null,null,null,null,14,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.U3=new A.bN("Name a site in the roamer test range, or paste coordinates anywhere. ROAMER scores the nearest characterized record against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by survey coverage \xd7 operability \u2014 then turns the best into a field brief.",null,B.Rl,null,null,null,null,null,null)
+B.Fy=s([B.U6,B.cU,B.U3],t.p)
+B.FV=s([4,9,14,19],t.t)
+B.Hw=s([137,80,78,71,13,10,26,10],t.Z)
 B.EP=new A.lE(0,"png")
 B.EX=new A.iM(B.EP,!1,0,"png")
-B.EN=new A.k7(B.Hv,B.EX,0,"png")
-B.Hw=s([71,73,70,56,55,97],t.Z)
-B.EM=new A.k7(B.Hw,B.h5,1,"gif87a")
-B.GW=s([71,73,70,56,57,97],t.Z)
-B.EL=new A.k7(B.GW,B.h5,2,"gif89a")
+B.EN=new A.k7(B.Hw,B.EX,0,"png")
+B.Hx=s([71,73,70,56,55,97],t.Z)
+B.EM=new A.k7(B.Hx,B.h5,1,"gif87a")
+B.GX=s([71,73,70,56,57,97],t.Z)
+B.EL=new A.k7(B.GX,B.h5,2,"gif89a")
 B.Fw=s([255,216,255],t.Z)
 B.EQ=new A.lE(2,"jpeg")
 B.F0=new A.iM(B.EQ,!1,3,"jpeg")
 B.EO=new A.k7(B.Fw,B.F0,3,"jpeg")
-B.Gg=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
-B.EK=new A.k7(B.Gg,B.nw,4,"webp")
-B.G9=s([66,77],t.Z)
+B.Gh=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
+B.EK=new A.k7(B.Gh,B.nw,4,"webp")
+B.Ga=s([66,77],t.Z)
 B.ER=new A.lE(4,"bmp")
 B.EZ=new A.iM(B.ER,!1,6,"bmp")
-B.EJ=new A.k7(B.G9,B.EZ,5,"bmp")
-B.FW=s([B.EN,B.EM,B.EL,B.EO,B.EK,B.EJ],A.aq("z<k7>"))
+B.EJ=new A.k7(B.Ga,B.EZ,5,"bmp")
+B.FX=s([B.EN,B.EM,B.EL,B.EO,B.EK,B.EJ],A.aq("z<k7>"))
 B.lC=new A.DJ(0,"named")
 B.zF=new A.DJ(1,"anonymous")
-B.G4=s([B.lC,B.zF],A.aq("z<DJ>"))
-B.GK=s([0.41233895,0.35762064,0.18051042],t.n)
-B.Gr=s([0.2126,0.7152,0.0722],t.n)
+B.G5=s([B.lC,B.zF],A.aq("z<DJ>"))
+B.GL=s([0.41233895,0.35762064,0.18051042],t.n)
+B.Gs=s([0.2126,0.7152,0.0722],t.n)
 B.HG=s([0.01932141,0.11916382,0.95034478],t.n)
-B.G6=s([B.GK,B.Gr,B.HG],t.zg)
+B.G7=s([B.GL,B.Gs,B.HG],t.zg)
 B.nF=s([0,4,12,1,5,13,3,7,15],t.t)
 B.Wx=new A.fq(0,1)
 B.WC=new A.fq(0.5,1)
@@ -86591,43 +86597,43 @@ B.WG=new A.fq(0.8875,0.25)
 B.WE=new A.fq(0.925,0.5)
 B.Wy=new A.fq(0.9625,0.75)
 B.Wz=new A.fq(1,1)
-B.Gh=s([B.Wx,B.WC,B.WF,B.WH,B.WD,B.WB,B.WA,B.WG,B.WE,B.Wy,B.Wz],A.aq("z<fq>"))
+B.Gi=s([B.Wx,B.WC,B.WF,B.WH,B.WD,B.WB,B.WA,B.WG,B.WE,B.Wy,B.Wz],A.aq("z<fq>"))
 B.c3=new A.kD(0,"left")
 B.dK=new A.kD(1,"right")
 B.i0=new A.kD(2,"center")
 B.f3=new A.kD(3,"justify")
 B.aQ=new A.kD(4,"start")
 B.i1=new A.kD(5,"end")
-B.Gi=s([B.c3,B.dK,B.i0,B.f3,B.aQ,B.i1],A.aq("z<kD>"))
-B.Gw=s([2,1.13276676],t.n)
-B.Fz=s([2.18349805,1.20311921],t.n)
-B.Hn=s([2.33888662,1.28698796],t.n)
-B.Hp=s([2.48660575,1.36351941],t.n)
-B.Gm=s([2.62226596,1.44717976],t.n)
-B.Gt=s([2.7514899,1.53385819],t.n)
-B.GU=s([3.36298265,1.98288283],t.n)
-B.GA=s([4.08649929,2.23811846],t.n)
-B.GM=s([4.85481134,2.47563463],t.n)
-B.Gq=s([5.62945551,2.72948597],t.n)
-B.Gx=s([6.43023796,2.98020421],t.n)
-B.nG=s([B.Gw,B.Fz,B.Hn,B.Hp,B.Gm,B.Gt,B.GU,B.GA,B.GM,B.Gq,B.Gx],t.zg)
-B.Gk=s(["Arial"],t.s)
-B.Gl=s([B.iH,B.iI],A.aq("z<vx>"))
-B.Gn=s(["-apple-system","BlinkMacSystemFont"],t.s)
+B.Gj=s([B.c3,B.dK,B.i0,B.f3,B.aQ,B.i1],A.aq("z<kD>"))
+B.Gx=s([2,1.13276676],t.n)
+B.FA=s([2.18349805,1.20311921],t.n)
+B.Ho=s([2.33888662,1.28698796],t.n)
+B.Hq=s([2.48660575,1.36351941],t.n)
+B.Gn=s([2.62226596,1.44717976],t.n)
+B.Gu=s([2.7514899,1.53385819],t.n)
+B.GV=s([3.36298265,1.98288283],t.n)
+B.GB=s([4.08649929,2.23811846],t.n)
+B.GN=s([4.85481134,2.47563463],t.n)
+B.Gr=s([5.62945551,2.72948597],t.n)
+B.Gy=s([6.43023796,2.98020421],t.n)
+B.nG=s([B.Gx,B.FA,B.Ho,B.Hq,B.Gn,B.Gu,B.GV,B.GB,B.GN,B.Gr,B.Gy],t.zg)
+B.Gl=s(["Arial"],t.s)
+B.Gm=s([B.iH,B.iI],A.aq("z<vx>"))
+B.Go=s(["-apple-system","BlinkMacSystemFont"],t.s)
 B.nH=s(["BlinkMacSystemFont"],t.s)
-B.Gp=s([18,15,10,12,15,18,15,12,12],t.n)
+B.Gq=s([18,15,10,12,15,18,15,12,12],t.n)
 B.cn=new A.j(!0,B.M,null,null,null,null,12,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Uf=new A.bN("1. DEM tiles \u2192 500 m block-average \u2192 slope/roughness recomputed (never average slopes).",null,B.cn,null,null,null,null,null,null)
-B.U8=new A.bN("2. Site-pad (1.5 km) and landscape (12 km) features reported separately.",null,B.cn,null,null,null,null,null,null)
+B.Ug=new A.bN("1. DEM tiles \u2192 500 m block-average \u2192 slope/roughness recomputed (never average slopes).",null,B.cn,null,null,null,null,null,null)
+B.U9=new A.bN("2. Site-pad (1.5 km) and landscape (12 km) features reported separately.",null,B.cn,null,null,null,null,null,null)
 B.U_=new A.bN("3. Distances in target-\u03c3 units; conjunctive pass/fail; grey tiles where Earth cannot match.",null,B.cn,null,null,null,null,null,null)
-B.U6=new A.bN("4. Positive control (Atacama) and negative control (Pokhara) included; a method that cannot fail is not a method.",null,B.cn,null,null,null,null,null,null)
-B.Gs=s([B.Uf,B.U8,B.U_,B.U6],t.p)
-B.Gu=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
-B.Ui=new A.bN("\xb7 Terrain is SRTM-derived via Terrarium tiles at 500 m \u2014 not Copernicus 30 m.",null,B.cn,null,null,null,null,null,null)
+B.U7=new A.bN("4. Positive control (Atacama) and negative control (Pokhara) included; a method that cannot fail is not a method.",null,B.cn,null,null,null,null,null,null)
+B.Gt=s([B.Ug,B.U9,B.U_,B.U7],t.p)
+B.Gv=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
+B.Uj=new A.bN("\xb7 Terrain is SRTM-derived via Terrarium tiles at 500 m \u2014 not Copernicus 30 m.",null,B.cn,null,null,null,null,null,null)
 B.U1=new A.bN("\xb7 Thermal is ERA5 air temperature (context); MODIS/Diviner skin temperature needs Earthdata login.",null,B.cn,null,null,null,null,null,null)
 B.Uq=new A.bN("\xb7 Literature attention is an OpenAlex keyword count \u2014 a proxy, not a review.",null,B.cn,null,null,null,null,null,null)
-B.Uk=new A.bN("\xb7 Target bands are documented Mars ranges, not a single mission measurement.",null,B.cn,null,null,null,null,null,null)
-B.Gy=s([B.Ui,B.U1,B.Uq,B.Uk],t.p)
+B.Ul=new A.bN("\xb7 Target bands are documented Mars ranges, not a single mission measurement.",null,B.cn,null,null,null,null,null,null)
+B.Gz=s([B.Uj,B.U1,B.Uq,B.Ul],t.p)
 B.aC=new A.eh(0,"icon")
 B.aS=new A.eh(1,"input")
 B.a9=new A.eh(2,"label")
@@ -86639,7 +86645,7 @@ B.aI=new A.eh(7,"suffixIcon")
 B.bB=new A.eh(8,"helperError")
 B.bC=new A.eh(9,"counter")
 B.cr=new A.eh(10,"container")
-B.Gz=s([B.aC,B.aS,B.a9,B.b_,B.b0,B.b1,B.a5,B.aI,B.bB,B.bC,B.cr],A.aq("z<eh>"))
+B.GA=s([B.aC,B.aS,B.a9,B.b_,B.b0,B.b1,B.a5,B.aI,B.bB,B.bC,B.cr],A.aq("z<eh>"))
 B.HN=new A.oe("en",null,"US")
 B.nI=s([B.HN],t.ss)
 B.nJ=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -86651,26 +86657,26 @@ B.Wk=new A.kT(8,0.12)
 B.Wj=new A.kT(12,0.14)
 B.nK=s([B.Wi,B.Wn,B.Wl,B.Wm,B.Wk,B.Wj],A.aq("z<kT>"))
 B.nL=s([0,21,51,121,151,191,271,321,360],t.n)
-B.GH=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
+B.GI=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
 B.A0=new A.GA(2,"outer")
 B.mo=new A.E(0.09803921568627451,0,0,0,B.h)
 B.f=new A.h(0,0)
 B.Am=new A.dP(0.2,B.A0,B.mo,B.f,11)
-B.GJ=s([B.Am],t.sq)
+B.GK=s([B.Am],t.sq)
 B.yI=new A.Ap(0,"left")
 B.yJ=new A.Ap(1,"right")
-B.GL=s([B.yI,B.yJ],A.aq("z<Ap>"))
+B.GM=s([B.yI,B.yJ],A.aq("z<Ap>"))
 B.X=new A.AC(0,"upstream")
-B.GN=s([B.X,B.i],A.aq("z<AC>"))
+B.GO=s([B.X,B.i],A.aq("z<AC>"))
 B.aj=new A.AG(0,"rtl")
 B.O=new A.AG(1,"ltr")
 B.k5=s([B.aj,B.O],A.aq("z<AG>"))
 B.By=new A.qs(0,"auto")
 B.Bz=new A.qs(1,"full")
 B.BA=new A.qs(2,"chromium")
-B.GS=s([B.By,B.Bz,B.BA],A.aq("z<qs>"))
+B.GT=s([B.By,B.Bz,B.BA],A.aq("z<qs>"))
 B.b7=new A.eA(1,"fuchsia")
-B.GX=s([B.a4,B.b7,B.G,B.aW,B.at,B.aX],A.aq("z<eA>"))
+B.GY=s([B.a4,B.b7,B.G,B.aW,B.at,B.aX],A.aq("z<eA>"))
 B.zm=new A.u2(0,"topLeft")
 B.zp=new A.u2(3,"bottomRight")
 B.Wd=new A.kS(B.zm,B.zp)
@@ -86679,55 +86685,49 @@ B.zn=new A.u2(1,"topRight")
 B.zo=new A.u2(2,"bottomLeft")
 B.We=new A.kS(B.zn,B.zo)
 B.Wf=new A.kS(B.zo,B.zn)
-B.GY=s([B.Wd,B.Wg,B.We,B.Wf],A.aq("z<kS>"))
-B.H_=s([35,30,20,25,30,35,30,25,25],t.n)
-B.H2=s(["click","scroll"],t.s)
+B.GZ=s([B.Wd,B.Wg,B.We,B.Wf],A.aq("z<kS>"))
+B.H0=s([35,30,20,25,30,35,30,25,25],t.n)
+B.H3=s(["click","scroll"],t.s)
 B.Ar=new A.qg()
 B.hE=new A.LE(1,"page")
 B.hF=new A.ec(B.b8,B.hE)
-B.H3=s([B.Ar,B.hF],A.aq("z<aT>"))
-B.He=s([],t.QP)
+B.H4=s([B.Ar,B.hF],A.aq("z<aT>"))
+B.Hf=s([],t.QP)
 B.nN=s([],A.aq("z<aN6>"))
-B.H8=s([],t.D)
-B.Hb=s([],t.fJ)
-B.H9=s([],t.ER)
+B.H9=s([],t.D)
+B.Hc=s([],t.fJ)
+B.Ha=s([],t.ER)
 B.Y3=s([],t.ss)
-B.Hf=s([],t.tc)
+B.Hg=s([],t.tc)
 B.hb=s([],t.jl)
-B.Hh=s([],t.wi)
-B.Hg=s([],A.aq("z<ave<@>>"))
+B.Hi=s([],t.wi)
+B.Hh=s([],A.aq("z<ave<@>>"))
 B.k6=s([],t.AO)
-B.Hd=s([],t.D1)
+B.He=s([],t.D1)
 B.ha=s([],t.QF)
-B.Hj=s([],t.Lx)
-B.Hc=s([],t.AS)
+B.Hk=s([],t.Lx)
+B.Hd=s([],t.AS)
 B.Y4=s([],t.p)
-B.Ha=s([],t.n)
-B.H6=s([],t.t)
+B.Hb=s([],t.n)
+B.H7=s([],t.t)
 B.nO=s([],t.ee)
-B.Hi=s([],t.XS)
+B.Hj=s([],t.XS)
 B.Ql=new A.j(!0,B.M,null,null,null,null,11.5,null,null,null,null,null,1.55,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Uo=new A.bN("Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015\u20132024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.",null,B.Ql,null,null,null,null,null,null)
-B.cU=new A.dd(null,8,null,null)
 B.Eg=new A.Ik(1,"italic")
 B.S3=new A.j(!0,B.M,null,null,null,null,11,null,B.Eg,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.U4=new A.bN("Web: sushant-me.github.io/roamer   \xb7   Android APK: github.com/sushant-me/roamer/releases\nBuilt during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.",null,B.S3,null,null,null,null,null,null)
+B.U5=new A.bN("Web: sushant-me.github.io/roamer   \xb7   Android APK: github.com/sushant-me/roamer/releases\nBuilt during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.",null,B.S3,null,null,null,null,null,null)
 B.SF=new A.j(!0,B.M,null,null,null,null,11,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ug=new A.bN("Built with: Flutter/Dart (web + Android), GitHub Pages, GitHub Releases. SI tools: this assistant was used for code, the data pipeline and copy; every number is recomputed from the sources above and human-reviewed before submission.",null,B.SF,null,null,null,null,null,null)
-B.Hk=s([B.Uo,B.cU,B.U4,B.cU,B.Ug],t.p)
+B.Uh=new A.bN("Built with: Flutter/Dart (web + Android), GitHub Pages, GitHub Releases. SI tools: this assistant was used for code, the data pipeline and copy; every number is recomputed from the sources above and human-reviewed before submission.",null,B.SF,null,null,null,null,null,null)
+B.Hl=s([B.Uo,B.cU,B.U5,B.cU,B.Uh],t.p)
 B.K9=new A.h(0,2)
 B.Al=new A.dP(0.75,B.fh,B.mo,B.K9,1.5)
-B.Hq=s([B.Al],t.sq)
+B.Hr=s([B.Al],t.sq)
 B.ev=s([B.cu,B.ce,B.ff,B.fg,B.iG],t.QP)
-B.z3=new A.j(!0,B.M,null,null,null,null,10,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.U5=new A.bN("THE CLAIM",null,B.z3,null,null,null,null,null,null)
-B.Rl=new A.j(!0,B.ap,null,null,null,null,14,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Um=new A.bN("Name any place on Earth. ROAMER scores it against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by survey coverage \xd7 operability \u2014 then turns the best into a field brief.",null,B.Rl,null,null,null,null,null,null)
-B.Hx=s([B.U5,B.cU,B.Um],t.p)
-B.Gb=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.H4=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
-B.Go=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.HA=s([B.Gb,B.H4,B.Go],t.zg)
+B.Gc=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
+B.H5=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.Gp=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
+B.HA=s([B.Gc,B.H5,B.Gp],t.zg)
 B.HB=s([45,95,45,20,45,90,45,45,45],t.n)
 B.HC=s([120,120,20,45,20,15,20,120,120],t.n)
 B.Ew=new A.eq(58625,"MaterialIcons",!1)
@@ -86776,11 +86776,11 @@ B.LS=new A.a7(0.9594,1.3212)
 B.LW=new A.a7(0.9653,1.3032)
 B.M4=new A.a7(0.9705,1.288)
 B.nQ=s([B.LZ,B.LR,B.M9,B.LN,B.LU,B.LO,B.LQ,B.LP,B.LV,B.LL,B.LS,B.LW,B.M4],A.aq("z<+(G,G)>"))
-B.Ue=new A.bN("CHALLENGE",null,B.z3,null,null,null,null,null,null)
+B.Uf=new A.bN("CHALLENGE",null,B.z3,null,null,null,null,null,null)
 B.l4=new A.dd(null,6,null,null)
 B.la=new A.j(!0,B.ap,null,null,null,null,12.5,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Uh=new A.bN("Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars. NASA Space Apps Challenge 2026, Bhaktapur (Virtual).",null,B.la,null,null,null,null,null,null)
-B.HM=s([B.Ue,B.l4,B.Uh],t.p)
+B.Ui=new A.bN("Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars. NASA Space Apps Challenge 2026, Bhaktapur (Virtual).",null,B.la,null,null,null,null,null,null)
+B.HM=s([B.Uf,B.l4,B.Ui],t.p)
 B.m=new A.y5(0,"ignored")
 B.aM=new A.e(4294967304)
 B.ex=new A.e(4294967323)
@@ -87307,82 +87307,82 @@ B.km=new A.bA(B.bl,[],A.aq("bA<D,@>"))
 B.tP=new A.bA(B.bl,[],A.aq("bA<Ar,@>"))
 B.Jr=new A.bA(B.bl,[],A.aq("bA<fV,cy>"))
 B.tQ=new A.bA(B.bl,[],A.aq("bA<fV,nX<cy>>"))
-B.FN=s([42,null,null,8589935146],t.Z)
-B.FO=s([43,null,null,8589935147],t.Z)
-B.FP=s([45,null,null,8589935149],t.Z)
-B.FQ=s([46,null,null,8589935150],t.Z)
-B.FR=s([47,null,null,8589935151],t.Z)
-B.FS=s([48,null,null,8589935152],t.Z)
-B.FT=s([49,null,null,8589935153],t.Z)
-B.FV=s([50,null,null,8589935154],t.Z)
-B.FX=s([51,null,null,8589935155],t.Z)
-B.FY=s([52,null,null,8589935156],t.Z)
-B.FZ=s([53,null,null,8589935157],t.Z)
-B.G_=s([54,null,null,8589935158],t.Z)
-B.G0=s([55,null,null,8589935159],t.Z)
-B.G1=s([56,null,null,8589935160],t.Z)
-B.G3=s([57,null,null,8589935161],t.Z)
-B.GO=s([8589934852,8589934852,8589934853,null],t.Z)
-B.FC=s([4294967555,null,4294967555,null],t.Z)
-B.FD=s([4294968065,null,null,8589935154],t.Z)
-B.FE=s([4294968066,null,null,8589935156],t.Z)
-B.FF=s([4294968067,null,null,8589935158],t.Z)
-B.FG=s([4294968068,null,null,8589935160],t.Z)
-B.FL=s([4294968321,null,null,8589935157],t.Z)
-B.GP=s([8589934848,8589934848,8589934849,null],t.Z)
-B.FB=s([4294967423,null,null,8589935150],t.Z)
-B.FH=s([4294968069,null,null,8589935153],t.Z)
-B.FA=s([4294967309,null,null,8589935117],t.Z)
-B.FI=s([4294968070,null,null,8589935159],t.Z)
-B.FM=s([4294968327,null,null,8589935152],t.Z)
-B.GQ=s([8589934854,8589934854,8589934855,null],t.Z)
-B.FJ=s([4294968071,null,null,8589935155],t.Z)
-B.FK=s([4294968072,null,null,8589935161],t.Z)
-B.GR=s([8589934850,8589934850,8589934851,null],t.Z)
-B.tR=new A.dn(["*",B.FN,"+",B.FO,"-",B.FP,".",B.FQ,"/",B.FR,"0",B.FS,"1",B.FT,"2",B.FV,"3",B.FX,"4",B.FY,"5",B.FZ,"6",B.G_,"7",B.G0,"8",B.G1,"9",B.G3,"Alt",B.GO,"AltGraph",B.FC,"ArrowDown",B.FD,"ArrowLeft",B.FE,"ArrowRight",B.FF,"ArrowUp",B.FG,"Clear",B.FL,"Control",B.GP,"Delete",B.FB,"End",B.FH,"Enter",B.FA,"Home",B.FI,"Insert",B.FM,"Meta",B.GQ,"PageDown",B.FJ,"PageUp",B.FK,"Shift",B.GR],A.aq("dn<D,U<v?>>"))
-B.G2=s([B.nX,null,null,B.tD],t.L)
-B.Hl=s([B.tp,null,null,B.tE],t.L)
-B.Gv=s([B.tq,null,null,B.tF],t.L)
-B.GT=s([B.tr,null,null,B.cJ],t.L)
+B.FO=s([42,null,null,8589935146],t.Z)
+B.FP=s([43,null,null,8589935147],t.Z)
+B.FQ=s([45,null,null,8589935149],t.Z)
+B.FR=s([46,null,null,8589935150],t.Z)
+B.FS=s([47,null,null,8589935151],t.Z)
+B.FT=s([48,null,null,8589935152],t.Z)
+B.FU=s([49,null,null,8589935153],t.Z)
+B.FW=s([50,null,null,8589935154],t.Z)
+B.FY=s([51,null,null,8589935155],t.Z)
+B.FZ=s([52,null,null,8589935156],t.Z)
+B.G_=s([53,null,null,8589935157],t.Z)
+B.G0=s([54,null,null,8589935158],t.Z)
+B.G1=s([55,null,null,8589935159],t.Z)
+B.G2=s([56,null,null,8589935160],t.Z)
+B.G4=s([57,null,null,8589935161],t.Z)
+B.GP=s([8589934852,8589934852,8589934853,null],t.Z)
+B.FD=s([4294967555,null,4294967555,null],t.Z)
+B.FE=s([4294968065,null,null,8589935154],t.Z)
+B.FF=s([4294968066,null,null,8589935156],t.Z)
+B.FG=s([4294968067,null,null,8589935158],t.Z)
+B.FH=s([4294968068,null,null,8589935160],t.Z)
+B.FM=s([4294968321,null,null,8589935157],t.Z)
+B.GQ=s([8589934848,8589934848,8589934849,null],t.Z)
+B.FC=s([4294967423,null,null,8589935150],t.Z)
+B.FI=s([4294968069,null,null,8589935153],t.Z)
+B.FB=s([4294967309,null,null,8589935117],t.Z)
+B.FJ=s([4294968070,null,null,8589935159],t.Z)
+B.FN=s([4294968327,null,null,8589935152],t.Z)
+B.GR=s([8589934854,8589934854,8589934855,null],t.Z)
+B.FK=s([4294968071,null,null,8589935155],t.Z)
+B.FL=s([4294968072,null,null,8589935161],t.Z)
+B.GS=s([8589934850,8589934850,8589934851,null],t.Z)
+B.tR=new A.dn(["*",B.FO,"+",B.FP,"-",B.FQ,".",B.FR,"/",B.FS,"0",B.FT,"1",B.FU,"2",B.FW,"3",B.FY,"4",B.FZ,"5",B.G_,"6",B.G0,"7",B.G1,"8",B.G2,"9",B.G4,"Alt",B.GP,"AltGraph",B.FD,"ArrowDown",B.FE,"ArrowLeft",B.FF,"ArrowRight",B.FG,"ArrowUp",B.FH,"Clear",B.FM,"Control",B.GQ,"Delete",B.FC,"End",B.FI,"Enter",B.FB,"Home",B.FJ,"Insert",B.FN,"Meta",B.GR,"PageDown",B.FK,"PageUp",B.FL,"Shift",B.GS],A.aq("dn<D,U<v?>>"))
+B.G3=s([B.nX,null,null,B.tD],t.L)
+B.Hm=s([B.tp,null,null,B.tE],t.L)
+B.Gw=s([B.tq,null,null,B.tF],t.L)
+B.GU=s([B.tr,null,null,B.cJ],t.L)
 B.Ft=s([B.ts,null,null,B.tG],t.L)
 B.Hy=s([B.tt,null,null,B.kh],t.L)
-B.Hu=s([B.tu,null,null,B.eF],t.L)
-B.Ga=s([B.tv,null,null,B.cK],t.L)
+B.Hv=s([B.tu,null,null,B.eF],t.L)
+B.Gb=s([B.tv,null,null,B.cK],t.L)
 B.HF=s([B.tw,null,null,B.eG],t.L)
-B.Ht=s([B.tx,null,null,B.cL],t.L)
-B.G8=s([B.ty,null,null,B.ki],t.L)
+B.Hu=s([B.tx,null,null,B.cL],t.L)
+B.G9=s([B.ty,null,null,B.ki],t.L)
 B.Fx=s([B.tz,null,null,B.cM],t.L)
-B.Gj=s([B.tA,null,null,B.eH],t.L)
-B.Hm=s([B.tB,null,null,B.cN],t.L)
-B.Ho=s([B.tC,null,null,B.eI],t.L)
-B.Gc=s([B.eD,B.eD,B.hi,null],t.L)
+B.Gk=s([B.tA,null,null,B.eH],t.L)
+B.Hn=s([B.tB,null,null,B.cN],t.L)
+B.Hp=s([B.tC,null,null,B.eI],t.L)
+B.Gd=s([B.eD,B.eD,B.hi,null],t.L)
 B.Hz=s([B.he,null,B.he,null],t.L)
-B.GB=s([B.bK,null,null,B.cK],t.L)
-B.GC=s([B.bv,null,null,B.cL],t.L)
-B.GD=s([B.bw,null,null,B.cM],t.L)
+B.GC=s([B.bK,null,null,B.cK],t.L)
+B.GD=s([B.bv,null,null,B.cL],t.L)
+B.GE=s([B.bw,null,null,B.cM],t.L)
 B.HD=s([B.bL,null,null,B.cN],t.L)
-B.Hr=s([B.kb,null,null,B.ki],t.L)
-B.Gd=s([B.eC,B.eC,B.hh,null],t.L)
-B.H0=s([B.aN,null,null,B.cJ],t.L)
-B.GE=s([B.cG,null,null,B.eF],t.L)
-B.G7=s([B.hd,null,null,B.kg],t.L)
-B.GF=s([B.cH,null,null,B.eH],t.L)
-B.Hs=s([B.eB,null,null,B.kh],t.L)
-B.Ge=s([B.eE,B.eE,B.hj,null],t.L)
-B.GG=s([B.ez,null,null,B.eG],t.L)
-B.H5=s([B.eA,null,null,B.eI],t.L)
-B.Gf=s([B.cj,B.cj,B.cI,null],t.L)
-B.Jt=new A.dn(["*",B.G2,"+",B.Hl,"-",B.Gv,".",B.GT,"/",B.Ft,"0",B.Hy,"1",B.Hu,"2",B.Ga,"3",B.HF,"4",B.Ht,"5",B.G8,"6",B.Fx,"7",B.Gj,"8",B.Hm,"9",B.Ho,"Alt",B.Gc,"AltGraph",B.Hz,"ArrowDown",B.GB,"ArrowLeft",B.GC,"ArrowRight",B.GD,"ArrowUp",B.HD,"Clear",B.Hr,"Control",B.Gd,"Delete",B.H0,"End",B.GE,"Enter",B.G7,"Home",B.GF,"Insert",B.Hs,"Meta",B.Ge,"PageDown",B.GG,"PageUp",B.H5,"Shift",B.Gf],A.aq("dn<D,U<e?>>"))
+B.Hs=s([B.kb,null,null,B.ki],t.L)
+B.Ge=s([B.eC,B.eC,B.hh,null],t.L)
+B.H1=s([B.aN,null,null,B.cJ],t.L)
+B.GF=s([B.cG,null,null,B.eF],t.L)
+B.G8=s([B.hd,null,null,B.kg],t.L)
+B.GG=s([B.cH,null,null,B.eH],t.L)
+B.Ht=s([B.eB,null,null,B.kh],t.L)
+B.Gf=s([B.eE,B.eE,B.hj,null],t.L)
+B.GH=s([B.ez,null,null,B.eG],t.L)
+B.H6=s([B.eA,null,null,B.eI],t.L)
+B.Gg=s([B.cj,B.cj,B.cI,null],t.L)
+B.Jt=new A.dn(["*",B.G3,"+",B.Hm,"-",B.Gw,".",B.GU,"/",B.Ft,"0",B.Hy,"1",B.Hv,"2",B.Gb,"3",B.HF,"4",B.Hu,"5",B.G9,"6",B.Fx,"7",B.Gk,"8",B.Hn,"9",B.Hp,"Alt",B.Gd,"AltGraph",B.Hz,"ArrowDown",B.GC,"ArrowLeft",B.GD,"ArrowRight",B.GE,"ArrowUp",B.HD,"Clear",B.Hs,"Control",B.Ge,"Delete",B.H1,"End",B.GF,"Enter",B.G8,"Home",B.GG,"Insert",B.Ht,"Meta",B.Gf,"PageDown",B.GH,"PageUp",B.H6,"Shift",B.Gg],A.aq("dn<D,U<e?>>"))
 B.K3={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.tS=new A.bA(B.K3,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.K2={"zh-Hant":0,"zh-TW":1,"zh-MO":2,"zh-HK":3,ja:4,ko:5,zh:6,"zh-Hans":7,"zh-CN":8}
 B.k4=s(["Noto Sans TC"],t.s)
-B.GV=s(["Noto Sans HK","Noto Sans TC"],t.s)
-B.G5=s(["Noto Sans JP"],t.s)
-B.Fy=s(["Noto Sans KR"],t.s)
+B.GW=s(["Noto Sans HK","Noto Sans TC"],t.s)
+B.G6=s(["Noto Sans JP"],t.s)
+B.Fz=s(["Noto Sans KR"],t.s)
 B.nM=s(["Noto Sans SC"],t.s)
 B.HI=s(["Noto Sans SC","Noto Sans TC"],t.s)
-B.hl=new A.bA(B.K2,[B.k4,B.k4,B.k4,B.GV,B.G5,B.Fy,B.nM,B.nM,B.HI],t.VJ)
+B.hl=new A.bA(B.K2,[B.k4,B.k4,B.k4,B.GW,B.G6,B.Fz,B.nM,B.nM,B.HI],t.VJ)
 B.JZ={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
 B.wM=new A.m(458907)
 B.ws=new A.m(458873)
@@ -87950,9 +87950,9 @@ B.hR=new A.dS([B.aA],t.El)
 B.Cj=new A.E(0.23529411764705882,0,0,0,B.h)
 B.Kc=new A.h(0,4)
 B.An=new A.dP(0.5,B.fh,B.Cj,B.Kc,10)
-B.H1=s([B.An],t.sq)
+B.H2=s([B.An],t.sq)
 B.Mg=new A.j8(B.lO,B.q)
-B.N4=new A.hl(null,null,null,B.H1,B.Mg)
+B.N4=new A.hl(null,null,null,B.H2,B.Mg)
 B.N5=new A.a3(B.eB,!1,!0,!1,!1,B.m)
 B.y8=new A.a3(B.k9,!1,!1,!1,!0,B.m)
 B.N6=new A.a3(B.nS,!0,!1,!1,!1,B.m)
@@ -88064,9 +88064,9 @@ B.Ok=new A.jb(3,"hide")
 B.Y8=new A.jb(4,"remove")
 B.Ol=new A.jb(5,"timeout")
 B.Om=new A.tg(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.U9=new A.bN("Brief copied \u2014 paste it anywhere.",null,null,null,null,null,null,null,null)
+B.Ua=new A.bN("Brief copied \u2014 paste it anywhere.",null,null,null,null,null,null,null,null)
 B.Do=new A.aQ(4e6)
-B.On=new A.ph(B.U9,B.bu,null,null,null,null,null,null,null,null,null,null,null,B.Do,!1,null,null,null,B.a7,null)
+B.On=new A.ph(B.Ua,B.bu,null,null,null,null,null,null,null,null,null,null,null,B.Do,!1,null,null,null,B.a7,null)
 B.yB=new A.Ag(0,"permissive")
 B.Oo=new A.Ag(1,"normal")
 B.Op=new A.Ag(2,"forced")
@@ -88461,18 +88461,18 @@ B.S_=new A.j(!0,B.ap,null,null,null,null,13,null,null,null,null,null,1.4,null,nu
 B.U0=new A.bN('Test the highest-gap site for a 5-day EVA + thermal-protocol campaign, and record the ground truth needed to move it from "candidate" to "characterized".',null,B.S_,null,null,null,null,null,null)
 B.U2=new A.bN("x: similarity to Mars target  \xb7  y: how well studied (\u2191 more studied)",null,B.dM,null,null,null,null,null,null)
 B.Ru=new A.j(!0,B.Z,null,null,null,null,null,B.dq,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.U3=new A.bN("OPEN",null,B.Ru,null,null,null,null,null,null)
-B.U7=new A.bN("NAME A PLACE",null,B.i5,null,null,null,null,null,null)
+B.U4=new A.bN("OPEN",null,B.Ru,null,null,null,null,null,null)
+B.U8=new A.bN("NAME A PLACE",null,B.i5,null,null,null,null,null,null)
 B.Te=new A.j(!0,null,null,null,null,null,14,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ua=new A.bN("MISSION BRIEF",null,B.Te,null,null,null,null,null,null)
-B.Ub=new A.bN("Atacama (global positive control) is outside this Nepal crop.",null,B.f4,null,null,null,null,null,null)
-B.Uc=new A.bN("TEST RANGE",null,B.i5,null,null,null,null,null,null)
+B.Ub=new A.bN("MISSION BRIEF",null,B.Te,null,null,null,null,null,null)
+B.Uc=new A.bN("Atacama (global positive control) is outside this Nepal crop.",null,B.f4,null,null,null,null,null,null)
+B.Ud=new A.bN("TEST RANGE",null,B.i5,null,null,null,null,null,null)
 B.Pm=new A.j(!0,null,null,null,null,null,null,B.dq,null,1.2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ud=new A.bN("MISSION BRIEF \u2192",null,B.Pm,null,null,null,null,null,null)
+B.Ue=new A.bN("MISSION BRIEF \u2192",null,B.Pm,null,null,null,null,null,null)
 B.Qr=new A.j(!0,null,null,null,null,null,null,B.dq,null,1.1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Uj=new A.bN("COPY BRIEF AS TEXT",null,B.Qr,null,null,null,null,null,null)
+B.Uk=new A.bN("COPY BRIEF AS TEXT",null,B.Qr,null,null,null,null,null,null)
 B.PU=new A.j(!0,B.M,null,null,null,null,10,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ul=new A.bN("NO CHARACTERIZED RECORD YET",null,B.PU,null,null,null,null,null,null)
+B.Um=new A.bN("NO CHARACTERIZED RECORD YET",null,B.PU,null,null,null,null,null,null)
 B.S4=new A.j(!0,B.ap,null,null,null,null,12.5,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Un=new A.bN('Not a Mars-likeness score. Not a landing-site selection. Not a claim that any of these sites is "the Moon on Earth". It is a shortlist with its evidence attached, and the negative result is part of the finding.',null,B.S4,null,null,null,null,null,null)
 B.QU=new A.j(!0,B.M,null,null,null,null,10.5,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -88947,7 +88947,7 @@ return A.c([A.A(A.A(A.a9(),q),"Alphabetic"),A.A(A.A(A.a9(),q),"Ideographic")],t.
 s($,"aQR","aBs",()=>{var q="PlaceholderAlignment"
 return A.c([A.A(A.A(A.a9(),q),"Baseline"),A.A(A.A(A.a9(),q),"AboveBaseline"),A.A(A.A(A.a9(),q),"BelowBaseline"),A.A(A.A(A.a9(),q),"Top"),A.A(A.A(A.a9(),q),"Bottom"),A.A(A.A(A.a9(),q),"Middle")],t.O)})
 r($,"aQG","aBk",()=>A.cC().gTA()+"roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2")
-s($,"aQ9","aAZ",()=>A.aFb(B.GH))
+s($,"aQ9","aAZ",()=>A.aFb(B.GI))
 s($,"aQ8","ap6",()=>A.a3m(A.aCy($.aAZ())))
 s($,"aNt","cD",()=>{var q,p=A.A(A.A(A.n7(),"window"),"screen")
 p=p==null?null:A.A(p,"width")

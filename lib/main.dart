@@ -735,7 +735,7 @@ class MethodView extends StatelessWidget {
     Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
       Text('THE CLAIM', style: TextStyle(color: kMuted, fontSize: 10, letterSpacing: 2)),
       SizedBox(height: 8),
-      Text('Name any place on Earth. ROAMER scores it against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by survey coverage × operability — then turns the best into a field brief.',
+      Text('Name a site in the roamer test range, or paste coordinates anywhere. ROAMER scores the nearest characterized record against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by survey coverage × operability — then turns the best into a field brief.',
           style: TextStyle(color: kInk, fontSize: 14, height: 1.45)),
     ])),
     const _SectionLabel('THE METHOD'),
