@@ -1,32 +1,35 @@
 1
-00:00:00,100 --> 00:00:01,682
-Look up.
+00:00:00,400 --> 00:00:03,082
+Every night, the sky has a story.
 
 2
-00:00:01,632 --> 00:00:05,063
-AstroLens turns your phone into a space guide.
+00:00:03,032 --> 00:00:05,024
+AstroLens helps you read it.
 
 3
-00:00:05,063 --> 00:00:08,762
-Point it at the night sky and it names the stars above you.
+00:00:05,024 --> 00:00:07,954
+Point your phone up, and the stars have names.
 
 4
-00:00:08,762 --> 00:00:16,147
-Explore stars in a 360 degree dome, fly a 3D solar system of every planet, and watch how Earth formed.
+00:00:07,954 --> 00:00:13,683
+Fly a three-D solar system, with real NASA images for every planet.
 
 5
-00:00:16,147 --> 00:00:21,926
-Then switch to Earth analogs: the real places on Earth where we should test Moon and Mars hardware.
+00:00:13,683 --> 00:00:19,933
+Watch Earth form across four and a half billion years, and weigh the competing hypotheses.
 
 6
-00:00:21,926 --> 00:00:23,839
-AstroLens.
+00:00:19,933 --> 00:00:23,852
+Then ask where on Earth we should test Moon and Mars hardware.
 
 7
-00:00:23,839 --> 00:00:25,420
-Look up.
+00:00:23,852 --> 00:00:25,245
+AstroLens.
 
 8
-00:00:25,420 --> 00:00:27,308
-Understand.
+00:00:25,245 --> 00:00:26,235
+Look up.
 
+9
+00:00:26,235 --> 00:00:27,498
+Understand.
