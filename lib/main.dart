@@ -210,7 +210,7 @@ class _FindViewState extends State<FindView> {
       const SizedBox(height: 10),
       Text(
         ql.isEmpty
-            ? '${widget.sites.length} sites characterized · Nepal test range + 2 global controls'
+            ? '${widget.sites.length} sites characterized · Nepal test range + 1 global control'
             : coord != null
                 ? 'coordinates recognized — nearest case file below'
                 : filtered.isEmpty
@@ -259,7 +259,10 @@ class _FindViewState extends State<FindView> {
           final dy = (box.maxHeight - ih * scale) / 2;
           final pins = <Widget>[];
           for (final p in (widget.map['pins'] as List)) {
-            pins.add(_pin(p as Map<String, dynamic>, box, widget.sites, widget.onOpen, dx, dy, scale, iw, ih));
+            final m = p as Map<String, dynamic>;
+            final fx = (m['x'] as num).toDouble(), fy = (m['y'] as num).toDouble();
+            if (fx < 0 || fx > 1 || fy < 0 || fy > 1) continue;
+            pins.add(_pin(m, box, widget.sites, widget.onOpen, dx, dy, scale, iw, ih));
           }
           return ClipRRect(
             borderRadius: BorderRadius.circular(6),
