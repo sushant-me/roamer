@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'space.dart' show kBg, kPanel, kPanel2, kInk, kMuted, kAccent, kTeal;
 import 'earthfilm.dart';
+import 'spacepics.dart';
 
 /// A deterministic starfield you can put behind any screen.
 class StarfieldBackground extends StatelessWidget {
@@ -223,6 +224,11 @@ class _EarthStoryScreenState extends State<EarthStoryScreen> with SingleTickerPr
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(color: kPanel, borderRadius: BorderRadius.circular(16), border: Border.all(color: kPanel2)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.asset(SpacePics.forStage(s.title), height: 150, width: double.infinity, fit: BoxFit.cover),
+          ),
+          const SizedBox(height: 12),
           Text(s.title, style: const TextStyle(color: kInk, fontSize: 21, fontWeight: FontWeight.w800)),
           const SizedBox(height: 8),
           Text(s.what, style: const TextStyle(color: kInk, fontSize: 14, height: 1.55)),
@@ -504,6 +510,11 @@ class _HypothesesViewState extends State<HypothesesView> {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(color: kPanel, borderRadius: BorderRadius.circular(16), border: Border.all(color: kPanel2)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.asset(SpacePics.forHypothesis(h.name), height: 140, width: double.infinity, fit: BoxFit.cover),
+          ),
+          const SizedBox(height: 10),
           Text('${index + 1} / ${hypotheses.length}', style: const TextStyle(color: kMuted, fontSize: 10, letterSpacing: 2)),
           const SizedBox(height: 6),
           Text(h.name, style: const TextStyle(color: kAccent, fontSize: 22, fontWeight: FontWeight.w800)),

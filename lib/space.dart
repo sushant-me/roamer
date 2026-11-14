@@ -10,6 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'earthstory.dart';
 import 'skydome.dart';
+import 'spacepics.dart';
+import 'solarsystem.dart';
 
 const Color kBg = Color(0xFF060B18);
 const Color kPanel = Color(0xFF0E1B33);
@@ -206,7 +208,7 @@ class HomeScreen extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(color: kAccent.withValues(alpha: .12), borderRadius: BorderRadius.circular(999)),
-                    child: const Text('6 features', style: TextStyle(color: kAccent, fontSize: 10, letterSpacing: 1)),
+                    child: const Text('7 features', style: TextStyle(color: kAccent, fontSize: 10, letterSpacing: 1)),
                   ),
                 ]),
                 const SizedBox(height: 10),
@@ -216,7 +218,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
                 const SizedBox(height: 12),
                 Wrap(spacing: 6, runSpacing: 6, children: [
-                  _chip('AR sky camera'), _chip('Tonight’s sky'), _chip('Story of Earth'), _chip('Earth analogs'),
+                  _chip('AR sky camera'), _chip('3D solar system'), _chip('Story of Earth'), _chip('Earth analogs'),
                 ]),
               ]),
             ),
@@ -247,6 +249,13 @@ class HomeScreen extends StatelessWidget {
               icon: Icons.nights_stay_outlined,
               tint: Color(0xFF8AB4FF),
               onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const TonightScreen())),
+            ),
+            _FeatureCard(
+              title: '3D Solar System',
+              subtitle: 'Orbit the Sun, visit every planet, and fly out to galaxies and the Oort Cloud.',
+              icon: Icons.blur_circular,
+              tint: const Color(0xFFFFC46B),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SolarSystemScreen())),
             ),
             _FeatureCard(
               title: 'Learn the Sky',
@@ -964,6 +973,11 @@ class ConstellationDetailScreen extends StatelessWidget {
       appBar: AppBar(backgroundColor: kBg, foregroundColor: kInk, title: Text(con.name)),
       body: StarfieldBackground(
         child: ListView(padding: const EdgeInsets.all(18), children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(14),
+            child: Image.asset(SpacePics.forConstellation(con.abbr), height: 190, width: double.infinity, fit: BoxFit.cover),
+          ),
+          const SizedBox(height: 14),
           Text(con.abbr.toUpperCase(), style: const TextStyle(color: kMuted, fontSize: 11, letterSpacing: 4)),
           const SizedBox(height: 4),
           Text(con.name, style: const TextStyle(color: kInk, fontSize: 30, fontWeight: FontWeight.w800)),
@@ -1033,29 +1047,17 @@ class _StarDetailScreenState extends State<StarDetailScreen> {
       backgroundColor: kBg,
       appBar: AppBar(backgroundColor: kBg, foregroundColor: kInk, title: Text(s.name)),
       body: ListView(padding: const EdgeInsets.all(18), children: [
-        FutureBuilder<String?>(
-          future: imageFuture,
-          builder: (ctx, snap) {
-            final url = snap.data;
-            if (url == null) {
-              return ClipRRect(
-                borderRadius: BorderRadius.circular(14),
-                child: Stack(alignment: Alignment.bottomLeft, children: [
-                  Image.asset('assets/img/nebula.jpg', height: 180, width: double.infinity, fit: BoxFit.cover),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.black.withValues(alpha: .45),
-                    child: const Text('NASA image', style: TextStyle(color: kMuted, fontSize: 9)),
-                  ),
-                ]),
-              );
-            }
-            return ClipRRect(
-              borderRadius: BorderRadius.circular(14),
-              child: Image.network(url, height: 180, width: double.infinity, fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => Image.asset('assets/img/nebula.jpg', height: 180, fit: BoxFit.cover)),
-            );
-          },
+        ClipRRect(
+          borderRadius: BorderRadius.circular(14),
+          child: Stack(alignment: Alignment.bottomLeft, children: [
+            Image.asset(SpacePics.forStar(s.con), height: 210, width: double.infinity, fit: BoxFit.cover),
+            Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.black.withValues(alpha: .45),
+              child: Text('Real image · NASA/ESO · ${s.con}',
+                  style: const TextStyle(color: kMuted, fontSize: 9)),
+            ),
+          ]),
         ),
         const SizedBox(height: 14),
         Text(s.name, style: const TextStyle(color: kInk, fontSize: 28, fontWeight: FontWeight.w800)),

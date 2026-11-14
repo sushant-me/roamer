@@ -63,6 +63,7 @@ flutter:
 
   assets:
     - assets/img/
+    - assets/img/space/
     - assets/data/
     - assets/map/
 

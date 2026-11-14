@@ -4,6 +4,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:sensors_plus/sensors_plus.dart';
 
 import 'space.dart';
 
@@ -75,6 +76,10 @@ class _SkyDomeScreenState extends State<SkyDomeScreen>
   double _az = 180.0, _alt = 35.0;
   Size _size = Size.zero;
   List<({Star star, AltAz pos})> _stars = const [];
+  bool _gyro = false;
+  double _ax = 0, _ay = 0, _azm = 9.8, _mx = 0, _my = 0, _mz = 0;
+  StreamSubscription<AccelerometerEvent>? _accSub;
+  StreamSubscription<MagnetometerEvent>? _magSub;
 
   Timer? _clock;
   Ticker? _ticker;
@@ -90,11 +95,31 @@ class _SkyDomeScreenState extends State<SkyDomeScreen>
     super.initState();
     _ticker = createTicker(_tick);
     _boot();
+    try {
+      _accSub = accelerometerEventStream(samplingPeriod: SensorInterval.gameInterval).listen((e) {
+        _ax = e.x; _ay = e.y; _azm = e.z; _fromSensors();
+      }, onError: (_) {});
+      _magSub = magnetometerEventStream(samplingPeriod: SensorInterval.gameInterval).listen((e) {
+        _mx = e.x; _my = e.y; _mz = e.z; _fromSensors();
+      }, onError: (_) {});
+    } catch (_) {}
+  }
+
+  void _fromSensors() {
+    if (!_gyro || !mounted) return;
+    final a = aimFromSensors(_ax, _ay, _azm, _mx, _my, _mz);
+    if (a == null) return;
+    setState(() {
+      _az = a.az;
+      _alt = a.alt.clamp(-10.0, 90.0);
+    });
   }
 
   @override
   void dispose() {
     _clock?.cancel();
+    _accSub?.cancel();
+    _magSub?.cancel();
     _ticker?.dispose();
     super.dispose();
   }
@@ -253,7 +278,7 @@ class _SkyDomeScreenState extends State<SkyDomeScreen>
       backgroundColor: kBg,
       body: GestureDetector(
         behavior: HitTestBehavior.opaque,
-        onPanStart: (_) => _stop(),
+        onPanStart: (_) { setState(() => _gyro = false); _stop(); },
         onPanUpdate: _panUpdate,
         onPanEnd: _panEnd,
         onTapUp: _tap,
@@ -295,6 +320,10 @@ class _SkyDomeScreenState extends State<SkyDomeScreen>
                   const SizedBox(width: 8),
                   _txt('SKY DOME', _mb(12, kInk, 5)),
                   const Spacer(),
+                  TextButton(
+                    onPressed: () => setState(() => _gyro = !_gyro),
+                    child: _txt(_gyro ? 'GYRO ON' : 'GYRO OFF', _m(9, _gyro ? kAccent : kMuted, 0.8)),
+                  ),
                   TextButton(
                     onPressed: _reset,
                     child: _txt('RESET VIEW', _m(9, kAccent, 0.8)),
