@@ -3966,7 +3966,13 @@
    "api",
    "pokhara"
   ],
-  "note": "Weights perturbed ±20% (single and paired); ranking recomputed from the same dimension scores. Experimental, not a full uncertainty propagation."
+  "note": "Weights perturbed ±20% (single and paired); ranking recomputed from the same dimension scores. Experimental, not a full uncertainty propagation.",
+  "thresholds": {
+   "variants": 10,
+   "flips": 16,
+   "affected": 16,
+   "note": "Thresholds change pass/fail labels, not the Survey Gap ranking: the gap is computed from continuous distance scores, not from pass counts. This reports pass-count sensitivity so labels are not over-read."
+  }
  },
  "global_screening": [
   {
