@@ -448,6 +448,13 @@ class SiteScreen extends StatelessWidget {
               style: TextStyle(color: kMuted, fontSize: 10.5, height: 1.4)),
         ),
         Padding(
+          padding: const EdgeInsets.fromLTRB(20, 2, 20, 0),
+          child: Text(
+            'Terrain context: elevation ${site.alt.round()} m · ruggedness (mean residual) ${site.terrain['rough_m'] ?? '—'} m · variogram slope ${site.terrain['vario_slope'] ?? '—'} — reported, not separately scored.',
+            style: const TextStyle(color: kGrey, fontSize: 10, height: 1.4),
+          ),
+        ),
+        Padding(
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           child: Text(
             'Ground thermal context: skin (MERRA-2/NASA POWER) seasonal ±${site.thermal['skin_seasonal_amp_k'] ?? '—'} K · soil 6 cm (ERA5-Land 2024) seasonal ±${site.thermal['soil_seasonal_amp_k'] ?? '—'} K, diurnal ±${site.thermal['soil_diurnal_amp_k'] ?? '—'} K — context only, not scored.',
@@ -771,7 +778,7 @@ class MethodView extends StatelessWidget {
     ])),
     const _SectionLabel('THE METHOD'),
     Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
-      Text('1. DEM tiles → 500 m block-average → slope/roughness recomputed (never average slopes).', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('1. DEM tiles → 500 m block-average → slope/roughness recomputed (never average slopes). Terrain score uses relief + slope; ruggedness and variogram are reported as context.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('2. Site-pad (1.5 km) and landscape (12 km) features reported separately.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('3. Distances in target-σ units; conjunctive pass/fail; grey tiles where Earth cannot match.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('4. Positive control (Atacama) and negative control (Pokhara) included; a method that cannot fail is not a method.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
