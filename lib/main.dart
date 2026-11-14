@@ -181,6 +181,15 @@ class _FindViewState extends State<FindView> {
     final filtered = ql.isEmpty
         ? widget.sites
         : widget.sites.where((s) => (s.name + ' ' + s.country + ' ' + s.blurb).toLowerCase().contains(ql)).toList();
+    final coord = _parseLatLon(q);
+    Site? nearest;
+    double nearestKm = 0;
+    if (coord != null) {
+      for (final s in widget.sites) {
+        final d = _haversineKm(coord[0], coord[1], s.lat, s.lon);
+        if (nearest == null || d < nearestKm) { nearest = s; nearestKm = d; }
+      }
+    }
     final children = <Widget>[];
     children.add(Header('ROAMER', sub: 'Find the Moon on Earth. Prove it with data.'));
     children.add(Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -190,7 +199,7 @@ class _FindViewState extends State<FindView> {
         onChanged: (v) => setState(() => q = v),
         style: const TextStyle(color: kInk, fontSize: 16),
         decoration: InputDecoration(
-          hintText: 'Type Kagbeni, Lo Manthang, Atacama…',
+          hintText: 'Type a place, or paste lat, lon…',
           hintStyle: const TextStyle(color: kMuted, fontSize: 14),
           prefixIcon: const Icon(Icons.search, color: kYellow),
           enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(6), borderSide: const BorderSide(color: kBlue)),
@@ -201,10 +210,33 @@ class _FindViewState extends State<FindView> {
       Text(
         ql.isEmpty
             ? '${widget.sites.length} sites characterized · Nepal test range + 2 global controls'
-            : '${filtered.length} match${filtered.length == 1 ? '' : 'es'} — tap a record',
+            : coord != null
+                ? 'coordinates recognized — nearest case file below'
+                : '${filtered.length} match${filtered.length == 1 ? '' : 'es'} — tap a record',
         style: const TextStyle(color: kMuted, fontSize: 12),
       ),
     ])));
+
+    if (coord != null && nearest != null) {
+      children.add(Panel(child: Row(children: [
+        const Icon(Icons.my_location, color: kYellow, size: 20),
+        const SizedBox(width: 10),
+        Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text('${coord[0].toStringAsFixed(4)}, ${coord[1].toStringAsFixed(4)}', style: const TextStyle(color: kInk, fontSize: 14, fontFamily: 'monospace')),
+          Text('nearest characterized: ${nearest.name} · ${nearestKm.toStringAsFixed(0)} km — this point is not yet characterized',
+              style: const TextStyle(color: kMuted, fontSize: 11)),
+        ])),
+        TextButton(onPressed: () => widget.onOpen(nearest!), child: const Text('OPEN', style: TextStyle(color: kYellow, fontWeight: FontWeight.w800))),
+      ])));
+    }
+    if (ql.isNotEmpty && coord == null && filtered.isEmpty) {
+      children.add(Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        const Text('NO CHARACTERIZED RECORD YET', style: TextStyle(color: kMuted, fontSize: 10, letterSpacing: 1.6)),
+        const SizedBox(height: 6),
+        Text('“$q” is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama — or paste coordinates (28.82, 83.78).',
+            style: const TextStyle(color: kInk, fontSize: 12.5, height: 1.4)),
+      ])));
+    }
 
     children.add(Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
@@ -678,4 +710,23 @@ class MethodView extends StatelessWidget {
     ])),
     Padding(padding: const EdgeInsets.all(16), child: Text('Generated ${meta['generated']}', style: const TextStyle(color: kGrey, fontSize: 10))),
   ]);
+}
+
+
+List<double>? _parseLatLon(String q) {
+  final m = RegExp(r'^\s*(-?\d+(?:\.\d+)?)\s*[,\s]\s*(-?\d+(?:\.\d+)?)\s*$').firstMatch(q);
+  if (m == null) return null;
+  final a = double.parse(m.group(1)!);
+  final b = double.parse(m.group(2)!);
+  if (a.abs() > 90 || b.abs() > 180) return null;
+  return [a, b];
+}
+
+double _haversineKm(double lat1, double lon1, double lat2, double lon2) {
+  const r = 6371.0;
+  final dLat = (lat2 - lat1) * math.pi / 180;
+  final dLon = (lon2 - lon1) * math.pi / 180;
+  final a = math.sin(dLat / 2) * math.sin(dLat / 2) +
+      math.cos(lat1 * math.pi / 180) * math.cos(lat2 * math.pi / 180) * math.sin(dLon / 2) * math.sin(dLon / 2);
+  return r * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a));
 }
