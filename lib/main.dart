@@ -42,11 +42,11 @@ class RoamerApp extends StatelessWidget {
 
 class Site {
   final String id, name, country, role, blurb, access;
-  final double lat, lon, alt, operability, similarity, attention, gap;
+  final double lat, lon, alt, operability, similarity, attention, gap, attentionAlt, gapAlt;
   final int passes, total;
   final Map<String, dynamic> scores, requirements, terrain, thermal, climate, illumination, literature, d;
   Site(this.id, this.name, this.country, this.role, this.blurb, this.access,
-      this.lat, this.lon, this.alt, this.operability, this.similarity, this.attention, this.gap,
+      this.lat, this.lon, this.alt, this.operability, this.similarity, this.attention, this.gap, this.attentionAlt, this.gapAlt,
       this.passes, this.total, this.scores, this.requirements, this.terrain, this.thermal, this.climate,
       this.illumination, this.literature, this.d);
   factory Site.fromJson(Map<String, dynamic> j) {
@@ -56,6 +56,8 @@ class Site {
       (j['lat'] as num).toDouble(), (j['lon'] as num).toDouble(), (j['alt_m'] as num?)?.toDouble() ?? 0,
       (j['operability'] as num?)?.toDouble() ?? 0, (j['scores']['similarity'] as num).toDouble(),
       (j['attention'] as num).toDouble(), (j['survey_gap'] as num).toDouble(),
+      (j['attention_alt'] as num?)?.toDouble() ?? (j['attention'] as num).toDouble(),
+      (j['gap_alt'] as num?)?.toDouble() ?? (j['survey_gap'] as num).toDouble(),
       j['passes'] as int, j['requirements_total'] as int,
       (j['scores'] as Map).cast<String, dynamic>(),
       (j['requirements'] as Map).cast<String, dynamic>(),
@@ -360,9 +362,9 @@ class SiteCard extends StatelessWidget {
             style: const TextStyle(color: kYellow, fontSize: 10, fontFamily: 'monospace', height: 1.3),
           ),
           const SizedBox(height: 3),
-          const Text(
-            'Research priority ≠ suitability: this site is.39 similar and .26 studied; a failed check lowers similarity but does not disqualify.',
-            style: TextStyle(color: kGrey, fontSize: 9.5, height: 1.35),
+          Text(
+            'Research priority ≠ suitability: ${site.similarity.toStringAsFixed(2)} similar, ${site.attention.toStringAsFixed(2)} studied. A failed check lowers similarity but does not disqualify. Gap range under two literature proxies: ${math.min(site.gap, site.gapAlt).toStringAsFixed(2)}–${math.max(site.gap, site.gapAlt).toStringAsFixed(2)}.',
+            style: const TextStyle(color: kGrey, fontSize: 9.5, height: 1.35),
           ),
         ]),
       ),
@@ -430,6 +432,11 @@ class SiteScreen extends StatelessWidget {
             const SizedBox(width: 18),
             _stat('gap · research priority', site.gap.toStringAsFixed(2), accent: true),
           ]),
+          const SizedBox(height: 6),
+          Text(
+            'gap range under two literature proxies: ${math.min(site.gap, site.gapAlt).toStringAsFixed(2)}–${math.max(site.gap, site.gapAlt).toStringAsFixed(2)}',
+            style: const TextStyle(color: kGrey, fontSize: 10),
+          ),
         ])),
         const _SectionLabel('REQUIREMENT CHECKS'),
         ...reqLabels.entries.map((e) {
