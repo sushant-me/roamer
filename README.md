@@ -72,9 +72,9 @@ The pipeline fetches Terrarium elevation tiles, Open-Meteo climate, and OpenAlex
 
 ## External review & known limits
 
-- **Human methodology review** (arunlohar11, Space Apps Connect #2115) — feedback incorporated: threshold sensitivity, suitability-vs-research-priority framing, 500 m-vs-climate resolution mismatch, SRTM geology limits, "shortlist for investigation, not certification".
-- **ChatGPT reviews**: 20 → 23 → **24/25** across three passes.
-- **Global analogs not scored this run**: Río Tinto, Haughton Crater, McMurdo Dry Valleys, Pampas de La Joya, Wadi Rum, Death Valley, Askja. They were added, then removed because the shared OpenAlex attention budget was exhausted and attention collapsed to zero — a corrupted metric. Listed here so the omission is explicit.
+- **Human methodology review**: Arun Lohar (@arunlohar11), Space Apps Connect #2115 — **resolved and credited**; feedback incorporated: threshold sensitivity, suitability-vs-research-priority framing, 500 m-vs-climate resolution mismatch, SRTM geology limits, "shortlist for investigation, not certification".
+- **ChatGPT reviews**: 20 → 23 → **24/25** across four passes.
+- **Global analogs**: Río Tinto, Haughton Crater, McMurdo Dry Valleys, Pampas de La Joya, Wadi Rum, Death Valley, Askja are **similarity-screened** and placed under a second literature index (Crossref): proxy survey gap ≈0.00 for all but Askja (0.07) — well-studied, like the Atacama control. They are not in the OpenAlex ranking because that budget was exhausted; shown in METHOD so the gap is explicit.
 - **Numbers independently recomputed**: all 34 similarities and gaps re-derived from stored features in a separate implementation (max deviation 0.006; 0 pass-count mismatches).
 - **Limits**: 34 records concentrated in Nepal + Atacama; thermal scored on ERA5 air temperature (MERRA-2 skin and soil 6 cm shown as context); terrain SRTM-derived at 500 m; no MODIS LST (needs Earthdata login); operability is an analyst-assigned judgment.
 
