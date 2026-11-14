@@ -82861,7 +82861,7 @@ j.push(new A.bL(A.ba(q.afG(),p,p,p,B.Qf,p,p),p))
 j.push(new A.bD(B.DS,A.dt(new A.HU(new A.abJ(q,a),p,p,p,A.aDQ(p,p,B.Z,p,p,p,p,p,p,B.de,p,p,B.jl,p,p,p,p,p,p,p),p,p,!1,p,!0,p,B.Uo,p),p,1/0),p))
 return A.aqG(k,A.Jp(j,B.mU),p)},
 afG(){var s=B.tN.ghg(),r=s.jf(s,new A.abF(this)).fO(0,new A.abG(),t.N).en(0)
-s=(r.length!==0?"Fails: "+B.b.bl(r,", ")+". ":"")+"Terrain is SRTM-derived at 500 m, not Copernicus 30 m; thermal is air temperature, not MODIS skin temperature; literature attention is an OpenAlex proxy; target bands are documented ranges, not a single mission measurement. A candidate is not a proven analog \u2014 it is a shortlist entry with its evidence attached."
+s=(r.length!==0?"Fails: "+B.b.bl(r,", ")+". ":"")+"Terrain is SRTM-derived at 500 m, not Copernicus 30 m; thermal is air temperature, not MODIS skin temperature; literature attention is an OpenAlex proxy; target bands are documented ranges, not a single mission measurement. A candidate is not a proven analog \u2014 it is a shortlist entry with its evidence attached. A failed check lowers similarity but does not disqualify: the gap ranks where to survey next, not the best analog."
 return s.charCodeAt(0)==0?s:s},
 a3x(){var s=t.jl,r=t.Pf
 s=A.a_(new A.a8(A.c([A.c(["Terrain",B.bj,"computed"],s),A.c(["Thermal",B.iU,"air proxy"],s),A.c(["Illumination",B.bj,"computed"],s),A.c(["Water",B.iU,"precip proxy"],s),A.c(["Dust",B.cD,"not computed"],s),A.c(["Radiation",B.cD,"not computed"],s),A.c(["Subsurface",B.cD,"not computed"],s),A.c(["Permafrost",B.cD,"not computed"],s)],t.EY),new A.abE(),r),r.i("ar.E"))

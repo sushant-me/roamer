@@ -493,7 +493,7 @@ class SiteScreen extends StatelessWidget {
     final failed = reqLabels.entries.where((e) => (site.requirements[e.key] as Map)['pass'] != true).map((e) => e.value).toList();
     final reasons = StringBuffer();
     if (failed.isNotEmpty) reasons.write('Fails: ${failed.join(', ')}. ');
-    reasons.write('Terrain is SRTM-derived at 500 m, not Copernicus 30 m; thermal is air temperature, not MODIS skin temperature; literature attention is an OpenAlex proxy; target bands are documented ranges, not a single mission measurement. A candidate is not a proven analog — it is a shortlist entry with its evidence attached.');
+    reasons.write('Terrain is SRTM-derived at 500 m, not Copernicus 30 m; thermal is air temperature, not MODIS skin temperature; literature attention is an OpenAlex proxy; target bands are documented ranges, not a single mission measurement. A candidate is not a proven analog — it is a shortlist entry with its evidence attached. A failed check lowers similarity but does not disqualify: the gap ranks where to survey next, not the best analog.');
     return reasons.toString();
   }
 
