@@ -1,0 +1,33 @@
+1
+00:00:01,600 --> 00:00:05,100
+NASA Space Apps, twenty twenty-six.
+
+2
+00:00:05,100 --> 00:00:09,600
+The challenge: find places on Earth
+that analog Moon and Mars bases.
+
+3
+00:00:09,600 --> 00:00:14,000
+ROAMER scores any place on a
+common five hundred metre grid,
+
+4
+00:00:14,000 --> 00:00:18,500
+shows where the analogy breaks,
+and ranks sites by what nobody has studied.
+
+5
+00:00:18,500 --> 00:00:23,000
+Atacama passes. Pokhara fails.
+Kagbeni leads.
+
+6
+00:00:23,000 --> 00:00:26,500
+Paste coordinates, and it finds
+the nearest characterized site.
+
+7
+00:00:26,500 --> 00:00:29,000
+Find the Moon on Earth.
+Prove it with data.
