@@ -8,12 +8,13 @@ Point at the night sky and name the stars. Scrub 4.6 billion years of Earth's fo
 
 ![Home](screenshots/home.png)
 
-## Six features
+## Seven features
 
 | Feature | What it does |
 |---|---|
 | **AR Sky Camera** | Uses the phone camera and motion sensors to estimate where it points, then names the nearest bright stars. Manual aim fallback when sensors are unavailable. |
 | **AR Explorer · Sky Dome** | Tap a star for its story; drag a 360° dome built from a 268-star catalogue. |
+| **3D Solar System** | Orbit the Sun, tap any planet for a real NASA image and facts, visit galaxies, the Kuiper Belt, heliopause and Oort Cloud. |
 | **Tonight's Sky** | Everything above your location right now, with altitude and direction. |
 | **Learn the Sky** | 268 bright stars and all 88 IAU constellations, with plain-language stories. |
 | **Story of Earth** | A 4.6-billion-year timeline, a playable film, whole-Earth composition, and five competing formation hypotheses. |
