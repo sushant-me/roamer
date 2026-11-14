@@ -212,7 +212,9 @@ class _FindViewState extends State<FindView> {
             ? '${widget.sites.length} sites characterized · Nepal test range + 2 global controls'
             : coord != null
                 ? 'coordinates recognized — nearest case file below'
-                : '${filtered.length} match${filtered.length == 1 ? '' : 'es'} — tap a record',
+                : filtered.isEmpty
+                    ? 'no characterized record — see note below'
+                    : '${filtered.length} match${filtered.length == 1 ? '' : 'es'} — tap a record',
         style: const TextStyle(color: kMuted, fontSize: 12),
       ),
     ])));

@@ -81518,9 +81518,10 @@ n=A.atG(c,c,c,c,c,c,c,c,!0,new A.fN(4,A.jw(6),B.lE),c,c,c,c,c,c,c,c,c,c,c,new A.
 if(a0)k=""+d.a.c.length+" sites characterized \xb7 Nepal test range + 2 global controls"
 else if(r)k="coordinates recognized \u2014 nearest case file below"
 else{k=s.length
-j=k===1?"":"es"
+if(k===0)k="no characterized record \u2014 see note below"
+else{j=k===1?"":"es"
 j=""+k+" match"+j+" \u2014 tap a record"
-k=j}e.push(new A.c3(A.cE(A.c([B.SL,B.dD,new A.Aj(n,B.Ov,B.Q4,B.NL,B.NM,new A.agg(d),!0,c),B.kZ,A.bd(k,c,c,c,B.Ra,c,c)],o),B.S,B.r,B.w),c))
+k=j}}e.push(new A.c3(A.cE(A.c([B.SL,B.dD,new A.Aj(n,B.Ov,B.Q4,B.NL,B.NM,new A.agg(d),!0,c),B.kZ,A.bd(k,c,c,c,B.Ra,c,c)],o),B.S,B.r,B.w),c))
 if(r&&b.a!=null)e.push(new A.c3(A.eM(A.c([B.Eh,B.kY,A.ny(A.cE(A.c([A.bd(B.c.O(q[0],4)+", "+B.c.O(q[1],4),c,c,c,B.Pb,c,c),A.bd("nearest characterized: "+b.a.b+" \xb7 "+B.c.O(p,0)+" km \u2014 this point is not yet characterized",c,c,c,B.dH,c,c)],o),B.S,B.r,B.w)),A.aq1(B.SH,new A.agh(b,d),c)],o),B.a0,B.r,B.w),c))
 if(!a0&&a1&&s.length===0)e.push(new A.c3(A.cE(A.c([B.SU,B.yj,A.bd("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,B.yO,c,c)],o),B.S,B.r,B.w),c))
 e.push(new A.c3(A.cE(A.c([A.eM(A.c([B.SP,A.bd("DEM hillshade \xb7 500 m grid",c,c,c,A.eq(c,c,A.ai(204,B.M.B()>>>16&255,B.M.B()>>>8&255,B.M.B()&255),c,c,c,c,c,c,c,c,10,c,c,c,c,c,!0,c,c,c,c,c,c,c,c),c,c)],o),B.a0,B.ts,B.w),B.dD,A.eO(A.au_(new A.agi(d)),330,c),B.dD,A.avR(A.c([d.Cl(B.Y,"candidate"),d.Cl(B.bf,"positive control"),d.Cl(B.bD,"negative control")],o),6,12),B.l_,B.SO],o),B.S,B.r,B.w),c))
