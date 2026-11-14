@@ -4,7 +4,7 @@
 
 Point at the night sky and name the stars. Scrub 4.6 billion years of Earth's formation. Then use the **Earth Analogs** engine to answer our challenge — *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars*.
 
-**Live:** https://sushant-me.github.io/roamer/ · **APK:** [latest release](https://github.com/sushant-me/roamer/releases/latest/download/app-release.apk) · **29 s demo:** [video](https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4)
+**Live:** https://sushant-me.github.io/roamer/ · **APK:** [latest release](https://github.com/sushant-me/roamer/releases/latest/download/app-release.apk) · **29 s demo:** [premium film](https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4) · [66 s full film](https://sushant-me.github.io/roamer/video/roamer_demo_full.mp4)
 
 ![Home](screenshots/home.png)
 
