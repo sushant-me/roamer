@@ -213,7 +213,7 @@ class _FindViewState extends State<FindView> {
       ]),
       const SizedBox(height: 8),
       SizedBox(
-        height: 360,
+        height: 330,
         child: LayoutBuilder(builder: (ctx, box) {
           final iw = (widget.map['width'] as int).toDouble();
           final ih = (widget.map['height'] as int).toDouble();
