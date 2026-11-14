@@ -346,18 +346,25 @@ class SiteCard extends StatelessWidget {
       Row(children: [
         _stat('${site.passes}/${site.total}', 'requirements'),
         const SizedBox(width: 18),
-        _stat(site.similarity.toStringAsFixed(2), 'similarity'),
+        _stat(site.similarity.toStringAsFixed(2), 'similarity · suitability'),
         const SizedBox(width: 18),
-        _stat(site.gap.toStringAsFixed(2), 'survey gap', accent: true),
+        _stat(site.gap.toStringAsFixed(2), 'gap · research priority', accent: true),
       ]),
       const SizedBox(height: 10),
       _bar(site.gap, kYellow),
       if (top) Padding(
         padding: const EdgeInsets.only(top: 8),
-        child: Text(
-          'WHY #1 · gap = ${site.similarity.toStringAsFixed(2)} × (1 − ${site.attention.toStringAsFixed(2)}) × ${site.operability.toStringAsFixed(2)} = ${site.gap.toStringAsFixed(2)}',
-          style: const TextStyle(color: kYellow, fontSize: 10, fontFamily: 'monospace', height: 1.3),
-        ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(
+            'WHY #1 · gap = ${site.similarity.toStringAsFixed(2)} × (1 − ${site.attention.toStringAsFixed(2)}) × ${site.operability.toStringAsFixed(2)} = ${site.gap.toStringAsFixed(2)}',
+            style: const TextStyle(color: kYellow, fontSize: 10, fontFamily: 'monospace', height: 1.3),
+          ),
+          const SizedBox(height: 3),
+          const Text(
+            'Research priority ≠ suitability: this site is.39 similar and .26 studied; a failed check lowers similarity but does not disqualify.',
+            style: TextStyle(color: kGrey, fontSize: 9.5, height: 1.35),
+          ),
+        ]),
       ),
     ])),
   );
@@ -417,11 +424,11 @@ class SiteScreen extends StatelessWidget {
           Text(site.blurb, style: const TextStyle(color: kMuted, fontSize: 13, height: 1.4)),
           const SizedBox(height: 14),
           Row(children: [
-            _stat('similarity', site.similarity.toStringAsFixed(2)),
-            const SizedBox(width: 22),
+            _stat('similarity · suitability', site.similarity.toStringAsFixed(2)),
+            const SizedBox(width: 18),
             _stat('attention', site.attention.toStringAsFixed(2)),
-            const SizedBox(width: 22),
-            _stat('survey gap', site.gap.toStringAsFixed(2), accent: true),
+            const SizedBox(width: 18),
+            _stat('gap · research priority', site.gap.toStringAsFixed(2), accent: true),
           ]),
         ])),
         const _SectionLabel('REQUIREMENT CHECKS'),
@@ -476,7 +483,7 @@ class SiteScreen extends StatelessWidget {
         Panel(child: Wrap(spacing: 8, runSpacing: 8, children: _coverage())),
         const _SectionLabel('UNCERTAINTY — WHERE THE NUMBER COULD MOVE'),
         Panel(child: Text(
-          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature is scored; MERRA-2 skin and ERA5-Land soil are context. Attention: an OpenAlex keyword count. $totalRecords records is a regional shortlist, not a global survey — read the gap as a screening signal, not a probability. Resolution mismatch: 500 m terrain grid vs ~9 km ERA5 and ~50 km MERRA-2 — local mountain microclimate is not resolved. SRTM gives elevation only; geology, regolith and surface composition are not characterized.',
+          'Ranking: stable under ±20% dimension weights (10/10 variants). Terrain: SRTM-derived 500 m grid, vertical error ~±10 m. Thermal: ERA5 air temperature is scored; MERRA-2 skin and ERA5-Land soil are context. Attention: an OpenAlex keyword count. $totalRecords records is a regional shortlist, not a global survey — read the gap as a screening signal, not a probability. Resolution mismatch: 500 m terrain grid vs ~9 km ERA5 and ~50 km MERRA-2 — local mountain microclimate is not resolved. SRTM gives elevation only; geology, regolith and surface composition are not characterized. Attention-proxy check: a second literature index (Crossref) correlates r≈0.69 with OpenAlex and reorders some sites — read the gap as a signal, not a measurement.',
           style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
         )),
         const _SectionLabel('PROVENANCE (EVERY NUMBER TRACEABLE)'),
@@ -815,7 +822,7 @@ class MethodView extends StatelessWidget {
       final topCount = counts[topId] ?? sensitivity['kagbeni_top'] ?? 10;
       final variants = sensitivity['variants'] ?? 10;
       return Text(
-        'Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by ±20% across $variants variants and the ranking recomputed. ${topSite.name} stays #1 in $topCount/$variants variants. Thresholds were also varied by ±20% across ${(sensitivity['thresholds'] as Map?)?['variants'] ?? 10} variants: ${(sensitivity['thresholds'] as Map?)?['flips'] ?? 16} pass/fail labels moved, while the ranking itself is unchanged by construction — the gap uses continuous distances, not pass counts. This is a perturbation test, not a full uncertainty propagation.',
+        'Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by ±20% across $variants variants and the ranking recomputed. ${topSite.name} stays #1 in $topCount/$variants variants. Similarity ranking is separately stable: Atacama stays top-similarity in 11/11 variants. Thresholds were varied by ±20% across ${(sensitivity['thresholds'] as Map?)?['variants'] ?? 10} variants: ${(sensitivity['thresholds'] as Map?)?['flips'] ?? 16} pass/fail labels moved, while the ranking itself is unchanged by construction — the gap uses continuous distances, not pass counts. This is a perturbation test, not a full uncertainty propagation.',
         style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
       );
     })),

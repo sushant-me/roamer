@@ -27,7 +27,9 @@ const baseRank=ranks(base);
 for(const w of variants){
   const r=ranks(w); topCounts[r[0]]=(topCounts[r[0]]||0)+1; if(r[0]==='kagbeni') kagbeniTop++;
 }
-const sens={variants:variants.length, kagbeni_top:kagbeniTop, top_counts:topCounts,
+const simTop=[]; for(const w of [base,...variants]){ const arr=sites.map(s=>({id:s.id, sim:sim(s,w)})); arr.sort((a,b)=>b.sim-a.sim); simTop.push(arr[0].id); }
+const simTopCounts={}; for(const id of simTop) simTopCounts[id]=(simTopCounts[id]||0)+1;
+const sens={variants:variants.length, kagbeni_top:kagbeniTop, top_counts:topCounts, similarity_top_counts:simTopCounts, similarity_top_id:simTop[0],
   base_top:baseRank[0], base_order:baseRank,
   note:'Weights perturbed ±20% (single and paired); ranking recomputed from the same dimension scores. Experimental, not a full uncertainty propagation.'};
 d.sensitivity=sens;
