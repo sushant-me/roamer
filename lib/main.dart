@@ -759,10 +759,17 @@ class MethodView extends StatelessWidget {
       Text('· Target bands are documented Mars ranges, not a single mission measurement.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
     ])),
     const _SectionLabel('SENSITIVITY — IS THE RANKING FRAGILE?'),
-    Panel(child: Text(
-      'Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by ±20% across ${sensitivity['variants'] ?? 10} variants and the ranking recomputed. Kagbeni stays #1 in ${sensitivity['kagbeni_top'] ?? 10}/${sensitivity['variants'] ?? 10} variants. This is a perturbation test, not a full uncertainty propagation — but the top of the ranking is not weight-fragile.',
-      style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
-    )),
+    Panel(child: Builder(builder: (ctx) {
+      final topId = sensitivity['base_top'] as String?;
+      final topSite = sites.firstWhere((s) => s.id == topId, orElse: () => sites.first);
+      final counts = (sensitivity['top_counts'] as Map?)?.cast<String, dynamic>() ?? const {};
+      final topCount = counts[topId] ?? sensitivity['kagbeni_top'] ?? 10;
+      final variants = sensitivity['variants'] ?? 10;
+      return Text(
+        'Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by ±20% across $variants variants and the ranking recomputed. ${topSite.name} stays #1 in $topCount/$variants variants. This is a perturbation test, not a full uncertainty propagation — but the top of the ranking is not weight-fragile.',
+        style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
+      );
+    })),
     const _SectionLabel('BENCHMARK — DOES IT RECOVER PUBLISHED ANALOGS?'),
     Panel(child: const Text(
       'Atacama (similarity 0.59) and Khumbu (0.32) are published analog sites; both land in the top four by similarity, which is the expected check that the scoring recovers known analogs. Neither tops Survey Gap because both are well studied — that is the ranking behaving as designed, not a miss.',
