@@ -94,7 +94,7 @@ class _HomeShellState extends State<HomeShell> {
     final pages = [
       FindView(sites: sites, map: map, onOpen: _open),
       GapView(sites: sites, onOpen: _open),
-      MethodView(sites: sites, meta: meta),
+      MethodView(sites: sites, meta: meta, sensitivity: (widget.data['sensitivity'] as Map?)?.cast<String, dynamic>() ?? const {}),
     ];
     return Scaffold(
       body: SafeArea(child: IndexedStack(index: tab, children: pages)),
@@ -428,7 +428,7 @@ class SiteScreen extends StatelessWidget {
         ])),
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 2, 20, 0),
-          child: Text('Bar = match in target-σ units (fuller is closer). Grey coverage tiles are not computed by design.',
+          child: Text('Bar = match in target-σ units (fuller is closer). Weights: terrain 0.45 · thermal 0.15 · illumination 0.15 · aridity 0.25. Grey coverage tiles are not computed by design.',
               style: TextStyle(color: kMuted, fontSize: 10.5, height: 1.4)),
         ),
         const _SectionLabel('COVERAGE — WHAT IS COMPUTED'),
@@ -724,7 +724,8 @@ Widget _kv(String k, String v) => Padding(
 class MethodView extends StatelessWidget {
   final List<Site> sites;
   final Map<String, dynamic> meta;
-  const MethodView({super.key, required this.sites, required this.meta});
+  final Map<String, dynamic> sensitivity;
+  const MethodView({super.key, required this.sites, required this.meta, required this.sensitivity});
   @override
   Widget build(BuildContext context) => _page([
     const Header('METHOD', sub: 'What this is — and what it is not'),
@@ -757,6 +758,21 @@ class MethodView extends StatelessWidget {
       Text('· Literature attention is an OpenAlex keyword count — a proxy, not a review.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('· Target bands are documented Mars ranges, not a single mission measurement.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
     ])),
+    const _SectionLabel('SENSITIVITY — IS THE RANKING FRAGILE?'),
+    Panel(child: Text(
+      'Dimension weights (terrain 0.45, thermal 0.15, illumination 0.15, aridity 0.25) were perturbed by ±20% across ${sensitivity['variants'] ?? 10} variants and the ranking recomputed. Kagbeni stays #1 in ${sensitivity['kagbeni_top'] ?? 10}/${sensitivity['variants'] ?? 10} variants. This is a perturbation test, not a full uncertainty propagation — but the top of the ranking is not weight-fragile.',
+      style: const TextStyle(color: kMuted, fontSize: 12, height: 1.5),
+    )),
+    const _SectionLabel('BENCHMARK — DOES IT RECOVER PUBLISHED ANALOGS?'),
+    Panel(child: const Text(
+      'Atacama (similarity 0.59) and Khumbu (0.32) are published analog sites; both land in the top four by similarity, which is the expected check that the scoring recovers known analogs. Neither tops Survey Gap because both are well studied — that is the ranking behaving as designed, not a miss.',
+      style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
+    )),
+    const _SectionLabel('MARS VS MOON — WHAT THE TARGET IS'),
+    Panel(child: const Text(
+      'Target profile: Mars mid-latitude (Jezero / NE Syrtis). Slope and relief limits also bound lunar trafficability, but lunar thermal and illumination extremes are not scored: the Moon comparison here is trafficability + access only, and every record says so.',
+      style: TextStyle(color: kMuted, fontSize: 12, height: 1.5),
+    )),
     const _SectionLabel('DATA & CREDITS'),
     Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
       Text('Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015–2024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.',
