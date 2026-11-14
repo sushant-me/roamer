@@ -8,7 +8,7 @@ Find places on Earth that analog Moon and Mars bases.
 
 3
 00:00:08,400 --> 00:00:12,400
-ROAMER scores twelve sites on a common
+ROAMER scores twenty-five sites on a common
 five hundred metre grid,
 
 4
