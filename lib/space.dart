@@ -220,6 +220,21 @@ class HomeScreen extends StatelessWidget {
                 Wrap(spacing: 6, runSpacing: 6, children: [
                   _chip('AR sky camera'), _chip('3D solar system'), _chip('Story of Earth'), _chip('Earth analogs'),
                 ]),
+                const SizedBox(height: 14),
+                OutlinedButton(
+                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => buildAnalog())),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: kAccent,
+                    side: BorderSide(color: kAccent.withValues(alpha: .6)),
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  ),
+                  child: const Row(mainAxisSize: MainAxisSize.min, children: [
+                    Text('CHALLENGE #09 · EARTH ANALOGS', style: TextStyle(fontSize: 10, letterSpacing: 1.4, fontWeight: FontWeight.w700)),
+                    SizedBox(width: 8),
+                    Icon(Icons.arrow_forward, size: 14),
+                  ]),
+                ),
               ]),
             ),
             const SizedBox(height: 18),
@@ -274,7 +289,7 @@ class HomeScreen extends StatelessWidget {
             ),
             _FeatureCard(
               title: 'Earth Analogs',
-              subtitle: 'Where on Earth should we test Moon/Mars hardware next?',
+              subtitle: 'The challenge answer — 34 sites and a survey-gap ranking.',
               icon: Icons.public,
               tint: Color(0xFFFF9F43),
               onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => buildAnalog())),
