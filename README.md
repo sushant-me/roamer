@@ -11,7 +11,8 @@ ROAMER scores any place on Earth against Moon/Mars requirements on a common 500 
 **Backup deck (7 slides):** https://sushant-me.github.io/roamer/roamer_deck_7slides.pdf
 **One-pager (PDF):** https://sushant-me.github.io/roamer/roamer_one_pager.pdf (download `app-release.apk`)
 **Demo video (29 s, narrated):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.mp4 — narration is SI-generated (text-to-speech), disclosed in the project page.
-**Captions:** https://sushant-me.github.io/roamer/video/roamer_demo_30s.srt
+**Captions (SRT):** https://sushant-me.github.io/roamer/video/roamer_demo_30s.srt
+**Captioned video (no sound needed):** https://sushant-me.github.io/roamer/video/roamer_demo_30s_captions.mp4
 
 <details><summary><b>Video transcript</b></summary>
 
