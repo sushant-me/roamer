@@ -270,7 +270,7 @@ function scoreSite(site, terrain, clim, solarF, lit){
   const aridityScore=+Math.max(0,Math.min(1,1-(clim.precip_annual_mm/800))).toFixed(2);
   const req={
     trafficable_slopes:{ pass: terrain.local_slope_med_deg<=10, value:terrain.local_slope_med_deg, unit:'° local slope (3 km)', threshold:'≤10°' },
-    terrain_relief:{ pass: terrain.local_relief_m>=20 && terrain.local_relief_m<=1500, value:terrain.local_relief_m, unit:'m P90–P10 (1.5 km site pad)', threshold:'150–1,500 m' },
+    terrain_relief:{ pass: terrain.local_relief_m>=20 && terrain.local_relief_m<=1500, value:terrain.local_relief_m, unit:'m P90–P10 (1.5 km site pad)', threshold:'20–1,500 m' },
     sunlight:{ pass: solarF.noon_elev_min_deg>=20, value:solarF.noon_elev_min_deg, unit:'° noon elevation (worst solstice)', threshold:'≥20°' },
     aridity:{ pass: clim.precip_annual_mm<800, value:clim.precip_annual_mm, unit:'mm/yr precipitation', threshold:'<800 mm (semi-arid)' },
     access:{ pass: (site.operability??0)>=0.5, value:site.operability, unit:'operability 0–1', threshold:'≥0.5' },

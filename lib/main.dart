@@ -293,6 +293,11 @@ class _FindViewState extends State<FindView> {
       child: Text('Gap ranks research priority, not analog quality — similarity is the suitability signal, shown separately.',
           style: TextStyle(color: kGrey, fontSize: 10, height: 1.4)),
     ));
+    children.add(const Padding(
+      padding: EdgeInsets.fromLTRB(20, 0, 20, 6),
+      child: Text('0.00 is expected for the well-studied controls: Atacama and Pokhara score zero because they are already surveyed or fail a gate — not because the score failed to compute.',
+          style: TextStyle(color: kGrey, fontSize: 9.5, height: 1.35)),
+    ));
     for (final s in filtered) {
       children.add(SiteCard(site: s, rank: widget.sites.indexOf(s) + 1, top: s.id == widget.sites.first.id, onTap: () => widget.onOpen(s)));
     }
@@ -355,6 +360,11 @@ class SiteCard extends StatelessWidget {
       ]),
       const SizedBox(height: 10),
       _bar(site.gap, kYellow),
+      if (site.gap <= 0.005) const Padding(
+        padding: EdgeInsets.only(top: 5),
+        child: Text('0.00 = already well-surveyed or failed a gate — expected for the controls, not a bug.',
+            style: TextStyle(color: kGrey, fontSize: 9.5, height: 1.3)),
+      ),
       if (top) Padding(
         padding: const EdgeInsets.only(top: 8),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -808,6 +818,17 @@ class MethodView extends StatelessWidget {
       Text('2. Site-pad (1.5 km) and landscape (12 km) features reported separately.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('3. Distances in target-σ units; conjunctive pass/fail; grey tiles where Earth cannot match.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
       Text('4. Positive control (Atacama) and negative control (Pokhara) included; a method that cannot fail is not a method.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+    ])),
+    const _SectionLabel('DATA SOURCES, VARIABLES & WEIGHTS'),
+    Panel(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
+      Text('· Sites: 34 characterized records — 33 in the Nepal test range + Atacama control (Chile). Coordinates and altitude sampled from the DEM; operability is an analyst score 0–1 with access notes.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived, z12 native ~30–34 m, block-averaged to 500 m. Variables: elevation, local relief (1.5 km pad), landscape relief (12 km), median/IQR slope, roughness, variogram slope.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Climate: Open-Meteo Archive API (ERA5 reanalysis, 2015–2024, 0.25° ≈ 28 km). Variables: annual precipitation, seasonal and diurnal air-temperature amplitude, shortwave radiation → aridity and illumination.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Context only: NASA POWER MERRA-2 skin temperature (0.5° × 0.625°) and ERA5-Land soil at 6 cm (0.1° ≈ 9 km); shown, not scored.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Literature attention: OpenAlex keyword count for the site name, normalized as log10(count+1)/4; a second Crossref-based index is the proxy check (r ≈ 0.69).', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Targets: NASA PDS MOLA topography and THEMIS/Diviner thermal summaries → relief 800 ± 400 m, slope 4 ± 3°, seasonal amplitude 45 ± 12 K, noon elevation 40 ± 12°. Documented ranges, not a single mission measurement.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Weights: similarity = 0.45 terrain + 0.15 thermal + 0.15 illumination + 0.25 aridity. Each dimension is |x − target| in target-σ units, scored 1/(1+d).', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
+      Text('· Gates: local slope ≤ 10°, relief 20–1,500 m, noon Sun ≥ 20°, precipitation < 800 mm/yr, operability ≥ 0.5. Attention and operability close the gap: gap = similarity × (1 − attention) × operability.', style: TextStyle(color: kMuted, fontSize: 12, height: 1.5)),
     ])),
     const _SectionLabel('WHAT THIS IS NOT'),
     Panel(child: const Text('Not a Mars-likeness score. Not a landing-site selection. Not a certification of base-site suitability. Not a claim that any of these sites is "the Moon on Earth". It is a shortlist for further investigation, with its evidence attached, and the negative result is part of the finding.',

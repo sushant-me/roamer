@@ -110,8 +110,9 @@ class _SkyDomeScreenState extends State<SkyDomeScreen>
     final a = aimFromSensors(_ax, _ay, _azm, _mx, _my, _mz);
     if (a == null) return;
     setState(() {
-      _az = a.az;
-      _alt = a.alt.clamp(-10.0, 90.0);
+      final dAz = ((a.az - _az + 540) % 360) - 180;
+      _az = (_az + 0.18 * dAz + 360) % 360;
+      _alt = (_alt + 0.22 * (a.alt.clamp(-10.0, 90.0) - _alt)).clamp(-10.0, 90.0);
     });
   }
 

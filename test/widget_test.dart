@@ -72,8 +72,57 @@ void main() {
     final data = jsonDecode(raw!) as Map<String, dynamic>;
     await tester.pumpWidget(RoamerApp(data: data));
     await tester.pump(const Duration(milliseconds: 50));
-    expect(find.textContaining('ROAMER'), findsWidgets);
-    expect(find.textContaining('34 sites characterized'), findsOneWidget);
-    expect(find.textContaining('TEST RANGE'), findsOneWidget);
+    expect(find.textContaining('AstroLens'), findsWidgets);
+    expect(find.textContaining('A space learning app.'), findsOneWidget);
+    expect(find.textContaining('CHALLENGE #09'), findsWidgets);
+  });
+
+
+  test('Star and constellation catalogues are internally consistent', () async {
+    final starsRaw = await rootBundle.loadString('assets/data/stars.json');
+    final starsData = json.decode(starsRaw) as Map<String, dynamic>;
+    final stars = (starsData['stars'] as List).cast<Map<String, dynamic>>();
+    expect(stars.length, 267);
+    expect(starsData['count'], 267);
+    final names = <String>{};
+    for (final s in stars) {
+      names.add(s['n'] as String);
+      final ra = (s['ra'] as num).toDouble();
+      final dec = (s['dec'] as num).toDouble();
+      final mag = (s['m'] as num).toDouble();
+      expect(ra >= 0 && ra < 24, isTrue, reason: '${s['n']} RA');
+      expect(dec >= -90 && dec <= 90, isTrue, reason: '${s['n']} Dec');
+      expect(mag < 7.5, isTrue, reason: '${s['n']} magnitude');
+      expect((s['con'] as String).isNotEmpty, isTrue);
+    }
+    expect(names.length, stars.length, reason: 'duplicate star names');
+
+    final conRaw = await rootBundle.loadString('assets/data/constellations.json');
+    final conData = json.decode(conRaw) as Map<String, dynamic>;
+    final cons = (conData['constellations'] as List).cast<Map<String, dynamic>>();
+    expect(cons.length, 88);
+    expect(conData['count'], 88);
+    expect(cons.map((c) => c['abbr']).toSet().length, 88);
+    for (final c in cons) {
+      expect((c['brightest'] as String).isNotEmpty, isTrue);
+      expect((c['story'] as String).length, greaterThan(60));
+    }
+  });
+
+  test('Requirement pass flags agree with the documented thresholds', () async {
+    final raw = await rootBundle.loadString('assets/data/roamer_data.json');
+    final data = json.decode(raw) as Map<String, dynamic>;
+    final sites = (data['sites'] as List).cast<Map<String, dynamic>>();
+    for (final s in sites) {
+      final req = s['requirements'] as Map<String, dynamic>;
+      double v(String k) => ((req[k] as Map)['value'] as num).toDouble();
+      bool pass(String k) => ((req[k] as Map)['pass'] as bool);
+      expect(pass('trafficable_slopes'), v('trafficable_slopes') <= 10, reason: '${s['id']} slope');
+      expect(pass('terrain_relief'), v('terrain_relief') >= 20 && v('terrain_relief') <= 1500, reason: '${s['id']} relief');
+      expect(pass('sunlight'), v('sunlight') >= 20, reason: '${s['id']} sun');
+      expect(pass('aridity'), v('aridity') < 800, reason: '${s['id']} aridity');
+      expect(pass('access'), v('access') >= 0.5, reason: '${s['id']} access');
+      expect((req['terrain_relief'] as Map)['threshold'], '20–1,500 m');
+    }
   });
 }
