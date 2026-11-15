@@ -384,7 +384,7 @@ break
 default:s=null}s=A.a0(s,t.N)
 return s},
 aZh(){var s=A.d6().b,r=s==null?null:s.canvasKitVariant
-s=A.b0Z(A.aT_(B.Mu,r==null?"auto":r))
+s=A.b0Z(A.aT_(B.Mv,r==null?"auto":r))
 return new A.a7(s,new A.aAS(),A.Z(s).i("a7<1,y>"))},
 b08(a,b){return b+a},
 a18(){var s=0,r=A.L(t.m),q,p,o,n
@@ -12137,7 +12137,7 @@ case 4:s=l.a
 s===$&&A.a()
 s=A.bx(s,200)
 r=A.bx(A.a5L(l,B.pO,B.LL),24)
-q=A.bx(A.a5L(l,B.pO,B.MH),32)
+q=A.bx(A.a5L(l,B.pO,B.MI),32)
 p=A.bx(l.a,10)
 o=A.bx(l.a,12)
 l.d===$&&A.a()
@@ -12147,8 +12147,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.bx(A.BE(s+240),40)
-r=A.bx(A.a5L(l,B.pQ,B.NA),24)
-q=A.bx(A.a5L(l,B.pQ,B.NB),32)
+r=A.bx(A.a5L(l,B.pQ,B.NB),24)
+q=A.bx(A.a5L(l,B.pQ,B.NC),32)
 p=A.bx(l.a+15,8)
 o=A.bx(l.a+15,12)
 l.d===$&&A.a()
@@ -21213,7 +21213,7 @@ r.toString
 A.ci(r)
 q=a.h(0,"swipeEdge")
 q.toString
-return new A.nF(s,r,B.Ml[A.d_(q)])},
+return new A.nF(s,r,B.Mm[A.d_(q)])},
 E6:function E6(a,b){this.a=a
 this.b=b},
 nF:function nF(a,b,c){this.a=a
@@ -23469,7 +23469,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 aSO(a,b){var s=A.Z(b).i("a7<1,dL>")
 s=A.a0(new A.a7(b,new A.a6F(),s),s.i("aj.E"))
-return A.aS6(!0,s,a,B.MU,!0,B.GS,null)},
+return A.aS6(!0,s,a,B.MV,!0,B.GS,null)},
 aDj(a){var s
 try{a.e6()}catch(s){a.Rj()}a.w=B.a4x
 try{a.bj(A.b0S())}catch(s){}},
@@ -24106,7 +24106,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 aan(a,b){var s
-if(a.j(0,b))return new A.L7(B.MW)
+if(a.j(0,b))return new A.L7(B.MX)
 s=A.b([],t.fJ)
 A.ca()
 a.o0(new A.aao(b,A.aD(t.u),s))
@@ -29321,7 +29321,7 @@ a9_(a){var s=a/100
 return(s<=0.0031308?s*12.92:1.055*Math.pow(s,0.4166666666666667)-0.055)*255},
 aDx(a){var s=Math.pow(Math.abs(a),0.42)
 return A.kj(a)*400*s/(s+27.13)},
-aDy(a){var s=A.aDP(a,B.Nz),r=A.aDx(s[0]),q=A.aDx(s[1]),p=A.aDx(s[2])
+aDy(a){var s=A.aDP(a,B.NA),r=A.aDx(s[0]),q=A.aDx(s[1]),p=A.aDx(s[2])
 return Math.atan2((r+q-2*p)/9,(11*r+-12*q+p)/11)},
 aTu(a,b){var s,r,q,p,o,n=B.h.aX(b,4)<=1?0:100,m=(b&1)===0?0:100
 if(b<4){s=(a-n*0.7152-m*0.0722)/0.2126
@@ -29459,7 +29459,7 @@ return b+3},
 aK1(a){var s,r,q,p
 for(s=new A.fH(a),r=t.Hz,s=new A.aW(s,s.gG(0),r.i("aW<aJ.E>")),r=r.i("aJ.E"),q=0;s.v();){p=s.d
 if(p==null)p=r.a(p)
-q=q*31+p&2147483647}return B.Mt[B.h.aX(q,19)]},
+q=q*31+p&2147483647}return B.Mu[B.h.aX(q,19)]},
 b1e(a){var s,r,q,p
 if(a.gG(0)===0)return!0
 s=a.gW(0)
@@ -30485,7 +30485,7 @@ xP(){var s=this.as
 s===$&&A.a()
 return s},
 xQ(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.N5
+if(a<0||b<0)return B.N6
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -30504,7 +30504,7 @@ l.push(new A.ei(n[0],n[1],n[2],n[3],B.ly[m]))}return l},
 dg(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
-r=B.Mo[J.an(s.affinity.value)]
+r=B.Mp[J.an(s.affinity.value)]
 return new A.ac(J.an(s.pos),r)},
 Nc(a){var s=this.a
 s===$&&A.a()
@@ -30750,7 +30750,7 @@ j(a,b){if(b==null)return!1
 if(!(b instanceof A.Ak))return!1
 return b.d===this.d&&b.b==this.b&&A.h1(b.c,this.c)},
 gt(a){var s=this,r=s.c
-return A.O(s.d,s.a,s.b,A.bo(r==null?B.MX:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.O(s.d,s.a,s.b,A.bo(r==null?B.MY:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 $ihN:1}
 A.ze.prototype={
 Xm(a,b){var s=this.QL(a),r=A.aZ(new A.a3C(this,b,s))
@@ -31289,7 +31289,7 @@ p.toString
 p=p>0}else p=!1
 if(p)return q}o=this.acy(a,b)
 if(o.length===1)return B.b.gW(o)
-for(r=0;r<7;++r){q=A.aHP(o,new A.a7y(B.LR[r]))
+for(r=0;r<7;++r){q=A.aHP(o,new A.a7y(B.LS[r]))
 if(q!=null)return q}return B.b.gW(o)},
 adq(a){var s,r,q
 if(B.iD.av(a)){s=B.iD.h(0,a)
@@ -36082,7 +36082,7 @@ if(m.f!==B.pj){m.f=B.pj
 m.Tq()}}return m.d.a.a3r(a)},
 Tq(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-a3q(a){if(B.b.q(B.MM,a))return this.f===B.ii
+a3q(a){if(B.b.q(B.MN,a))return this.f===B.ii
 return!1}}
 A.a7e.prototype={
 $0(){return new A.dp(Date.now(),0,!1)},
@@ -43351,7 +43351,7 @@ if(o>0)return s
 return null}}
 A.aoF.prototype={
 D(a,b){this.QI(b,0,b.length,!1)},
-b2(){this.QI(B.MR,0,0,!0)}}
+b2(){this.QI(B.MS,0,0,!0)}}
 A.aAg.prototype={
 QI(a,b,c,d){var s=this.b.asN(a,b,c,d)
 if(s!=null)this.a.hy(s,0,s.length,d)}}
@@ -47801,7 +47801,7 @@ r=A.nu(B.Qq,B.f,r==null?1:r)
 r.toString
 q=p.ab(q.gn())
 if(q==null)q=1
-return A.aKt(A.aJr(null,B.q,new A.vo(q,B.Mg,new A.cV(B.CM,this.e)),s,1,B.Vs),r)}}
+return A.aKt(A.aJr(null,B.q,new A.vo(q,B.Mh,new A.cV(B.CM,this.e)),s,1,B.Vs),r)}}
 A.Jk.prototype={
 l(){var s=this,r=s.bg$
 if(r!=null)r.J(s.gfa())
@@ -51342,7 +51342,7 @@ n=o.e
 o=o.cx
 r=q.gai1()
 q.a.toString
-return new A.F3(p,p,p,new A.atG(),p,p,p,p,p,n,B.PB,p,p,p,B.N1,q.gai8(),o,p,B.Zy,s,p,r,p,p,B.pN,!1,!1,p,p,p,new A.q_(q,t.bT))},
+return new A.F3(p,p,p,new A.atG(),p,p,p,p,p,n,B.PB,p,p,p,B.N2,q.gai8(),o,p,B.Zy,s,p,r,p,p,B.pN,!1,!1,p,p,p,new A.q_(q,t.bT))},
 I(a){var s,r=this.a9M(a)
 this.a.toString
 s=this.d
@@ -51657,7 +51657,7 @@ A.x8.prototype={
 H(){return"_CornerId."+this.b}}
 A.mm.prototype={}
 A.vq.prototype={
-lt(){var s,r,q,p=this,o=A.b_k(B.MD,new A.adN(p,p.b.gb0().a1(0,p.a.gb0()))),n=p.a
+lt(){var s,r,q,p=this,o=A.b_k(B.ME,new A.adN(p,p.b.gb0().a1(0,p.a.gb0()))),n=p.a
 n.toString
 s=o.a
 r=p.qH(n,s)
@@ -52787,7 +52787,7 @@ A.avI.prototype={
 $2(a,b){return this.a.C$.cb(a,this.b)},
 $S:18}
 A.Tl.prototype={
-gEv(){return B.LQ},
+gEv(){return B.LR},
 Jz(a){var s
 switch(a.a){case 0:s=this.d.b
 break
@@ -55793,7 +55793,7 @@ A.avX.prototype={
 $0(){return A.b([],t.q1)},
 $S:246}
 A.U6.prototype={
-gEv(){return B.M0},
+gEv(){return B.M1},
 Jz(a){var s,r=this
 switch(a.a){case 0:s=r.d.ax
 break
@@ -56444,7 +56444,7 @@ return s.b}}
 A.jG.prototype={
 H(){return"_ListTileSlot."+this.b}}
 A.VN.prototype={
-gEv(){return B.Mw},
+gEv(){return B.Mx},
 Jz(a){var s,r=this
 switch(a.a){case 0:s=r.d
 break
@@ -56751,7 +56751,7 @@ r.f=s.d},
 $S:0}
 A.O5.prototype={
 I(a){var s=this.c.R(0,new A.f(0,40.95))
-return A.aJr(A.LA(null,B.Gc,!0),B.O,new A.vo(1,B.Ni,new A.cV(B.CL,B.w)),s,1.25,B.Vt)}}
+return A.aJr(A.LA(null,B.Gc,!0),B.O,new A.vo(1,B.Nj,new A.cV(B.CL,B.w)),s,1.25,B.Vt)}}
 A.qu.prototype={
 H(){return"MaterialType."+this.b}}
 A.vp.prototype={
@@ -57481,7 +57481,7 @@ $3(a,b,c){return new A.oQ(b,this.a,!1,c,null)},
 $S:129}
 A.OO.prototype={
 a94(a){var s=t.Tr
-s=A.a0(new A.a7(B.MC,new A.afn(a),s),s.i("aj.E"))
+s=A.a0(new A.a7(B.MD,new A.afn(a),s),s.i("aj.E"))
 return s},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -64378,7 +64378,7 @@ return new A.n8(r.a.cR(s.giN()),r.b,r.c)},
 dg(a){var s=this.b
 return s.a.c.dg(a.a1(0,s.giN()))},
 rs(){var s,r,q=this.b,p=q.giN()
-if(!isFinite(p.a)||!isFinite(p.b))return B.MT
+if(!isFinite(p.a)||!isFinite(p.b))return B.MU
 s=q.f
 if(s==null){s=q.a.c.rs()
 q.f=s}if(p.j(0,B.f))r=s
@@ -74099,7 +74099,7 @@ break
 case 1:return A.J(q,r)}})
 return A.K($async$GO,r)},
 acQ(a,b){var s,r,q,p
-if(a===b)return B.N0
+if(a===b)return B.N1
 s=A.b([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.hg(B.fw,a)
@@ -76240,7 +76240,7 @@ A.lT.prototype={}
 A.Pf.prototype={
 m4(a,b){var s,r,q,p,o,n=$.a1.ai$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.E,r=0;r<2;++r){q=B.MO[r]
+for(s=t.E,r=0;r<2;++r){q=B.MP[r]
 p=n.e
 p.toString
 o=A.aCL(p,q,s)
@@ -76352,7 +76352,7 @@ this.fb()}}
 A.ol.prototype={
 k(a){return"Entry#"+A.bt(this)+"("+this.d.k(0)+")"}}
 A.yG.prototype={
-ah(){return new A.Fc(A.aD(t.mf),B.MV,null,null)},
+ah(){return new A.Fc(A.aD(t.mf),B.MW,null,null)},
 azq(a,b){return this.w.$2(a,b)},
 avX(a,b){return this.x.$2(a,b)}}
 A.Fc.prototype={
@@ -78973,7 +78973,7 @@ h.IQ()
 r=h.gadJ()
 q=q.ww
 h.e!==$&&A.aU()
-h.e=new A.Qx(f,new A.c8(B.Pj,l),new A.qp(),p,B.cJ,0,k,h.gag8(),h.gaga(),r,B.cJ,0,j,h.gag2(),h.gag4(),r,i,B.MY,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.LI(),new A.LI())
+h.e=new A.Qx(f,new A.c8(B.Pj,l),new A.qp(),p,B.cJ,0,k,h.gag8(),h.gaga(),r,B.cJ,0,j,h.gag2(),h.gag4(),r,i,B.MZ,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.LI(),new A.LI())
 return h},
 z3(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -82365,7 +82365,7 @@ j(a,b){var s=this
 if(b==null)return!1
 if(J.R(b)!==A.p(s))return!1
 return b instanceof A.bN&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.cj(null,null)},
-gt(a){return A.O(this.a,this.b,null,this.d,A.bo(B.N4),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gt(a){return A.O(this.a,this.b,null,this.d,A.bo(B.N5),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.tn(B.h.nU(this.a,16).toUpperCase(),5,"0")+")"}}
 A.q6.prototype={
 cv(a){return!this.w.j(0,a.w)},
@@ -83468,7 +83468,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.BF(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.uF(a1),B.MS,e===!0,d,c,b,a3,A.aUi(a2))
+a=new A.BF(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.uF(a1),B.MT,e===!0,d,c,b,a3,A.aUi(a2))
 if(!a.j(0,a0.e))a0.T(new A.atX(a0,a))},
 BB(){if(this.d==null)this.rb()},
 Kg(){this.rb()},
@@ -83864,7 +83864,7 @@ r.X(0,s.a1m(null,l))
 l.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.N2[p]
+for(;!1;++p){o=B.N3[p]
 n=l.c
 n.toString
 m=new A.i6(o.JZ(n),null,!0,B.nb,B.cr,new A.ts(new ($.a1s())(B.cr)),B.cr)
@@ -84215,7 +84215,7 @@ I(a){var s,r,q=this,p=null,o=q.gafF(),n=A.n5(a),m=q.c7$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.gL()==null){r=q.gPv()
-r=J.ke(r.slice(0),A.Z(r).c)}else r=B.N3
+r=J.ke(r.slice(0),A.Z(r).c)}else r=B.N4
 return new A.q2(p,new A.d3(new A.af0(q,a),A.Bu(B.cf,new A.Kk(!1,A.aDp(A.n3(!0,p,A.S0(m,new A.vA(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),p,n),p),o,q.gafw(),p,p,o),p,t.w3),p)}}
 A.af_.prototype={
 $1(a){var s,r=this.a
@@ -89774,7 +89774,7 @@ r.As()
 return s.b_()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gGR(),p=0;p<s.length;s.length===r||(0,A.x)(s),++p)s[p].J(q)
-o.b=B.MZ
+o.b=B.N_
 o.y=!1
 o.dw()},
 eD(a,b){return a.nh(b)},
@@ -94549,7 +94549,7 @@ if(s!=null)s.au()
 this.gxB().l()
 this.a7w()},
 I(a){var s=null,r=t.p,q=A.b([A.aEp(B.JD,B.a1Q,new A.ar6(a),s)],r),p=this.gxB()
-return A.fP(A.iZ(q,B.a0,A.aK4(p,B.o,B.o,B.MB,B.A),s,B.z,s,B.a1J),B.a0,new A.iE(A.aK6(A.b([this.anz(),B.IN],r),p),1,s),s)},
+return A.fP(A.iZ(q,B.a0,A.aK4(p,B.o,B.o,B.MC,B.A),s,B.z,s,B.a1I),B.a0,new A.iE(A.aK6(A.b([this.anz(),B.IN],r),p),1,s),s)},
 anz(){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=h.ga3K(),e=A.ih(A.cc(16),A.es(g,g,g,new A.Ac(h.e,g),B.C)),d=A.dM(A.Y(f.c,g,g,g,g,B.a_h,g,g),1),c=t.p
 d=A.bL(A.b([d,A.v0(g,g,A.lv(h.r?B.pq:B.pr,B.o,g,36),g,g,h.gIq(),g,g,g)],c),B.x,B.m,B.n,0)
 s=A.akO(B.o,B.ce,1,0,g,new A.ar0(h),h.e)
@@ -94570,7 +94570,7 @@ for(s=t.G,r=0;r<7;++r){q=B.pU[r]
 m.push(new A.j6(B.c.aH(A.bU(q[1])),B.cz,A.cv(p,p,B.q,s.a(q[2]),p,p,p,p,p,p,p,p,p),p))}o=A.ih(o,A.cL(A.bL(m,B.x,B.m,B.n,0),16,p))
 m=A.b([],n)
 for(r=0;r<7;++r){q=B.pU[r]
-m.push(A.bL(A.b([A.cv(p,p,B.q,s.a(q[2]),p,p,p,8,p,p,p,p,8),B.Vx,A.Y(A.j(q[0])+" "+A.j(q[1])+"%",p,p,p,p,B.c7,p,p)],n),B.x,B.m,B.bw,0))}return A.bp(A.b([o,B.ak,A.F6(m,4,10),B.ak,B.a1t,B.bA,B.a1y,B.ak,A.ih(A.cc(16),A.f8(B.bh,A.b([A.j8("assets/img/earth.jpg",B.bN,210,1/0),A.cv(p,B.a2e,B.q,B.l.by(0.35),p,p,p,p,p,B.oN,p,p,p)],n),B.O,B.b4,p))],n),B.x,B.m,B.n)}}
+m.push(A.bL(A.b([A.cv(p,p,B.q,s.a(q[2]),p,p,p,8,p,p,p,p,8),B.Vx,A.Y(A.j(q[0])+" "+A.j(q[1])+"%",p,p,p,p,B.c7,p,p)],n),B.x,B.m,B.bw,0))}return A.bp(A.b([o,B.ak,A.F6(m,4,10),B.ak,B.a1s,B.bA,B.a1x,B.ak,A.ih(A.cc(16),A.f8(B.bh,A.b([A.j8("assets/img/earth.jpg",B.bN,210,1/0),A.cv(p,B.a2e,B.q,B.l.by(0.35),p,p,p,p,p,B.oN,p,p,p)],n),B.O,B.b4,p))],n),B.x,B.m,B.n)}}
 A.ar2.prototype={
 $0(){return this.a.r=!1},
 $S:0}
@@ -94721,7 +94721,7 @@ l=B.lB[s]
 n=n?B.o:B.z
 n=A.Y(l.a,q,q,q,q,new A.k(!0,n,q,q,q,q,13,B.dq,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q),q,q)
 o.push(A.abg(B.ad,m,new A.ass(r,s),A.Y(l.b,q,q,q,q,B.c7,q,q),n,q))}o.push(B.ak)
-o.push(B.a1e)
+o.push(B.a1d)
 return A.fk(o,B.cy,B.W)},
 PG(a,b,c){var s=null
 return A.bp(A.b([A.Y(a,s,s,s,s,A.bY(s,s,c,s,s,s,s,s,s,s,s,9,s,s,B.ao,s,s,!0,s,2,s,s,s,s,s,s),s,s),B.h6,A.Y(b,s,s,s,s,B.hb,s,s)],t.p),B.G,B.m,B.n)}}
@@ -94897,8 +94897,8 @@ j=""+k+" match"+j+" \u2014 tap a record"
 k=j}}e.push(new A.bW(A.bp(A.b([B.a1M,B.ak,n,B.bz,A.Y(k,c,c,c,c,B.dK,c,c)],o),B.G,B.m,B.n),c))
 if(r&&b.a!=null){r=A.Y(B.c.M(q[0],4)+", "+B.c.M(q[1],4),c,c,c,c,B.Xv,c,c)
 n=b.a
-e.push(new A.bW(A.bL(A.b([B.Jz,B.eD,A.dM(A.bp(A.b([r,A.Y(p<1?"this is the "+n.b+" record \u2014 coordinates match its reference point":"nearest characterized: "+n.b+" \xb7 "+B.c.M(p,0)+" km \u2014 this point is not yet characterized",c,c,c,c,B.cl,c,c)],o),B.G,B.m,B.n),1),A.wz(B.a1V,new A.arv(b,d),c)],o),B.x,B.m,B.n,0),c))}if(!a0&&a1&&s.length===0)e.push(new A.bW(A.bp(A.b([B.a17,B.bm,A.Y("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,c,B.mL,c,c)],o),B.G,B.m,B.n),c))
-e.push(new A.bW(A.bp(A.b([A.bL(A.b([B.a1k,A.Y("DEM hillshade \xb7 500 m grid",c,c,c,c,A.bY(c,c,A.ag(204,B.A.u()>>>16&255,B.A.u()>>>8&255,B.A.u()&255),c,c,c,c,c,c,c,c,10,c,c,c,c,c,!0,c,c,c,c,c,c,c,c),c,c)],o),B.x,B.eg,B.n,0),B.ak,A.cL(A.aIx(new A.arw(d)),330,c),B.ak,A.F6(A.b([d.Hc(B.o,"candidate"),d.Hc(B.bP,"positive control"),d.Hc(B.cc,"negative control")],o),6,12),B.d1,B.a2c],o),B.G,B.m,B.n),c))
+e.push(new A.bW(A.bL(A.b([B.Jz,B.eD,A.dM(A.bp(A.b([r,A.Y(p<1?"this is the "+n.b+" record \u2014 coordinates match its reference point":"nearest characterized: "+n.b+" \xb7 "+B.c.M(p,0)+" km \u2014 this point is not yet characterized",c,c,c,c,B.cl,c,c)],o),B.G,B.m,B.n),1),A.wz(B.a1V,new A.arv(b,d),c)],o),B.x,B.m,B.n,0),c))}if(!a0&&a1&&s.length===0)e.push(new A.bW(A.bp(A.b([B.a16,B.bm,A.Y("\u201c"+d.d+"\u201d is not in the six-record test range. Try Kagbeni, Lo Manthang, Shey Phoksundo, Khumbu, Pokhara or Atacama \u2014 or paste coordinates (28.82, 83.78).",c,c,c,c,B.mL,c,c)],o),B.G,B.m,B.n),c))
+e.push(new A.bW(A.bp(A.b([A.bL(A.b([B.a1j,A.Y("DEM hillshade \xb7 500 m grid",c,c,c,c,A.bY(c,c,A.ag(204,B.A.u()>>>16&255,B.A.u()>>>8&255,B.A.u()&255),c,c,c,c,c,c,c,c,10,c,c,c,c,c,!0,c,c,c,c,c,c,c,c),c,c)],o),B.x,B.eg,B.n,0),B.ak,A.cL(A.aIx(new A.arw(d)),330,c),B.ak,A.F6(A.b([d.Hc(B.o,"candidate"),d.Hc(B.bP,"positive control"),d.Hc(B.cc,"negative control")],o),6,12),B.d1,B.a2c],o),B.G,B.m,B.n),c))
 e.push(B.Ra)
 e.push(B.Rb)
 e.push(B.R9)
@@ -95051,7 +95051,7 @@ A.de.prototype={
 I(a){var s=null
 return new A.aO(B.Id,A.Y(this.c,s,s,s,s,B.a_F,s,s),s)}}
 A.MW.prototype={
-I(a){var s,r,q,p,o,n,m,l,k,j=null,i="positive_control",h=t.p,g=A.b([B.IL,new A.bW(A.bp(A.b([B.a1F,B.bz,A.cL(A.aIx(new A.a8p(this)),400,j),B.ak,B.a1W],h),B.G,B.m,B.n),j),B.R7],h)
+I(a){var s,r,q,p,o,n,m,l,k,j=null,i="positive_control",h=t.p,g=A.b([B.IL,new A.bW(A.bp(A.b([B.a1E,B.bz,A.cL(A.aIx(new A.a8p(this)),400,j),B.ak,B.a1W],h),B.G,B.m,B.n),j),B.R7],h)
 for(s=this.c,r=s.length,q=0;q<s.length;s.length===r||(0,A.x)(s),++q){p=s[q]
 o=A.Y(B.c.M(p.as,2),j,j,j,j,B.a_u,j,j)
 n=A.bp(A.b([A.Y(p.b,j,j,j,j,B.hc,j,j),A.Y("similarity "+B.c.M(p.z,2)+" \xb7 attention "+B.c.M(p.Q,2)+" \xb7 operability "+B.c.M(p.y,2),j,j,j,j,B.BI,j,j)],h),B.G,B.m,B.n)
@@ -95178,11 +95178,11 @@ return A.J(null,r)}})
 return A.K($async$$0,r)},
 $S:21}
 A.Oj.prototype={
-I(a){var s=null,r=A.bp(B.LO,B.G,B.m,B.n),q=A.bp(B.LI,B.G,B.m,B.n),p=A.bp(B.MF,B.G,B.m,B.n),o=A.bp(B.KH,B.G,B.m,B.n),n=A.bp(B.Lt,B.G,B.m,B.n),m=t.l7
+I(a){var s=null,r=A.bp(B.LP,B.G,B.m,B.n),q=A.bp(B.LI,B.G,B.m,B.n),p=A.bp(B.MG,B.G,B.m,B.n),o=A.bp(B.KH,B.G,B.m,B.n),n=A.bp(B.Lt,B.G,B.m,B.n),m=t.l7
 m=A.a0(J.iX(this.f,new A.aei(),m),m)
 m.push(B.bm)
-m.push(B.a1h)
-return A.fF(new A.dY(B.k1,A.fk(A.b([B.IM,new A.bW(r,s),new A.bW(q,s),B.a5Q,new A.bW(p,s),B.a5M,new A.bW(o,s),B.a5Z,new A.bW(B.a1P,s),B.a5Y,new A.bW(n,s),B.a62,new A.bW(new A.dX(new A.aej(this),s),s),B.a5X,new A.bW(B.a1d,s),B.a5N,new A.bW(B.a1u,s),B.a61,new A.bW(A.bp(m,B.G,B.m,B.n),s),B.a5P,new A.bW(A.bp(B.Ne,B.G,B.m,B.n),s),new A.aO(B.cy,A.Y("Generated "+A.j(this.d.h(0,"generated")),s,s,s,s,B.BK,s,s),s)],t.p),B.kJ,B.W),s),s,s)}}
+m.push(B.a1g)
+return A.fF(new A.dY(B.k1,A.fk(A.b([B.IM,new A.bW(r,s),new A.bW(q,s),B.a5Q,new A.bW(p,s),B.a5M,new A.bW(o,s),B.a5Z,new A.bW(B.a1P,s),B.a5Y,new A.bW(n,s),B.a62,new A.bW(new A.dX(new A.aej(this),s),s),B.a5X,new A.bW(B.a1c,s),B.a5N,new A.bW(B.a1t,s),B.a61,new A.bW(A.bp(m,B.G,B.m,B.n),s),B.a5P,new A.bW(A.bp(B.Nf,B.G,B.m,B.n),s),new A.aO(B.cy,A.Y("Generated "+A.j(this.d.h(0,"generated")),s,s,s,s,B.BK,s,s),s)],t.p),B.kJ,B.W),s),s,s)}}
 A.aej.prototype={
 $1(a){var s,r,q,p,o,n,m,l=null,k="variants",j="thresholds",i=this.a,h=i.e,g=A.cH(h.h(0,"base_top")),f=B.b.Zt(i.c,new A.aeg(g),new A.aeh(i))
 i=t.Xw
@@ -95216,7 +95216,7 @@ else{q=q.h(a,"secondary_gap")
 q="Crossref-proxy gap "+A.j(q==null?"\u2014":q)}return new A.aO(B.HL,A.Y(p+" ("+o+") \xb7 similarity "+n+" \xb7 "+q,r,r,r,r,B.mK,r,r),r)},
 $S:603}
 A.ru.prototype={
-ah(){return new A.Ie(B.C,B.N_,B.J,null,null)}}
+ah(){return new A.Ie(B.C,B.N0,B.J,null,null)}}
 A.aAM.prototype={
 $0(){var s=new A.xK()
 s.yI(1801)
@@ -95570,21 +95570,21 @@ if(s!=null)s.au()
 this.gxB().l()
 this.a7Z()},
 I(a){var s=this,r=null,q=s.gxB()
-return A.fP(A.iZ(r,B.a0,A.aK4(q,B.o,B.o,B.Mm,B.A),r,B.z,r,B.a2y),B.a0,A.aK6(A.b([s.ajI(),s.acP(),s.a9l()],t.p),q),r)},
+return A.fP(A.iZ(r,B.a0,A.aK4(q,B.o,B.o,B.Mn,B.A),r,B.z,r,B.a2y),B.a0,A.aK6(A.b([s.ajI(),s.acP(),s.a9l()],t.p),q),r)},
 ajI(){var s=this,r=null,q=t.p
-return A.f8(B.bh,A.b([A.jm(0,A.n7(r,A.es(r,r,r,new A.Wu(s.e,s.f,s.r,s.w,new A.ayA(s),r),B.C),B.au,!1,r,r,r,r,r,r,r,r,r,r,r,r,new A.ayB(),new A.ayC(s),r,r,r,r,r,r,r,new A.ayD(s),r,r,r)),A.lS(r,A.cv(r,B.a1E,B.q,r,r,new A.ck(B.l.by(0.5),r,r,A.cc(10),r,r,B.ae),r,r,r,B.oO,r,r,r),r,r,12,r,12,r),A.lS(r,A.bp(A.b([s.QR(B.IV,new A.ayE(s)),B.bm,s.QR(B.J9,new A.ayF(s))],q),B.x,B.m,B.n),r,r,r,12,12,r)],q),B.O,B.b4,r)},
+return A.f8(B.bh,A.b([A.jm(0,A.n7(r,A.es(r,r,r,new A.Wu(s.e,s.f,s.r,s.w,new A.ayA(s),r),B.C),B.au,!1,r,r,r,r,r,r,r,r,r,r,r,r,new A.ayB(),new A.ayC(s),r,r,r,r,r,r,r,new A.ayD(s),r,r,r)),A.lS(r,A.cv(r,B.a1D,B.q,r,r,new A.ck(B.l.by(0.5),r,r,A.cc(10),r,r,B.ae),r,r,r,B.oO,r,r,r),r,r,12,r,12,r),A.lS(r,A.bp(A.b([s.QR(B.IV,new A.ayE(s)),B.bm,s.QR(B.J9,new A.ayF(s))],q),B.x,B.m,B.n),r,r,r,12,12,r)],q),B.O,B.b4,r)},
 QR(a,b){var s=null,r=A.cc(10)
 return A.hP(!1,B.Y,!0,s,A.kc(!1,A.cc(10),!0,new A.aO(B.e6,A.lv(a,B.z,s,18),s),s,!0,s,s,s,s,s,s,s,s,b,s,s,s,s,s,s,s),B.q,B.c0,0,s,s,new A.cV(r,B.w),s,s,B.bH)},
 ajH(a){var s=this.c
 s.toString
 A.cS(s,!1).dK(A.ed(new A.ayw(a),null,t.z))},
-acP(){var s,r,q,p,o=null,n=t.p,m=A.b([B.a1r,B.d1,B.a1v,B.bK],n)
+acP(){var s,r,q,p,o=null,n=t.p,m=A.b([B.a1q,B.d1,B.a1u,B.bK],n)
 for(s=B.PH.gh9(),s=s.gaa(s);s.v();){r=s.gN()
 q=new A.av(14,14)
 p=new A.av(14,14)
 m.push(new A.aO(B.oL,new A.vp(A.kc(!1,new A.c2(p,p,p,p),!0,A.bp(A.b([new A.pn(B.CR,A.j8(r.b,B.bN,150,1/0),o),new A.aO(B.HU,A.Y(r.a,o,o,o,o,B.Z1,o,o),o)],n),B.G,B.m,B.n),o,!0,o,o,o,o,o,o,o,o,new A.ayv(this,r),o,o,o,o,o,o,o),B.bH,!1,0,B.c0,o,o,o,o,!0,B.q,B.Y,new A.c2(q,q,q,q),o),o))}return new A.iE(A.fk(m,B.oP,B.W),1,o)},
 a9l(){var s,r,q,p,o=null,n=t.p,m=A.b([B.a29,B.bz],n)
-for(s=0;s<6;++s){r=B.LX[s]
+for(s=0;s<6;++s){r=B.LY[s]
 q=new A.av(14,14)
 p=new A.aH(B.ce,1,B.t,-1)
 m.push(A.cv(o,A.bp(A.b([A.bL(A.b([new A.j6(1,B.cz,A.Y(r.a,o,o,o,o,B.mJ,o,o),o),A.Y(r.b,o,o,o,o,B.YS,o,o)],n),B.x,B.m,B.n,0),B.bm,A.Y(r.c,o,o,o,o,B.ag,o,o)],n),B.G,B.m,B.n),B.q,o,o,new A.ck(B.c0,o,new A.dK(p,p,p,p),new A.c2(q,q,q,q),o,o,B.ae),o,o,B.HG,B.oP,o,o,o))}return new A.iE(A.fk(m,B.cy,B.W),1,o)}}
@@ -95706,7 +95706,7 @@ b4.r=B.Fg.gn()
 l=b4.bW()
 b4=e.e
 r.drawPath((b4==null?e.e=new A.jY(e.ghv().a.snapshot()):b4).a,l)
-l.delete()}for(b1=a7.e,b4=t.c,g=0;g<8;++g){a0=B.LY[g]
+l.delete()}for(b1=a7.e,b4=t.c,g=0;g<8;++g){a0=B.LZ[g]
 p=a0.b
 d=(58+54*Math.log(1+p*3))*b2
 o=A.b([],b3)
@@ -95745,7 +95745,7 @@ p=a2.a
 n=a2.b
 r.drawCircle(p,n,a3,l)
 l.delete()
-a4=new A.m7(new A.e4(a0.a,a8,a8,B.aB,a8,a8,a8,a8,a8,a8,new A.k(!0,B.z,a8,a8,a8,a8,10,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,B.Nb,a8,a8,a8)),B.ax,B.N,new A.fw(1),a8,a8,a8,a8,B.aq,a8)
+a4=new A.m7(new A.e4(a0.a,a8,a8,B.aB,a8,a8,a8,a8,a8,a8,new A.k(!0,B.z,a8,a8,a8,a8,10,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,B.Nc,a8,a8,a8)),B.ax,B.N,new A.fw(1),a8,a8,a8,a8,B.aq,a8)
 a4.nz()
 a4.aB(b5,new A.f(p+(a3+3),n+-6))
 i.push(new A.XJ(a0,a2,a3+10))}a5=A.aq()
@@ -95773,11 +95773,11 @@ r=t.p
 m=A.b([A.ih(A.cc(16),A.j8(l,B.bN,230,1/0)),B.c6,A.Y(m,o,o,o,o,B.BE,o,o),B.ak,A.Y(n.f,o,o,o,o,B.ha,o,o),B.B0],r)
 for(n=n.r,q=0;q<4;++q){p=n[q]
 m.push(new A.aO(B.fk,A.bL(A.b([A.Y(p.a,o,o,o,o,B.dK,o,o),A.Y(p.b,o,o,o,o,B.mK,o,o)],r),B.x,B.eg,B.n,0),o))}m.push(B.bA)
-m.push(B.a1o)
+m.push(B.a1n)
 return A.fP(s,B.a0,new A.iE(A.fk(m,B.dl,B.W),1,o),o)}}
 A.uW.prototype={
 I(a){var s=null,r=this.c
-return A.fP(A.iZ(s,B.a0,s,s,B.z,s,A.Y(r,s,s,s,s,s,s,s)),B.a0,new A.iE(A.fk(A.b([A.ih(A.cc(16),A.j8(this.d,B.bN,240,1/0)),B.c6,A.Y(r,s,s,s,s,B.Xz,s,s),B.bz,A.Y("A real galaxy image from NASA/ESO. The Milky Way is one of trillions of galaxies; these are our neighbours and the most famous spirals and ellipticals.",s,s,s,s,B.ha,s,s),B.c6,B.a1i],t.p),B.dl,B.W),1,s),s)}}
+return A.fP(A.iZ(s,B.a0,s,s,B.z,s,A.Y(r,s,s,s,s,s,s,s)),B.a0,new A.iE(A.fk(A.b([A.ih(A.cc(16),A.j8(this.d,B.bN,240,1/0)),B.c6,A.Y(r,s,s,s,s,B.Xz,s,s),B.bz,A.Y("A real galaxy image from NASA/ESO. The Milky Way is one of trillions of galaxies; these are our neighbours and the most famous spirals and ellipticals.",s,s,s,s,B.ha,s,s),B.c6,B.a1h],t.p),B.dl,B.W),1,s),s)}}
 A.JK.prototype={
 l(){var s=this,r=s.bg$
 if(r!=null)r.J(s.gfa())
@@ -95813,8 +95813,8 @@ A.lb.prototype={}
 A.dJ.prototype={}
 A.QW.prototype={}
 A.N8.prototype={
-I(a){var s=null,r="Story of Earth",q=A.cc(20),p=A.tZ(A.b7(4280105582),1),o=t.p,n=A.bL(A.b([A.cv(s,s,B.q,s,s,B.nu,s,12,s,s,s,s,12),B.eD,B.a1q,B.h7,A.cv(s,B.a19,B.q,s,s,new A.ck(B.o.by(0.12),s,s,A.cc(999),s,s,B.ae),s,s,s,B.kM,s,s,s)],o),B.x,B.m,B.n,0),m=A.F6(A.b([A.aAU("AR sky camera"),A.aAU("3D solar system"),A.aAU(r),A.aAU("Earth analogs")],o),6,6),l=B.o.by(0.6)
-return A.fP(s,B.a0,new A.iE(A.nR(!0,A.fk(A.b([A.cv(s,A.bp(A.b([n,B.bz,B.a1m,B.d1,B.a2s,B.bK,m,B.c6,A.aJ4(B.Tt,new A.a9B(this,a),A.aDZ(s,s,s,s,s,s,s,s,s,B.o,s,s,B.HW,s,new A.cV(A.cc(12),B.w),new A.aH(l,1,B.t,-1),s,s,s,s))],o),B.G,B.m,B.n),B.q,s,s,new A.ck(s,s,p,q,s,B.KA,B.ae),s,s,s,B.dl,s,s,s),B.bA,B.a1b,B.bz,new A.jE("Sky Camera","Point your phone at the sky \u2014 it names the stars in view.",B.Jf,B.o,new A.a9C(a),s),new A.jE("AR Explorer","Tap any star in the camera view for its NASA-sourced story.",B.Jg,B.cd,new A.a9D(a),s),new A.jE("Tonight\u2019s Sky","What is above you right now, with altitude and direction.",B.Je,A.b7(4287280383),new A.a9E(a),s),new A.jE("3D Solar System","Orbit the Sun, visit every planet, and fly out to galaxies and the Oort Cloud.",B.IX,B.FP,new A.a9F(a),s),new A.jE("Learn the Sky","267 bright stars and 88 constellations, in plain language.",B.Jd,A.b7(4292061183),new A.a9G(a),s),new A.aO(B.HJ,A.Y("EXPLORE THE EARTH",s,s,s,s,B.jj,s,s),s),new A.jE(r,"Scrub 4.6 billion years: how Earth formed, what it is made of, and the competing hypotheses.",B.ps,B.kb,new A.a9H(a),s),new A.jE("Earth Analogs","The challenge answer \u2014 34 sites and a survey-gap ranking.",B.ps,A.b7(4294942531),new A.a9I(this,a),s),new A.jE("About this app","Team roamer \xb7 data sources \xb7 honest limits.",B.J1,B.A,new A.a9J(a),s),B.bA,B.a2C],o),B.Ih,B.W),!1,B.ad,!0),1,s),s)}}
+I(a){var s=null,r="Story of Earth",q=A.cc(20),p=A.tZ(A.b7(4280105582),1),o=t.p,n=A.bL(A.b([A.cv(s,s,B.q,s,s,B.nu,s,12,s,s,s,s,12),B.eD,B.a1p,B.h7,A.cv(s,B.a18,B.q,s,s,new A.ck(B.o.by(0.12),s,s,A.cc(999),s,s,B.ae),s,s,s,B.kM,s,s,s)],o),B.x,B.m,B.n,0),m=A.F6(A.b([A.aAU("AR sky camera"),A.aAU("3D solar system"),A.aAU(r),A.aAU("Earth analogs")],o),6,6),l=B.o.by(0.6)
+return A.fP(s,B.a0,new A.iE(A.nR(!0,A.fk(A.b([A.cv(s,A.bp(A.b([n,B.bz,B.a1l,B.d1,B.a2s,B.bK,m,B.c6,A.aJ4(B.Tt,new A.a9B(this,a),A.aDZ(s,s,s,s,s,s,s,s,s,B.o,s,s,B.HW,s,new A.cV(A.cc(12),B.w),new A.aH(l,1,B.t,-1),s,s,s,s))],o),B.G,B.m,B.n),B.q,s,s,new A.ck(s,s,p,q,s,B.KA,B.ae),s,s,s,B.dl,s,s,s),B.bA,B.a1a,B.bz,new A.jE("Sky Camera","Point your phone at the sky \u2014 it names the stars in view.",B.Jf,B.o,new A.a9C(a),s),new A.jE("AR Explorer","Tap any star in the camera view for its NASA-sourced story.",B.Jg,B.cd,new A.a9D(a),s),new A.jE("Tonight\u2019s Sky","What is above you right now, with altitude and direction.",B.Je,A.b7(4287280383),new A.a9E(a),s),new A.jE("3D Solar System","Orbit the Sun, visit every planet, and fly out to galaxies and the Oort Cloud.",B.IX,B.FP,new A.a9F(a),s),new A.jE("Learn the Sky","267 bright stars and 88 constellations, in plain language.",B.Jd,A.b7(4292061183),new A.a9G(a),s),new A.aO(B.HJ,A.Y("EXPLORE THE EARTH",s,s,s,s,B.jj,s,s),s),new A.jE(r,"Scrub 4.6 billion years: how Earth formed, what it is made of, and the competing hypotheses.",B.ps,B.kb,new A.a9H(a),s),new A.jE("Earth Analogs","The challenge answer \u2014 34 sites and a survey-gap ranking.",B.ps,A.b7(4294942531),new A.a9I(this,a),s),new A.jE("About this app","Team roamer \xb7 data sources \xb7 honest limits.",B.J1,B.A,new A.a9J(a),s),B.bA,B.a2C],o),B.Ih,B.W),!1,B.ad,!0),1,s),s)}}
 A.a9B.prototype={
 $0(){return A.cS(this.b,!1).dK(A.ed(new A.a9A(this.a),null,t.z))},
 $S:0}
@@ -96125,7 +96125,7 @@ $1(a){return new A.rB(new A.axY(this.a,this.b),null)},
 $S:625}
 A.axY.prototype={
 $2(a,b){var s=null,r=this.a,q=this.b,p=t.p
-return new A.aO(B.dl,A.bp(A.b([B.a1I,B.bm,A.Y("Azimuth "+B.c.M(r.a,0)+"\xb0 \xb7 Altitude "+B.c.M(r.b,0)+"\xb0",s,s,s,s,B.dK,s,s),A.akO(B.o,s,360,0,s,new A.axU(r,b),r.a),A.akO(B.o,s,90,-10,s,new A.axV(r,b),r.b),B.ak,A.bL(A.b([A.dM(A.aHG(B.a1S,new A.axW(r,q,a),A.aHH(s,s,B.o,s,s,s,s,s,s,B.a0,s,s,s,s,s,s,s,s,s,s)),1),B.eD,A.dM(A.aJ4(B.a1z,new A.axX(r,q,a),A.aDZ(s,s,s,s,s,s,s,s,s,B.z,s,s,s,s,s,B.CW,s,s,s,s)),1)],p),B.x,B.m,B.n,0)],p),B.G,B.m,B.bw),s)},
+return new A.aO(B.dl,A.bp(A.b([B.a1H,B.bm,A.Y("Azimuth "+B.c.M(r.a,0)+"\xb0 \xb7 Altitude "+B.c.M(r.b,0)+"\xb0",s,s,s,s,B.dK,s,s),A.akO(B.o,s,360,0,s,new A.axU(r,b),r.a),A.akO(B.o,s,90,-10,s,new A.axV(r,b),r.b),B.ak,A.bL(A.b([A.dM(A.aHG(B.a1S,new A.axW(r,q,a),A.aHH(s,s,B.o,s,s,s,s,s,s,B.a0,s,s,s,s,s,s,s,s,s,s)),1),B.eD,A.dM(A.aJ4(B.a1y,new A.axX(r,q,a),A.aDZ(s,s,s,s,s,s,s,s,s,B.z,s,s,s,s,s,B.CW,s,s,s,s)),1)],p),B.x,B.m,B.n,0)],p),B.G,B.m,B.bw),s)},
 $S:626}
 A.axU.prototype={
 $1(a){return this.b.$1(new A.axT(this.a,a))},
@@ -96200,7 +96200,7 @@ h=m.b
 p.drawCircle(i,h,j,g)
 g.delete()
 if(k<2.2||n<8){n=n<8?B.o:B.z
-f=new A.m7(new A.e4(l.a,e,e,B.aB,e,e,e,e,e,e,new A.k(!0,n,e,e,e,e,11,B.dq,e,e,e,e,e,e,e,e,e,e,e,e,e,e,B.My,e,e,e)),B.ax,B.N,new A.fw(1),e,e,e,e,B.aq,e)
+f=new A.m7(new A.e4(l.a,e,e,B.aB,e,e,e,e,e,e,new A.k(!0,n,e,e,e,e,11,B.dq,e,e,e,e,e,e,e,e,e,e,e,e,e,e,B.Mz,e,e,e)),B.ax,B.N,new A.fw(1),e,e,e,e,B.aq,e)
 f.nz()
 f.aB(a,new A.f(i+6,h+-6))}}},
 du(a){var s=a.c,r=this.c
@@ -96489,7 +96489,7 @@ lA(a,b){var s=null
 return new A.aO(B.fk,A.bL(A.b([A.Y(a,s,s,s,s,B.dK,s,s),A.Y(b,s,s,s,s,B.mK,s,s)],t.p),B.x,B.eg,B.n,0),s)}}
 A.tL.prototype={
 I(a){var s=null
-return A.fP(A.iZ(s,B.a0,s,s,B.z,s,B.a2D),B.a0,A.fk(B.ND,B.dl,B.W),s)}}
+return A.fP(A.iZ(s,B.a0,s,s,B.z,s,B.a2D),B.a0,A.fk(B.LO,B.dl,B.W),s)}}
 A.akj.prototype={}
 A.ans.prototype={
 Rp(a,b,c,d){var s,r,q
@@ -100683,7 +100683,7 @@ B.Ei=new A.an4()
 B.ac=new A.S5()
 B.dZ=new A.an7()
 B.eI=new A.Sa(0,0,0,0)
-B.MS=s([],A.aw("B<a5n>"))
+B.MT=s([],A.aw("B<a5n>"))
 B.a6l=new A.and()
 B.e_=new A.Sx()
 B.ca=new A.Sy()
@@ -101174,8 +101174,8 @@ B.oX=new A.pI(!1,!1,!1,!0)
 B.cz=new A.MJ(0,"tight")
 B.aS=new A.h8(800)
 B.a_B=new A.k(!0,B.z,null,null,null,null,15,B.aS,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1p=new A.ai("COMPETING HYPOTHESES",null,B.a_B,null,null,null,null,null,null,null)
-B.Iu=new A.j6(1,B.cz,B.a1p,null)
+B.a1o=new A.ai("COMPETING HYPOTHESES",null,B.a_B,null,null,null,null,null,null,null)
+B.Iu=new A.j6(1,B.cz,B.a1o,null)
 B.ZB=new A.k(!0,B.z,null,null,null,null,20,B.aS,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a2k=new A.ai("Different hypotheses",null,B.ZB,null,null,null,null,null,null,null)
 B.Iv=new A.j6(1,B.cz,B.a2k,null)
@@ -101400,27 +101400,27 @@ B.aO=new A.EF(0,"clamp")
 B.FO=new A.u(1,0.011764705882352941,0.023529411764705882,0.058823529411764705,B.e)
 B.FD=new A.u(1,0.0392156862745098,0.0784313725490196,0.1568627450980392,B.e)
 B.FJ=new A.u(1,0.06274509803921569,0.11764705882352941,0.22745098039215686,B.e)
-B.MI=s([B.FO,B.FD,B.FJ],t.c)
-B.Kw=new A.he(B.cT,B.cS,B.aO,B.MI,null,null)
+B.MJ=s([B.FO,B.FD,B.FJ],t.c)
+B.Kw=new A.he(B.cT,B.cS,B.aO,B.MJ,null,null)
 B.G5=new A.u(1,0.00784313725490196,0.01568627450980392,0.047058823529411764,B.e)
 B.Gb=new A.u(1,0.0392156862745098,0.09411764705882353,0.18823529411764706,B.e)
-B.Nh=s([B.G5,B.a0,B.Gb],t.c)
-B.ME=s([0,0.55,1],t.n)
-B.Kx=new A.he(B.cT,B.cS,B.aO,B.Nh,B.ME,null)
+B.Ni=s([B.G5,B.a0,B.Gb],t.c)
+B.MF=s([0,0.55,1],t.n)
+B.Kx=new A.he(B.cT,B.cS,B.aO,B.Ni,B.MF,null)
 B.G4=new A.u(1,0.0196078431372549,0.0392156862745098,0.08627450980392157,B.e)
 B.kp=new A.u(1,0.043137254901960784,0.09019607843137255,0.18823529411764706,B.e)
-B.Nr=s([B.G4,B.kp],t.c)
-B.Ky=new A.he(B.cT,B.cS,B.aO,B.Nr,null,null)
+B.Ns=s([B.G4,B.kp],t.c)
+B.Ky=new A.he(B.cT,B.cS,B.aO,B.Ns,null,null)
 B.FA=new A.u(0.1803921568627451,0.23921568627450981,0.8627450980392157,0.592156862745098,B.e)
 B.LH=s([B.y,B.FA,B.y],t.c)
-B.N6=s([0.32,0.55,0.78],t.n)
-B.Kz=new A.he(B.cT,B.cS,B.aO,B.LH,B.N6,null)
+B.N7=s([0.32,0.55,0.78],t.n)
+B.Kz=new A.he(B.cT,B.cS,B.aO,B.LH,B.N7,null)
 B.Cv=new A.dI(1,1)
-B.LV=s([B.ce,B.kp],t.c)
-B.KA=new A.he(B.dW,B.Cv,B.aO,B.LV,null,null)
+B.LW=s([B.ce,B.kp],t.c)
+B.KA=new A.he(B.dW,B.Cv,B.aO,B.LW,null,null)
 B.Gk=new A.u(0.13333333333333333,0.6666666666666666,0.7058823529411765,1,B.e)
-B.Nn=s([B.y,B.Gk,B.y],t.c)
-B.KB=new A.he(B.jS,B.ni,B.aO,B.Nn,null,null)
+B.No=s([B.y,B.Gk,B.y],t.c)
+B.KB=new A.he(B.jS,B.ni,B.aO,B.No,null,null)
 B.KC=new A.vg(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.pH=new A.ql(0,"threeLine")
 B.KD=new A.ql(1,"titleHeight")
@@ -101428,30 +101428,30 @@ B.KE=new A.ql(2,"top")
 B.pI=new A.ql(3,"center")
 B.KF=new A.ql(4,"bottom")
 B.ag=new A.k(!0,B.A,null,null,null,null,12,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1a=new A.ai("\xb7 Sites: 34 characterized records \u2014 33 in the Nepal test range + Atacama control (Chile). Coordinates and altitude sampled from the DEM; operability is an analyst score 0\u20131 with access notes.",null,B.ag,null,null,null,null,null,null,null)
+B.a19=new A.ai("\xb7 Sites: 34 characterized records \u2014 33 in the Nepal test range + Atacama control (Chile). Coordinates and altitude sampled from the DEM; operability is an analyst score 0\u20131 with access notes.",null,B.ag,null,null,null,null,null,null,null)
 B.a2j=new A.ai("\xb7 Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived, z12 native ~30\u201334 m, block-averaged to 500 m. Variables: elevation, local relief (1.5 km pad), landscape relief (12 km), median/IQR slope, roughness, variogram slope.",null,B.ag,null,null,null,null,null,null,null)
-B.a1s=new A.ai("\xb7 Climate: Open-Meteo Archive API (ERA5 reanalysis, 2015\u20132024, 0.25\xb0 \u2248 28 km). Variables: annual precipitation, seasonal and diurnal air-temperature amplitude, shortwave radiation \u2192 aridity and illumination.",null,B.ag,null,null,null,null,null,null,null)
+B.a1r=new A.ai("\xb7 Climate: Open-Meteo Archive API (ERA5 reanalysis, 2015\u20132024, 0.25\xb0 \u2248 28 km). Variables: annual precipitation, seasonal and diurnal air-temperature amplitude, shortwave radiation \u2192 aridity and illumination.",null,B.ag,null,null,null,null,null,null,null)
 B.a2u=new A.ai("\xb7 Context only: NASA POWER MERRA-2 skin temperature (0.5\xb0 \xd7 0.625\xb0) and ERA5-Land soil at 6 cm (0.1\xb0 \u2248 9 km); shown, not scored.",null,B.ag,null,null,null,null,null,null,null)
-B.a1D=new A.ai("\xb7 Literature attention: OpenAlex keyword count for the site name, normalized as log10(count+1)/4; a second Crossref-based index is the proxy check (r \u2248 0.69).",null,B.ag,null,null,null,null,null,null,null)
-B.a1g=new A.ai("\xb7 Targets: NASA PDS MOLA topography and THEMIS/Diviner thermal summaries \u2192 relief 800 \xb1 400 m, slope 4 \xb1 3\xb0, seasonal amplitude 45 \xb1 12 K, noon elevation 40 \xb1 12\xb0. Documented ranges, not a single mission measurement.",null,B.ag,null,null,null,null,null,null,null)
+B.a1C=new A.ai("\xb7 Literature attention: OpenAlex keyword count for the site name, normalized as log10(count+1)/4; a second Crossref-based index is the proxy check (r \u2248 0.69).",null,B.ag,null,null,null,null,null,null,null)
+B.a1f=new A.ai("\xb7 Targets: NASA PDS MOLA topography and THEMIS/Diviner thermal summaries \u2192 relief 800 \xb1 400 m, slope 4 \xb1 3\xb0, seasonal amplitude 45 \xb1 12 K, noon elevation 40 \xb1 12\xb0. Documented ranges, not a single mission measurement.",null,B.ag,null,null,null,null,null,null,null)
 B.a2z=new A.ai("\xb7 Weights: similarity = 0.45 terrain + 0.15 thermal + 0.15 illumination + 0.25 aridity. Each dimension is |x \u2212 target| in target-\u03c3 units, scored 1/(1+d).",null,B.ag,null,null,null,null,null,null,null)
 B.a2i=new A.ai("\xb7 Gates: local slope \u2264 10\xb0, relief 20\u20131,500 m, noon Sun \u2265 20\xb0, precipitation < 800 mm/yr, operability \u2265 0.5. Attention and operability close the gap: gap = similarity \xd7 (1 \u2212 attention) \xd7 operability.",null,B.ag,null,null,null,null,null,null,null)
-B.KH=s([B.a1a,B.a2j,B.a1s,B.a2u,B.a1D,B.a1g,B.a2z,B.a2i],t.p)
-B.MG=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
-B.Mf=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
+B.KH=s([B.a19,B.a2j,B.a1r,B.a2u,B.a1C,B.a1f,B.a2z,B.a2i],t.p)
+B.MH=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.Mg=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.NQ=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.KK=s([B.MG,B.Mf,B.NQ],t.zg)
+B.KK=s([B.MH,B.Mg,B.NQ],t.zg)
 B.pJ=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.KL=s([239,191,189],t.t)
 B.L9=s([4,9,14,19],t.t)
-B.Nq=s([137,80,78,71,13,10,26,10],t.Z)
+B.Nr=s([137,80,78,71,13,10,26,10],t.Z)
 B.JM=new A.nb(0,"png")
 B.JV=new A.k9(B.JM,!1,0,"png")
-B.JK=new A.lz(B.Nq,B.JV,0,"png")
-B.Ns=s([71,73,70,56,55,97],t.Z)
-B.JJ=new A.lz(B.Ns,B.ik,1,"gif87a")
-B.MA=s([71,73,70,56,57,97],t.Z)
-B.JI=new A.lz(B.MA,B.ik,2,"gif89a")
+B.JK=new A.lz(B.Nr,B.JV,0,"png")
+B.Nt=s([71,73,70,56,55,97],t.Z)
+B.JJ=new A.lz(B.Nt,B.ik,1,"gif87a")
+B.MB=s([71,73,70,56,57,97],t.Z)
+B.JI=new A.lz(B.MB,B.ik,2,"gif89a")
 B.KM=s([255,216,255],t.Z)
 B.JN=new A.nb(2,"jpeg")
 B.JZ=new A.k9(B.JN,!1,3,"jpeg")
@@ -101466,19 +101466,19 @@ B.Lc=s([B.JK,B.JJ,B.JI,B.JL,B.JH,B.JG],A.aw("B<lz>"))
 B.nc=new A.HP(0,"named")
 B.Cm=new A.HP(1,"anonymous")
 B.Ll=s([B.nc,B.Cm],A.aw("B<HP>"))
-B.Mh=s([0.41233895,0.35762064,0.18051042],t.n)
+B.Mi=s([0.41233895,0.35762064,0.18051042],t.n)
 B.LN=s([0.2126,0.7152,0.0722],t.n)
 B.NK=s([0.01932141,0.11916382,0.95034478],t.n)
-B.Ln=s([B.Mh,B.LN,B.NK],t.zg)
+B.Ln=s([B.Mi,B.LN,B.NK],t.zg)
 B.pK=s([0,4,12,1,5,13,3,7,15],t.t)
 B.Lr=s([65533],t.t)
-B.a1G=new A.ai("\xb7 Terrain is SRTM-derived via Terrarium tiles at 500 m \u2014 not Copernicus 30 m.",null,B.ag,null,null,null,null,null,null,null)
-B.a1K=new A.ai("\xb7 Thermal is ERA5 air temperature (context); MODIS/Diviner skin temperature needs Earthdata login.",null,B.ag,null,null,null,null,null,null,null)
-B.a1n=new A.ai("\xb7 Literature attention is an OpenAlex keyword count \u2014 a proxy, not a review.",null,B.ag,null,null,null,null,null,null,null)
+B.a1F=new A.ai("\xb7 Terrain is SRTM-derived via Terrarium tiles at 500 m \u2014 not Copernicus 30 m.",null,B.ag,null,null,null,null,null,null,null)
+B.a1J=new A.ai("\xb7 Thermal is ERA5 air temperature (context); MODIS/Diviner skin temperature needs Earthdata login.",null,B.ag,null,null,null,null,null,null,null)
+B.a1m=new A.ai("\xb7 Literature attention is an OpenAlex keyword count \u2014 a proxy, not a review.",null,B.ag,null,null,null,null,null,null,null)
 B.a2t=new A.ai("\xb7 Scope: 34 records concentrated in Nepal, with one global control (Atacama) \u2014 a regional shortlist, not a global survey.",null,B.ag,null,null,null,null,null,null,null)
-B.a1A=new A.ai("\xb7 Operability is an analyst-assigned 0\u20131 from road/permit/flight access \u2014 a documented judgment, not a measurement.",null,B.ag,null,null,null,null,null,null,null)
+B.a1z=new A.ai("\xb7 Operability is an analyst-assigned 0\u20131 from road/permit/flight access \u2014 a documented judgment, not a measurement.",null,B.ag,null,null,null,null,null,null,null)
 B.a2m=new A.ai("\xb7 Target bands are documented Mars ranges, not a single mission measurement.",null,B.ag,null,null,null,null,null,null,null)
-B.Lt=s([B.a1G,B.a1K,B.a1n,B.a2t,B.a1A,B.a2m],t.p)
+B.Lt=s([B.a1F,B.a1J,B.a1m,B.a2t,B.a1z,B.a2m],t.p)
 B.a4N=new A.hq(0,1)
 B.a4S=new A.hq(0.5,1)
 B.a4V=new A.hq(0.5375,0.75)
@@ -101498,76 +101498,104 @@ B.h9=new A.m5(3,"justify")
 B.ax=new A.m5(4,"start")
 B.je=new A.m5(5,"end")
 B.LC=s([B.cI,B.dI,B.jd,B.h9,B.ax,B.je],A.aw("B<m5>"))
-B.M2=s(["hydrogen","helium","silicate dust","iron","water ice beyond the snow line"],t.s)
-B.Hq=new A.fj(0,"The solar nebula","4.567 billion years ago","A cold cloud of gas and dust collapses. The young Sun ignites at the centre, and a spinning disk of leftovers begins to clump together.",B.M2,"Calcium\u2013aluminium-rich inclusions in meteorites date the first solids to 4.567 Gyr.")
-B.Mc=s(["rocky planetesimals","ice-rich bodies from the outer disk","metal grains"],t.s)
-B.Hp=new A.fj(0.07,"Planetesimals and pebbles","4.56 billion years ago","Dust sticks into pebbles, pebbles into kilometre-sized planetesimals. Gravity and collisions assemble larger and larger bodies.",B.Mc,"Asteroid families and meteorite ages record this violent assembly.")
+B.M3=s(["hydrogen","helium","silicate dust","iron","water ice beyond the snow line"],t.s)
+B.Hq=new A.fj(0,"The solar nebula","4.567 billion years ago","A cold cloud of gas and dust collapses. The young Sun ignites at the centre, and a spinning disk of leftovers begins to clump together.",B.M3,"Calcium\u2013aluminium-rich inclusions in meteorites date the first solids to 4.567 Gyr.")
+B.Md=s(["rocky planetesimals","ice-rich bodies from the outer disk","metal grains"],t.s)
+B.Hp=new A.fj(0.07,"Planetesimals and pebbles","4.56 billion years ago","Dust sticks into pebbles, pebbles into kilometre-sized planetesimals. Gravity and collisions assemble larger and larger bodies.",B.Md,"Asteroid families and meteorite ages record this violent assembly.")
 B.NH=s(["molten silicate","liquid iron","nickel","dissolved gases"],t.s)
 B.Hu=new A.fj(0.14,"The magma ocean","4.54 billion years ago","Impacts deliver enormous energy. Proto-Earth melts into a global magma ocean hundreds of kilometres deep; iron begins to sink toward the centre.",B.NH,"Hafnium\u2013tungsten isotopes show core formation within the first ~30\u2013100 Myr.")
-B.Nv=s(["vaporised mantle rock","iron cores merging","orbital debris"],t.s)
-B.Hl=new A.fj(0.2,"The Moon-forming impact","4.51 billion years ago","A Mars-sized body (often called Theia) strikes the young Earth. Debris thrown into orbit coalesces into the Moon; Earth is left molten again.",B.Nv,"Lunar samples share Earth\u2019s oxygen, titanium and tungsten isotopes \u2014 evidence of a deep, well-mixed collision.")
-B.M1=s(["iron\u2013nickel core","silicate mantle","early crust"],t.s)
-B.Ho=new A.fj(0.3,"Core and magnetic field","4.5 billion years ago","Iron and nickel settle into a core, releasing gravitational energy. A geodynamo starts, shielding the surface from the solar wind.",B.M1,"Ancient magnetised crystals in Jack Hills zircons record a field ~4.2 Gyr ago.")
-B.NC=s(["liquid water","carbon dioxide","nitrogen","water vapour"],t.s)
-B.Hn=new A.fj(0.4,"Oceans and atmosphere","4.4 billion years ago","Outgassing and ice-rich impactors deliver water. Steam condenses into the first oceans; a thick CO\u2082-rich atmosphere forms.",B.NC,"Hadean zircons preserve evidence of liquid water at the surface.")
-B.Nt=s(["platinum-group metals","gold","iridium","chondritic debris"],t.s)
-B.Hr=new A.fj(0.52,"Late accretion (the veneer)","4.4\u20133.9 billion years ago","A final wave of impacts adds a thin layer of material to the mantle and crust \u2014 including the precious metals we mine today.",B.Nt,"Earth\u2019s mantle is richer in highly siderophile elements than core formation alone predicts.")
-B.N8=s(["granite","basalt","sediments","water"],t.s)
-B.Hs=new A.fj(0.64,"Continents and plate tectonics","4.0\u20133.5 billion years ago","Granite-rich continents form and begin to move. Subduction recycles crust, and the first stable landmasses appear.",B.N8,"The oldest rocks (Acasta, Isua) and zircon chemistry record continental crust.")
+B.Nw=s(["vaporised mantle rock","iron cores merging","orbital debris"],t.s)
+B.Hl=new A.fj(0.2,"The Moon-forming impact","4.51 billion years ago","A Mars-sized body (often called Theia) strikes the young Earth. Debris thrown into orbit coalesces into the Moon; Earth is left molten again.",B.Nw,"Lunar samples share Earth\u2019s oxygen, titanium and tungsten isotopes \u2014 evidence of a deep, well-mixed collision.")
+B.M2=s(["iron\u2013nickel core","silicate mantle","early crust"],t.s)
+B.Ho=new A.fj(0.3,"Core and magnetic field","4.5 billion years ago","Iron and nickel settle into a core, releasing gravitational energy. A geodynamo starts, shielding the surface from the solar wind.",B.M2,"Ancient magnetised crystals in Jack Hills zircons record a field ~4.2 Gyr ago.")
+B.ND=s(["liquid water","carbon dioxide","nitrogen","water vapour"],t.s)
+B.Hn=new A.fj(0.4,"Oceans and atmosphere","4.4 billion years ago","Outgassing and ice-rich impactors deliver water. Steam condenses into the first oceans; a thick CO\u2082-rich atmosphere forms.",B.ND,"Hadean zircons preserve evidence of liquid water at the surface.")
+B.Nu=s(["platinum-group metals","gold","iridium","chondritic debris"],t.s)
+B.Hr=new A.fj(0.52,"Late accretion (the veneer)","4.4\u20133.9 billion years ago","A final wave of impacts adds a thin layer of material to the mantle and crust \u2014 including the precious metals we mine today.",B.Nu,"Earth\u2019s mantle is richer in highly siderophile elements than core formation alone predicts.")
+B.N9=s(["granite","basalt","sediments","water"],t.s)
+B.Hs=new A.fj(0.64,"Continents and plate tectonics","4.0\u20133.5 billion years ago","Granite-rich continents form and begin to move. Subduction recycles crust, and the first stable landmasses appear.",B.N9,"The oldest rocks (Acasta, Isua) and zircon chemistry record continental crust.")
 B.NI=s(["oxygen","banded iron formations","organic carbon"],t.s)
 B.Hm=new A.fj(0.76,"The Great Oxidation","2.4 billion years ago","Cyanobacteria learn to split water with sunlight. Oxygen accumulates in the air and rusts the oceans.",B.NI,"Banded iron formations and mass-independent sulfur isotopes date the rise of oxygen.")
-B.MN=s(["ice","phosphorus","oxygen","organic matter"],t.s)
-B.Hv=new A.fj(0.88,"Snowball and explosion of life","720\u2013540 million years ago","Ice sheets reach the tropics, then retreat. Complex life diversifies rapidly in the oceans and later on land.",B.MN,"Glacial deposits at sea level and the Cambrian fossil record mark these transitions.")
-B.LU=s(["iron core","silicate mantle","oceans","atmosphere","biosphere"],t.s)
-B.Ht=new A.fj(1,"The living planet","Today","Plate tectonics, liquid oceans, a magnetic shield and life have coexisted for hundreds of millions of years \u2014 a system that is still changing.",B.LU,"Earth is the only planet where all of these are known to operate together.")
+B.MO=s(["ice","phosphorus","oxygen","organic matter"],t.s)
+B.Hv=new A.fj(0.88,"Snowball and explosion of life","720\u2013540 million years ago","Ice sheets reach the tropics, then retreat. Complex life diversifies rapidly in the oceans and later on land.",B.MO,"Glacial deposits at sea level and the Cambrian fossil record mark these transitions.")
+B.LV=s(["iron core","silicate mantle","oceans","atmosphere","biosphere"],t.s)
+B.Ht=new A.fj(1,"The living planet","Today","Plate tectonics, liquid oceans, a magnetic shield and life have coexisted for hundreds of millions of years \u2014 a system that is still changing.",B.LV,"Earth is the only planet where all of these are known to operate together.")
 B.ef=s([B.Hq,B.Hp,B.Hu,B.Hl,B.Ho,B.Hn,B.Hr,B.Hs,B.Hm,B.Hv,B.Ht],A.aw("B<fj>"))
-B.LZ=s([2,1.13276676],t.n)
+B.M_=s([2,1.13276676],t.n)
 B.KP=s([2.18349805,1.20311921],t.n)
-B.Na=s([2.33888662,1.28698796],t.n)
-B.Ng=s([2.48660575,1.36351941],t.n)
+B.Nb=s([2.33888662,1.28698796],t.n)
+B.Nh=s([2.48660575,1.36351941],t.n)
 B.LG=s([2.62226596,1.44717976],t.n)
-B.LP=s([2.7514899,1.53385819],t.n)
-B.Mx=s([3.36298265,1.98288283],t.n)
-B.M4=s([4.08649929,2.23811846],t.n)
-B.Mn=s([4.85481134,2.47563463],t.n)
+B.LQ=s([2.7514899,1.53385819],t.n)
+B.My=s([3.36298265,1.98288283],t.n)
+B.M5=s([4.08649929,2.23811846],t.n)
+B.Mo=s([4.85481134,2.47563463],t.n)
 B.LM=s([5.62945551,2.72948597],t.n)
-B.M_=s([6.43023796,2.98020421],t.n)
-B.pL=s([B.LZ,B.KP,B.Na,B.Ng,B.LG,B.LP,B.Mx,B.M4,B.Mn,B.LM,B.M_],t.zg)
+B.M0=s([6.43023796,2.98020421],t.n)
+B.pL=s([B.M_,B.KP,B.Nb,B.Nh,B.LG,B.LQ,B.My,B.M5,B.Mo,B.LM,B.M0],t.zg)
 B.LE=s(["Arial"],t.s)
 B.LF=s([B.jX,B.jY],A.aw("B<yR>"))
 B.eE=new A.k(!0,B.A,null,null,null,null,10,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1H=new A.ai("THE CLAIM",null,B.eE,null,null,null,null,null,null,null)
+B.a1G=new A.ai("THE CLAIM",null,B.eE,null,null,null,null,null,null,null)
 B.ak=new A.cE(null,8,null,null)
 B.Zb=new A.k(!0,B.z,null,null,null,null,14,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a2A=new A.ai("Name a site in the roamer test range, or paste coordinates anywhere. ROAMER scores the nearest characterized record against Moon/Mars requirements on a common 500 m grid, quantifies where the analogy breaks, and ranks sites by survey coverage \xd7 operability \u2014 then turns the best into a field brief.",null,B.Zb,null,null,null,null,null,null,null)
-B.LI=s([B.a1H,B.ak,B.a2A],t.p)
+B.LI=s([B.a1G,B.ak,B.a2A],t.p)
 B.LJ=s(["-apple-system","BlinkMacSystemFont"],t.s)
 B.pM=s(["BlinkMacSystemFont"],t.s)
 B.LL=s([18,15,10,12,15,18,15,12,12],t.n)
-B.a1x=new A.ai("CHALLENGE",null,B.eE,null,null,null,null,null,null,null)
+B.a0D=new A.k(!0,B.o,null,null,null,null,26,B.aS,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a20=new A.ai("AstroLens",null,B.a0D,null,null,null,null,null,null,null)
 B.bm=new A.cE(null,6,null,null)
+B.ha=new A.k(!0,B.z,null,null,null,null,14,null,null,null,null,null,1.55,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a1R=new A.ai("A space learning app by team roamer. Explore Earth\u2019s best Moon/Mars analog sites, point your camera at the night sky, and read the story of the stars.",null,B.ha,null,null,null,null,null,null,null)
+B.bA=new A.cE(null,18,null,null)
+B.a_Q=new A.k(!0,B.o,null,null,null,null,11,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a27=new A.ai("JUDGE\u2019S 60-SECOND TOUR",null,B.a_Q,null,null,null,null,null,null,null)
+B.a0N=new A.k(!0,B.z,null,null,null,null,12,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a2_=new A.ai("1. Tap CHALLENGE #09 \xb7 EARTH ANALOGS on the home screen.\n2. Read the gap formula in METHOD.\n3. Check FIND: Chhusang 4/5 (gap 0.23), Kagbeni 5/5 (0.16).\n4. Compare the controls: Atacama 0.00, Pokhara 0.00.\n5. Then explore Story of Earth and the Sky Dome.",null,B.a0N,null,null,null,null,null,null,null)
+B.cm=new A.k(!0,B.A,null,null,null,null,11,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a1e=new A.ai("SCOPE & FOCUS",null,B.cm,null,null,null,null,null,null,null)
+B.eG=new A.k(!0,B.A,null,null,null,null,12,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a1L=new A.ai("The submitted answer is the Earth Analogs engine. Sky Camera, AR Explorer, Tonight\u2019s Sky and Learn the Sky are the same HYG catalogue and the same math \u2014 one product, not separate apps; AR Explorer and Sky Dome are modes inside Sky Camera. 3D Solar System and Story of Earth are the engagement layer. Those are the seven tiles. If we had to cut one feature, it would be 3D Solar System \u2014 the challenge answer stays.",null,B.eG,null,null,null,null,null,null,null)
+B.a2r=new A.ai("SENSORS, OFFLINE & DRIFT",null,B.cm,null,null,null,null,null,null,null)
+B.a1X=new A.ai("AR pointing fuses accelerometer and magnetometer with low-pass smoothing; compass drift near metal or magnets is real, so the app offers manual aim, GYRO ON/OFF and RESET VIEW instead of pretending absolute accuracy. GPS comes from geolocator; if it is denied or unavailable the app falls back to Kathmandu and says so. Star, constellation and image data are bundled, so the sky features work offline; only optional NASA lookups need a connection.",null,B.eG,null,null,null,null,null,null,null)
+B.a1Y=new A.ai("WHY IT MATTERS",null,B.cm,null,null,null,null,null,null,null)
+B.a1A=new A.ai("NASA tests instruments, procedures and science operations at Earth analog sites before risking them on the Moon or Mars (NASA Analog Missions). A transparent shortlist of where a field campaign would add the most new information is a small but real planning tool.",null,B.eG,null,null,null,null,null,null,null)
+B.a25=new A.ai("VALIDATION",null,B.cm,null,null,null,null,null,null,null)
+B.a2E=new A.ai("Two controls anchor the ranking: Atacama passes 5/5 but scores gap 0.00 because it is already studied; Pokhara fails aridity and scores 0.00. Known analogs all screen as heavily studied (proxy gap \u22480.00; Askja 0.07). Chhusang 0.23 and Kagbeni 0.16 sit where similarity is high but attention is low \u2014 the case for a survey.",null,B.eG,null,null,null,null,null,null,null)
+B.a1i=new A.ai("DATA SOURCES",null,B.cm,null,null,null,null,null,null,null)
+B.a1b=new A.ai("\xb7 Star positions and magnitudes: HYG Database v4.1 (astronexus/HYG-Database), CC BY-SA 4.0\n\xb7 Star and constellation descriptions: written for this app\n\xb7 Images: NASA Images API (images-api.nasa.gov)\n\xb7 Earth analog data: AWS Terrain Tiles, Open-Meteo ERA5, ERA5-Land, NASA POWER, OpenAlex, NASA PDS",null,B.eG,null,null,null,null,null,null,null)
+B.a17=new A.ai("HONEST LIMITS",null,B.cm,null,null,null,null,null,null,null)
+B.a2f=new A.ai("Star positions use a low-precision sidereal-time model: expect a fraction of a degree of pointing error. Camera AR depends on device sensors; when they are unavailable, use manual aim. The Earth-analog list is a regional shortlist, not a global survey \u2014 the METHOD tab in that feature states its limits.",null,B.eG,null,null,null,null,null,null,null)
+B.VA=new A.cE(null,22,null,null)
+B.ki=new A.u(1,0.33725490196078434,0.40784313725490196,0.5490196078431373,B.e)
+B.BB=new A.k(!0,B.ki,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.a2a=new A.ai("Team roamer \xb7 NASA Space Apps 2026 \xb7 Bhaktapur (Virtual)",null,B.BB,null,null,null,null,null,null,null)
+B.LO=s([B.a20,B.bm,B.a1R,B.bA,B.a27,B.ak,B.a2_,B.bA,B.a1e,B.ak,B.a1L,B.bA,B.a2r,B.ak,B.a1X,B.bA,B.a1Y,B.ak,B.a1A,B.bA,B.a25,B.ak,B.a2E,B.bA,B.a1i,B.ak,B.a1b,B.bA,B.a17,B.ak,B.a2f,B.VA,B.a2a],t.p)
+B.a1w=new A.ai("CHALLENGE",null,B.eE,null,null,null,null,null,null,null)
 B.mL=new A.k(!0,B.z,null,null,null,null,12.5,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a1T=new A.ai("Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars. NASA Space Apps Challenge 2026, Bhaktapur (Virtual).",null,B.mL,null,null,null,null,null,null,null)
-B.LO=s([B.a1x,B.bm,B.a1T],t.p)
+B.LP=s([B.a1w,B.bm,B.a1T],t.p)
 B.bC=new A.kJ(0,"label")
 B.bf=new A.kJ(1,"avatar")
 B.cn=new A.kJ(2,"deleteIcon")
-B.LQ=s([B.bC,B.bf,B.cn],A.aw("B<kJ>"))
-B.LR=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
+B.LR=s([B.bC,B.bf,B.cn],A.aw("B<kJ>"))
+B.LS=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
 B.Th=new A.fx("Kuiper Belt","30\u201350 AU","A ring of icy bodies beyond Neptune \u2014 home of Pluto, Eris, Makemake and most short-period comets. New Horizons flew through it in 2019.")
 B.Te=new A.fx("Heliopause","~120 AU","The boundary where the Sun\u2019s wind meets interstellar space. Voyager 1 crossed it in 2012, Voyager 2 in 2018.")
 B.Tf=new A.fx("Oort Cloud","~2,000\u2013100,000 AU","A hypothetical spherical shell of icy planetesimals that supplies long-period comets. It has never been imaged directly.")
 B.Td=new A.fx("Voyager 1","~165 AU","The most distant human-made object, still sending data after leaving the heliosphere.")
 B.Tg=new A.fx("The Milky Way","~100,000 light-years","Our galaxy: a barred spiral with 100\u2013400 billion stars. The Solar System orbits its centre every ~230 million years.")
 B.Tc=new A.fx("Observable universe","~93 billion light-years","The farthest light we can see, from 13.8 billion years ago. Beyond it may lie more universe we cannot observe.")
-B.LX=s([B.Th,B.Te,B.Tf,B.Td,B.Tg,B.Tc],A.aw("B<+(y,y,y)>"))
+B.LY=s([B.Th,B.Te,B.Tf,B.Td,B.Tg,B.Tc],A.aw("B<+(y,y,y)>"))
 B.F8=new A.u(1,0.6901960784313725,0.6627450980392157,0.6274509803921569,B.e)
 B.Sq=new A.cr("Distance from Sun","0.39 AU")
 B.T2=new A.cr("Year","88 Earth days")
 B.SC=new A.cr("Day","59 Earth days")
 B.zX=new A.cr("Moons","0")
-B.ML=s([B.Sq,B.T2,B.SC,B.zX],t.zA)
-B.RZ=new A.hj("Mercury",0.39,3.2,0.241,B.F8,"Smallest planet, no atmosphere, scorched and frozen. A day on Mercury lasts longer than its year.",B.ML)
+B.MM=s([B.Sq,B.T2,B.SC,B.zX],t.zA)
+B.RZ=new A.hj("Mercury",0.39,3.2,0.241,B.F8,"Smallest planet, no atmosphere, scorched and frozen. A day on Mercury lasts longer than its year.",B.MM)
 B.Fd=new A.u(1,0.9019607843137255,0.7843137254901961,0.5411764705882353,B.e)
 B.SI=new A.cr("Distance from Sun","0.72 AU")
 B.Su=new A.cr("Year","225 Earth days")
@@ -101579,15 +101607,15 @@ B.SA=new A.cr("Distance from Sun","1 AU")
 B.SV=new A.cr("Year","365.25 days")
 B.T4=new A.cr("Day","23 h 56 m")
 B.Sn=new A.cr("Moons","1")
-B.LW=s([B.SA,B.SV,B.T4,B.Sn],t.zA)
-B.S_=new A.hj("Earth",1,5.4,1,B.Fp,"The only planet known to host life, with liquid water, plate tectonics and a protective magnetic field.",B.LW)
+B.LX=s([B.SA,B.SV,B.T4,B.Sn],t.zA)
+B.S_=new A.hj("Earth",1,5.4,1,B.Fp,"The only planet known to host life, with liquid water, plate tectonics and a protective magnetic field.",B.LX)
 B.F3=new A.u(1,0.8666666666666667,0.47843137254901963,0.2901960784313726,B.e)
 B.St=new A.cr("Distance from Sun","1.52 AU")
 B.Sm=new A.cr("Year","687 Earth days")
 B.So=new A.cr("Day","24 h 37 m")
 B.SE=new A.cr("Moons","2")
-B.Mk=s([B.St,B.Sm,B.So,B.SE],t.zA)
-B.S0=new A.hj("Mars",1.52,4.6,1.881,B.F3,"A cold desert world with the tallest volcano and deepest canyon in the Solar System \u2014 and water ice at its poles.",B.Mk)
+B.Ml=s([B.St,B.Sm,B.So,B.SE],t.zA)
+B.S0=new A.hj("Mars",1.52,4.6,1.881,B.F3,"A cold desert world with the tallest volcano and deepest canyon in the Solar System \u2014 and water ice at its poles.",B.Ml)
 B.Gi=new A.u(1,0.8509803921568627,0.7058823529411765,0.5607843137254902,B.e)
 B.SD=new A.cr("Distance from Sun","5.20 AU")
 B.SH=new A.cr("Year","11.9 Earth years")
@@ -101600,15 +101628,15 @@ B.Ss=new A.cr("Distance from Sun","9.58 AU")
 B.T6=new A.cr("Year","29.5 Earth years")
 B.SZ=new A.cr("Day","10 h 42 m")
 B.SO=new A.cr("Moons","146+")
-B.Mi=s([B.Ss,B.T6,B.SZ,B.SO],t.zA)
-B.RV=new A.hj("Saturn",9.58,9,29.45,B.F1,"Famous for its bright ring system of ice and rock; so low in density it would float in water.",B.Mi)
+B.Mj=s([B.Ss,B.T6,B.SZ,B.SO],t.zA)
+B.RV=new A.hj("Saturn",9.58,9,29.45,B.F1,"Famous for its bright ring system of ice and rock; so low in density it would float in water.",B.Mj)
 B.Ft=new A.u(1,0.5607843137254902,0.8392156862745098,0.9019607843137255,B.e)
 B.SY=new A.cr("Distance from Sun","19.2 AU")
 B.T5=new A.cr("Year","84 Earth years")
 B.T0=new A.cr("Day","17 h 14 m")
 B.T3=new A.cr("Moons","28")
-B.Nc=s([B.SY,B.T5,B.T0,B.T3],t.zA)
-B.RY=new A.hj("Uranus",19.2,7.5,84,B.Ft,"An ice giant tipped on its side, likely by a giant impact; it rolls around the Sun.",B.Nc)
+B.Nd=s([B.SY,B.T5,B.T0,B.T3],t.zA)
+B.RY=new A.hj("Uranus",19.2,7.5,84,B.Ft,"An ice giant tipped on its side, likely by a giant impact; it rolls around the Sun.",B.Nd)
 B.G2=new A.u(1,0.2901960784313726,0.4196078431372549,0.9098039215686274,B.e)
 B.SX=new A.cr("Distance from Sun","30.1 AU")
 B.Sp=new A.cr("Year","165 Earth years")
@@ -101616,7 +101644,7 @@ B.Sk=new A.cr("Day","16 h 6 m")
 B.Tb=new A.cr("Moons","16")
 B.NL=s([B.SX,B.Sp,B.Sk,B.Tb],t.zA)
 B.RW=new A.hj("Neptune",30.1,7.3,164.8,B.G2,"The windiest planet, with supersonic storms in a deep blue methane atmosphere.",B.NL)
-B.LY=s([B.RZ,B.RX,B.S_,B.S0,B.RU,B.RV,B.RY,B.RW],A.aw("B<hj>"))
+B.LZ=s([B.RZ,B.RX,B.S_,B.S0,B.RU,B.RV,B.RY,B.RW],A.aw("B<hj>"))
 B.b_=new A.eR(0,"icon")
 B.bg=new A.eR(1,"input")
 B.as=new A.eR(2,"label")
@@ -101628,7 +101656,7 @@ B.b5=new A.eR(7,"suffixIcon")
 B.c8=new A.eR(8,"helperError")
 B.c9=new A.eR(9,"counter")
 B.d7=new A.eR(10,"container")
-B.M0=s([B.b_,B.bg,B.as,B.bq,B.br,B.bs,B.al,B.b5,B.c8,B.c9,B.d7],A.aw("B<eR>"))
+B.M1=s([B.b_,B.bg,B.as,B.bq,B.br,B.bs,B.al,B.b5,B.c8,B.c9,B.d7],A.aw("B<eR>"))
 B.NR=new A.qm("en",null,"US")
 B.pN=s([B.NR],t.ss)
 B.pO=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -101640,41 +101668,41 @@ B.a4A=new A.mn(8,0.12)
 B.a4z=new A.mn(12,0.14)
 B.pP=s([B.a4y,B.a4D,B.a4B,B.a4C,B.a4A,B.a4z],A.aw("B<mn>"))
 B.pQ=s([0,21,51,121,151,191,271,321,360],t.n)
-B.Me=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
+B.Mf=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
 B.CK=new A.KR(2,"outer")
 B.o9=new A.u(0.09803921568627451,0,0,0,B.e)
 B.f=new A.f(0,0)
 B.Da=new A.en(0.2,B.CK,B.o9,B.f,11)
-B.Mg=s([B.Da],t.sq)
+B.Mh=s([B.Da],t.sq)
 B.Bd=new A.E6(0,"left")
 B.Be=new A.E6(1,"right")
-B.Ml=s([B.Bd,B.Be],A.aw("B<E6>"))
+B.Mm=s([B.Bd,B.Be],A.aw("B<E6>"))
 B.Wl=new A.o5("Orbits",null)
 B.Wj=new A.o5("Galaxies",null)
 B.Wi=new A.o5("Beyond",null)
-B.Mm=s([B.Wl,B.Wj,B.Wi],t.p)
+B.Mn=s([B.Wl,B.Wj,B.Wi],t.p)
 B.a7=new A.En(0,"upstream")
-B.Mo=s([B.a7,B.j],A.aw("B<En>"))
+B.Mp=s([B.a7,B.j],A.aw("B<En>"))
 B.ap=new A.rF(0,"rtl")
 B.N=new A.rF(1,"ltr")
 B.ly=s([B.ap,B.N],A.aw("B<rF>"))
-B.Mt=s(["assets/img/space/carina_nebula.jpg","assets/img/space/orion_nebula.jpg","assets/img/space/eagle.jpg","assets/img/space/helix.jpg","assets/img/space/ring_nebula.jpg","assets/img/space/crab.jpg","assets/img/space/horsehead.jpg","assets/img/space/rosette.jpg","assets/img/space/lagoon.jpg","assets/img/space/pleiades.jpg","assets/img/space/andromeda_galaxy.jpg","assets/img/space/whirlpool.jpg","assets/img/space/sombrero.jpg","assets/img/space/triangulum.jpg","assets/img/space/lmc.jpg","assets/img/space/smc.jpg","assets/img/space/milkyway.jpg","assets/img/space/sun.jpg","assets/img/space/earth.jpg"],t.s)
+B.Mu=s(["assets/img/space/carina_nebula.jpg","assets/img/space/orion_nebula.jpg","assets/img/space/eagle.jpg","assets/img/space/helix.jpg","assets/img/space/ring_nebula.jpg","assets/img/space/crab.jpg","assets/img/space/horsehead.jpg","assets/img/space/rosette.jpg","assets/img/space/lagoon.jpg","assets/img/space/pleiades.jpg","assets/img/space/andromeda_galaxy.jpg","assets/img/space/whirlpool.jpg","assets/img/space/sombrero.jpg","assets/img/space/triangulum.jpg","assets/img/space/lmc.jpg","assets/img/space/smc.jpg","assets/img/space/milkyway.jpg","assets/img/space/sun.jpg","assets/img/space/earth.jpg"],t.s)
 B.EG=new A.u9(0,"auto")
 B.EH=new A.u9(1,"full")
 B.EI=new A.u9(2,"chromium")
-B.Mu=s([B.EG,B.EH,B.EI],A.aw("B<u9>"))
+B.Mv=s([B.EG,B.EH,B.EI],A.aw("B<u9>"))
 B.d8=new A.jG(0,"leading")
 B.bV=new A.jG(1,"title")
 B.d9=new A.jG(2,"subtitle")
 B.eQ=new A.jG(3,"trailing")
-B.Mw=s([B.d8,B.bV,B.d9,B.eQ],A.aw("B<jG>"))
+B.Mx=s([B.d8,B.bV,B.d9,B.eQ],A.aw("B<jG>"))
 B.Ul=new A.jt(B.l,B.f,4)
-B.My=s([B.Ul],t.kO)
+B.Mz=s([B.Ul],t.kO)
 B.Wm=new A.o5("Timeline",null)
 B.Wk=new A.o5("Hypotheses",null)
-B.MB=s([B.Wm,B.Wk],t.p)
+B.MC=s([B.Wm,B.Wk],t.p)
 B.bo=new A.fs(1,"fuchsia")
-B.MC=s([B.af,B.bo,B.P,B.bd,B.aN,B.be],A.aw("B<fs>"))
+B.MD=s([B.af,B.bo,B.P,B.bd,B.aN,B.be],A.aw("B<fs>"))
 B.C3=new A.x8(0,"topLeft")
 B.C6=new A.x8(3,"bottomRight")
 B.a4t=new A.mm(B.C3,B.C6)
@@ -101683,39 +101711,39 @@ B.C4=new A.x8(1,"topRight")
 B.C5=new A.x8(2,"bottomLeft")
 B.a4u=new A.mm(B.C4,B.C5)
 B.a4v=new A.mm(B.C5,B.C4)
-B.MD=s([B.a4t,B.a4w,B.a4u,B.a4v],A.aw("B<mm>"))
+B.ME=s([B.a4t,B.a4w,B.a4u,B.a4v],A.aw("B<mm>"))
 B.a2o=new A.ai("1. DEM tiles \u2192 500 m block-average \u2192 slope/roughness recomputed (never average slopes). Terrain score uses relief + slope; ruggedness and variogram are reported as context.",null,B.ag,null,null,null,null,null,null,null)
 B.a2w=new A.ai("2. Site-pad (1.5 km) and landscape (12 km) features reported separately.",null,B.ag,null,null,null,null,null,null,null)
-B.a16=new A.ai("3. Distances in target-\u03c3 units; conjunctive pass/fail; grey tiles where Earth cannot match.",null,B.ag,null,null,null,null,null,null,null)
+B.a15=new A.ai("3. Distances in target-\u03c3 units; conjunctive pass/fail; grey tiles where Earth cannot match.",null,B.ag,null,null,null,null,null,null,null)
 B.a1O=new A.ai("4. Positive control (Atacama) and negative control (Pokhara) included; a method that cannot fail is not a method.",null,B.ag,null,null,null,null,null,null,null)
-B.MF=s([B.a2o,B.a2w,B.a16,B.a1O],t.p)
-B.MH=s([35,30,20,25,30,35,30,25,25],t.n)
-B.MM=s(["click","scroll"],t.s)
+B.MG=s([B.a2o,B.a2w,B.a15,B.a1O],t.p)
+B.MI=s([35,30,20,25,30,35,30,25,25],t.n)
+B.MN=s(["click","scroll"],t.s)
 B.Dh=new A.tP()
 B.iU=new A.Qp(1,"page")
 B.iV=new A.eM(B.bE,B.iU)
-B.MO=s([B.Dh,B.iV],A.aw("B<b2>"))
-B.N0=s([],t.QP)
+B.MP=s([B.Dh,B.iV],A.aw("B<b2>"))
+B.N1=s([],t.QP)
 B.pS=s([],A.aw("B<b2j>"))
-B.MU=s([],t.D)
-B.MW=s([],t.fJ)
-B.MT=s([],t.ER)
+B.MV=s([],t.D)
+B.MX=s([],t.fJ)
+B.MU=s([],t.ER)
 B.a6w=s([],t.ss)
-B.N1=s([],t.tc)
+B.N2=s([],t.tc)
 B.ir=s([],t.J)
-B.N3=s([],t.wi)
-B.N2=s([],A.aw("B<aJ6<@>>"))
+B.N4=s([],t.wi)
+B.N3=s([],A.aw("B<aJ6<@>>"))
 B.lz=s([],t.AO)
-B.MZ=s([],t.D1)
+B.N_=s([],t.D1)
 B.iq=s([],t.QF)
-B.N5=s([],t.Lx)
-B.MY=s([],t.AS)
-B.MV=s([],t.p)
-B.MX=s([],t.n)
-B.MR=s([],t.t)
+B.N6=s([],t.Lx)
+B.MZ=s([],t.AS)
+B.MW=s([],t.p)
+B.MY=s([],t.n)
+B.MS=s([],t.t)
 B.lA=s([],t.ee)
-B.N4=s([],t._m)
-B.N_=s([],t.gT)
+B.N5=s([],t._m)
+B.N0=s([],t.gT)
 B.IR=new A.n9("Core accretion","Standard model (planet formation theory)","Dust \u2192 pebbles \u2192 planetesimals \u2192 planetary embryos. Gas giants form when a solid core grows fast enough to capture hydrogen and helium before the disk disperses.","Matches the architecture of the Solar System, exoplanet statistics, and the inferred timescales from meteorite isotopes.","Struggles with the formation speed of Jupiter and with the known population of close-in super-Earths.")
 B.IS=new A.n9("Disk instability","Alternative rapid-formation model","Parts of a massive, cold disk collapse directly into giant planets through gravity, like a miniature star formation event.","Could explain giant planets at large separations and some directly imaged exoplanets.","Requires very massive, cold disks; most disks observed so far do not qualify.")
 B.IP=new A.n9("Giant impact (Theia)","Moon-formation model","A Mars-sized body collided with proto-Earth about 4.5 billion years ago. The debris disk formed the Moon and re-melted Earth.","Lunar and terrestrial rocks share oxygen, titanium and tungsten isotopes; the Moon has a small iron core and volatile depletion.","The details of the impactor\u2019s size, angle and isotopic mixing are still debated.")
@@ -101723,56 +101751,28 @@ B.IO=new A.n9("Late veneer","Final accretion phase","After core formation, a lat
 B.IQ=new A.n9("Water delivery","Ocean-origin debate","Water arrived as ice-rich planetesimals from beyond the snow line, or was already bound in the rocks that built Earth.","D/H ratios in Earth\u2019s oceans match carbonaceous chondrites and some comets; water is seen in protoplanetary disks.","No single source fits every isotope measurement; multiple reservoirs are likely.")
 B.lB=s([B.IR,B.IS,B.IP,B.IO,B.IQ],A.aw("B<n9>"))
 B.Um=new A.jt(B.l,B.f,3)
-B.Nb=s([B.Um],t.kO)
+B.Nc=s([B.Um],t.kO)
 B.Y3=new A.k(!0,B.A,null,null,null,null,11.5,null,null,null,null,null,1.55,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1L=new A.ai("Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015\u20132024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.",null,B.Y3,null,null,null,null,null,null,null)
+B.a1K=new A.ai("Terrain: AWS Terrain Tiles (Terrarium), SRTM-derived. Climate: Open-Meteo ERA5 archive 2015\u20132024. Literature: OpenAlex. Solar geometry: NOAA-style equations. Target bands: published Mars mid-latitude statistics (MOLA/THEMIS). Basemap hillshade rendered locally from the same DEM tiles.",null,B.Y3,null,null,null,null,null,null,null)
 B.pg=new A.MQ(1,"italic")
 B.ZX=new A.k(!0,B.A,null,null,null,null,11,null,B.pg,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a2b=new A.ai("Web: sushant-me.github.io/roamer   \xb7   Android APK: github.com/sushant-me/roamer/releases\nBuilt during the 2026 NASA Space Apps Challenge, Bhaktapur (Virtual). No project work before 14 Nov 2026.",null,B.ZX,null,null,null,null,null,null,null)
 B.hb=new A.k(!0,B.A,null,null,null,null,11,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1w=new A.ai("Built with: Flutter/Dart (web + Android), GitHub Pages, GitHub Releases. SI tools: this assistant was used for code, the data pipeline and copy; every number is recomputed from the sources above and human-reviewed before submission.",null,B.hb,null,null,null,null,null,null,null)
-B.Ne=s([B.a1L,B.ak,B.a2b,B.ak,B.a1w],t.p)
+B.a1v=new A.ai("Built with: Flutter/Dart (web + Android), GitHub Pages, GitHub Releases. SI tools: this assistant was used for code, the data pipeline and copy; every number is recomputed from the sources above and human-reviewed before submission.",null,B.hb,null,null,null,null,null,null,null)
+B.Nf=s([B.a1K,B.ak,B.a2b,B.ak,B.a1v],t.p)
 B.Qo=new A.f(0,2)
 B.D9=new A.en(0.75,B.hq,B.o9,B.Qo,1.5)
-B.Ni=s([B.D9],t.sq)
+B.Nj=s([B.D9],t.sq)
 B.Gg=new A.u(0.6666666666666666,0,0,0,B.e)
 B.Un=new A.jt(B.Gg,B.f,4)
 B.ch=s([B.Un],t.kO)
 B.fw=s([B.db,B.cU,B.ho,B.hp,B.jW],t.QP)
 B.Lv=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.MP=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.MQ=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
 B.LK=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.Nz=s([B.Lv,B.MP,B.LK],t.zg)
-B.NA=s([45,95,45,20,45,90,45,45,45],t.n)
-B.NB=s([120,120,20,45,20,15,20,120,120],t.n)
-B.a0D=new A.k(!0,B.o,null,null,null,null,26,B.aS,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a20=new A.ai("AstroLens",null,B.a0D,null,null,null,null,null,null,null)
-B.ha=new A.k(!0,B.z,null,null,null,null,14,null,null,null,null,null,1.55,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1R=new A.ai("A space learning app by team roamer. Explore Earth\u2019s best Moon/Mars analog sites, point your camera at the night sky, and read the story of the stars.",null,B.ha,null,null,null,null,null,null,null)
-B.bA=new A.cE(null,18,null,null)
-B.a_Q=new A.k(!0,B.o,null,null,null,null,11,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a27=new A.ai("JUDGE\u2019S 60-SECOND TOUR",null,B.a_Q,null,null,null,null,null,null,null)
-B.a0N=new A.k(!0,B.z,null,null,null,null,12,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a2_=new A.ai("1. Tap CHALLENGE #09 \xb7 EARTH ANALOGS on the home screen.\n2. Read the gap formula in METHOD.\n3. Check FIND: Chhusang 4/5 (gap 0.23), Kagbeni 5/5 (0.16).\n4. Compare the controls: Atacama 0.00, Pokhara 0.00.\n5. Then explore Story of Earth and the Sky Dome.",null,B.a0N,null,null,null,null,null,null,null)
-B.cm=new A.k(!0,B.A,null,null,null,null,11,null,null,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1f=new A.ai("SCOPE & FOCUS",null,B.cm,null,null,null,null,null,null,null)
-B.eG=new A.k(!0,B.A,null,null,null,null,12,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a15=new A.ai("The submitted answer is the Earth Analogs engine. The sky features are one coherent product: Sky Camera, AR Explorer, Sky Dome, Tonight\u2019s Sky and Learn the Sky are the same HYG catalogue and the same math viewed five ways. 3D Solar System and Story of Earth are the engagement layer that makes it a learning app. If we had to cut one feature, it would be 3D Solar System \u2014 the challenge answer stays.",null,B.eG,null,null,null,null,null,null,null)
-B.a2r=new A.ai("SENSORS, OFFLINE & DRIFT",null,B.cm,null,null,null,null,null,null,null)
-B.a1X=new A.ai("AR pointing fuses accelerometer and magnetometer with low-pass smoothing; compass drift near metal or magnets is real, so the app offers manual aim, GYRO ON/OFF and RESET VIEW instead of pretending absolute accuracy. GPS comes from geolocator; if it is denied or unavailable the app falls back to Kathmandu and says so. Star, constellation and image data are bundled, so the sky features work offline; only optional NASA lookups need a connection.",null,B.eG,null,null,null,null,null,null,null)
-B.a1Y=new A.ai("WHY IT MATTERS",null,B.cm,null,null,null,null,null,null,null)
-B.a1B=new A.ai("NASA tests instruments, procedures and science operations at Earth analog sites before risking them on the Moon or Mars (NASA Analog Missions). A transparent shortlist of where a field campaign would add the most new information is a small but real planning tool.",null,B.eG,null,null,null,null,null,null,null)
-B.a25=new A.ai("VALIDATION",null,B.cm,null,null,null,null,null,null,null)
-B.a2E=new A.ai("Two controls anchor the ranking: Atacama passes 5/5 but scores gap 0.00 because it is already studied; Pokhara fails aridity and scores 0.00. Known analogs all screen as heavily studied (proxy gap \u22480.00; Askja 0.07). Chhusang 0.23 and Kagbeni 0.16 sit where similarity is high but attention is low \u2014 the case for a survey.",null,B.eG,null,null,null,null,null,null,null)
-B.a1j=new A.ai("DATA SOURCES",null,B.cm,null,null,null,null,null,null,null)
-B.a1c=new A.ai("\xb7 Star positions and magnitudes: HYG Database v4.1 (astronexus/HYG-Database), CC BY-SA 4.0\n\xb7 Star and constellation descriptions: written for this app\n\xb7 Images: NASA Images API (images-api.nasa.gov)\n\xb7 Earth analog data: AWS Terrain Tiles, Open-Meteo ERA5, ERA5-Land, NASA POWER, OpenAlex, NASA PDS",null,B.eG,null,null,null,null,null,null,null)
-B.a18=new A.ai("HONEST LIMITS",null,B.cm,null,null,null,null,null,null,null)
-B.a2f=new A.ai("Star positions use a low-precision sidereal-time model: expect a fraction of a degree of pointing error. Camera AR depends on device sensors; when they are unavailable, use manual aim. The Earth-analog list is a regional shortlist, not a global survey \u2014 the METHOD tab in that feature states its limits.",null,B.eG,null,null,null,null,null,null,null)
-B.VA=new A.cE(null,22,null,null)
-B.ki=new A.u(1,0.33725490196078434,0.40784313725490196,0.5490196078431373,B.e)
-B.BB=new A.k(!0,B.ki,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a2a=new A.ai("Team roamer \xb7 NASA Space Apps 2026 \xb7 Bhaktapur (Virtual)",null,B.BB,null,null,null,null,null,null,null)
-B.ND=s([B.a20,B.bm,B.a1R,B.bA,B.a27,B.ak,B.a2_,B.bA,B.a1f,B.ak,B.a15,B.bA,B.a2r,B.ak,B.a1X,B.bA,B.a1Y,B.ak,B.a1B,B.bA,B.a25,B.ak,B.a2E,B.bA,B.a1j,B.ak,B.a1c,B.bA,B.a18,B.ak,B.a2f,B.VA,B.a2a],t.p)
+B.NA=s([B.Lv,B.MQ,B.LK],t.zg)
+B.NB=s([45,95,45,20,45,90,45,45,45],t.n)
+B.NC=s([120,120,20,45,20,15,20,120,120],t.n)
 B.J6=new A.bN(58625,"MaterialIcons",!1)
 B.JB=new A.dA(B.J6,null,B.z,null,null)
 B.Q1=new A.vy(B.JB,"FIND",null)
@@ -101802,17 +101802,17 @@ B.v=new A.h8(400)
 B.ai=new A.h8(500)
 B.ph=new A.h8(900)
 B.NO=s([B.lt,B.IG,B.IH,B.v,B.ai,B.dq,B.ao,B.aS,B.ph],A.aw("B<h8>"))
-B.Nu=s(["Iron",32.1,B.hN],t.J)
-B.M3=s(["Oxygen",30.1,B.kb],t.J)
+B.Nv=s(["Iron",32.1,B.hN],t.J)
+B.M4=s(["Oxygen",30.1,B.kb],t.J)
 B.FI=new A.u(1,0.8274509803921568,0.6549019607843137,1,B.e)
-B.M5=s(["Silicon",15.1,B.FI],t.J)
-B.Mj=s(["Magnesium",13.9,B.cd],t.J)
-B.Nf=s(["Sulfur",2.9,B.o],t.J)
+B.M6=s(["Silicon",15.1,B.FI],t.J)
+B.Mk=s(["Magnesium",13.9,B.cd],t.J)
+B.Ng=s(["Sulfur",2.9,B.o],t.J)
 B.FE=new A.u(1,0.6901960784313725,0.7450980392156863,0.7725490196078432,B.e)
-B.LS=s(["Nickel",1.8,B.FE],t.J)
+B.LT=s(["Nickel",1.8,B.FE],t.J)
 B.o1=new A.u(1,0.4235294117647059,0.5098039215686274,0.6588235294117647,B.e)
 B.La=s(["Other",4.1,B.o1],t.J)
-B.pU=s([B.Nu,B.M3,B.M5,B.Mj,B.Nf,B.LS,B.La],t.EY)
+B.pU=s([B.Nv,B.M4,B.M6,B.Mk,B.Ng,B.LT,B.La],t.EY)
 B.NP=s([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
 B.SQ=new A.aa(0.7078,8.3194)
 B.Sz=new A.aa(0.7895,2.4523)
@@ -102399,67 +102399,67 @@ B.Lg=s([54,null,null,8589935158],t.Z)
 B.Lh=s([55,null,null,8589935159],t.Z)
 B.Li=s([56,null,null,8589935160],t.Z)
 B.Lk=s([57,null,null,8589935161],t.Z)
-B.Mp=s([8589934852,8589934852,8589934853,null],t.Z)
+B.Mq=s([8589934852,8589934852,8589934853,null],t.Z)
 B.KS=s([4294967555,null,4294967555,null],t.Z)
 B.KT=s([4294968065,null,null,8589935154],t.Z)
 B.KU=s([4294968066,null,null,8589935156],t.Z)
 B.KV=s([4294968067,null,null,8589935158],t.Z)
 B.KW=s([4294968068,null,null,8589935160],t.Z)
 B.L0=s([4294968321,null,null,8589935157],t.Z)
-B.Mq=s([8589934848,8589934848,8589934849,null],t.Z)
+B.Mr=s([8589934848,8589934848,8589934849,null],t.Z)
 B.KR=s([4294967423,null,null,8589935150],t.Z)
 B.KX=s([4294968069,null,null,8589935153],t.Z)
 B.KQ=s([4294967309,null,null,8589935117],t.Z)
 B.KY=s([4294968070,null,null,8589935159],t.Z)
 B.L1=s([4294968327,null,null,8589935152],t.Z)
-B.Mr=s([8589934854,8589934854,8589934855,null],t.Z)
+B.Ms=s([8589934854,8589934854,8589934855,null],t.Z)
 B.KZ=s([4294968071,null,null,8589935155],t.Z)
 B.L_=s([4294968072,null,null,8589935161],t.Z)
-B.Ms=s([8589934850,8589934850,8589934851,null],t.Z)
-B.vX=new A.dz(["*",B.L2,"+",B.L3,"-",B.L4,".",B.L5,"/",B.L6,"0",B.L7,"1",B.L8,"2",B.Lb,"3",B.Ld,"4",B.Le,"5",B.Lf,"6",B.Lg,"7",B.Lh,"8",B.Li,"9",B.Lk,"Alt",B.Mp,"AltGraph",B.KS,"ArrowDown",B.KT,"ArrowLeft",B.KU,"ArrowRight",B.KV,"ArrowUp",B.KW,"Clear",B.L0,"Control",B.Mq,"Delete",B.KR,"End",B.KX,"Enter",B.KQ,"Home",B.KY,"Insert",B.L1,"Meta",B.Mr,"PageDown",B.KZ,"PageUp",B.L_,"Shift",B.Ms],A.aw("dz<y,U<q?>>"))
+B.Mt=s([8589934850,8589934850,8589934851,null],t.Z)
+B.vX=new A.dz(["*",B.L2,"+",B.L3,"-",B.L4,".",B.L5,"/",B.L6,"0",B.L7,"1",B.L8,"2",B.Lb,"3",B.Ld,"4",B.Le,"5",B.Lf,"6",B.Lg,"7",B.Lh,"8",B.Li,"9",B.Lk,"Alt",B.Mq,"AltGraph",B.KS,"ArrowDown",B.KT,"ArrowLeft",B.KU,"ArrowRight",B.KV,"ArrowUp",B.KW,"Clear",B.L0,"Control",B.Mr,"Delete",B.KR,"End",B.KX,"Enter",B.KQ,"Home",B.KY,"Insert",B.L1,"Meta",B.Ms,"PageDown",B.KZ,"PageUp",B.L_,"Shift",B.Mt],A.aw("dz<y,U<q?>>"))
 B.Lj=s([B.q1,null,null,B.vI],t.L)
-B.N7=s([B.vu,null,null,B.vJ],t.L)
-B.LT=s([B.vv,null,null,B.vK],t.L)
-B.Mv=s([B.vw,null,null,B.dw],t.L)
+B.N8=s([B.vu,null,null,B.vJ],t.L)
+B.LU=s([B.vv,null,null,B.vK],t.L)
+B.Mw=s([B.vw,null,null,B.dw],t.L)
 B.KG=s([B.vx,null,null,B.vL],t.L)
-B.Nx=s([B.vy,null,null,B.lO],t.L)
-B.Nm=s([B.vz,null,null,B.fH],t.L)
+B.Ny=s([B.vy,null,null,B.lO],t.L)
+B.Nn=s([B.vz,null,null,B.fH],t.L)
 B.Lu=s([B.vA,null,null,B.dx],t.L)
 B.NJ=s([B.vB,null,null,B.fI],t.L)
-B.Nl=s([B.vC,null,null,B.dy],t.L)
+B.Nm=s([B.vC,null,null,B.dy],t.L)
 B.Lp=s([B.vD,null,null,B.lP],t.L)
 B.KN=s([B.vE,null,null,B.dz],t.L)
 B.LD=s([B.vF,null,null,B.fJ],t.L)
-B.N9=s([B.vG,null,null,B.dA],t.L)
-B.Nd=s([B.vH,null,null,B.fK],t.L)
+B.Na=s([B.vG,null,null,B.dA],t.L)
+B.Ne=s([B.vH,null,null,B.fK],t.L)
 B.Lw=s([B.fF,B.fF,B.iz,null],t.L)
-B.Ny=s([B.iv,null,B.iv,null],t.L)
-B.M6=s([B.ci,null,null,B.dx],t.L)
-B.M7=s([B.c1,null,null,B.dy],t.L)
-B.M8=s([B.c2,null,null,B.dz],t.L)
+B.Nz=s([B.iv,null,B.iv,null],t.L)
+B.M7=s([B.ci,null,null,B.dx],t.L)
+B.M8=s([B.c1,null,null,B.dy],t.L)
+B.M9=s([B.c2,null,null,B.dz],t.L)
 B.NE=s([B.cj,null,null,B.dA],t.L)
-B.Nj=s([B.lI,null,null,B.lP],t.L)
+B.Nk=s([B.lI,null,null,B.lP],t.L)
 B.Lx=s([B.fE,B.fE,B.iy,null],t.L)
-B.MJ=s([B.ba,null,null,B.dw],t.L)
-B.M9=s([B.dt,null,null,B.fH],t.L)
+B.MK=s([B.ba,null,null,B.dw],t.L)
+B.Ma=s([B.dt,null,null,B.fH],t.L)
 B.Lo=s([B.iu,null,null,B.lN],t.L)
-B.Ma=s([B.du,null,null,B.fJ],t.L)
-B.Nk=s([B.fD,null,null,B.lO],t.L)
+B.Mb=s([B.du,null,null,B.fJ],t.L)
+B.Nl=s([B.fD,null,null,B.lO],t.L)
 B.Ly=s([B.fG,B.fG,B.iA,null],t.L)
-B.Mb=s([B.fB,null,null,B.fI],t.L)
-B.MQ=s([B.fC,null,null,B.fK],t.L)
+B.Mc=s([B.fB,null,null,B.fI],t.L)
+B.MR=s([B.fC,null,null,B.fK],t.L)
 B.Lz=s([B.cZ,B.cZ,B.dv,null],t.L)
-B.PE=new A.dz(["*",B.Lj,"+",B.N7,"-",B.LT,".",B.Mv,"/",B.KG,"0",B.Nx,"1",B.Nm,"2",B.Lu,"3",B.NJ,"4",B.Nl,"5",B.Lp,"6",B.KN,"7",B.LD,"8",B.N9,"9",B.Nd,"Alt",B.Lw,"AltGraph",B.Ny,"ArrowDown",B.M6,"ArrowLeft",B.M7,"ArrowRight",B.M8,"ArrowUp",B.NE,"Clear",B.Nj,"Control",B.Lx,"Delete",B.MJ,"End",B.M9,"Enter",B.Lo,"Home",B.Ma,"Insert",B.Nk,"Meta",B.Ly,"PageDown",B.Mb,"PageUp",B.MQ,"Shift",B.Lz],A.aw("dz<y,U<h?>>"))
+B.PE=new A.dz(["*",B.Lj,"+",B.N8,"-",B.LU,".",B.Mw,"/",B.KG,"0",B.Ny,"1",B.Nn,"2",B.Lu,"3",B.NJ,"4",B.Nm,"5",B.Lp,"6",B.KN,"7",B.LD,"8",B.Na,"9",B.Ne,"Alt",B.Lw,"AltGraph",B.Nz,"ArrowDown",B.M7,"ArrowLeft",B.M8,"ArrowRight",B.M9,"ArrowUp",B.NE,"Clear",B.Nk,"Control",B.Lx,"Delete",B.MK,"End",B.Ma,"Enter",B.Lo,"Home",B.Mb,"Insert",B.Nl,"Meta",B.Ly,"PageDown",B.Mc,"PageUp",B.MR,"Shift",B.Lz],A.aw("dz<y,U<h?>>"))
 B.Qg={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.vY=new A.bD(B.Qg,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.Qe={"zh-Hant":0,"zh-TW":1,"zh-MO":2,"zh-HK":3,ja:4,ko:5,zh:6,"zh-Hans":7,"zh-CN":8}
 B.lx=s(["Noto Sans TC"],t.s)
-B.Mz=s(["Noto Sans HK","Noto Sans TC"],t.s)
+B.MA=s(["Noto Sans HK","Noto Sans TC"],t.s)
 B.Lm=s(["Noto Sans JP"],t.s)
 B.KO=s(["Noto Sans KR"],t.s)
 B.pR=s(["Noto Sans SC"],t.s)
 B.NN=s(["Noto Sans SC","Noto Sans TC"],t.s)
-B.iD=new A.bD(B.Qe,[B.lx,B.lx,B.lx,B.Mz,B.Lm,B.KO,B.pR,B.pR,B.NN],t.VJ)
+B.iD=new A.bD(B.Qe,[B.lx,B.lx,B.lx,B.MA,B.Lm,B.KO,B.pR,B.pR,B.NN],t.VJ)
 B.Qa={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
 B.z_=new A.o(458907)
 B.yG=new A.o(458873)
@@ -102847,8 +102847,8 @@ B.a21=new A.ai("RANKED BY SURVEY GAP",null,B.cm,null,null,null,null,null,null,nu
 B.Ra=new A.aO(B.Ib,B.a21,null)
 B.Ij=new A.a8(20,4,20,4)
 B.mN=new A.k(!0,B.ct,null,null,null,null,10,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1C=new A.ai("Gap ranks research priority, not analog quality \u2014 similarity is the suitability signal, shown separately.",null,B.mN,null,null,null,null,null,null,null)
-B.Rb=new A.aO(B.Ij,B.a1C,null)
+B.a1B=new A.ai("Gap ranks research priority, not analog quality \u2014 similarity is the suitability signal, shown separately.",null,B.mN,null,null,null,null,null,null,null)
+B.Rb=new A.aO(B.Ij,B.a1B,null)
 B.HP=new A.a8(0,5,0,0)
 B.a_S=new A.k(!0,B.ct,null,null,null,null,9.5,null,null,null,null,null,1.3,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a2h=new A.ai("0.00 = already well-surveyed or failed a gate \u2014 expected for the controls, not a bug.",null,B.a_S,null,null,null,null,null,null,null)
@@ -102895,12 +102895,12 @@ B.JF=new A.ly(!0,B.QV,null)
 B.S8=new A.nE(0,0,0,0,null,null,B.JF,null)
 B.S9=new A.vQ(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Fw=new A.u(0.6,0,0,0,B.e)
-B.No=s([B.y,B.Fw],t.c)
-B.Md=s([0.5,1],t.n)
-B.Sa=new A.fN(B.V,0.95,B.aO,null,0,B.No,B.Md,null)
+B.Np=s([B.y,B.Fw],t.c)
+B.Me=s([0.5,1],t.n)
+B.Sa=new A.fN(B.V,0.95,B.aO,null,0,B.Np,B.Me,null)
 B.G6=new A.u(1,0.01568627450980392,0.027450980392156862,0.058823529411764705,B.e)
-B.Nw=s([B.kp,B.G6],t.c)
-B.Sb=new A.fN(B.V,0.5,B.aO,null,0,B.Nw,null,null)
+B.Nx=s([B.kp,B.G6],t.c)
+B.Sb=new A.fN(B.V,0.5,B.aO,null,0,B.Nx,null,null)
 B.FW=new A.u(1,1,0.9529411764705882,0.6901960784313725,B.e)
 B.G0=new A.u(1,1,0.7019607843137254,0,B.e)
 B.KJ=s([B.FW,B.G0,B.y],t.c)
@@ -102967,8 +102967,8 @@ B.a2p=new A.ai("CHALLENGE #09 \xb7 EARTH ANALOGS",null,B.a_3,null,null,null,null
 B.dH=new A.cE(8,null,null,null)
 B.IW=new A.bN(57499,"MaterialIcons",!0)
 B.Jq=new A.dA(B.IW,14,null,null,null)
-B.Np=s([B.a2p,B.dH,B.Jq],t.p)
-B.Tt=new A.Db(B.aF,B.m,B.bw,B.x,null,B.dO,null,0,B.Np,null)
+B.Nq=s([B.a2p,B.dH,B.Jq],t.p)
+B.Tt=new A.Db(B.aF,B.m,B.bw,B.x,null,B.dO,null,0,B.Nq,null)
 B.Tu=new A.Dd(1333)
 B.m8=new A.Dd(2222)
 B.Tv=new A.Qb(null,null)
@@ -103095,9 +103095,9 @@ B.eA=new A.eu([B.ab],t.El)
 B.FV=new A.u(0.23529411764705882,0,0,0,B.e)
 B.Qr=new A.f(0,4)
 B.Db=new A.en(0.5,B.hq,B.FV,B.Qr,10)
-B.MK=s([B.Db],t.sq)
+B.ML=s([B.Db],t.sq)
 B.Ts=new A.ku(B.k0,B.w)
-B.Uo=new A.hl(null,null,null,B.MK,B.Ts)
+B.Uo=new A.hl(null,null,null,B.ML,B.Ts)
 B.ml=new A.o0(0,"onlyForDiscrete")
 B.Av=new A.o0(1,"onlyForContinuous")
 B.Aw=new A.o0(2,"always")
@@ -103229,8 +103229,8 @@ B.VK=new A.ky(3,"hide")
 B.a6B=new A.ky(4,"remove")
 B.VL=new A.ky(5,"timeout")
 B.VM=new A.wl(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1l=new A.ai("Brief copied \u2014 paste it anywhere.",null,null,null,null,null,null,null,null,null)
-B.VN=new A.rx(B.a1l,B.c_,null,null,null,null,null,null,null,null,null,null,null,B.oG,!1,null,null,null,B.O,null)
+B.a1k=new A.ai("Brief copied \u2014 paste it anywhere.",null,null,null,null,null,null,null,null,null)
+B.VN=new A.rx(B.a1k,B.c_,null,null,null,null,null,null,null,null,null,null,null,B.oG,!1,null,null,null,B.O,null)
 B.B6=new A.DU(0,"permissive")
 B.VO=new A.DU(1,"normal")
 B.VP=new A.DU(2,"forced")
@@ -103665,33 +103665,33 @@ B.a_O=new A.k(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,nul
 B.X7=new A.k(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.i,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.a13=new A.e5(B.Zm,B.Y0,B.Zn,B.ZW,B.XC,B.XL,B.Yo,B.ZQ,B.YG,B.a_q,B.X0,B.Xk,B.a_k,B.a_O,B.X7)
 B.Xw=new A.k(!0,B.A,null,null,null,null,10,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a17=new A.ai("NO CHARACTERIZED RECORD YET",null,B.Xw,null,null,null,null,null,null,null)
+B.a16=new A.ai("NO CHARACTERIZED RECORD YET",null,B.Xw,null,null,null,null,null,null,null)
 B.YT=new A.k(!0,B.o,null,null,null,null,10,null,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a19=new A.ai("7 features",null,B.YT,null,null,null,null,null,null,null)
-B.a1b=new A.ai("EXPLORE THE SKY",null,B.jj,null,null,null,null,null,null,null)
-B.a1d=new A.ai("Atacama (similarity 0.59) and Khumbu (0.32) are published analog sites; both land in the top four by similarity, which is the expected check that the scoring recovers known analogs. Neither tops Survey Gap because both are well studied \u2014 that is the ranking behaving as designed, not a miss.",null,B.ag,null,null,null,null,null,null,null)
+B.a18=new A.ai("7 features",null,B.YT,null,null,null,null,null,null,null)
+B.a1a=new A.ai("EXPLORE THE SKY",null,B.jj,null,null,null,null,null,null,null)
+B.a1c=new A.ai("Atacama (similarity 0.59) and Khumbu (0.32) are published analog sites; both land in the top four by similarity, which is the expected check that the scoring recovers known analogs. Neither tops Survey Gap because both are well studied \u2014 that is the ranking behaving as designed, not a miss.",null,B.ag,null,null,null,null,null,null,null)
 B.YA=new A.k(!0,B.o1,null,null,null,null,10,null,null,null,null,null,1.45,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1e=new A.ai("Science is a competition between explanations. The standard model is core accretion; giant impact explains the Moon; late accretion explains the mantle\u2019s metals; water delivery is still debated.",null,B.YA,null,null,null,null,null,null,null)
-B.a1h=new A.ai("These seven established analogs are screened for suitability but not ranked in the OpenAlex-based list: that budget was exhausted mid-run. Under a second literature index (Crossref), the famous analogs score a near-zero research gap (only Askja is 0.07) \u2014 the same pattern as the Atacama positive control, which supports the main result that well-studied analogs are not where a new survey pays off.",null,B.hb,null,null,null,null,null,null,null)
+B.a1d=new A.ai("Science is a competition between explanations. The standard model is core accretion; giant impact explains the Moon; late accretion explains the mantle\u2019s metals; water delivery is still debated.",null,B.YA,null,null,null,null,null,null,null)
+B.a1g=new A.ai("These seven established analogs are screened for suitability but not ranked in the OpenAlex-based list: that budget was exhausted mid-run. Under a second literature index (Crossref), the famous analogs score a near-zero research gap (only Askja is 0.07) \u2014 the same pattern as the Atacama positive control, which supports the main result that well-studied analogs are not where a new survey pays off.",null,B.hb,null,null,null,null,null,null,null)
 B.XS=new A.k(!0,B.A,null,null,null,null,12,null,null,null,null,null,1.55,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1i=new A.ai("Galaxies are gravitationally bound systems of stars, gas, dust and dark matter. Their shapes \u2014 spiral, elliptical, irregular \u2014 record how they formed and merged.",null,B.XS,null,null,null,null,null,null,null)
-B.a1k=new A.ai("TEST RANGE",null,B.cm,null,null,null,null,null,null,null)
-B.a1m=new A.ai("A space learning app.",null,B.BH,null,null,null,null,null,null,null)
+B.a1h=new A.ai("Galaxies are gravitationally bound systems of stars, gas, dust and dark matter. Their shapes \u2014 spiral, elliptical, irregular \u2014 record how they formed and merged.",null,B.XS,null,null,null,null,null,null,null)
+B.a1j=new A.ai("TEST RANGE",null,B.cm,null,null,null,null,null,null,null)
+B.a1l=new A.ai("A space learning app.",null,B.BH,null,null,null,null,null,null,null)
 B.mM=new A.k(!0,B.ki,null,null,null,null,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1o=new A.ai("Real image: NASA. Sizes and orbits are schematic, not to scale.",null,B.mM,null,null,null,null,null,null,null)
+B.a1n=new A.ai("Real image: NASA. Sizes and orbits are schematic, not to scale.",null,B.mM,null,null,null,null,null,null,null)
 B.XN=new A.k(!0,B.z,null,null,null,null,26,B.aS,null,5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1q=new A.ai("AstroLens",null,B.XN,null,null,null,null,null,null,null)
-B.a1r=new A.ai("REAL GALAXIES",null,B.jj,null,null,null,null,null,null,null)
+B.a1p=new A.ai("AstroLens",null,B.XN,null,null,null,null,null,null,null)
+B.a1q=new A.ai("REAL GALAXIES",null,B.jj,null,null,null,null,null,null,null)
 B.Yu=new A.k(!0,B.ki,null,null,null,null,9,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a1t=new A.ai("Whole-Earth composition by mass (core + mantle + crust), standard reference model.",null,B.Yu,null,null,null,null,null,null,null)
-B.a1u=new A.ai("Target profile: Mars mid-latitude (Jezero / NE Syrtis). Slope and relief limits also bound lunar trafficability, but lunar thermal and illumination extremes are not scored: the Moon comparison here is trafficability + access only, and every record says so.",null,B.ag,null,null,null,null,null,null,null)
-B.a1v=new A.ai("The Milky Way is one of trillions. These are the ones we can see \u2014 and a few neighbours.",null,B.ag,null,null,null,null,null,null,null)
-B.a1y=new A.ai("REAL EARTH",null,B.eE,null,null,null,null,null,null,null)
-B.a1z=new A.ai("Set manually",null,null,null,null,null,null,null,null,null)
-B.a1E=new A.ai("drag to orbit \xb7 pinch to zoom \xb7 tap a planet",null,B.c7,null,null,null,null,null,null,null)
-B.a1F=new A.ai("x: similarity to Mars target  \xb7  y: how well studied (\u2191 more studied)",null,B.cl,null,null,null,null,null,null,null)
-B.a1I=new A.ai("Aim the sky map",null,B.BA,null,null,null,null,null,null,null)
-B.a1J=new A.ai("Story of Earth",null,null,null,null,null,null,null,null,null)
+B.a1s=new A.ai("Whole-Earth composition by mass (core + mantle + crust), standard reference model.",null,B.Yu,null,null,null,null,null,null,null)
+B.a1t=new A.ai("Target profile: Mars mid-latitude (Jezero / NE Syrtis). Slope and relief limits also bound lunar trafficability, but lunar thermal and illumination extremes are not scored: the Moon comparison here is trafficability + access only, and every record says so.",null,B.ag,null,null,null,null,null,null,null)
+B.a1u=new A.ai("The Milky Way is one of trillions. These are the ones we can see \u2014 and a few neighbours.",null,B.ag,null,null,null,null,null,null,null)
+B.a1x=new A.ai("REAL EARTH",null,B.eE,null,null,null,null,null,null,null)
+B.a1y=new A.ai("Set manually",null,null,null,null,null,null,null,null,null)
+B.a1D=new A.ai("drag to orbit \xb7 pinch to zoom \xb7 tap a planet",null,B.c7,null,null,null,null,null,null,null)
+B.a1E=new A.ai("x: similarity to Mars target  \xb7  y: how well studied (\u2191 more studied)",null,B.cl,null,null,null,null,null,null,null)
+B.a1H=new A.ai("Aim the sky map",null,B.BA,null,null,null,null,null,null,null)
+B.a1I=new A.ai("Story of Earth",null,null,null,null,null,null,null,null,null)
 B.a1M=new A.ai("NAME A PLACE",null,B.cm,null,null,null,null,null,null,null)
 B.WZ=new A.k(!0,null,null,null,null,null,null,B.aS,null,1.2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a1N=new A.ai("MISSION BRIEF \u2192",null,B.WZ,null,null,null,null,null,null,null)
@@ -104222,7 +104222,7 @@ return A.b([A.F(A.F(A.ap(),q),"Alphabetic"),A.F(A.F(A.ap(),q),"Ideographic")],t.
 s($,"b6j","aQ4",()=>{var q="PlaceholderAlignment"
 return A.b([A.F(A.F(A.ap(),q),"Baseline"),A.F(A.F(A.ap(),q),"AboveBaseline"),A.F(A.F(A.ap(),q),"BelowBaseline"),A.F(A.F(A.ap(),q),"Top"),A.F(A.F(A.ap(),q),"Bottom"),A.F(A.F(A.ap(),q),"Middle")],t.O)})
 r($,"b67","aPX",()=>A.d6().gZC()+"roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2")
-s($,"b5y","aPz",()=>A.aUv(B.Me))
+s($,"b5y","aPz",()=>A.aUv(B.Mf))
 s($,"b5x","aCC",()=>A.abA(A.aRu($.aPz())))
 s($,"b2D","d0",()=>{var q,p=A.F(A.F(A.p0(),"window"),"screen")
 p=p==null?null:A.F(p,"width")
