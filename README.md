@@ -13,10 +13,10 @@ Point at the night sky and name the stars. Scrub 4.6 billion years of Earth's fo
 | Feature | What it does |
 |---|---|
 | **AR Sky Camera** | Uses the phone camera and motion sensors to estimate where it points, then names the nearest bright stars. Manual aim fallback when sensors are unavailable. |
-| **AR Explorer · Sky Dome** | Tap a star for its story; drag a 360° dome built from a 268-star catalogue. |
+| **AR Explorer · Sky Dome** | Tap a star for its story; drag a 360° dome built from a 267-star catalogue. |
 | **3D Solar System** | Orbit the Sun, tap any planet for a real NASA image and facts, visit galaxies, the Kuiper Belt, heliopause and Oort Cloud. |
 | **Tonight's Sky** | Everything above your location right now, with altitude and direction. |
-| **Learn the Sky** | 268 bright stars and all 88 IAU constellations, with plain-language stories. |
+| **Learn the Sky** | 267 bright stars and all 88 IAU constellations, with plain-language stories. |
 | **Story of Earth** | A 4.6-billion-year timeline, a playable film, whole-Earth composition, and five competing formation hypotheses. |
 | **Earth Analogs** | The challenge engine: 34 sites scored on one 500 m grid, a quantified mismatch ledger, and a survey-gap ranking. |
 
@@ -56,6 +56,14 @@ A slider and a 75-second animated film walk from the solar nebula to today: plan
 
 - **Human methodology review**: Arun Lohar (@arunlohar11), Space Apps Connect #2115 — resolved and credited; threshold and proxy sensitivity, suitability-vs-priority framing and data limits were incorporated.
 - **ChatGPT judge review**: 20 → 23 → **24/25** across four passes.
+
+
+## Data QA
+
+- **Star catalogue:** 267 entries cross-checked against HYG v4.1 by HIP identifier — right ascension, declination and magnitude agree within rounding; the one non-HIP entry is the resolved Castor B component. All 88 IAU constellation abbreviations are present, and each `brightest` field was checked against HYG membership.
+- **Demo sky:** the dome's alt/az for the demo was independently recomputed with a standard sidereal-time formula at the recorded location/time; the stars labelled on screen (e.g. Diphda, Fomalhaut) land where the app places them.
+- **Analog data:** `flutter test` asserts the 34 records, the gap identity, sensitivity counts, the controls, all five requirement flags against their documented thresholds, and the catalog counts.
+- **No silent claims:** zero scores are labelled in-app as "already well-surveyed or failed a gate", not as a failed computation.
 
 ## Run / build
 
