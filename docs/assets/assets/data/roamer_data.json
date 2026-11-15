@@ -81,7 +81,7 @@
      "pass": true,
      "value": 154,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -190,7 +190,7 @@
      "pass": true,
      "value": 208,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -299,7 +299,7 @@
      "pass": true,
      "value": 662,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -408,7 +408,7 @@
      "pass": true,
      "value": 254,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -517,7 +517,7 @@
      "pass": true,
      "value": 25,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -626,7 +626,7 @@
      "pass": true,
      "value": 398,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -735,7 +735,7 @@
      "pass": true,
      "value": 359,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -844,7 +844,7 @@
      "pass": false,
      "value": 0,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -953,7 +953,7 @@
      "pass": true,
      "value": 360,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1062,7 +1062,7 @@
      "pass": true,
      "value": 154,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1171,7 +1171,7 @@
      "pass": true,
      "value": 352,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1280,7 +1280,7 @@
      "pass": true,
      "value": 163,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1389,7 +1389,7 @@
      "pass": true,
      "value": 627,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1498,7 +1498,7 @@
      "pass": true,
      "value": 252,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1607,7 +1607,7 @@
      "pass": true,
      "value": 331,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1716,7 +1716,7 @@
      "pass": true,
      "value": 154,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1825,7 +1825,7 @@
      "pass": true,
      "value": 264,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -1934,7 +1934,7 @@
      "pass": true,
      "value": 712,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2043,7 +2043,7 @@
      "pass": true,
      "value": 474,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2152,7 +2152,7 @@
      "pass": true,
      "value": 379,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2261,7 +2261,7 @@
      "pass": true,
      "value": 321,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2370,7 +2370,7 @@
      "pass": true,
      "value": 400,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2479,7 +2479,7 @@
      "pass": true,
      "value": 859,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2588,7 +2588,7 @@
      "pass": true,
      "value": 335,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2697,7 +2697,7 @@
      "pass": true,
      "value": 465,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2806,7 +2806,7 @@
      "pass": true,
      "value": 543,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -2915,7 +2915,7 @@
      "pass": true,
      "value": 499,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -3024,7 +3024,7 @@
      "pass": true,
      "value": 878,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -3133,7 +3133,7 @@
      "pass": true,
      "value": 714,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -3242,7 +3242,7 @@
      "pass": true,
      "value": 87,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -3351,7 +3351,7 @@
      "pass": true,
      "value": 605,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -3460,7 +3460,7 @@
      "pass": true,
      "value": 482,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -3569,7 +3569,7 @@
      "pass": true,
      "value": 379,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
@@ -3678,7 +3678,7 @@
      "pass": true,
      "value": 73,
      "unit": "m P90–P10 (1.5 km site pad)",
-     "threshold": "150–1,500 m"
+     "threshold": "20–1,500 m"
     },
     "sunlight": {
      "pass": true,
