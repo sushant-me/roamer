@@ -1,0 +1,38 @@
+36 hours. One question I couldn't stop thinking about.
+
+Where on Earth should we test Moon and Mars hardware?
+
+Last weekend I built AstroLens for NASA Space Apps 2026 (challenge #09). It started as a space learning app — point your phone at the night sky and it names the stars — but the part I'm proudest of is the Earth Analogs engine underneath.
+
+Everyone names Atacama as the Mars analog. But Atacama is already one of the most studied places on Earth. So I asked a different question: where would a field survey actually teach us something new?
+
+34 sites. One 500 m grid. Five pass/fail gates. One Survey Gap score:
+gap = similarity × (1 − literature attention) × operability
+
+The controls are my favourite part:
+→ Atacama passes 5/5 but scores 0.00 — because it's already surveyed.
+→ Pokhara fails aridity and scores 0.00.
+→ Chhusang leads at 0.23; Kagbeni 0.16.
+
+A 0.00 isn't a bug. It's the method working.
+
+I also added 267 stars, 88 constellations, a gyro sky dome, a 3D solar system, and a 4.6-billion-year Story of Earth — because an app about space should make you look up, not just read a table.
+
+What I learned:
+• Controls are credibility. A method that can't fail isn't a method.
+• Name your proxies. Ours is an OpenAlex count, cross-checked with Crossref (r ≈ 0.69).
+• Catch your own inconsistencies. I found a threshold label that didn't match the code, fixed it, and added a regression test.
+• Scope is a feature. If I had to cut one feature, it'd be the 3D solar system; the challenge answer stays.
+
+It's not a certification — it's a shortlist for investigation, with the evidence attached.
+
+The certificate says "Galactic Problem Solver" 🙂 — the real win was shipping a working thing and learning how much honesty a small data product needs.
+
+Try it:
+🌐 https://sushant-me.github.io/roamer/
+🔗 Everything: https://sushant-me.github.io/roamer/share/
+💻 Code: https://github.com/sushant-me/roamer
+
+Thanks NASA Space Apps for the push.
+
+#NASASpaceApps #SpaceApps #AstroLens #EarthAnalogs #DataScience #Flutter #OpenData
